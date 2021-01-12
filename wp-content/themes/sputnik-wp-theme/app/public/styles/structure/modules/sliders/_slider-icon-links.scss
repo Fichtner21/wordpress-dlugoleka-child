@@ -1,0 +1,22 @@
+.menu-item {
+  &.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 18rem;
+    height: 18rem;
+    i,
+    svg {
+      max-width: 9rem;
+      max-height: 9rem;
+    }
+  }
+  &__title {
+    &--icon {
+      display: block;
+      margin-top: 2rem;
+    }
+  }
+}

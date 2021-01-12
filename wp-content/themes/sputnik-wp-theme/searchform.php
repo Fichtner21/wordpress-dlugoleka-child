@@ -1,0 +1,1 @@
+<?php require CUSTOM_PARTS . '/modules/module-searchform.php';

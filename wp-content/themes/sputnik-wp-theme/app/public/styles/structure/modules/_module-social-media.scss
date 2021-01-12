@@ -1,0 +1,9 @@
+.social-media {
+  display: flex;
+  align-items: center;
+  &__anchor {
+    text-decoration: none;
+    padding: 1rem;
+    cursor: pointer;
+  }
+}

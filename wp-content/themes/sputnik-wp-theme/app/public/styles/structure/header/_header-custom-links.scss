@@ -1,0 +1,11 @@
+.site-header {
+  &__top {
+    .menu {
+      display: flex;
+      align-items: center;
+      &-item {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

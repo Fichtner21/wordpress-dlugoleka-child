@@ -1,0 +1,49 @@
+.fc {
+  max-width: 40rem;
+  &-scrollgrid {
+    border: 0 !important;
+    &-section-header {
+      td {
+        border: 0 !important;
+      }
+    }
+  }
+  &-col-header {
+    &-cell {
+      vertical-align: middle;
+      border: 0 !important;
+      background: #f7fafb;
+      height: 3.5rem;
+      padding-top: 0.5rem !important;
+      &-cushion {
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+    }
+  }
+  &-daygrid-day {
+    position: relative;
+    width: 5rem;
+    height: 7rem;
+    &-frame {
+      height: 100%;
+      min-height: unset;
+    }
+    &-top {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+    }
+    &-number {
+      font-size: 1.4rem;
+    }
+    &-events {
+      display: none;
+      position: absolute !important;
+      top: 0;
+      left: 0;
+    }
+  }
+}
