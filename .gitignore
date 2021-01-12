@@ -1,0 +1,8 @@
+wp-admin
+wp-includes
+wp-content/themes/sputnik-wp-theme/node_modules
+wp-content/themes/sputnik-wp-theme/dist
+wp-content/themes/sputnik-wp-theme-child/node_modules
+wp-content/themes/sputnik-wp-theme-child/dist
+wp-config.php
+wp-content/uploads
