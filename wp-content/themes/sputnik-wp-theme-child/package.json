@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "js-cookie": "^2.2.1",
+    "npm-font-open-sans": "^1.1.0",
     "swiper": "^6.0.1"
   }
 }

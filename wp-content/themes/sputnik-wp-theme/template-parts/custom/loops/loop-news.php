@@ -14,7 +14,7 @@ if($news_query->have_posts()) : ?>
     <div class='posts-loop'>
         <?php while($news_query->have_posts()) : $news_query->the_post();
             if(function_exists('custom_post_loop_template')) {
-                is_front_page() ? custom_post_loop_template('h3') : custom_post_loop_template('h2');
+                is_front_page() ? custom_post_loop_template('h3') : custom_post_loop_template('h2');;
             } else {
                 // nothing...
                 // ! Add some placeholder structure

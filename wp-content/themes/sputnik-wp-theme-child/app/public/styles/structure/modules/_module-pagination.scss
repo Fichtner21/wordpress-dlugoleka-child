@@ -1,0 +1,24 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+
+  .nav-links {
+    .page-numbers {
+      padding: 5px 10px;
+      border: 2px solid lightgray;
+      text-decoration: none;
+      color: #000;
+      transition: all .3s;
+
+      &:hover {
+        background-color: $primaryColor;
+        color: #fff;
+      }
+    }
+
+    .current {
+      background-color: $primaryColor;
+      color: #fff;
+    }
+  }
+}

@@ -43,7 +43,7 @@ function sputnik_wp_theme_posted_on_dlugoleka() {
     }
 }
 
-function custom_post_loop_template_dlugoleka($heading_level = 'h2', $thumb_size = 'medium', $excerpt_length = 200, $categories_count = false) {
+function custom_post_loop_template_dlugoleka($heading_level = 'h2', $thumb_size = 'medium', $excerpt_length = 250, $categories_count = false) {
 	$post_type = get_post_type(); ?>
 	<article id="post-<?= get_the_ID(); ?>" <?php post_class(); ?>>
         <figure>
@@ -72,4 +72,9 @@ function custom_post_loop_template_dlugoleka($heading_level = 'h2', $thumb_size 
         </section>
 	</article><!-- #post-<?= get_the_ID(); ?> -->
 	<?php 
-	}
+    }
+    
+    
+       
+        
+    
