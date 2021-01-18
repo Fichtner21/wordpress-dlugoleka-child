@@ -1,3 +1,20 @@
 .module-messages {
-  background: #fff;
+  background: $secondaryColor;
+  padding: 1rem 0;
+  i,
+  svg {
+    margin-right: 2rem;
+  }
+  &__title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    a {
+      color: $primaryColor;
+      text-decoration: none;
+    }
+  }
+  .btn {
+    text-transform: lowercase;
+    margin-left: 2rem;
+  }
 }

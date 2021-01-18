@@ -1,7 +1,49 @@
 .footer {
+  background: $primaryColor;
+  color: white;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
   &-columns {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 3rem;
+    &-column {
+      &__image {
+        margin-bottom: 1.5rem;
+      }
+      &__title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+      }
+      &__content {
+        margin-bottom: 1.5rem;
+        p {
+          font-size: 1.2rem;
+        }
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 1.2rem;
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+      &__menu {
+        margin-bottom: 1.5rem;
+        .menu {
+          &-item {
+            a {
+              color: white;
+              text-decoration: none;
+              font-size: 1.2rem;
+              &:hover,
+              &:focus {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

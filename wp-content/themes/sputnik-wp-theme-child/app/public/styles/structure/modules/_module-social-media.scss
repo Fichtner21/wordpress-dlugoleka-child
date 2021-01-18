@@ -1,9 +1,7 @@
 .social-media {
-  display: flex;
-  align-items: center;
   &__anchor {
+    color: white;
     text-decoration: none;
-    padding: 1rem;
     cursor: pointer;
   }
 }

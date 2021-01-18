@@ -1,4 +1,31 @@
 .wcag-widget {
-  display: flex;
-  align-items: center;
+  &--fonts {
+    margin-left: auto;
+    margin-right: 2.5rem;
+  }
+  &__title {
+    font-size: 1.4rem;
+  }
+  &__button:not(.contrast__button) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 0.8rem;
+    border-radius: 100%;
+    background: black;
+    color: white;
+    border: 0;
+    margin: 0 0.5rem;
+    cursor: pointer;
+  }
+  .contrast__button {
+    background: transparent;
+    font-size: 1.4rem;
+    color: black;
+    border: 0;
+    cursor: pointer;
+  }
 }
