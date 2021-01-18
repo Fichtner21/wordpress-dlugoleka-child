@@ -1,32 +1,176 @@
 .site-header {
   &__top {
-    display: flex;
-    align-items: center;
+    background: #f8f9fa;
+    border: 0.1rem solid #f0f0f0;
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+    .menu {
+      &-item {
+        a {
+          font-size: 1.4rem;
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+    .social-media {
+      margin-left: 1.5rem;
+      &__anchor {
+        padding: 1rem 1.5rem;
+        &[title="Facebook"] {
+          background: #3d599b;
+        }
+        &[title="YouTube"] {
+          background: #b22b2b;
+        }
+        &[title="Instagram"] {
+          background: #d045c1;
+        }
+        &[title="Twitter"] {
+          background: #11bbe6;
+        }
+        &[title="RSS"] {
+          background: #e67f11;
+        }
+      }
+    }
   }
 
   &__bottom {
-    display: flex;
-    align-items: center;
-    position: relative;
     .main-navigation {
-      margin-left: auto;
     }
     .menu {
-      display: flex;
-      align-items: center;
-      &-item {
-        a {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          padding: 1.5rem;
+      @include extra-large {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 40rem;
+        height: 100%;
+        background: $primaryColor;
+        z-index: $menuIndex;
+        box-shadow: -1.5rem 0 5.5rem -1.5rem rgba(darken($primaryColor, 20%), 0.5);
+        transform: translateX(110%);
+        transition: all 300ms ease-in-out;
+        &.active {
+          transform: translateX(0);
         }
       }
+      &-item {
+        margin: 0 calc(0.9rem / 2);
+        padding: 0 calc(0.9rem / 2);
+        border-right: 0.1rem solid #d8d8d8;
+        border-bottom: 0.2rem solid transparent;
+        @include extra-large {
+          border: 0;
+        }
+        &:last-child {
+          border-right: 0;
+        }
+        &:hover,
+        &:focus {
+          border-bottom: 0.2rem solid $secondaryColor;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+          font-size: 1.6rem;
+          @include extra-large {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .sputnik-search-form__toggle {
+    background: $secondaryColor;
+    color: $primaryColor;
+    svg,
+    i,
+    path {
+      fill: $primaryColor;
     }
   }
 }
 
 .menu-toggle {
-  display: none;
+  @include extra-large {
+    display: block !important;
+    width: 5rem;
+    height: 4rem;
+    position: relative;
+    background: $primaryColor;
+    border: 0;
+    margin: 0 1.5rem;
+    cursor: pointer;
+    &__line {
+      display: block;
+      height: 0.2rem;
+      position: absolute;
+      right: 0;
+      background: white;
+      border-radius: 100rem;
+      margin-right: 0.5rem;
+      transition: all 200ms ease;
+      &:nth-child(2) {
+        width: calc(100% - 1rem);
+        top: 1rem;
+      }
+      &:nth-child(3) {
+        width: calc(75% - 1rem);
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:nth-child(4) {
+        width: calc(50% - 1rem);
+        bottom: 1rem;
+      }
+    }
+    &.active {
+      z-index: $closeMenuIndex;
+      top: 0;
+      right: 0;
+      .menu-toggle__line {
+        margin-right: 0;
+      }
+      .menu-toggle__line:nth-child(2) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      .menu-toggle__line:nth-child(3) {
+        width: calc(100% - 1rem);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+      .menu-toggle__line:nth-child(4) {
+        width: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.js-body-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($secondaryColor, 0.8);
+  z-index: $bodyOverlayIndex;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 400ms ease;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
 }

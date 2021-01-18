@@ -1,0 +1,15 @@
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  &__copy {
+    font-size: 1.2rem;
+  }
+  &__wcag {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: 3rem;
+  }
+}

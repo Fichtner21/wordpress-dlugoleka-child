@@ -1,7 +1,14 @@
 .btn {
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
   &--primary {
+    background: $secondaryColor;
+    color: black;
   }
   &--secondary {
+    background: $primaryColor;
+    color: white;
   }
   &--outline {
   }

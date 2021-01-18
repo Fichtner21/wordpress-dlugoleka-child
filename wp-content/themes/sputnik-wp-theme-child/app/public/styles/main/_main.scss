@@ -1,3 +1,39 @@
 body {
   font-family: 'Open Sans', sans-serif !important;
 }
+/* Text meant only for screen readers. */
+.screen-reader-text,
+.sr-only {
+  border: 0;
+  clip: rect(0.1rem, 0.1rem, 0.1rem, 0.1rem);
+  clip-path: inset(50%);
+  height: 0.1rem;
+  margin: -0.1rem;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0.1rem;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus,
+.sr-only:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1rem;
+  height: auto;
+  left: 0.5rem;
+  line-height: normal;
+  padding: 1.5rem 2.3rem 1.4rem;
+  text-decoration: none;
+  top: 0.5rem;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
+
+#primary {
+  display: none;
+}
