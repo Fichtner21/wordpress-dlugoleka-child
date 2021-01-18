@@ -1,8 +1,8 @@
-$primaryColor: dodgerblue;
-$primaryHoverColor: darken(dodgerblue, 15%);
+$primaryColor: #0a3255;
+$primaryHoverColor: darken($primaryColor, 15%);
 
-$secondaryColor: navy;
-$secondaryHoverColor: lighten(navy, 15%);
+$secondaryColor: #ffd800;
+$secondaryHoverColor: lighten($secondaryColor, 15%);
 
 // Contrast
 $contrastBackground: black;
