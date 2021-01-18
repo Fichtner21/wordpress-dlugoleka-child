@@ -1,0 +1,32 @@
+.site-header {
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .main-navigation {
+      margin-left: auto;
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      &-item {
+        a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.menu-toggle {
+  display: none;
+}

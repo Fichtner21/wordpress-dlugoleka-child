@@ -1,0 +1,68 @@
+// Small mobiles & smartwatches
+$screen-xs-max: 360px;
+// $screen-xs-max: 36rem;
+
+// Small tablets and large smartphones
+$screen-sm-max: 580px;
+// $screen-sm-max: 58rem;
+
+// Small tablets
+$screen-md-max: 768px;
+// $screen-md-max: 76.8rem;
+
+// Tablets and small desktops
+$screen-lg-max: 992px;
+// $screen-lg-max: 99.2rem;
+
+// Large tablets and desktops
+$screen-xl-max: 1170px;
+// $screen-xl-max: 117rem;
+
+// XS
+@mixin extra-small {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+// SM
+@mixin small {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+// MD
+@mixin medium {
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+// LG
+@mixin large {
+  @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+// EX
+@mixin extra-large {
+  @media (max-width: #{$screen-xl-max}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin custom-screen($screen) {
+  @media (max-width: $screen + "rem") {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin custom-screen-between($min_screen, $max_screen) {
+  @media (min-width: $min_screen + "rem") and (max-width: $max_screen + "rem") {
+    @content;
+  }
+}

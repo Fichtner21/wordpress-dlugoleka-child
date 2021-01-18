@@ -173,7 +173,7 @@ require CUSTOM_INC . '/skin-changer.php';
 require CUSTOM_INC . '/create-child-theme.php';
 
 // Use automatic theme updater & checker
-require CUSTOM_INC . '/theme-updater.php';
+// require CUSTOM_INC . '/theme-updater.php';
 
 // Use automatic theme updater & checker
 require CUSTOM_INC . '/customize-admin.php';

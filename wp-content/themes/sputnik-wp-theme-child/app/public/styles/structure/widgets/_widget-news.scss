@@ -1,0 +1,16 @@
+.widget_custom_news {
+  .post {
+    position: relative;
+    &-footer {
+      &__categories {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1rem;
+        & > span {
+          display: none;
+        }
+      }
+    }
+  }
+}

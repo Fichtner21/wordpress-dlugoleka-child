@@ -1,3 +1,28 @@
-body {
-  background-color: red;
-}
+// From node modules
+@import "../../../node_modules/swiper/swiper-bundle.css";
+
+// Globals
+@import "./main/reset";
+@import "./main/variables";
+@import "./main/main";
+@import "./main/fonts";
+@import "./main/svg-icon";
+@import "./main/responsive";
+@import "./main/buttons";
+
+// Structure
+@import "./structure/header";
+@import "./structure/modules";
+@import "./structure/footer";
+@import "./structure/widgets";
+@import "./structure/index";
+@import "./structure/loops/loop-news";
+
+// Theme Skins ( Theme changer )
+@import "./skins/christmas";
+@import "./skins/easter";
+@import "./skins/mourning";
+
+// Functionality
+@import "./functionality/print";
+@import "./functionality/wcag";
