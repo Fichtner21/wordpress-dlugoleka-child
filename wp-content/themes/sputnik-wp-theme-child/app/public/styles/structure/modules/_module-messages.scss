@@ -17,4 +17,20 @@
     text-transform: lowercase;
     margin-left: 2rem;
   }
+  .swiper-wrapper{
+    -webkit-transition-timing-function:linear!important;    transition-timing-function:linear!important; 
+    position: relative;
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 26px;      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      position: relative;
+      overflow: hidden;
+      padding: 0 50px; 
+    }
+  }
 }

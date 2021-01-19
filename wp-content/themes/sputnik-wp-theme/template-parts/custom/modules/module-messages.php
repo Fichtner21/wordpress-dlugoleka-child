@@ -16,7 +16,7 @@ if($messages_query->have_posts()) : ?>
         <div class="container">
             <i class="fas fa-bullhorn"></i>
 
-            <div class="swiper-container">
+            <div class="swiper-container" id="communicat">
                 <div class="swiper-wrapper">
                     <?php while($messages_query->have_posts()) : $messages_query->the_post(); ?>
                         <div class="swiper-slide module-messages__content">

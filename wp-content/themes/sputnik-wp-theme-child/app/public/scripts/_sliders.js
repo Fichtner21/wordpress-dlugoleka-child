@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const messagesSlider = new Swiper("#communicat", {
       spaceBetween: 0,
       // centeredSlides: true,
-      speed: 22000,
+      speed: 7000,
       autoplay: {
         delay: 1,
       },
       loop: true,
-      slidesPerView: 'auto',
+      slidesPerView: 2,
       allowTouchMove: false,
       disableOnInteraction: true,
 

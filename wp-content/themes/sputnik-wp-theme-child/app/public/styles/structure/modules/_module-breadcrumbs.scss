@@ -1,0 +1,17 @@
+#breadcrumbs {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+
+  a {
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .breadcrumb_last {
+    font-weight: 700;
+  }
+}

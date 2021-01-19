@@ -1,0 +1,191 @@
+.post-grid-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0 20px;
+  margin-bottom: 3rem;
+
+  @media screen and (max-width: 799px){
+    display: block;
+  }
+
+  .post-grid-left {
+    .post-nav {
+      display: flex;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+
+      :nth-child(n) {
+        margin-right: 1.5rem;
+      }
+
+      svg {
+        margin-right: .5rem !important;
+        color: $secondaryColor;
+      }
+
+      &__category a{
+        color: #000;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .entry-header {
+      font-size: 5.2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    .post-excerpt {
+      font-size: 1.6rem;      
+    }
+  }
+
+  .post-grid-right {
+    figure {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-height: 34rem;
+
+      img {
+        //max-width: initial;
+        //height: initial;
+      }
+    }
+  }
+}
+
+.post-grid-bottom {
+  display: grid;
+  grid-template-columns: 1fr 41rem;
+  grid-template-rows: auto;
+  gap: 0 20px;
+  
+  @media screen and (max-width: 799px){
+    display: block;
+  }
+
+  .posts-other {
+    .archive-sidebar {
+      h2 {
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        letter-spacing: 0.3rem;
+        margin-bottom: 3rem;
+      }
+  
+      .posts-loop {
+        .post {
+          display: grid;
+          grid-template-columns: 18rem 1fr;
+          grid-template-rows: auto;
+          gap: 0 1.5rem;
+          position: relative;
+          margin-bottom: 3rem;
+          box-shadow: 0px 0.3rem 0.7rem 0px rgba(40,40,40,0.1);
+          max-height: 18rem;
+    
+          .post-others-left {       
+  
+            &__category {
+              position: absolute;
+              overflow: hidden;
+              top: 0;
+              left: 0;                    
+  
+              a {
+                text-decoration: none;
+                color: #fff;
+                padding: 0.7rem 1rem;
+                font-size: 1.2rem;  
+  
+                &:hover {
+                  text-decoration: underline;
+                } 
+              }
+            }
+    
+            figure {
+              overflow: hidden;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              max-height: 18rem;
+  
+              img {
+                max-width: initial;
+                height: initial;
+              }
+            }
+          }
+    
+          .post-bulk {
+            .post-heading {
+              .post-heading-meta {
+                font-size: 1.2rem;
+                margin: 1rem 0;
+  
+                svg {
+                  color: $secondaryColor;
+                }
+              }
+  
+              &__title {
+                font-size: 1.4rem;
+                font-weight: 700;
+                text-transform: uppercase;  
+                margin-bottom: 1rem;            
+  
+                a {
+                  text-decoration: none;
+                  color: #000;
+  
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+  
+            .post-content {
+              margin-bottom: 1rem;
+              &__excerpt {
+                font-size: 1.2rem;
+                line-height: 2rem;
+                max-height: 6rem;
+                overflow: hidden;
+              }           
+            }
+  
+            .post-footer {           
+              display: flex;
+              justify-content: flex-end;
+              align-items: center; 
+              margin-right: 1rem;         
+    
+              &__button {
+                padding: 0.3rem 2rem;
+                background-color: $secondaryColor;
+                color: #000;
+                text-decoration: none;
+                transition: all .3s;
+                font-size: 1.2rem;
+                font-weight: 700;
+    
+                &:hover {
+                  background-color: lighten($secondaryColor, 5%);
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }    
+    }
+  }
+}
