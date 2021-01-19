@@ -1,10 +1,62 @@
+.wcag-nav {
+  &__content {
+    display: flex;
+    align-items: center;
+    @include extra-large {
+      display: block !important;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      max-width: 40rem;
+      height: 100%;
+      background: $primaryColor;
+      z-index: $menuWcagIndex;
+      box-shadow: -1.5rem 0 5.5rem -1.5rem rgba(darken($primaryColor, 20%), 0.5);
+      transform: translateX(-110%);
+      transition: all 300ms ease-in-out;
+      &.active {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.wcag-nav-toggle {
+  display: none;
+  @include extra-large {
+    display: inline-block !important;
+    width: 5rem;
+    height: 4rem;
+    position: relative;
+    background: $primaryColor;
+    color: white;
+    border: 0;
+    margin-right: 1.5rem;
+    cursor: pointer;
+
+    &.active {
+      z-index: $closeMenuWcagIndex;
+    }
+  }
+}
+
 .wcag-widget {
   &--fonts {
     margin-left: auto;
     margin-right: 2.5rem;
+    @include extra-large {
+      padding: 1rem;
+    }
   }
   &__title {
     font-size: 1.4rem;
+    @include extra-large {
+      font-size: 1.6rem;
+      color: white;
+      margin-left: 1rem;
+    }
   }
   &__button:not(.contrast__button) {
     display: inline-flex;
@@ -20,6 +72,10 @@
     border: 0;
     margin: 0 0.5rem;
     cursor: pointer;
+    @include extra-large {
+      background: white;
+      color: black;
+    }
   }
   .contrast__button {
     background: transparent;
@@ -27,5 +83,10 @@
     color: black;
     border: 0;
     cursor: pointer;
+    @include extra-large {
+      color: white;
+      font-size: 1.6rem;
+      padding: 1rem;
+    }
   }
 }

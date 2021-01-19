@@ -6,16 +6,25 @@
     padding-left: 1.5rem;
     margin: 1rem 0;
     .menu {
+      @include extra-large {
+        display: block !important;
+      }
       &-item {
         a {
           font-size: 1.4rem;
           color: black;
           text-decoration: none;
+          @include extra-large {
+            display: block;
+            color: white;
+            font-size: 1.6rem;
+            padding: 1rem;
+          }
         }
       }
     }
     .social-media {
-      margin-left: 1.5rem;
+      margin-left: auto;
       &__anchor {
         padding: 1rem 1.5rem;
         &[title="Facebook"] {
@@ -99,7 +108,7 @@
 
 .menu-toggle {
   @include extra-large {
-    display: block !important;
+    display: inline-block !important;
     width: 5rem;
     height: 4rem;
     position: relative;
@@ -156,7 +165,8 @@
   }
 }
 
-.js-body-overlay {
+.js-body-overlay,
+.js-body-overlay-wcag {
   position: fixed;
   top: 0;
   left: 0;

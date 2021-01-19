@@ -21,13 +21,24 @@
 	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="site-header__top">
-				<?php require CUSTOM_PARTS . '/header/header-custom-links.php'; ?>
+				<nav class='wcag-nav' id='js-wcag-navigation'>
+					<button class="wcag-nav-toggle" id='js-wcag-nav-toggle' title='<?= __('Menu górne','sputnik-wp-theme'); ?>'>
+						<span class="screen-reader-text"><?= __('Menu górne','sputnik-wp-theme'); ?></span>
 
-				<?php require CUSTOM_PARTS . '/header/header-wcag-fonts.php'; ?>
+						<i class="fas fa-info"></i>
+					</button>
 
-				<?php require CUSTOM_PARTS . '/header/header-wcag-contrast.php'; ?>
+					<div class='wcag-nav__content'>
+						<?php require CUSTOM_PARTS . '/header/header-custom-links.php'; ?>
+
+						<?php require CUSTOM_PARTS . '/header/header-wcag-fonts.php'; ?>
+
+						<?php require CUSTOM_PARTS . '/header/header-wcag-contrast.php'; ?>
+					</div>
+				</nav>
 
 				<?php require CUSTOM_PARTS . '/modules/module-social-media.php'; ?>
+
 			</div>
 
 			<div class='site-header__bottom'>
