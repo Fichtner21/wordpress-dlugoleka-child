@@ -11,7 +11,19 @@
 
 ?>
 
-	<?php if(!is_front_page()) require CUSTOM_PARTS . '/modules/sliders/slider-emergency-numbers.php'; ?>
+	<?php if(!is_front_page()) : ?>
+		<section class='page-section emergency-numbers'>
+			<div class='container'>
+				<header class="page-section-heading">
+					<h2 class="page-section-heading__title"><?= __('Numery alarmowe','sputnik-wp-theme'); ?></h2>
+				</header>
+
+				<?php require CUSTOM_PARTS . '/modules/sliders/slider-emergency-numbers.php'; ?>
+
+				<?php function_exists('custom_swiper_arrows') ? custom_swiper_arrows() : null; ?>
+			</div>
+		</section>
+	<?php endif; ?>
 
 	<footer class="footer">
 		<?php require CUSTOM_PARTS . '/footer/footer-columns.php'; ?>
