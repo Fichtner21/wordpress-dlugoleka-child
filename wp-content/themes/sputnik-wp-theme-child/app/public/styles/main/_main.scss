@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
 }
 /* Text meant only for screen readers. */
 .screen-reader-text,
@@ -32,8 +32,4 @@ body {
   top: 0.5rem;
   width: auto;
   z-index: 100000; /* Above WP toolbar. */
-}
-
-#primary {
-  display: none;
 }
