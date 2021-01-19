@@ -33,3 +33,49 @@ body {
   width: auto;
   z-index: 100000; /* Above WP toolbar. */
 }
+
+.page-section {
+  &-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__title {
+      font-size: 2.4rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    &__terms {
+      display: flex;
+      align-items: center;
+      & > span {
+        display: inline-block;
+        font-size: 1.4rem;
+        margin-right: 1rem;
+      }
+    }
+    &__anchor {
+      display: block;
+      text-align: right;
+      color: black;
+    }
+  }
+}
+
+.custom-terms {
+  display: flex;
+  align-items: center;
+  &__anchor {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+    &.active {
+      background: $primaryColor;
+      color: white;
+    }
+  }
+}
