@@ -107,6 +107,61 @@ if(!function_exists('menu_item_commons_images')) {
     add_filter ( 'wp_nav_menu_objects', 'menu_item_commons_images', 10, 2 );
 }
 
+// Clean custom menu items
+if(!function_exists('clean_custom_menu')) {
+    function clean_custom_menu( $menu_id ) {
+        $menu_items = wp_get_nav_menu_items($menu_id);
+
+        $menu_list .= '<ul class="menu">' . "\n";
+
+        $count = 0;
+        $submenu = false;
+
+        foreach( $menu_items as $menu_item ) {
+
+            $link = $menu_item->url;
+            $title = $menu_item->title;
+
+            if ( !$menu_item->menu_item_parent ) {
+                $parent_id = $menu_item->ID;
+
+                $menu_list .= '<li class="menu-item">' ."\n";
+                $menu_list .= '<a href="'. $link .'" class="menu-item__title">'. $title .'</a>' ."\n";
+            }
+
+            if ( $parent_id == $menu_item->menu_item_parent ) {
+
+                if ( !$submenu ) {
+                    $submenu = true;
+                    $menu_list .= '<ul class="sub-menu">' . "\n";
+                }
+
+                $menu_list .= '<li class="item">' . "\n";
+                $menu_list .= '<a href="'. $link .'" class="title">'. $title .'</a>' ."\n";
+                $menu_list .= '</li>' . "\n";
+
+
+                if ( $menu_items[ $count + 1 ]->menu_item_parent != $parent_id && $submenu ){
+                    $menu_list .= '</ul>' . "\n";
+                    $submenu = false;
+                }
+
+            }
+
+            if ( $menu_items[ $count + 1 ]->menu_item_parent != $parent_id ) {
+                $menu_list .= '</li>' . "\n";
+                $submenu = false;
+            }
+
+            $count++;
+        }
+
+        $menu_list .= '</ul>' ."\n";
+
+        return $menu_list;
+    }
+}
+
 // Display theme menus Slider || Simple
 if(!function_exists('display_custom_theme_menu')) {
     function display_custom_theme_menu($location, $type = 'simple-menu', $slides_visible = null) {

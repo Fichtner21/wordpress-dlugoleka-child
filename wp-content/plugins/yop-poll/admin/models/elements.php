@@ -267,6 +267,10 @@ class YOP_POLL_Elements {
 				}
 			}
 		}
+		return array(
+			'errors_present' => self::$errors_present,
+			'error_text' => self::$error_text
+		);
 	}
 	public static function order_subelements( $subelements, $order_by, $order_rule ) {
 		switch ( $order_by ) {

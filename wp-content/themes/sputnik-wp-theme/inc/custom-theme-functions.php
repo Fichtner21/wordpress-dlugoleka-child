@@ -184,6 +184,25 @@ require CUSTOM_INC . '/custom-shortcodes.php';
 // Add custom widgets
 require CUSTOM_INC . '/custom-widgets.php';
 
+
+if(!function_exists('custom_swiper_arrows')) {
+    function custom_swiper_arrows() { ?>
+        <button class="swiper-button-prev" title="<?= __('Poprzedni','sputnik-wp-theme'); ?>">
+            <span class="screen-reader-text"><?= __('Poprzedni','sputnik-wp-theme'); ?></span>
+        </button>
+
+        <button class="swiper-button-next" title="<?= __('Następny','sputnik-wp-theme'); ?>">
+            <span class="screen-reader-text"><?= __('Następny','sputnik-wp-theme'); ?></span>
+        </button>
+    <?php }
+}
+
+if(!function_exists('custom_swiper_pagination')) {
+    function custom_swiper_pagination() { ?>
+        <div class="swiper-pagination"></div>
+    <?php }
+}
+
 // Add ACF google map api key
 if(!function_exists('my_acf_google_map_api')) {
 	function my_acf_google_map_api( $api ){

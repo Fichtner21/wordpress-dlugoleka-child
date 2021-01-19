@@ -60,13 +60,13 @@ class YOP_Poll_Basic {
 		}
 		return $answers_count;
 	}
-	public static function get_gdpr_html( $poll ) {
+	public static function get_gdpr_html( $poll, $poll_uid ) {
 		$gdpr_html = '';
 		if ( 'yes' === $poll->meta_data['options']['poll']['enableGdpr'] ) {
 			if ( 'consent' === $poll->meta_data['options']['poll']['gdprSolution'] ) {
 				$gdpr_html = '<div class="basic-gdpr">'
-						. '<label class="basic-gdpr-consent-text" for="gdpr-consent">'
-							. '<input type="checkbox" name="gdpr-consent" id="gdpr-consent" class="gdpr-consent" value="agree">'
+						. '<label class="basic-gdpr-consent-text" for="gdpr-consent-' . $poll_uid . '">'
+							. '<input type="checkbox" name="gdpr-consent" id="gdpr-consent-' . $poll_uid . '" class="gdpr-consent" value="agree">'
 							. $poll->meta_data['options']['poll']['gdprConsentText']
 						. '</label>'
 					. '</div>';
@@ -816,7 +816,7 @@ class YOP_Poll_Basic {
 													. '<div class="basic-elements">'
 														. $poll_elements
 													. '</div>'
-													. self::get_gdpr_html( $poll )
+													. self::get_gdpr_html( $poll, $use_captcha[2] )
 													. $use_captcha[1]
 													. self::do_show_total_votes_and_answers( $poll, $params )
 													. '<div class="basic-vote">'

@@ -290,6 +290,10 @@ class YOP_Poll_Admin {
 				$maintenance  = new YOP_POLL_Maintenance();
 				$maintenance->update_to_version_6_2_3();
 			}
+			if ( true === version_compare( $installed_version, '6.2.4', '<' ) ) {
+				$maintenance  = new YOP_POLL_Maintenance();
+				$maintenance->update_to_version_6_2_4();
+			}
         }
 	}
     public function load_translations() {

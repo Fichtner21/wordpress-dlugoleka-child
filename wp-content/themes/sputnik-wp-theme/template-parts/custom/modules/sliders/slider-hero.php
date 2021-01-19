@@ -10,6 +10,8 @@
                     $herb = get_sub_field('herb');
                 ?>
                     <div class="swiper-slide hero-slide">
+                        <?php if(!empty($herb)) echo '<img class="hero-slide__herb" src="'. $herb['url'] .'" alt="'. $herb['alt'] .'">'; ?>
+
                         <?php if(!empty($image)) echo '<img class="hero-slide__image" src="'. $image['url'] .'" alt="'. $image['alt'] .'">'; ?>
 
                         <div class='hero-slide__content'>
@@ -18,14 +20,14 @@
                             <?php if(!empty($title)) echo '<p class="hero-slide__title">'. $title .'</p>'; ?>
 
                             <?php if(!empty($searchform)) echo do_shortcode($searchform); ?>
-
-                            <?php if(!empty($herb)) echo '<img class="hero-slide__herb" src="'. $herb['url'] .'" alt="'. $herb['alt'] .'">'; ?>
                         </div>
                     </div>
                 <?php endwhile; ?>
             </div>
 
-            <div class="swiper-pagination"></div>
+            <?php function_exists('custom_swiper_arrows') ? custom_swiper_arrows() : null; ?>
+
+            <?php function_exists('custom_swiper_pagination') ? custom_swiper_pagination() : null; ?>
         </div>
     </div>
 <?php endif; ?>

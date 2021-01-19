@@ -118,6 +118,11 @@ You can have only one question per poll.
 
 == Changelog ==
 
+= 6.2.4 =
+* fixed issue with GDPR/CCPA checkbox when having multiple polls on the same page
+* fixed issue with Results and Get Code icons not showing
+* fixed issue with cloning polls
+
 = 6.2.3 =
 * fixed issue with [br] tag showing on results page
 * added more tags for answers - [strong][/strong], [p][/p], [b][/b], [u][/u], [i][/i]
