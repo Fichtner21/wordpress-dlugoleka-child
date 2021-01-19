@@ -85,6 +85,8 @@ get_header(); ?>
 				</header>
 
 				<?php require CUSTOM_PARTS . '/modules/sliders/slider-emergency-numbers.php'; ?>
+
+				<?php function_exists('custom_swiper_arrows') ? custom_swiper_arrows() : null; ?>
 			</div>
 		</section>
 

@@ -1,5 +1,25 @@
 .slider-icon-links {
   position: relative;
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: $secondaryColor;
+    color: black;
+    border-radius: 100%;
+    border: 0;
+    top: 3rem;
+    cursor: pointer;
+    &::after {
+      font-size: 1.4rem;
+    }
+  }
+  .swiper-button-prev {
+    left: -2rem;
+  }
+  .swiper-button-next {
+    right: -2rem;
+  }
 }
 
 .menu-pod-bannerem-glownym {

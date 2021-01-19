@@ -7,9 +7,18 @@
             <div class="attachment">
                 <p class="attachment__title"><?= $title; ?></p>
 
-                <?php echo '<pre>';
-                var_dump($attachment);
-                echo '</pre>'; ?>
+                <?php foreach($attachment as $file) :
+                    $file_ID = $file['file']['ID'];
+                    $file_title = $file['file']['title'];
+                    $file_size = $file['file']['filesize'];
+                    $file_size_converted = formatSizeUnits($file_size);
+                    $file_url = $file['file']['url'];
+                    ?>
+                    <a target="_blank" href='<?= $file_url; ?>' class='attachment__file' title='<?= $file_title; ?>'>
+                        <span><i class="fas fa-file-download"></i> <?= $file_title; ?></span>
+                        <em><?= $file_size_converted; ?></em>
+                    </a>
+                <?php endforeach; ?>
             </div>
         <?php endwhile; ?>
     </div>
