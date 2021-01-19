@@ -118,6 +118,8 @@ if(!function_exists('custom_post_loop_template')) {
     function custom_post_loop_template($heading_level = 'h2', $thumb_size = 'thumbnail', $excerpt_length = 200, $categories_count = false) {
 		$post_type = get_post_type(); ?>
 		<article id="post-<?= get_the_ID(); ?>" <?php post_class(); ?>>
+			<?php sputnik_wp_theme_post_thumbnail($thumb_size); ?>
+
 			<header class="post-heading">
 				<?php the_title( '<'. $heading_level .' class="post-heading__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></'. $heading_level .'>' ); ?>
 
@@ -127,8 +129,6 @@ if(!function_exists('custom_post_loop_template')) {
 					<?php $post_type != 'wydarzenia' ? sputnik_wp_theme_posted_by() : null; ?>
 				</div>
 			</header><!-- .entry-header -->
-
-			<?php sputnik_wp_theme_post_thumbnail($thumb_size); ?>
 
 			<div class="post-content">
 				<?= get_custom_excerpt($excerpt_length); ?>
