@@ -12,12 +12,12 @@ if(!function_exists('sputnik_wp_theme_child_enqueue_style')) {
 
 // Frontend assets
 if(!function_exists('public_custom_assets_child')) {
-	function public_custom_assets_child() {		
+	function public_custom_assets_child() {
 		wp_enqueue_script( 'public-scripts-child', get_stylesheet_directory_uri() . '/dist/public/public.bundle.js' );
 		wp_enqueue_style( 'public-styles-child', get_stylesheet_directory_uri() . '/dist/public/styles/style.css' );
 	}
 
-	add_action( 'wp_enqueue_scripts', 'public_custom_assets_child' );
+	add_action( 'wp_enqueue_scripts', 'public_custom_assets_child', 20 );
 }
 function sputnik_wp_theme_posted_on_dlugoleka() {
     $post_type = get_post_type();
@@ -48,16 +48,16 @@ function custom_post_loop_template_dlugoleka($heading_level = 'h2', $thumb_size 
 	<article id="post-<?= get_the_ID(); ?>" <?php post_class(); ?>>
         <figure>
             <?php sputnik_wp_theme_post_thumbnail($thumb_size); ?>
-        </figure>		
+        </figure>
         <section class="post-bulk">
             <header class="post-heading">
                 <div class="post-heading-meta">
-                    <?php sputnik_wp_theme_posted_on_dlugoleka(); ?>                   
+                    <?php sputnik_wp_theme_posted_on_dlugoleka(); ?>
                 </div>
                 <?php the_title( '<'. $heading_level .' class="post-heading__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></'. $heading_level .'>' ); ?>
 
-                
-            </header><!-- .entry-header -->			
+
+            </header><!-- .entry-header -->
 
             <div class="post-content">
                 <?= get_custom_excerpt($excerpt_length); ?>
@@ -71,10 +71,9 @@ function custom_post_loop_template_dlugoleka($heading_level = 'h2', $thumb_size 
             </footer><!-- .entry-footer -->
         </section>
 	</article><!-- #post-<?= get_the_ID(); ?> -->
-	<?php 
+	<?php
     }
-    
-    
-       
-        
-    
+
+
+
+

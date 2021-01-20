@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  if (document.querySelector(".menu-pod-bannerem-glownym")) {
-    const slidesVisible = document.querySelector(".menu-pod-bannerem-glownym").dataset.slidesVisible;
+  if (document.querySelector(".menu-pod-banerem-glownym")) {
+    const slidesVisible = document.querySelector(".menu-pod-banerem-glownym").dataset.slidesVisible;
 
-    const underHeroSlider = new Swiper(".menu-pod-bannerem-glownym.swiper-container", {
+    const underHeroSlider = new Swiper(".menu-pod-banerem-glownym", {
       loop: false,
       speed: 500,
       spaceBetween: 30,
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".menu-numery-alarmowe")) {
     const slidesVisible = document.querySelector(".menu-numery-alarmowe").dataset.slidesVisible;
 
-    const emergencyNumbersSlider = new Swiper(".menu-numery-alarmowe.swiper-container", {
+    const emergencyNumbersSlider = new Swiper(".menu-numery-alarmowe", {
       loop: false,
       speed: 500,
       spaceBetween: 15,
