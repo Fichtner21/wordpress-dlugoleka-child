@@ -1,0 +1,32 @@
+.site-header__bottom {
+  position: relative;
+
+  .menu {
+    &-item {
+      & > .sub-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 8.8rem;
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: $subMenuIndex;
+        height: 40rem;
+        li {
+          a {
+            font-size: 1.4rem;
+          }
+        }
+        & > .sub-menu {
+          position: static;
+          li {
+            a {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

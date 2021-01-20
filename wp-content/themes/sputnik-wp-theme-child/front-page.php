@@ -29,7 +29,7 @@ get_header(); ?>
 
 		<section class='page-section news'>
       <div class="container">
-     
+
     <div id="response"></div>
       <script>
       jQuery(function($){
@@ -44,21 +44,18 @@ get_header(); ?>
           },
           success:function(data){
             filter.find('button').text('Filtruj'); // changing the button label back
-            // console.log('data serialize', filter.serialize());
 
-              $('.posts-loop').html(data); // insert data
-              // console.log('data', data.length);  
-              $('.posts-loop h2').slice(4, $('.posts-loop h2').length).css('display', 'none');
+            $('.posts-front .posts-loop').html(data); // insert data
           }
         });
         return false;
         });
       });
   </script>
-<?php 
+<?php
 
 ?>
-      
+
 			<div class='container posts-front'>
 				<header class="page-section-heading">
 					<h2 class="page-section-heading__title"><?= __('Aktualności','sputnik-wp-theme'); ?></h2>
@@ -72,8 +69,8 @@ get_header(); ?>
             </div> -->
             <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php"     method="POST" id="filter">
               <?php
-                if( $terms = get_terms( array( 'taxonomy' => 'category', 'orderby' => 'name' ) ) ) : 
-            
+                if( $terms = get_terms( array( 'taxonomy' => 'category', 'orderby' => 'name' ) ) ) :
+
                   echo '<select name="categoryfilter"><option value="'.$terms.'">Wybierz kategorie...</option>';
                   foreach ( $terms as $term ) :
                     echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as the value of an option
@@ -81,7 +78,7 @@ get_header(); ?>
                   echo '</select>';
                 endif;
               ?>
-          
+
               <!-- <label>
                 <input type="radio" name="date" value="ASC" /> Data: rosnąco
               </label>
@@ -110,10 +107,10 @@ get_header(); ?>
       $news_query = new WP_Query($news_args);
 
       if($news_query->have_posts()) : ?>
-          <div class='posts-loop'>          
+          <div class='posts-loop'>
               <?php while($news_query->have_posts()) : $news_query->the_post(); ?>
               <article id="post-<?= get_the_ID(); ?>" <?php post_class() . ' post'; ?>>
-                    <div class="post-others-left">                    
+                    <div class="post-others-left">
                     <?php
                         if (has_post_thumbnail( get_the_ID() ) ){ ?>
                             <figure>
@@ -129,37 +126,37 @@ get_header(); ?>
                         <?php
                         }
                     ?>
-                    		
+
                     </div>
                     <section class="post-bulk">
                         <header class="post-heading">
                                 <div class="post-heading-meta">
-                                        <?php echo '<i class="fas fa-clock"></i> Data publikacji: ' . get_the_date('d.m.Y') . 'r.'; ?>                   
+                                        <?php echo '<i class="fas fa-clock"></i> Data publikacji: ' . get_the_date('d.m.Y') . 'r.'; ?>
                                 </div>
-                                <?php the_title( '<div class="post-heading__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></div>' ); ?>    
-                                
-                        </header><!-- .entry-header -->			
+                                <?php the_title( '<div class="post-heading__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></div>' ); ?>
+
+                        </header><!-- .entry-header -->
 
                         <div class="post-content">
                                 <?= get_custom_excerpt(200); ?>
-                                
+
                         </div><!-- .entry-content -->
 
                         <footer class="post-footer">
                                 <!-- Category -->
-                                
-                          <?php 
+
+                          <?php
                           $categories = get_the_category();
                           $separator = ', ';
                           $output = '';
                           if ( ! empty( $categories ) ) {
                                   foreach( $categories as $category ) {
                                           $output .= '<div class="category-list">Kategoria: <a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '" class="category-link">' . esc_html( $category->name ) . '</a></div>';
-                                          
+
                                   }
                                   echo trim( $output, $separator );
                           } ?>
-                                
+
 
                           <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme'); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
                         </footer><!-- .entry-footer -->
