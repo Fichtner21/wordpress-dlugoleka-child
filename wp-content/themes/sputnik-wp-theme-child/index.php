@@ -71,7 +71,7 @@ get_header(); ?>
 							<div class='posts-loop'>
 									<?php while($news_others->have_posts()) : $news_others->the_post(); ?>
 											<article id="post-<?= get_the_ID(); ?>" <?php post_class(); ?>>
-											<div class="post-others-left">
+												<div class="post-others-left">
 												<div class="post-others-left__category">
 													<?php 
 													$categories = get_the_category();
@@ -88,8 +88,8 @@ get_header(); ?>
 												<figure>												
 														<?php sputnik_wp_theme_post_thumbnail('medium'); ?>
 												</figure>		
-											</div>
-											<section class="post-bulk">
+												</div>
+												<section class="post-bulk">
 													<header class="post-heading">
 															<div class="post-heading-meta">
 																	<?php echo '<i class="fas fa-clock"></i> Data publikacji: ' . get_the_date('d.m.Y') . 'r.'; ?>                   
@@ -109,8 +109,8 @@ get_header(); ?>
 							
 															<a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme'); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
 													</footer><!-- .entry-footer -->
-											</section>
-									</article><!-- #post-<?= get_the_ID(); ?> -->
+												</section>
+										</article><!-- #post-<?= get_the_ID(); ?> -->
 								<?php	endwhile; ?>
 							</div>
 					<?php endif; wp_reset_query(); wp_reset_postdata(); ?>

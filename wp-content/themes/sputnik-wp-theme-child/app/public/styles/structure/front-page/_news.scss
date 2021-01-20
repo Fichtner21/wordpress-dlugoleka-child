@@ -1,9 +1,140 @@
 .news {
   margin-top: 15rem;
 
+  
   .posts-loop {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-  }
+
+    @media screen and (max-width: 899px){
+      display: block;
+    }
+    article {
+      display: grid;
+      grid-template-columns: 18rem 1fr;
+      grid-template-rows: auto;
+      gap: 0 1.5rem;
+      position: relative;      
+      box-shadow: 0px 0.3rem 0.7rem 0px rgba(40,40,40,0.1);
+      height: 20rem;
+
+      @media screen and (max-width: 500px){
+        grid-template-columns: 12rem 1fr;
+      }
+
+      .post-others-left {       
+
+        &__category {
+          position: absolute;
+          overflow: hidden;
+          top: 0;
+          left: 0;                    
+
+          a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0.7rem 1rem;
+            font-size: 1.2rem;  
+
+            &:hover {
+              text-decoration: underline;
+            } 
+          }
+        }
+
+        figure {
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 20rem;
+
+          @media screen and (max-width: 500px){
+            max-height: 12rem;
+          }
+
+          img {
+            max-width: initial;
+            height: initial;
+          }
+        }
+      }
+
+      .post-bulk {
+        .post-heading {
+          .post-heading-meta {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+
+            svg {
+              color: $secondaryColor;
+            }
+          }
+
+          &__title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-transform: uppercase;  
+            margin-bottom: 1rem;            
+
+            a {
+              text-decoration: none;
+              color: #000;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+
+        .post-content {
+          margin-bottom: 1rem;
+          &__excerpt {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            max-height: 6rem;
+            overflow: hidden;
+          }           
+        }
+
+        .post-footer {           
+          display: flex;
+          justify-content: space-between;
+          align-items: center; 
+          margin-right: 1rem; 
+
+          .category-list {
+            font-size: 1.2rem;
+
+            .category-link {
+              color: #000;
+              text-decoration: none;
+              
+  
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }          
+
+          &__button {
+            padding: 0.3rem 2rem;
+            background-color: $secondaryColor;
+            color: #000;
+            text-decoration: none;
+            transition: all .3s;
+            font-size: 1.2rem;
+            font-weight: 700;
+
+            &:hover {
+              background-color: lighten($secondaryColor, 5%);
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  } 
 }
