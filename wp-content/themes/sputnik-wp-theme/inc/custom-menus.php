@@ -5,7 +5,7 @@ register_nav_menus(
     array(
         'menu-1' => esc_html__( 'Menu główne', 'sputnik-wp-theme' ),
         'menu-2' => esc_html__( 'Pasek górny', 'sputnik-wp-theme' ),
-        'menu-3' => esc_html__( 'Pod bannerem głównym', 'sputnik-wp-theme' ),
+        'menu-3' => esc_html__( 'Pod banerem głównym', 'sputnik-wp-theme' ),
         'menu-4' => esc_html__( 'Numery alarmowe', 'sputnik-wp-theme' ),
         'menu-5' => esc_html__( 'Stopka 1', 'sputnik-wp-theme' ),
         'menu-6' => esc_html__( 'Stopka 2', 'sputnik-wp-theme' ),
