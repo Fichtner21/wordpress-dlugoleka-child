@@ -1,0 +1,28 @@
+.links-under-slider {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  &__anchor {
+    display: block;
+    text-align: center;
+    flex-grow: 1;
+    padding: 1.5rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    background: $secondaryColor;
+    color: black;
+    text-decoration: none;
+    border-bottom: 0.2rem solid transparent;
+    &:hover,
+    &:focus {
+      border-bottom: 0.2rem solid black;
+    }
+    i,
+    svg {
+      margin-left: 12%;
+    }
+    &:nth-child(even) {
+      background: #ededed;
+    }
+  }
+}

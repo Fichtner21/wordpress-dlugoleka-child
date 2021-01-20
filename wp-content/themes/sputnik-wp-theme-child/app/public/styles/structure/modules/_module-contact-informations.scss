@@ -1,6 +1,6 @@
-.most-searched {
-  background: $primaryColor;
-  color: white;
+.contact-informations {
+  background: $secondaryColor;
+  color: black;
   padding: 3rem;
   &__title {
     font-size: 1.8rem;
@@ -8,16 +8,18 @@
     text-transform: uppercase;
     margin-bottom: 4rem;
   }
-  &-list {
-    &__item {
-      margin-bottom: 3rem;
-    }
-    &__anchor {
+  &__row {
+    margin-bottom: 3rem;
+  }
+  &__subtitle {
+    text-transform: uppercase;
+  }
+  &__data {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    a {
       text-decoration: none;
-      color: white;
-      text-transform: uppercase;
-      font-size: 1.6rem;
-      margin-left: 3rem;
+      color: black;
       &:hover,
       &:focus {
         text-decoration: underline;

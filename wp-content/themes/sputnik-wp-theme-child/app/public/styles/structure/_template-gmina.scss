@@ -1,0 +1,29 @@
+.three-favorite-section {
+  margin-bottom: 5rem;
+  & > .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+
+  .page-section-heading {
+    grid-column: 4 span;
+  }
+
+  .three-favorite {
+    grid-column: 2 span;
+    @include extra-large {
+      grid-column: 4 span;
+    }
+  }
+
+  .most-searched,
+  .contact-informations {
+    @include extra-large {
+      grid-column: 2 span;
+    }
+    @include small {
+      grid-column: 4 span;
+    }
+  }
+}

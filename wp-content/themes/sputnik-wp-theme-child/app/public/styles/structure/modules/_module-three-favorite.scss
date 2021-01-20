@@ -1,0 +1,62 @@
+.three-favorite {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  @include small {
+    grid-template-columns: 1fr;
+  }
+  &-post {
+    &__thumbnail {
+      display: block;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    &__title {
+      font-size: 1.6rem;
+      text-align: center;
+      padding: 1.5rem;
+      background: white;
+      box-shadow: 0 0.3rem 0.7rem rgba(black, 0.15);
+      margin-top: -0.5rem;
+      a {
+        color: black;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+    &:nth-child(3) {
+      grid-column: 2 span;
+      @include small {
+        grid-column: 1 span;
+      }
+      .three-favorite-post {
+        &__thumbnail {
+          height: 20rem;
+          overflow: hidden;
+          position: relative;
+          @include extra-large {
+            height: 40rem;
+          }
+          @include small {
+            height: auto;
+          }
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include small {
+              position: static;
+              transform: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

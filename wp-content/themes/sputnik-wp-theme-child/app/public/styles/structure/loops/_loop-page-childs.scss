@@ -1,0 +1,27 @@
+.pages-loop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+  margin: 5rem 0;
+
+  .page {
+    .wp-post-image {
+      width: 100%;
+    }
+    .post-heading {
+      margin: 1rem 0;
+      &__title {
+        font-size: 1.6rem;
+        color: #0a3255;
+        a {
+          color: #0a3255;
+          text-decoration: none;
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
