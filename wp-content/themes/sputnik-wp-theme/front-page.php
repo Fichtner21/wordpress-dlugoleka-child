@@ -104,7 +104,7 @@ get_header(); ?>
 					</div>
 				<?php endif; ?>
 
-				<?php if(get_option('google_maps_key') || (get_option('google_play_link') || get_option('app_store_link'))) : ?>
+				<?php if(get_field('google_map_api_key', 'option') || (get_option('google_play_link') || get_option('app_store_link'))) : ?>
 					<div class='col-8 map-apps'>
 						<?php require CUSTOM_PARTS . '/modules/module-google-map.php'; ?>
 

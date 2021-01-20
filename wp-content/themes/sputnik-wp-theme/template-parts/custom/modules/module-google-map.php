@@ -1,4 +1,4 @@
-<?php if(get_option('google_maps_key')) : ?>
+<?php if(get_field('google_map_api_key', 'option')) : ?>
     <div class="map">
         <header class="page-section-heading">
             <h2 class="page-section-heading__title"><?= __('Jak dojechać?','sputnik-wp-theme'); ?></h2>
