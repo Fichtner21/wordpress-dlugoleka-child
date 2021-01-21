@@ -1,6 +1,8 @@
 .contact-form {
   padding: 3rem;
+  padding-bottom: 6rem;
   background: #f7f6fb;
+  position: relative;
   &__title {
     text-transform: uppercase;
     font-size: 3rem;
@@ -35,5 +37,15 @@
     &--textarea {
       height: 13rem;
     }
+  }
+  &__submit {
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    background: $primaryColor;
+    color: white;
+    border: 0;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
   }
 }
