@@ -3,26 +3,68 @@
 
   .menu {
     &-item {
-      & > .sub-menu {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 8.8rem;
-        left: 0;
-        right: 0;
-        background: white;
-        z-index: $subMenuIndex;
-        height: 40rem;
-        li {
-          a {
-            font-size: 1.4rem;
+      &-has-children {
+        &:hover,
+        &:focus,
+        &.focus {
+          & > .sub-menu {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+            @include extra-large {
+              overflow: visible;
+              padding: 0 1rem;
+              max-height: fit-content;
+            }
           }
         }
         & > .sub-menu {
-          position: static;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          height: 45rem;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background-color: white;
+          z-index: $subMenuIndex;
+          padding: 1rem;
+          transform: translateY(5rem);
+          opacity: 0;
+          visibility: hidden;
+          transition: all 350ms ease;
+          border: 0.1rem solid rgba(black, 0.25);
+          border-top: 0;
+          box-shadow: 0 1.5rem 3.5rem -0.8rem rgba(black, 0.25);
+          @include extra-large {
+            position: static;
+            height: auto;
+            display: block;
+            transform: none;
+            max-height: 0;
+            padding: 0;
+            overflow: hidden;
+          }
           li {
+            border: 0;
+            padding: 0;
+            margin: 0.5rem;
             a {
-              font-size: 1.2rem;
+              font-size: 1.4rem;
+              &:hover,
+              &:focus {
+                color: $primaryColor;
+              }
+              @include extra-large {
+                padding: 0.75rem 1.25rem;
+              }
+            }
+
+            & > .sub-menu {
+              position: static;
+              transform: none;
+              height: auto;
             }
           }
         }
