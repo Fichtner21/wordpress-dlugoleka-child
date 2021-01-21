@@ -3,7 +3,7 @@
     <h2 class="contact-form__title"><?= __('Zadaj pytanie Wójtowi','sputnik-wp-theme'); ?></h2>
 
     <div class="contact-form__wrapper">
-        <div class="contact-form__row">
+        <div class="contact-form__row contact-form__row--2-col">
             <div class="contact-form__wrap">
                 <label for="first-name" class="contact-form__label"><?= __('Imię','sputnik-wp-theme'); ?></label>
                 <input type="text" id="first-name" name="first-name" class="contact-form__input">
