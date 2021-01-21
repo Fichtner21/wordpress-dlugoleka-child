@@ -1,0 +1,10 @@
+body:not(.home) {
+  .map {
+    margin-top: 4rem;
+    .google-map-container {
+      &__map {
+        height: 36rem !important;
+      }
+    }
+  }
+}

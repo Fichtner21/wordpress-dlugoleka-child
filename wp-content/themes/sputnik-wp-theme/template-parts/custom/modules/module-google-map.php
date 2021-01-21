@@ -1,6 +1,6 @@
 <?php if(get_field('google_map_api_key', 'option')) : ?>
     <div class="map">
-        <header class="page-section-heading">
+        <header class="page-section-heading container">
             <h2 class="page-section-heading__title"><?= __('Jak dojechać?','sputnik-wp-theme'); ?></h2>
         </header>
         <?php if(get_field('location', 'option')) : $location = get_field('location', 'option'); ?>
