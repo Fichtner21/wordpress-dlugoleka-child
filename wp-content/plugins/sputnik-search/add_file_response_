@@ -11,8 +11,8 @@ Array
             [filetime] => -1
             [ssl_verify_result] => 0
             [redirect_count] => 0
-            [total_time] => 10.315198
-            [namelookup_time] => 0.018799
+            [total_time] => 21.386293
+            [namelookup_time] => 0.000896
             [connect_time] => 0
             [pretransfer_time] => 0
             [size_upload] => 0
@@ -38,11 +38,19 @@ Array
             [scheme] => 
             [appconnect_time_us] => 0
             [connect_time_us] => 0
+<<<<<<< HEAD
             [namelookup_time_us] => 18799
             [pretransfer_time_us] => 0
             [redirect_time_us] => 0
             [starttransfer_time_us] => 0
             [total_time_us] => 10315198
+=======
+            [namelookup_time_us] => 896
+            [pretransfer_time_us] => 0
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 0
+            [total_time_us] => 21386293
+>>>>>>> 934ad5240984f9a0bee94a786e1ca6fd033e47f3
         )
 
 )
