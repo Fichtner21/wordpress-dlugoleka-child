@@ -1,0 +1,52 @@
+.objects {
+  &__title {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.object {
+  background: #f9f9f9;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3rem;
+    opacity: 0.03;
+  }
+  &__title {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  &-data {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+    &-col {
+      position: relative;
+      padding-left: 3rem;
+      i,
+      svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        fill: #0b3253;
+        color: #0b3253;
+        font-size: 2rem;
+      }
+      &__title {
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+      }
+      &__data {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
