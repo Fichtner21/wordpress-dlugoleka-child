@@ -1,4 +1,4 @@
-<?php /* Template Name: Gmina */
+<?php /* Template Name: Strony i trzy wyróżnione i wydarzenia */
 
 $choosed_elements = get_field('choose_elements');
 
@@ -25,17 +25,19 @@ get_header(); ?>
 			</div>
 		</section>
 
-        <section class='page-section attractions'>
+        <section class='page-section events'>
 			<div class='container'>
 				<header class="page-section-heading">
-					<h2 class="page-section-heading__title"><?= __('Atrakcje','sputnik-wp-theme'); ?></h2>
+					<h2 class="page-section-heading__title"><?= __('Wydarzenia','sputnik-wp-theme'); ?></h2>
 				</header>
 
-				<?php require CUSTOM_PARTS . '/loops/loop-attractions.php'; ?>
+				<div class='events__wrapper'>
+					<?php require CUSTOM_PARTS . '/modules/module-calendar.php'; ?>
+
+					<?php require CUSTOM_PARTS . '/loops/loop-events.php'; ?>
+				</div>
 			</div>
 		</section>
-
-		<?php require CUSTOM_PARTS . '/modules/module-google-map.php'; ?>
 	</main><!-- #main -->
 
 <?php get_footer();
