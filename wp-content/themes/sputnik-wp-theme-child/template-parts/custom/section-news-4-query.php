@@ -33,10 +33,10 @@
 				<div class='page-section-heading__meta'>
 					<a href='<?= get_the_permalink(get_page_by_path(__('aktualnosci', 'sputnik-wp-theme'))); ?>' class='page-section-heading__anchor' title='<?= __('Zobacz wszystkie','sputnik-wp-theme'); ?>'><?= __('Zobacz wszystkie','sputnik-wp-theme'); ?></a>
 
-						<div class="page-section-heading__terms">
+						<!-- <div class="page-section-heading__terms">
 							<span><?= __('Filtry','sputnik-wp-theme'); ?>:</span>
 							<?= function_exists('show_terms_with_childrens') ? show_terms_with_childrens('category') : null; ?>
-            </div>
+            </div> -->
 
             <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php"     method="POST" id="filter">
               <?php
