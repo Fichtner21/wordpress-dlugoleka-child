@@ -9,6 +9,7 @@
     gap: 3rem;
     .galerie {
       position: relative;
+      max-width: 30rem;
       &:hover,
       &:focus {
         .post__button {
