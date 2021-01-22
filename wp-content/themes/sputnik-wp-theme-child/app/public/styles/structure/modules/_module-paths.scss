@@ -1,0 +1,32 @@
+.paths {
+  &__title {
+    margin-bottom: 3rem;
+  }
+}
+
+.path {
+  background: #f9f9f9;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  &-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    &__number {
+      font-size: 3.4rem;
+      font-weight: bold;
+      margin-right: 3rem;
+    }
+    &__title {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+  }
+  &-content {
+    display: flex;
+    &__image {
+      margin-right: 3rem;
+    }
+  }
+}
