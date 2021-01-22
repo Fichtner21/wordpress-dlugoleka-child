@@ -1,0 +1,48 @@
+.galleries {
+  .entry-title {
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+  }
+  .posts-loop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+    .galerie {
+      position: relative;
+      &:hover,
+      &:focus {
+        .post__button {
+          opacity: 1;
+        }
+      }
+      .post__button {
+        position: absolute;
+        top: 7rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        background: white;
+        font-weight: 600;
+        padding: 1.5rem;
+        opacity: 0;
+      }
+      .post-heading {
+        &__title {
+          margin-bottom: 1rem;
+          font-size: 1.8rem;
+          a {
+            text-decoration: none;
+            color: #0a3255;
+            &:hover,
+            &:focus {
+              text-decoration: underline;
+            }
+          }
+        }
+        &__excerpt {
+          color: #282728;
+        }
+      }
+    }
+  }
+}
