@@ -42,5 +42,16 @@
 
 <?php wp_footer(); ?>
 
+
+<?php if(is_page('kontakt')) : ?>
+	<script>
+		grecaptcha.ready(function() {
+			grecaptcha.execute('6LecWjsaAAAAAEOse8zcdG1kotODFs05U2DY3Jl1', {action: 'homepage'}).then(function(token) {
+				document.getElementById('token').value = token;
+			});
+		});
+	</script>
+<?php endif; ?>
+
 </body>
 </html>
