@@ -1,0 +1,23 @@
+.news {
+  .posts-loop {
+    &__wrapper {
+      &:nth-child(1) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        article {
+          grid-template-columns: 1fr;
+          height: auto;
+          .post-bulk {
+            padding: 1.5rem;
+          }
+        }
+      }
+      &:nth-child(2) {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+  }
+}
