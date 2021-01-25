@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const calendarEvents = [];
 
   allEventsArr.forEach((event) => {
+    console.log(event.event_type.value);
     if (event.event_type.value == "oneday") {
       const obj = {
         id: event.ID,
