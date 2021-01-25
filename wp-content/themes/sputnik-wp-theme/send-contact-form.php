@@ -50,9 +50,17 @@ if(isset($_POST['first-name'])) :
 
         foreach($emails_array as $email) :
             if(mail( $email, $subject, $message)) :
-                echo 'Yahoo!!!';
+                echo 'Wiadomość została wysłana poprawnie.';
+
+                header('Location: '. $_SERVER['HTTP_REFERER']);
+
+	            exit;
             else :
-               echo 'Oh No!';
+                echo 'Wystąpił błąd. Spróbuj ponownie.';
+
+                header('Location: '. $_SERVER['HTTP_REFERER']);
+
+	            exit;
             endif;
         endforeach;
     }

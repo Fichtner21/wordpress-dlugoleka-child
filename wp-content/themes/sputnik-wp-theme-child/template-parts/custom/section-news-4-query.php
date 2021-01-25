@@ -80,7 +80,8 @@
 
       if($news_query->have_posts()) : ?>
           <div class='posts-loop'>
-              <?php while($news_query->have_posts()) : $news_query->the_post(); ?>
+              <?php $i = 0; while($news_query->have_posts()) : $news_query->the_post(); ?>
+              <?php if( !is_front_page() && ( $i == 0 || $i == 2 ) ) echo '<div class="posts-loop__wrapper">'; ?>
               <article id="post-<?= get_the_ID(); ?>" <?php post_class() . ' post'; ?>>
                     <div class="post-others-left">
                       <?php if (has_post_thumbnail( get_the_ID() ) ) { ?>
@@ -121,7 +122,8 @@
                         </footer><!-- .entry-footer -->
                     </section>
                 </article><!-- #post-<?= get_the_ID(); ?> -->
-              <?php endwhile; ?>
+                <?php if( !is_front_page() && ( $i == 1 || $i ==  3) ) echo '</div>'; ?>
+              <?php $i++; endwhile; ?>
           </div>
       <?php endif; wp_reset_query(); wp_reset_postdata(); ?>
 	</div>
