@@ -13,8 +13,8 @@ $events_query = new WP_Query($events_args);
 if($events_query->have_posts()) : ?>
     <div class='posts-loop'>
         <?php while($events_query->have_posts()) : $events_query->the_post();
-            if(function_exists('custom_post_loop_template')) {
-                custom_post_loop_template('h3');
+            if(function_exists('custom_post_loop_template_dlugoleka')) {
+                custom_post_loop_template_dlugoleka('h3', 'medium', 140);
             } else {
                 // nothing...
                 // ! Add some placeholder structure

@@ -186,6 +186,8 @@ if(!function_exists('title_on_hover_loop_template')) {
     <?php }
 }
 
+
+
 // Fromat unit sizes in attachments
 if(!function_exists('formatSizeUnits')) {
 	function formatSizeUnits($bytes) {
