@@ -4,6 +4,24 @@
   gap: 3rem;
   margin: 5rem 0;
 
+  &--background {
+    padding: 5rem 0;
+    position: relative;
+    z-index: 0;
+    &::before {
+      display: block;
+      content: "";
+      width: 100vw;
+      height: 100%;
+      margin-left: -50vw;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background: #f8f9fb;
+      z-index: -1;
+    }
+  }
+
   .page {
     max-width: 25rem;
     .wp-post-image {

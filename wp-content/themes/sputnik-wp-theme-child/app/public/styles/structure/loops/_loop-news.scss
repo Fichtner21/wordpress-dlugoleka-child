@@ -21,3 +21,26 @@
     }
   }
 }
+
+body.page-template-template-aktualnosci-kontakt {
+  .news-contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .contact-informations__row:last-child {
+      display: none;
+    }
+  }
+  .news {
+    margin: 0;
+    .posts-loop {
+      grid-template-columns: repeat(3, 1fr);
+      article {
+        grid-template-columns: 1fr;
+        height: auto;
+        .post-bulk {
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+}

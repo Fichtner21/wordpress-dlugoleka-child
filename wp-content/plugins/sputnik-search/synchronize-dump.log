@@ -1,0 +1,3822 @@
+2021-01-25 12:06:22	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"613","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/613
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 1073
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.127684
+            [namelookup_time] => 0.002165
+            [connect_time] => 0.042052
+            [pretransfer_time] => 0.095104
+            [size_upload] => 781
+            [size_download] => 144
+            [speed_download] => 1133
+            [speed_upload] => 6149
+            [download_content_length] => 144
+            [upload_content_length] => 781
+            [starttransfer_time] => 0.12757
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 59702
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 94965
+            [connect_time_us] => 42052
+            [namelookup_time_us] => 2165
+            [pretransfer_time_us] => 95104
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 127570
+            [total_time_us] => 127684
+        )
+
+)
+
+2021-01-25 12:06:23	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"615","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/615
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 1080
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.10888
+            [namelookup_time] => 0.002739
+            [connect_time] => 0.02745
+            [pretransfer_time] => 0.07939
+            [size_upload] => 788
+            [size_download] => 144
+            [speed_download] => 1333
+            [speed_upload] => 7296
+            [download_content_length] => 144
+            [upload_content_length] => 788
+            [starttransfer_time] => 0.108836
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 59725
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 79252
+            [connect_time_us] => 27450
+            [namelookup_time_us] => 2739
+            [pretransfer_time_us] => 79390
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 108836
+            [total_time_us] => 108880
+        )
+
+)
+
+2021-01-25 12:06:25	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"616","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/616
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 1073
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.109832
+            [namelookup_time] => 0.002593
+            [connect_time] => 0.026958
+            [pretransfer_time] => 0.080155
+            [size_upload] => 781
+            [size_download] => 144
+            [speed_download] => 1321
+            [speed_upload] => 7165
+            [download_content_length] => 144
+            [upload_content_length] => 781
+            [starttransfer_time] => 0.109795
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 59747
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 79902
+            [connect_time_us] => 26958
+            [namelookup_time_us] => 2593
+            [pretransfer_time_us] => 80155
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 109795
+            [total_time_us] => 109832
+        )
+
+)
+
+2021-01-25 12:06:27	Array
+(
+    [res] => {"msg":"Not Found","path":"/testowy_1/post/616","query":{},"statusCode":404,"response":"{\"found\":false,\"_index\":\"testowy_1\",\"_type\":\"post\",\"_id\":\"616\",\"_version\":8,\"result\":\"not_found\",\"_shards\":{\"total\":2,\"successful\":1,\"failed\":0}}"}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/616
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 404
+            [header_size] => 372
+            [request_size] => 274
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.124264
+            [namelookup_time] => 0.000925
+            [connect_time] => 0.039681
+            [pretransfer_time] => 0.095136
+            [size_upload] => 0
+            [size_download] => 263
+            [speed_download] => 2120
+            [speed_upload] => 0
+            [download_content_length] => 263
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.124224
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 59791
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 95069
+            [connect_time_us] => 39681
+            [namelookup_time_us] => 925
+            [pretransfer_time_us] => 95136
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 124224
+            [total_time_us] => 124264
+        )
+
+)
+
+2021-01-25 12:06:28	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"617","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/617
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 1080
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.113237
+            [namelookup_time] => 0.002901
+            [connect_time] => 0.027806
+            [pretransfer_time] => 0.080687
+            [size_upload] => 788
+            [size_download] => 144
+            [speed_download] => 1274
+            [speed_upload] => 6973
+            [download_content_length] => 144
+            [upload_content_length] => 788
+            [starttransfer_time] => 0.11315
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 59813
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 80524
+            [connect_time_us] => 27806
+            [namelookup_time_us] => 2901
+            [pretransfer_time_us] => 80687
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 113150
+            [total_time_us] => 113237
+        )
+
+)
+
+2021-01-25 12:06:29	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"618","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/618
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 1080
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.125976
+            [namelookup_time] => 0.001194
+            [connect_time] => 0.0398
+            [pretransfer_time] => 0.095547
+            [size_upload] => 788
+            [size_download] => 144
+            [speed_download] => 1152
+            [speed_upload] => 6304
+            [download_content_length] => 144
+            [upload_content_length] => 788
+            [starttransfer_time] => 0.12594
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 59836
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 95475
+            [connect_time_us] => 39800
+            [namelookup_time_us] => 1194
+            [pretransfer_time_us] => 95547
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 125940
+            [total_time_us] => 125976
+        )
+
+)
+
+2021-01-25 12:06:30	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"619","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/619
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 1080
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.111363
+            [namelookup_time] => 0.001113
+            [connect_time] => 0.028168
+            [pretransfer_time] => 0.081072
+            [size_upload] => 788
+            [size_download] => 144
+            [speed_download] => 1297
+            [speed_upload] => 7099
+            [download_content_length] => 144
+            [upload_content_length] => 788
+            [starttransfer_time] => 0.111326
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 59859
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 81001
+            [connect_time_us] => 28168
+            [namelookup_time_us] => 1113
+            [pretransfer_time_us] => 81072
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 111326
+            [total_time_us] => 111363
+        )
+
+)
+
+2021-01-25 12:06:32	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"602","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/602
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 465
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.332373
+            [namelookup_time] => 0.000996
+            [connect_time] => 0.042009
+            [pretransfer_time] => 0.110848
+            [size_upload] => 173
+            [size_download] => 144
+            [speed_download] => 433
+            [speed_upload] => 521
+            [download_content_length] => 144
+            [upload_content_length] => 173
+            [starttransfer_time] => 0.332314
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 59881
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 110804
+            [connect_time_us] => 42009
+            [namelookup_time_us] => 996
+            [pretransfer_time_us] => 110848
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 332314
+            [total_time_us] => 332373
+        )
+
+)
+
+2021-01-25 12:06:33	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"583","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/583
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 469
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.116103
+            [namelookup_time] => 0.002563
+            [connect_time] => 0.030554
+            [pretransfer_time] => 0.086167
+            [size_upload] => 177
+            [size_download] => 144
+            [speed_download] => 1241
+            [speed_upload] => 1525
+            [download_content_length] => 144
+            [upload_content_length] => 177
+            [starttransfer_time] => 0.116014
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 59904
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 85982
+            [connect_time_us] => 30554
+            [namelookup_time_us] => 2563
+            [pretransfer_time_us] => 86167
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 116014
+            [total_time_us] => 116103
+        )
+
+)
+
+2021-01-25 12:06:34	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"565","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/565
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 715
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.130178
+            [namelookup_time] => 0.002593
+            [connect_time] => 0.04388
+            [pretransfer_time] => 0.097775
+            [size_upload] => 423
+            [size_download] => 144
+            [speed_download] => 1107
+            [speed_upload] => 3253
+            [download_content_length] => 144
+            [upload_content_length] => 423
+            [starttransfer_time] => 0.130091
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 59928
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 97604
+            [connect_time_us] => 43880
+            [namelookup_time_us] => 2593
+            [pretransfer_time_us] => 97775
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 130091
+            [total_time_us] => 130178
+        )
+
+)
+
+2021-01-25 12:06:36	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"560","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/560
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 457
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.133545
+            [namelookup_time] => 0.001191
+            [connect_time] => 0.046322
+            [pretransfer_time] => 0.102052
+            [size_upload] => 165
+            [size_download] => 144
+            [speed_download] => 1082
+            [speed_upload] => 1240
+            [download_content_length] => 144
+            [upload_content_length] => 165
+            [starttransfer_time] => 0.133508
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 59950
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 101985
+            [connect_time_us] => 46322
+            [namelookup_time_us] => 1191
+            [pretransfer_time_us] => 102052
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 133508
+            [total_time_us] => 133545
+        )
+
+)
+
+2021-01-25 12:06:37	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"558","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/558
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 765
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.540702
+            [namelookup_time] => 0.000893
+            [connect_time] => 0.046463
+            [pretransfer_time] => 0.10204
+            [size_upload] => 473
+            [size_download] => 144
+            [speed_download] => 266
+            [speed_upload] => 875
+            [download_content_length] => 144
+            [upload_content_length] => 473
+            [starttransfer_time] => 0.540648
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 59972
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 101876
+            [connect_time_us] => 46463
+            [namelookup_time_us] => 893
+            [pretransfer_time_us] => 102040
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 540648
+            [total_time_us] => 540702
+        )
+
+)
+
+2021-01-25 12:06:39	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"555","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/555
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 456
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.129263
+            [namelookup_time] => 0.000998
+            [connect_time] => 0.045636
+            [pretransfer_time] => 0.099374
+            [size_upload] => 164
+            [size_download] => 144
+            [speed_download] => 1116
+            [speed_upload] => 1271
+            [download_content_length] => 144
+            [upload_content_length] => 164
+            [starttransfer_time] => 0.129225
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 59995
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 99306
+            [connect_time_us] => 45636
+            [namelookup_time_us] => 998
+            [pretransfer_time_us] => 99374
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 129225
+            [total_time_us] => 129263
+        )
+
+)
+
+2021-01-25 12:06:40	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"543","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/543
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 1060
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.137077
+            [namelookup_time] => 0.001084
+            [connect_time] => 0.051509
+            [pretransfer_time] => 0.104541
+            [size_upload] => 768
+            [size_download] => 144
+            [speed_download] => 1051
+            [speed_upload] => 5605
+            [download_content_length] => 144
+            [upload_content_length] => 768
+            [starttransfer_time] => 0.137042
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60018
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 104469
+            [connect_time_us] => 51509
+            [namelookup_time_us] => 1084
+            [pretransfer_time_us] => 104541
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 137042
+            [total_time_us] => 137077
+        )
+
+)
+
+2021-01-25 12:06:41	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"541","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/541
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 1060
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.125497
+            [namelookup_time] => 0.000883
+            [connect_time] => 0.042281
+            [pretransfer_time] => 0.095891
+            [size_upload] => 768
+            [size_download] => 144
+            [speed_download] => 1152
+            [speed_upload] => 6144
+            [download_content_length] => 144
+            [upload_content_length] => 768
+            [starttransfer_time] => 0.1254
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60040
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 95715
+            [connect_time_us] => 42281
+            [namelookup_time_us] => 883
+            [pretransfer_time_us] => 95891
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 125400
+            [total_time_us] => 125497
+        )
+
+)
+
+2021-01-25 12:06:43	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"539","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/539
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 1060
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.129003
+            [namelookup_time] => 0.002815
+            [connect_time] => 0.041904
+            [pretransfer_time] => 0.099368
+            [size_upload] => 768
+            [size_download] => 144
+            [speed_download] => 1116
+            [speed_upload] => 5953
+            [download_content_length] => 144
+            [upload_content_length] => 768
+            [starttransfer_time] => 0.128919
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60063
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 99199
+            [connect_time_us] => 41904
+            [namelookup_time_us] => 2815
+            [pretransfer_time_us] => 99368
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 128919
+            [total_time_us] => 129003
+        )
+
+)
+
+2021-01-25 12:06:44	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"536","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/536
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 1056
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.12922
+            [namelookup_time] => 0.001113
+            [connect_time] => 0.04502
+            [pretransfer_time] => 0.098344
+            [size_upload] => 764
+            [size_download] => 144
+            [speed_download] => 1116
+            [speed_upload] => 5922
+            [download_content_length] => 144
+            [upload_content_length] => 764
+            [starttransfer_time] => 0.129136
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60087
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 98189
+            [connect_time_us] => 45020
+            [namelookup_time_us] => 1113
+            [pretransfer_time_us] => 98344
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 129136
+            [total_time_us] => 129220
+        )
+
+)
+
+2021-01-25 12:06:46	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"421","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/421
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.144975
+            [namelookup_time] => 0.001319
+            [connect_time] => 0.025939
+            [pretransfer_time] => 0.077006
+            [size_upload] => 8681
+            [size_download] => 144
+            [speed_download] => 1000
+            [speed_upload] => 60284
+            [download_content_length] => 144
+            [upload_content_length] => 8681
+            [starttransfer_time] => 0.102429
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60109
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 76967
+            [connect_time_us] => 25939
+            [namelookup_time_us] => 1319
+            [pretransfer_time_us] => 77006
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 102429
+            [total_time_us] => 144975
+        )
+
+)
+
+2021-01-25 12:06:48	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"420","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/420
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 437
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.114944
+            [namelookup_time] => 0.002696
+            [connect_time] => 0.031084
+            [pretransfer_time] => 0.085041
+            [size_upload] => 145
+            [size_download] => 144
+            [speed_download] => 1263
+            [speed_upload] => 1271
+            [download_content_length] => 144
+            [upload_content_length] => 145
+            [starttransfer_time] => 0.114862
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60133
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 84882
+            [connect_time_us] => 31084
+            [namelookup_time_us] => 2696
+            [pretransfer_time_us] => 85041
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 114862
+            [total_time_us] => 114944
+        )
+
+)
+
+2021-01-25 12:06:49	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"385","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/385
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 624
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.324849
+            [namelookup_time] => 0.211771
+            [connect_time] => 0.238847
+            [pretransfer_time] => 0.292749
+            [size_upload] => 332
+            [size_download] => 144
+            [speed_download] => 444
+            [speed_upload] => 1024
+            [download_content_length] => 144
+            [upload_content_length] => 332
+            [starttransfer_time] => 0.324763
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60156
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 292580
+            [connect_time_us] => 238847
+            [namelookup_time_us] => 211771
+            [pretransfer_time_us] => 292749
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 324763
+            [total_time_us] => 324849
+        )
+
+)
+
+2021-01-25 12:06:51	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"381","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/381
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.13504
+            [namelookup_time] => 0.000758
+            [connect_time] => 0.028538
+            [pretransfer_time] => 0.079061
+            [size_upload] => 3609
+            [size_download] => 144
+            [speed_download] => 1066
+            [speed_upload] => 26733
+            [download_content_length] => 144
+            [upload_content_length] => 3609
+            [starttransfer_time] => 0.102288
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60180
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 79023
+            [connect_time_us] => 28538
+            [namelookup_time_us] => 758
+            [pretransfer_time_us] => 79061
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 102288
+            [total_time_us] => 135040
+        )
+
+)
+
+2021-01-25 12:06:52	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"391","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/391
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.146599
+            [namelookup_time] => 0.002438
+            [connect_time] => 0.027543
+            [pretransfer_time] => 0.080379
+            [size_upload] => 9292
+            [size_download] => 144
+            [speed_download] => 986
+            [speed_upload] => 63643
+            [download_content_length] => 144
+            [upload_content_length] => 9292
+            [starttransfer_time] => 0.105415
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60203
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 80231
+            [connect_time_us] => 27543
+            [namelookup_time_us] => 2438
+            [pretransfer_time_us] => 80379
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 105415
+            [total_time_us] => 146599
+        )
+
+)
+
+2021-01-25 12:06:54	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"395","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/395
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.154111
+            [namelookup_time] => 0.001545
+            [connect_time] => 0.040593
+            [pretransfer_time] => 0.096944
+            [size_upload] => 4114
+            [size_download] => 144
+            [speed_download] => 935
+            [speed_upload] => 26714
+            [download_content_length] => 144
+            [upload_content_length] => 4114
+            [starttransfer_time] => 0.120065
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60237
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 96853
+            [connect_time_us] => 40593
+            [namelookup_time_us] => 1545
+            [pretransfer_time_us] => 96944
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 120065
+            [total_time_us] => 154111
+        )
+
+)
+
+2021-01-25 12:06:55	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"390","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/390
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.159493
+            [namelookup_time] => 0.00264
+            [connect_time] => 0.041009
+            [pretransfer_time] => 0.095635
+            [size_upload] => 8237
+            [size_download] => 144
+            [speed_download] => 905
+            [speed_upload] => 51805
+            [download_content_length] => 144
+            [upload_content_length] => 8237
+            [starttransfer_time] => 0.119541
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60259
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 95492
+            [connect_time_us] => 41009
+            [namelookup_time_us] => 2640
+            [pretransfer_time_us] => 95635
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 119541
+            [total_time_us] => 159493
+        )
+
+)
+
+2021-01-25 12:06:57	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"394","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/394
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.140896
+            [namelookup_time] => 0.001263
+            [connect_time] => 0.025842
+            [pretransfer_time] => 0.078686
+            [size_upload] => 7923
+            [size_download] => 144
+            [speed_download] => 1028
+            [speed_upload] => 56592
+            [download_content_length] => 144
+            [upload_content_length] => 7923
+            [starttransfer_time] => 0.104041
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60282
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 78642
+            [connect_time_us] => 25842
+            [namelookup_time_us] => 1263
+            [pretransfer_time_us] => 78686
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 104041
+            [total_time_us] => 140896
+        )
+
+)
+
+2021-01-25 12:06:58	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"386","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/386
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.165713
+            [namelookup_time] => 0.001108
+            [connect_time] => 0.044121
+            [pretransfer_time] => 0.09956
+            [size_upload] => 8654
+            [size_download] => 144
+            [speed_download] => 872
+            [speed_upload] => 52448
+            [download_content_length] => 144
+            [upload_content_length] => 8654
+            [starttransfer_time] => 0.124238
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60305
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 99489
+            [connect_time_us] => 44121
+            [namelookup_time_us] => 1108
+            [pretransfer_time_us] => 99560
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 124238
+            [total_time_us] => 165713
+        )
+
+)
+
+2021-01-25 12:06:59	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"389","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/389
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.159114
+            [namelookup_time] => 0.001432
+            [connect_time] => 0.042142
+            [pretransfer_time] => 0.097137
+            [size_upload] => 5623
+            [size_download] => 144
+            [speed_download] => 905
+            [speed_upload] => 35364
+            [download_content_length] => 144
+            [upload_content_length] => 5623
+            [starttransfer_time] => 0.121126
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60327
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 97058
+            [connect_time_us] => 42142
+            [namelookup_time_us] => 1432
+            [pretransfer_time_us] => 97137
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 121126
+            [total_time_us] => 159114
+        )
+
+)
+
+2021-01-25 12:07:01	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"392","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/392
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.157502
+            [namelookup_time] => 0.000794
+            [connect_time] => 0.044284
+            [pretransfer_time] => 0.095503
+            [size_upload] => 4669
+            [size_download] => 144
+            [speed_download] => 917
+            [speed_upload] => 29738
+            [download_content_length] => 144
+            [upload_content_length] => 4669
+            [starttransfer_time] => 0.120702
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60350
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 95331
+            [connect_time_us] => 44284
+            [namelookup_time_us] => 794
+            [pretransfer_time_us] => 95503
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 120702
+            [total_time_us] => 157502
+        )
+
+)
+
+2021-01-25 12:07:03	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"382","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/382
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.144009
+            [namelookup_time] => 0.002879
+            [connect_time] => 0.027676
+            [pretransfer_time] => 0.082445
+            [size_upload] => 3777
+            [size_download] => 144
+            [speed_download] => 1000
+            [speed_upload] => 26229
+            [download_content_length] => 144
+            [upload_content_length] => 3777
+            [starttransfer_time] => 0.106538
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60373
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 82280
+            [connect_time_us] => 27676
+            [namelookup_time_us] => 2879
+            [pretransfer_time_us] => 82445
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 106538
+            [total_time_us] => 144009
+        )
+
+)
+
+2021-01-25 12:07:04	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"383","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/383
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 316
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.154094
+            [namelookup_time] => 0.002872
+            [connect_time] => 0.032662
+            [pretransfer_time] => 0.086741
+            [size_upload] => 10285
+            [size_download] => 144
+            [speed_download] => 935
+            [speed_upload] => 66785
+            [download_content_length] => 144
+            [upload_content_length] => 10285
+            [starttransfer_time] => 0.113412
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60395
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 86586
+            [connect_time_us] => 32662
+            [namelookup_time_us] => 2872
+            [pretransfer_time_us] => 86741
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 113412
+            [total_time_us] => 154094
+        )
+
+)
+
+2021-01-25 12:07:05	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"384","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/384
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.158233
+            [namelookup_time] => 0.000887
+            [connect_time] => 0.043194
+            [pretransfer_time] => 0.097748
+            [size_upload] => 6471
+            [size_download] => 144
+            [speed_download] => 911
+            [speed_upload] => 40955
+            [download_content_length] => 144
+            [upload_content_length] => 6471
+            [starttransfer_time] => 0.121664
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60418
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 97638
+            [connect_time_us] => 43194
+            [namelookup_time_us] => 887
+            [pretransfer_time_us] => 97748
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 121664
+            [total_time_us] => 158233
+        )
+
+)
+
+2021-01-25 12:07:07	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"393","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/393
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.14604
+            [namelookup_time] => 0.002622
+            [connect_time] => 0.028167
+            [pretransfer_time] => 0.081575
+            [size_upload] => 8190
+            [size_download] => 144
+            [speed_download] => 986
+            [speed_upload] => 56095
+            [download_content_length] => 144
+            [upload_content_length] => 8190
+            [starttransfer_time] => 0.105971
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60440
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 81397
+            [connect_time_us] => 28167
+            [namelookup_time_us] => 2622
+            [pretransfer_time_us] => 81575
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 105971
+            [total_time_us] => 146040
+        )
+
+)
+
+2021-01-25 12:07:08	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"387","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/387
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.140268
+            [namelookup_time] => 0.001384
+            [connect_time] => 0.028191
+            [pretransfer_time] => 0.080101
+            [size_upload] => 4128
+            [size_download] => 144
+            [speed_download] => 1028
+            [speed_upload] => 29485
+            [download_content_length] => 144
+            [upload_content_length] => 4128
+            [starttransfer_time] => 0.104348
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60463
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 80018
+            [connect_time_us] => 28191
+            [namelookup_time_us] => 1384
+            [pretransfer_time_us] => 80101
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 104348
+            [total_time_us] => 140268
+        )
+
+)
+
+2021-01-25 12:07:09	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"388","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/388
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 316
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.14586
+            [namelookup_time] => 0.00133
+            [connect_time] => 0.025894
+            [pretransfer_time] => 0.079277
+            [size_upload] => 10278
+            [size_download] => 144
+            [speed_download] => 993
+            [speed_upload] => 70882
+            [download_content_length] => 144
+            [upload_content_length] => 10278
+            [starttransfer_time] => 0.103686
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60486
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 79208
+            [connect_time_us] => 25894
+            [namelookup_time_us] => 1330
+            [pretransfer_time_us] => 79277
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 103686
+            [total_time_us] => 145860
+        )
+
+)
+
+2021-01-25 12:07:11	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"274","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/274
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.613511
+            [namelookup_time] => 0.000966
+            [connect_time] => 0.043323
+            [pretransfer_time] => 0.094331
+            [size_upload] => 3404
+            [size_download] => 144
+            [speed_download] => 234
+            [speed_upload] => 5553
+            [download_content_length] => 144
+            [upload_content_length] => 3404
+            [starttransfer_time] => 0.120766
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60508
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 94253
+            [connect_time_us] => 43323
+            [namelookup_time_us] => 966
+            [pretransfer_time_us] => 94331
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 120766
+            [total_time_us] => 613511
+        )
+
+)
+
+2021-01-25 12:07:13	Array
+(
+    [res] => {"msg":"Not Found","path":"/testowy_1/post/285","query":{},"statusCode":404,"response":"{\"found\":false,\"_index\":\"testowy_1\",\"_type\":\"post\",\"_id\":\"285\",\"_version\":8,\"result\":\"not_found\",\"_shards\":{\"total\":2,\"successful\":1,\"failed\":0}}"}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/285
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 404
+            [header_size] => 372
+            [request_size] => 274
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.124125
+            [namelookup_time] => 0.001222
+            [connect_time] => 0.040309
+            [pretransfer_time] => 0.095336
+            [size_upload] => 0
+            [size_download] => 263
+            [speed_download] => 2120
+            [speed_upload] => 0
+            [download_content_length] => 263
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.124086
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60552
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 95270
+            [connect_time_us] => 40309
+            [namelookup_time_us] => 1222
+            [pretransfer_time_us] => 95336
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 124086
+            [total_time_us] => 124125
+        )
+
+)
+
+2021-01-25 12:07:14	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"276","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/276
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.13541
+            [namelookup_time] => 0.001199
+            [connect_time] => 0.025677
+            [pretransfer_time] => 0.078033
+            [size_upload] => 4292
+            [size_download] => 144
+            [speed_download] => 1066
+            [speed_upload] => 31792
+            [download_content_length] => 144
+            [upload_content_length] => 4292
+            [starttransfer_time] => 0.101413
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60575
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 77962
+            [connect_time_us] => 25677
+            [namelookup_time_us] => 1199
+            [pretransfer_time_us] => 78033
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 101413
+            [total_time_us] => 135410
+        )
+
+)
+
+2021-01-25 12:07:16	Array
+(
+    [res] => {"msg":"[document_missing_exception] [post][295]: document missing, with { index_uuid=\"POBvVBu-TQWry-Q6urDqIA\" & shard=\"0\" & index=\"testowy_1\" }","path":"/testowy_1/post/295/_update","query":{},"body":"{\"doc\":{\"title\":\"Itaque vero eos maiores ut dolore\",\"content\":\"Et sequi magnam quis dolore magnam vel commodi. Sed consequatur rerum qui molestiae. Animi atque provident qui\\n\\nIllum velit nesciunt ut numquam ea. Est in sit distinctio et ut sed dignissimos. Dolor commodi eligendi magni quos quia non\\nBeatae neque qui quia a laborum laboriosam. Consequuntur temporibus nesciunt aut fuga quod vero magnam. Minima quo aut incidunt exercitationem sit est. Tempora veritatis inventore soluta hic doloribus. Consequatur mollitia quo cupiditate provident tempore ut. Excepturi quas non at inventore. Nostrum nostrum praesentium dolor praesentium minus facere. Enim qui officia ipsum qui repellendus similique. Omnis deleniti temporibus voluptatem laboriosam aspernatur voluptatem. Id ducimus non in minima. Deserunt aperiam quibusdam vitae fugit et maiores voluptatum. Totam earum ut fuga dolor velit nihil quam. Aut aut rerum non quam illum suscipit. Commodi et quia quia dignissimos laudantium omnis. Harum non qui ab quas exercitationem tempore molestias. Nam magnam quis voluptatem sed adipisci ea. Provident suscipit necessitatibus quidem quis similique nam. Dolorem possimus nobis iusto debitis. Est ratione voluptatibus id. Nostrum distinctio possimus dolores assumenda soluta sed. Nam labore harum dolorem placeat sit eaque numquam. Soluta temporibus eius sunt ut est dolorem suscipit eius. Itaque consectetur quia reiciendis odio inventore. Qui aut quas aut corrupti. Eius rerum alias minima quia sit est ea quod. Ab provident sed repudiandae sed quas. Natus quibusdam debitis voluptatum ratione excepturi. Aut sed deleniti non quod repellendus repellat molestias adipisci. Quia dicta nostrum qui optio quisquam. Ad officiis adipisci suscipit enim eligendi. Laudantium repellendus velit quas est voluptatum. Eum voluptas qui dignissimos asperiores beatae. Nihil sit quos labore sint. Ab rerum qui consequatur amet rerum. Rem quaerat aut saepe voluptas sed. Atque molestiae error autem a cum minus. Voluptate vero maiores aperiam. Porro repudiandae soluta dolores sapiente unde. Ut enim qui maiores. Eum sapiente numquam deserunt.\\n\\nAut natus iure in perferendis. Et totam quo quibusdam veniam et. Rerum aperiam ipsum eius eum expedita\\n\\nSoluta quod fuga est magni sed voluptas omnisSunt quos qui quasi doloribus debitisFacilis nam aut quisRepudiandae sed sunt\",\"date\":\"2021-01-11\",\"categories\":[],\"thumbnail\":\"http://localhost/wordpress.dlugoleka/wp-content/uploads/2020/12/49c5c852-9959-3b41-b108-e5fa087df534.jpg\",\"url\":\"http://localhost/wordpress.dlugoleka/dzialaj-lokalnie/itaque-vero-eos-maiores-ut-dolore/\"}}","statusCode":404,"response":"{\"error\":{\"root_cause\":[{\"type\":\"document_missing_exception\",\"reason\":\"[post][295]: document missing\",\"index_uuid\":\"POBvVBu-TQWry-Q6urDqIA\",\"shard\":\"0\",\"index\":\"testowy_1\"}],\"type\":\"document_missing_exception\",\"reason\":\"[post][295]: document missing\",\"index_uuid\":\"POBvVBu-TQWry-Q6urDqIA\",\"shard\":\"0\",\"index\":\"testowy_1\"},\"status\":404}"}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/295
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 404
+            [header_size] => 398
+            [request_size] => 316
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.132415
+            [namelookup_time] => 0.00131
+            [connect_time] => 0.025682
+            [pretransfer_time] => 0.077096
+            [size_upload] => 2626
+            [size_download] => 3273
+            [speed_download] => 24795
+            [speed_upload] => 19893
+            [download_content_length] => 3273
+            [upload_content_length] => 2626
+            [starttransfer_time] => 0.102836
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60619
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 77016
+            [connect_time_us] => 25682
+            [namelookup_time_us] => 1310
+            [pretransfer_time_us] => 77096
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 102836
+            [total_time_us] => 132415
+        )
+
+)
+
+2021-01-25 12:07:19	Array
+(
+    [res] => {"msg":"[document_missing_exception] [post][289]: document missing, with { index_uuid=\"POBvVBu-TQWry-Q6urDqIA\" & shard=\"4\" & index=\"testowy_1\" }","path":"/testowy_1/post/289/_update","query":{},"body":"{\"doc\":{\"title\":\"Expedita natus labore minima\",\"content\":\"\\nError aliquam non eum porro enim et. Quia esse est velit\\nQui veniam labore nulla ducimusNemo ipsum sit similique qui illumAt autemExpedita nobisAccusantium consequaturAt et odit voluptasNobis vero ea totamNeque dolor earumAsperiores tenetur asperiores illo suntQuibusdam ullam ut qui\\n\\nHic neque rerum voluptas sequi Id ut neque dolorum. Repellat rerum quam id quibusdam iste. Blanditiis deleniti incidunt dolor. Asperiores aut voluptate suscipit dignissimos. Nam ut deleniti quasi qui qui. error repellendus atque in. Modi ea magnam aut nisi dignissimos. Optio velit sit sequi laboriosam. quae aliquid quaerat nobis qui nihil fugit. Totam praesentium quia voluptas. Atque iusto aut explicabo soluta. Harum doloremque eveniet quo. Hic reiciendis et unde. Id rem ea aut in praesentium Magnam quae debitis dolores. voluptatem aut explicabo qui inventore in. Quo voluptatum facilis soluta perspiciatis. Officia ducimus inventore Quibusdam esse deleniti impedit animi. Blanditiis culpa numquam et. Dolor harum sed harum. Asperiores sed rerum expedita. Quam quis et ut repudiandae aut. Nihil eius sint asperiores. Ullam labore incidunt atque. Et neque dolorum. Molestiae eaque aperiam temporibus impedit voluptatibus. Hic labore qui maiores voluptatem. Aspernatur enim et in dolorem magni autem.\\nUt enim ut rerum consectetur assumenda. Praesentium nobis et molestias quo ullam qui. Dolorum est nam reprehenderit earum. Vero odit facilis consequuntur debitis consequatur dolorem. Et nihil laboriosam quam sequi. Natus nisi cumque. Dolore qui accusantium praesentium deserunt sed architecto. quis sunt nisi doloremque. non ratione quod. alias voluptates recusandae debitis cupiditate odio. Atque sint in nostrum qui magnam dolores. ab consequuntur numquam minima. Suscipit omnis adipisci ut. blanditiis quia et. delectus repellat modi laborum quia Voluptatum iure ad exercitationem unde sint. Vel eaque consequatur placeat. neque aut eum.\\nVelit est sint aut officia voluptatum. Provident quod voluptates dolore tenetur sed ut\\n\\n\\nAliquam ut nam maxime ratione sit voluptatem ut nobis. Voluptatem voluptatibus quibusdam quia maiores magni\\n\\nEt id quae debitis ut aut corrupti\\nAutem provident commodi suscipit. Est explicabo dolorem ex quibusdam et dignissimos. rerum quae dignissimos molestiae. aspernatur culpa sit. Vero neque ipsum in voluptatum porro Voluptate ut distinctio nam est sed nulla excepturi Delectus quia ut beatae tenetur Provident autem temporibus quis. Similique exercitationem vitae id nam aspernatur. Nostrum veniam odit nulla alias adipisci. Necessitatibus quasi ea quo Voluptatibus magni laboriosam iusto. possimus doloremque molestiae. Rem et atque non soluta nihil. at voluptate quaerat molestiae. Molestiae recusandae blanditiis Voluptas tempora expedita repudiandae quidem expedita voluptates. Voluptate aut porro quisquam odio. Quas fuga maiores perspiciatis iure facilis. Ullam rerum facilis nisi Vero at voluptatibus qui optio et. Impedit temporibus consequatur architecto Nemo rerum et quis aut. sint omnis quasi aut. Vel veniam eveniet at Alias animi ipsam debitis. Sint eveniet nemo asperiores. Quia deleniti similique aut nisi. Officia veritatis sed et inventore est nesciunt. labore sint velit esse perferendis. eveniet sunt rerum molestiae voluptatem aut. dolores corporis impedit natus. Quas veritatis autem aut qui. Perspiciatis aut voluptatem maiores assumenda ullam. Voluptas quas et aut quibusdam nesciunt quis. soluta modi exercitationem. Non ratione explicabo ratione voluptas. Ut neque aut sequi Sunt quo corporis quasi voluptas officiis. Doloremque aspernatur architecto pariatur incidunt sunt culpa quasi. Harum voluptatem quisquam porro rerum Impedit quaerat voluptas numquam Ut ipsam in incidunt quis sed. Laudantium tempora distinctio et ut. qui numquam.\",\"date\":\"2021-01-11\",\"categories\":[],\"thumbnail\":\"http://localhost/wordpress.dlugoleka/wp-content/uploads/2020/12/52079a19-868b-3cec-b40b-202d36a97d42.jpg\",\"url\":\"http://localhost/wordpress.dlugoleka/dzialaj-lokalnie/expedita-natus-labore-minima/\"}}","statusCode":404,"response":"{\"error\":{\"root_cause\":[{\"type\":\"document_missing_exception\",\"reason\":\"[post][289]: document missing\",\"index_uuid\":\"POBvVBu-TQWry-Q6urDqIA\",\"shard\":\"4\",\"index\":\"testowy_1\"}],\"type\":\"document_missing_exception\",\"reason\":\"[post][289]: document missing\",\"index_uuid\":\"POBvVBu-TQWry-Q6urDqIA\",\"shard\":\"4\",\"index\":\"testowy_1\"},\"status\":404}"}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/289
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 404
+            [header_size] => 399
+            [request_size] => 316
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.148667
+            [namelookup_time] => 0.001637
+            [connect_time] => 0.03888
+            [pretransfer_time] => 0.090704
+            [size_upload] => 4117
+            [size_download] => 4769
+            [speed_download] => 32222
+            [speed_upload] => 27817
+            [download_content_length] => 4769
+            [upload_content_length] => 4117
+            [starttransfer_time] => 0.116915
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60663
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 90588
+            [connect_time_us] => 38880
+            [namelookup_time_us] => 1637
+            [pretransfer_time_us] => 90704
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 116915
+            [total_time_us] => 148667
+        )
+
+)
+
+2021-01-25 12:07:20	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"251","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/251
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 502
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.307468
+            [namelookup_time] => 0.000959
+            [connect_time] => 0.025532
+            [pretransfer_time] => 0.083837
+            [size_upload] => 210
+            [size_download] => 144
+            [speed_download] => 469
+            [speed_upload] => 684
+            [download_content_length] => 144
+            [upload_content_length] => 210
+            [starttransfer_time] => 0.307364
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60685
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 83798
+            [connect_time_us] => 25532
+            [namelookup_time_us] => 959
+            [pretransfer_time_us] => 83837
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 307364
+            [total_time_us] => 307468
+        )
+
+)
+
+2021-01-25 12:07:22	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"249","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/249
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 546
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.121035
+            [namelookup_time] => 0.001177
+            [connect_time] => 0.037812
+            [pretransfer_time] => 0.090594
+            [size_upload] => 254
+            [size_download] => 144
+            [speed_download] => 1190
+            [speed_upload] => 2099
+            [download_content_length] => 144
+            [upload_content_length] => 254
+            [starttransfer_time] => 0.120949
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60708
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 90453
+            [connect_time_us] => 37812
+            [namelookup_time_us] => 1177
+            [pretransfer_time_us] => 90594
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 120949
+            [total_time_us] => 121035
+        )
+
+)
+
+2021-01-25 12:07:23	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"247","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/247
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 514
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.11134
+            [namelookup_time] => 0.002483
+            [connect_time] => 0.027684
+            [pretransfer_time] => 0.079951
+            [size_upload] => 222
+            [size_download] => 144
+            [speed_download] => 1297
+            [speed_upload] => 2000
+            [download_content_length] => 144
+            [upload_content_length] => 222
+            [starttransfer_time] => 0.11129
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60731
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 79858
+            [connect_time_us] => 27684
+            [namelookup_time_us] => 2483
+            [pretransfer_time_us] => 79951
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 111290
+            [total_time_us] => 111340
+        )
+
+)
+
+2021-01-25 12:07:25	Array
+(
+    [res] => {"msg":"[document_missing_exception] [post][281]: document missing, with { index_uuid=\"POBvVBu-TQWry-Q6urDqIA\" & shard=\"1\" & index=\"testowy_1\" }","path":"/testowy_1/post/281/_update","query":{},"body":"{\"doc\":{\"title\":\"Qui non consequuntur et quam hic vitae\",\"content\":\"Enim adipisci accusamus dolor reprehenderit debitis sunt. Nesciunt officia molestias numquam et ratione. Deleniti enim ratione sunt aut\\nFacere quidem est qui minus qui illo. Velit dicta et ipsum Nisi distinctio sed ut porro iste beatae. Culpa voluptas repudiandae ab et. Et similique ex ut. Facere nemo quis. fuga dolorum velit rerum laboriosam. Exercitationem est dicta distinctio eligendi commodi. Delectus vel quam molestiae Tempore dolore aperiam dolor error dignissimos deserunt dolorem. commodi magni asperiores enim adipisci Voluptates et animi consectetur. Occaecati voluptates facere. Dolorum beatae voluptatum sapiente nihil nobis cumque. Est eos deserunt beatae omnis omnis. Facere iure blanditiis repellendus quidem sit. Omnis veritatis laudantium molestias. eum repellendus fuga. Quo voluptatibus qui consequuntur omnis nihil reiciendis. mollitia maiores reprehenderit maiores laborum delectus. Aliquid quis aut rerum. Recusandae et atque dignissimos impedit nulla. Corporis doloremque voluptas ea\\n\\n\\nAutem saepe tenetur rerum Iusto unde consequatur mollitia corrupti blanditiis Nam voluptatem omnis fuga sit excepturi Est autem quibusdam sint occaecati. Quod et soluta praesentium dolore iste debitis consequuntur. Sunt laudantium id est expedita. Praesentium tenetur vel Nesciunt reiciendis omnis corporis. Facere aliquam eum veniam amet officia. Quaerat debitis placeat tempore omnis voluptatem Id mollitia dolores cum. qui soluta ea quod illum. Architecto rerum quia velit sint aut atque. inventore ratione reiciendis repellat deleniti voluptatem.\\n\\nIusto nullaCulpa eos officia ullam soluta quoEum magni sint et veroQuo tempora sed mollitia distinctioSaepe aut utQuo quia omnis in illumSunt vitae quibusdam aperiam quisquam rerum vel\",\"date\":\"2021-01-11\",\"categories\":[],\"thumbnail\":\"http://localhost/wordpress.dlugoleka/wp-content/uploads/2020/12/2ee5e0aa-0b49-324e-82e6-26306b882281.png\",\"url\":\"http://localhost/wordpress.dlugoleka/dzialaj-lokalnie/qui-non-consequuntur-et-quam-hic-vitae/\"}}","statusCode":404,"response":"{\"error\":{\"root_cause\":[{\"type\":\"document_missing_exception\",\"reason\":\"[post][281]: document missing\",\"index_uuid\":\"POBvVBu-TQWry-Q6urDqIA\",\"shard\":\"1\",\"index\":\"testowy_1\"}],\"type\":\"document_missing_exception\",\"reason\":\"[post][281]: document missing\",\"index_uuid\":\"POBvVBu-TQWry-Q6urDqIA\",\"shard\":\"1\",\"index\":\"testowy_1\"},\"status\":404}"}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/281
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 404
+            [header_size] => 398
+            [request_size] => 316
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.146427
+            [namelookup_time] => 0.001381
+            [connect_time] => 0.039556
+            [pretransfer_time] => 0.093241
+            [size_upload] => 2089
+            [size_download] => 2735
+            [speed_download] => 18732
+            [speed_upload] => 14308
+            [download_content_length] => 2735
+            [upload_content_length] => 2089
+            [starttransfer_time] => 0.116748
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60775
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 93159
+            [connect_time_us] => 39556
+            [namelookup_time_us] => 1381
+            [pretransfer_time_us] => 93241
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 116748
+            [total_time_us] => 146427
+        )
+
+)
+
+2021-01-25 12:07:27	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"243","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/243
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 575
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.112585
+            [namelookup_time] => 0.002656
+            [connect_time] => 0.027626
+            [pretransfer_time] => 0.081349
+            [size_upload] => 283
+            [size_download] => 144
+            [speed_download] => 1285
+            [speed_upload] => 2526
+            [download_content_length] => 144
+            [upload_content_length] => 283
+            [starttransfer_time] => 0.112499
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60798
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 81187
+            [connect_time_us] => 27626
+            [namelookup_time_us] => 2656
+            [pretransfer_time_us] => 81349
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 112499
+            [total_time_us] => 112585
+        )
+
+)
+
+2021-01-25 12:07:29	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"240","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/240
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 456
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.111416
+            [namelookup_time] => 0.001191
+            [connect_time] => 0.025931
+            [pretransfer_time] => 0.079498
+            [size_upload] => 164
+            [size_download] => 144
+            [speed_download] => 1297
+            [speed_upload] => 1477
+            [download_content_length] => 144
+            [upload_content_length] => 164
+            [starttransfer_time] => 0.111362
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60820
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 79401
+            [connect_time_us] => 25931
+            [namelookup_time_us] => 1191
+            [pretransfer_time_us] => 79498
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 111362
+            [total_time_us] => 111416
+        )
+
+)
+
+2021-01-25 12:07:31	Array
+(
+    [res] => {"msg":"Not Found","path":"/testowy_1/post/287","query":{},"statusCode":404,"response":"{\"found\":false,\"_index\":\"testowy_1\",\"_type\":\"post\",\"_id\":\"287\",\"_version\":16,\"result\":\"not_found\",\"_shards\":{\"total\":2,\"successful\":1,\"failed\":0}}"}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/287
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 404
+            [header_size] => 372
+            [request_size] => 274
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.125558
+            [namelookup_time] => 0.001277
+            [connect_time] => 0.04342
+            [pretransfer_time] => 0.096782
+            [size_upload] => 0
+            [size_download] => 264
+            [speed_download] => 2112
+            [speed_upload] => 0
+            [download_content_length] => 264
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.125518
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60864
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 96705
+            [connect_time_us] => 43420
+            [namelookup_time_us] => 1277
+            [pretransfer_time_us] => 96782
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 125518
+            [total_time_us] => 125558
+        )
+
+)
+
+2021-01-25 12:07:32	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"238","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/238
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 437
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.124387
+            [namelookup_time] => 0.001976
+            [connect_time] => 0.040424
+            [pretransfer_time] => 0.09442
+            [size_upload] => 145
+            [size_download] => 144
+            [speed_download] => 1161
+            [speed_upload] => 1169
+            [download_content_length] => 144
+            [upload_content_length] => 145
+            [starttransfer_time] => 0.12435
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60886
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 94378
+            [connect_time_us] => 40424
+            [namelookup_time_us] => 1976
+            [pretransfer_time_us] => 94420
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 124350
+            [total_time_us] => 124387
+        )
+
+)
+
+2021-01-25 12:07:34	Array
+(
+    [res] => {"msg":"[document_missing_exception] [post][283]: document missing, with { index_uuid=\"POBvVBu-TQWry-Q6urDqIA\" & shard=\"1\" & index=\"testowy_1\" }","path":"/testowy_1/post/283/_update","query":{},"body":"{\"doc\":{\"title\":\"Similique velit quaerat molestiae nobis dolorem\",\"content\":\"Quasi modi tempora necessitatibus est ut providentVoluptas nesciuntQui cum quis perferendis enim quisQuia repellendus\\n\\nDolores perferendis rerum eligendi ut. Quae ex inventore id non. Eos non dolores quam dolorem et. In aspernatur aspernatur ut eligendi et ipsum nulla\\n\\nQuo totam ut qui consectetur sed. Omnis quaerat eos sit qui. Maiores veniam inventore eveniet aut quidem\\n\\nInventorePerferendis veritatis amet nostrumMolestiae aliquam nemo consequaturAliquid aut liberoVeniam id odio accusantium eum exA id officiis enim labore sed quiaNobis illo eius placeat quaerat illo delectus beataeEst aut voluptate sedAut evenietAd sunt utDistinctio unde consequatur eligendi quam\\n\\nEt earum consectetur et\\nCulpa etSoluta est blanditiis pariatur reiciendis\",\"date\":\"2021-01-11\",\"categories\":[],\"thumbnail\":\"http://localhost/wordpress.dlugoleka/wp-content/uploads/2020/12/263d33bc-cf95-35ea-97ac-da7d14864e92.png\",\"url\":\"http://localhost/wordpress.dlugoleka/dzialaj-lokalnie/similique-velit-quaerat-molestiae-nobis-dolorem/\"}}","statusCode":404,"response":"{\"error\":{\"root_cause\":[{\"type\":\"document_missing_exception\",\"reason\":\"[post][283]: document missing\",\"index_uuid\":\"POBvVBu-TQWry-Q6urDqIA\",\"shard\":\"1\",\"index\":\"testowy_1\"}],\"type\":\"document_missing_exception\",\"reason\":\"[post][283]: document missing\",\"index_uuid\":\"POBvVBu-TQWry-Q6urDqIA\",\"shard\":\"1\",\"index\":\"testowy_1\"},\"status\":404}"}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/283
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 404
+            [header_size] => 398
+            [request_size] => 316
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.156745
+            [namelookup_time] => 0.001816
+            [connect_time] => 0.051365
+            [pretransfer_time] => 0.104303
+            [size_upload] => 1109
+            [size_download] => 1758
+            [speed_download] => 11269
+            [speed_upload] => 7108
+            [download_content_length] => 1758
+            [upload_content_length] => 1109
+            [starttransfer_time] => 0.128408
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60930
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 104193
+            [connect_time_us] => 51365
+            [namelookup_time_us] => 1816
+            [pretransfer_time_us] => 104303
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 128408
+            [total_time_us] => 156745
+        )
+
+)
+
+2021-01-25 12:07:35	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"292","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/292
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.149087
+            [namelookup_time] => 0.001286
+            [connect_time] => 0.03796
+            [pretransfer_time] => 0.089963
+            [size_upload] => 2345
+            [size_download] => 144
+            [speed_download] => 966
+            [speed_upload] => 15738
+            [download_content_length] => 144
+            [upload_content_length] => 2345
+            [starttransfer_time] => 0.116418
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60953
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 89916
+            [connect_time_us] => 37960
+            [namelookup_time_us] => 1286
+            [pretransfer_time_us] => 89963
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 116418
+            [total_time_us] => 149087
+        )
+
+)
+
+2021-01-25 12:07:37	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"278","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/278
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.156764
+            [namelookup_time] => 0.002643
+            [connect_time] => 0.042674
+            [pretransfer_time] => 0.097398
+            [size_upload] => 2705
+            [size_download] => 144
+            [speed_download] => 923
+            [speed_upload] => 17339
+            [download_content_length] => 144
+            [upload_content_length] => 2705
+            [starttransfer_time] => 0.123399
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 60976
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 97229
+            [connect_time_us] => 42674
+            [namelookup_time_us] => 2643
+            [pretransfer_time_us] => 97398
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 123399
+            [total_time_us] => 156764
+        )
+
+)
+
+2021-01-25 12:07:39	Array
+(
+    [res] => {"msg":"Not Found","path":"/testowy_1/post/297","query":{},"statusCode":404,"response":"{\"found\":false,\"_index\":\"testowy_1\",\"_type\":\"post\",\"_id\":\"297\",\"_version\":16,\"result\":\"not_found\",\"_shards\":{\"total\":2,\"successful\":1,\"failed\":0}}"}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/297
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 404
+            [header_size] => 372
+            [request_size] => 274
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.106801
+            [namelookup_time] => 0.001834
+            [connect_time] => 0.025736
+            [pretransfer_time] => 0.078479
+            [size_upload] => 0
+            [size_download] => 264
+            [speed_download] => 2490
+            [speed_upload] => 0
+            [download_content_length] => 264
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.106746
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61020
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 78382
+            [connect_time_us] => 25736
+            [namelookup_time_us] => 1834
+            [pretransfer_time_us] => 78479
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 106746
+            [total_time_us] => 106801
+        )
+
+)
+
+2021-01-25 12:07:42	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"231","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/231
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 433
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.1553
+            [namelookup_time] => 0.001754
+            [connect_time] => 0.026461
+            [pretransfer_time] => 0.080237
+            [size_upload] => 141
+            [size_download] => 144
+            [speed_download] => 929
+            [speed_upload] => 909
+            [download_content_length] => 144
+            [upload_content_length] => 141
+            [starttransfer_time] => 0.155214
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61042
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 80139
+            [connect_time_us] => 26461
+            [namelookup_time_us] => 1754
+            [pretransfer_time_us] => 80237
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 155214
+            [total_time_us] => 155300
+        )
+
+)
+
+2021-01-25 12:07:43	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"144","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/144
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 1071
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.126501
+            [namelookup_time] => 0.00113
+            [connect_time] => 0.044768
+            [pretransfer_time] => 0.094492
+            [size_upload] => 779
+            [size_download] => 144
+            [speed_download] => 1142
+            [speed_upload] => 6182
+            [download_content_length] => 144
+            [upload_content_length] => 779
+            [starttransfer_time] => 0.126464
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61065
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 94422
+            [connect_time_us] => 44768
+            [namelookup_time_us] => 1130
+            [pretransfer_time_us] => 94492
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 126464
+            [total_time_us] => 126501
+        )
+
+)
+
+2021-01-25 12:07:45	Array
+(
+    [res] => {"msg":"Not Found","path":"/testowy_1/post/142","query":{},"statusCode":404,"response":"{\"found\":false,\"_index\":\"testowy_1\",\"_type\":\"post\",\"_id\":\"142\",\"_version\":43,\"result\":\"not_found\",\"_shards\":{\"total\":2,\"successful\":1,\"failed\":0}}"}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/142
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 404
+            [header_size] => 372
+            [request_size] => 274
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.125128
+            [namelookup_time] => 0.00198
+            [connect_time] => 0.041409
+            [pretransfer_time] => 0.094334
+            [size_upload] => 0
+            [size_download] => 264
+            [speed_download] => 2112
+            [speed_upload] => 0
+            [download_content_length] => 264
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.125041
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61109
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 94197
+            [connect_time_us] => 41409
+            [namelookup_time_us] => 1980
+            [pretransfer_time_us] => 94334
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 125041
+            [total_time_us] => 125128
+        )
+
+)
+
+2021-01-25 12:07:47	Array
+(
+    [res] => {"msg":"Not Found","path":"/testowy_1/post/139","query":{},"statusCode":404,"response":"{\"found\":false,\"_index\":\"testowy_1\",\"_type\":\"post\",\"_id\":\"139\",\"_version\":38,\"result\":\"not_found\",\"_shards\":{\"total\":2,\"successful\":1,\"failed\":0}}"}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/139
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 404
+            [header_size] => 372
+            [request_size] => 274
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.127465
+            [namelookup_time] => 0.002585
+            [connect_time] => 0.043775
+            [pretransfer_time] => 0.096972
+            [size_upload] => 0
+            [size_download] => 264
+            [speed_download] => 2078
+            [speed_upload] => 0
+            [download_content_length] => 264
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.12738
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61153
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 96820
+            [connect_time_us] => 43775
+            [namelookup_time_us] => 2585
+            [pretransfer_time_us] => 96972
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 127380
+            [total_time_us] => 127465
+        )
+
+)
+
+2021-01-25 12:07:49	Array
+(
+    [res] => {"msg":"Not Found","path":"/testowy_1/post/123","query":{},"statusCode":404,"response":"{\"found\":false,\"_index\":\"testowy_1\",\"_type\":\"post\",\"_id\":\"123\",\"_version\":47,\"result\":\"not_found\",\"_shards\":{\"total\":2,\"successful\":1,\"failed\":0}}"}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/123
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 404
+            [header_size] => 372
+            [request_size] => 274
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.123277
+            [namelookup_time] => 0.001334
+            [connect_time] => 0.040667
+            [pretransfer_time] => 0.093722
+            [size_upload] => 0
+            [size_download] => 264
+            [speed_download] => 2146
+            [speed_upload] => 0
+            [download_content_length] => 264
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.123235
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61197
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 93648
+            [connect_time_us] => 40667
+            [namelookup_time_us] => 1334
+            [pretransfer_time_us] => 93722
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 123235
+            [total_time_us] => 123277
+        )
+
+)
+
+2021-01-25 12:07:51	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"124","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/124
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 450
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.128908
+            [namelookup_time] => 0.001074
+            [connect_time] => 0.046754
+            [pretransfer_time] => 0.10005
+            [size_upload] => 158
+            [size_download] => 144
+            [speed_download] => 1125
+            [speed_upload] => 1234
+            [download_content_length] => 144
+            [upload_content_length] => 158
+            [starttransfer_time] => 0.128871
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61221
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 99980
+            [connect_time_us] => 46754
+            [namelookup_time_us] => 1074
+            [pretransfer_time_us] => 100050
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 128871
+            [total_time_us] => 128908
+        )
+
+)
+
+2021-01-25 12:07:52	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"419","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/419
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 477
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.126027
+            [namelookup_time] => 0.001492
+            [connect_time] => 0.043043
+            [pretransfer_time] => 0.096506
+            [size_upload] => 185
+            [size_download] => 144
+            [speed_download] => 1142
+            [speed_upload] => 1468
+            [download_content_length] => 144
+            [upload_content_length] => 185
+            [starttransfer_time] => 0.125982
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61243
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 96420
+            [connect_time_us] => 43043
+            [namelookup_time_us] => 1492
+            [pretransfer_time_us] => 96506
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 125982
+            [total_time_us] => 126027
+        )
+
+)
+
+2021-01-25 12:07:53	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"399","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/399
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 1049
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.108413
+            [namelookup_time] => 0.00082
+            [connect_time] => 0.025978
+            [pretransfer_time] => 0.078339
+            [size_upload] => 757
+            [size_download] => 144
+            [speed_download] => 1333
+            [speed_upload] => 7009
+            [download_content_length] => 144
+            [upload_content_length] => 757
+            [starttransfer_time] => 0.108376
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61266
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 78267
+            [connect_time_us] => 25978
+            [namelookup_time_us] => 820
+            [pretransfer_time_us] => 78339
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 108376
+            [total_time_us] => 108413
+        )
+
+)
+
+2021-01-25 12:07:55	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"398","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/398
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 980
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.127625
+            [namelookup_time] => 0.001796
+            [connect_time] => 0.040133
+            [pretransfer_time] => 0.095118
+            [size_upload] => 688
+            [size_download] => 144
+            [speed_download] => 1133
+            [speed_upload] => 5417
+            [download_content_length] => 144
+            [upload_content_length] => 688
+            [starttransfer_time] => 0.127571
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61288
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 95016
+            [connect_time_us] => 40133
+            [namelookup_time_us] => 1796
+            [pretransfer_time_us] => 95118
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 127571
+            [total_time_us] => 127625
+        )
+
+)
+
+2021-01-25 12:07:56	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"397","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/397
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 1012
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.135636
+            [namelookup_time] => 0.002625
+            [connect_time] => 0.049574
+            [pretransfer_time] => 0.10306
+            [size_upload] => 720
+            [size_download] => 144
+            [speed_download] => 1066
+            [speed_upload] => 5333
+            [download_content_length] => 144
+            [upload_content_length] => 720
+            [starttransfer_time] => 0.135582
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61311
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 102953
+            [connect_time_us] => 49574
+            [namelookup_time_us] => 2625
+            [pretransfer_time_us] => 103060
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 135582
+            [total_time_us] => 135636
+        )
+
+)
+
+2021-01-25 12:07:58	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"367","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/367
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.137246
+            [namelookup_time] => 0.002464
+            [connect_time] => 0.027463
+            [pretransfer_time] => 0.080294
+            [size_upload] => 2065
+            [size_download] => 144
+            [speed_download] => 1051
+            [speed_upload] => 15072
+            [download_content_length] => 144
+            [upload_content_length] => 2065
+            [starttransfer_time] => 0.104368
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61335
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 80145
+            [connect_time_us] => 27463
+            [namelookup_time_us] => 2464
+            [pretransfer_time_us] => 80294
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 104368
+            [total_time_us] => 137246
+        )
+
+)
+
+2021-01-25 12:07:59	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"368","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/368
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.157059
+            [namelookup_time] => 0.001617
+            [connect_time] => 0.046217
+            [pretransfer_time] => 0.099506
+            [size_upload] => 3396
+            [size_download] => 144
+            [speed_download] => 917
+            [speed_upload] => 21630
+            [download_content_length] => 144
+            [upload_content_length] => 3396
+            [starttransfer_time] => 0.12361
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61357
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 99424
+            [connect_time_us] => 46217
+            [namelookup_time_us] => 1617
+            [pretransfer_time_us] => 99506
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 123610
+            [total_time_us] => 157059
+        )
+
+)
+
+2021-01-25 12:08:00	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"364","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/364
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.143668
+            [namelookup_time] => 0.002634
+            [connect_time] => 0.031013
+            [pretransfer_time] => 0.085906
+            [size_upload] => 1340
+            [size_download] => 144
+            [speed_download] => 1006
+            [speed_upload] => 9370
+            [download_content_length] => 144
+            [upload_content_length] => 1340
+            [starttransfer_time] => 0.110201
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61380
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 85803
+            [connect_time_us] => 31013
+            [namelookup_time_us] => 2634
+            [pretransfer_time_us] => 85906
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 110201
+            [total_time_us] => 143668
+        )
+
+)
+
+2021-01-25 12:08:02	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"363","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/363
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.149574
+            [namelookup_time] => 0.001772
+            [connect_time] => 0.036612
+            [pretransfer_time] => 0.089733
+            [size_upload] => 3373
+            [size_download] => 144
+            [speed_download] => 966
+            [speed_upload] => 22637
+            [download_content_length] => 144
+            [upload_content_length] => 3373
+            [starttransfer_time] => 0.115599
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61402
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 89630
+            [connect_time_us] => 36612
+            [namelookup_time_us] => 1772
+            [pretransfer_time_us] => 89733
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 115599
+            [total_time_us] => 149574
+        )
+
+)
+
+2021-01-25 12:08:03	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"365","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/365
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.138196
+            [namelookup_time] => 0.002896
+            [connect_time] => 0.028141
+            [pretransfer_time] => 0.082922
+            [size_upload] => 1803
+            [size_download] => 144
+            [speed_download] => 1043
+            [speed_upload] => 13065
+            [download_content_length] => 144
+            [upload_content_length] => 1803
+            [starttransfer_time] => 0.106579
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61425
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 82755
+            [connect_time_us] => 28141
+            [namelookup_time_us] => 2896
+            [pretransfer_time_us] => 82922
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 106579
+            [total_time_us] => 138196
+        )
+
+)
+
+2021-01-25 12:08:04	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"370","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/370
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.157625
+            [namelookup_time] => 0.001195
+            [connect_time] => 0.045011
+            [pretransfer_time] => 0.096315
+            [size_upload] => 6225
+            [size_download] => 144
+            [speed_download] => 917
+            [speed_upload] => 39649
+            [download_content_length] => 144
+            [upload_content_length] => 6225
+            [starttransfer_time] => 0.121242
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61448
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 96244
+            [connect_time_us] => 45011
+            [namelookup_time_us] => 1195
+            [pretransfer_time_us] => 96315
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 121242
+            [total_time_us] => 157625
+        )
+
+)
+
+2021-01-25 12:08:06	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"362","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/362
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.672643
+            [namelookup_time] => 0.001981
+            [connect_time] => 0.026123
+            [pretransfer_time] => 0.079415
+            [size_upload] => 1556
+            [size_download] => 144
+            [speed_download] => 214
+            [speed_upload] => 2315
+            [download_content_length] => 144
+            [upload_content_length] => 1556
+            [starttransfer_time] => 0.105552
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61470
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 79277
+            [connect_time_us] => 26123
+            [namelookup_time_us] => 1981
+            [pretransfer_time_us] => 79415
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 105552
+            [total_time_us] => 672643
+        )
+
+)
+
+2021-01-25 12:08:08	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"366","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/366
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.140251
+            [namelookup_time] => 0.002721
+            [connect_time] => 0.028611
+            [pretransfer_time] => 0.081969
+            [size_upload] => 4502
+            [size_download] => 144
+            [speed_download] => 1028
+            [speed_upload] => 32157
+            [download_content_length] => 144
+            [upload_content_length] => 4502
+            [starttransfer_time] => 0.105144
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61493
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 81816
+            [connect_time_us] => 28611
+            [namelookup_time_us] => 2721
+            [pretransfer_time_us] => 81969
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 105144
+            [total_time_us] => 140251
+        )
+
+)
+
+2021-01-25 12:08:09	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"369","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/369
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.168323
+            [namelookup_time] => 0.001222
+            [connect_time] => 0.042799
+            [pretransfer_time] => 0.096727
+            [size_upload] => 1785
+            [size_download] => 144
+            [speed_download] => 857
+            [speed_upload] => 10625
+            [download_content_length] => 144
+            [upload_content_length] => 1785
+            [starttransfer_time] => 0.136897
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61515
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 96658
+            [connect_time_us] => 42799
+            [namelookup_time_us] => 1222
+            [pretransfer_time_us] => 96727
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 136897
+            [total_time_us] => 168323
+        )
+
+)
+
+2021-01-25 12:08:10	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"361","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/361
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.137547
+            [namelookup_time] => 0.002679
+            [connect_time] => 0.027473
+            [pretransfer_time] => 0.081069
+            [size_upload] => 2348
+            [size_download] => 144
+            [speed_download] => 1051
+            [speed_upload] => 17138
+            [download_content_length] => 144
+            [upload_content_length] => 2348
+            [starttransfer_time] => 0.105672
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61538
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 80915
+            [connect_time_us] => 27473
+            [namelookup_time_us] => 2679
+            [pretransfer_time_us] => 81069
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 105672
+            [total_time_us] => 137547
+        )
+
+)
+
+2021-01-25 12:08:12	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"371","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/371
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.160006
+            [namelookup_time] => 0.002612
+            [connect_time] => 0.043711
+            [pretransfer_time] => 0.099158
+            [size_upload] => 6508
+            [size_download] => 144
+            [speed_download] => 900
+            [speed_upload] => 40675
+            [download_content_length] => 144
+            [upload_content_length] => 6508
+            [starttransfer_time] => 0.123495
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61561
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 98972
+            [connect_time_us] => 43711
+            [namelookup_time_us] => 2612
+            [pretransfer_time_us] => 99158
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 123495
+            [total_time_us] => 160006
+        )
+
+)
+
+2021-01-25 12:08:13	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"372","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/372
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.15571
+            [namelookup_time] => 0.001278
+            [connect_time] => 0.046926
+            [pretransfer_time] => 0.098245
+            [size_upload] => 1212
+            [size_download] => 144
+            [speed_download] => 929
+            [speed_upload] => 7819
+            [download_content_length] => 144
+            [upload_content_length] => 1212
+            [starttransfer_time] => 0.12289
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61583
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 98179
+            [connect_time_us] => 46926
+            [namelookup_time_us] => 1278
+            [pretransfer_time_us] => 98245
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 122890
+            [total_time_us] => 155710
+        )
+
+)
+
+2021-01-25 12:08:14	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"3","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/3
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.138816
+            [namelookup_time] => 0.001232
+            [connect_time] => 0.025744
+            [pretransfer_time] => 0.077526
+            [size_upload] => 5391
+            [size_download] => 142
+            [speed_download] => 1028
+            [speed_upload] => 39065
+            [download_content_length] => 142
+            [upload_content_length] => 5391
+            [starttransfer_time] => 0.101737
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61606
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 77453
+            [connect_time_us] => 25744
+            [namelookup_time_us] => 1232
+            [pretransfer_time_us] => 77526
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 101737
+            [total_time_us] => 138816
+        )
+
+)
+
+2021-01-25 12:08:16	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"357","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/357
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 364
+            [request_size] => 1298
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.124343
+            [namelookup_time] => 0.000761
+            [connect_time] => 0.03742
+            [pretransfer_time] => 0.092832
+            [size_upload] => 1005
+            [size_download] => 144
+            [speed_download] => 1161
+            [speed_upload] => 8104
+            [download_content_length] => 144
+            [upload_content_length] => 1005
+            [starttransfer_time] => 0.124267
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61629
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 92534
+            [connect_time_us] => 37420
+            [namelookup_time_us] => 761
+            [pretransfer_time_us] => 92832
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 124267
+            [total_time_us] => 124343
+        )
+
+)
+
+2021-01-25 12:08:17	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"360","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/360
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.158389
+            [namelookup_time] => 0.001314
+            [connect_time] => 0.044726
+            [pretransfer_time] => 0.09949
+            [size_upload] => 6301
+            [size_download] => 144
+            [speed_download] => 911
+            [speed_upload] => 39879
+            [download_content_length] => 144
+            [upload_content_length] => 6301
+            [starttransfer_time] => 0.122806
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61651
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 99408
+            [connect_time_us] => 44726
+            [namelookup_time_us] => 1314
+            [pretransfer_time_us] => 99490
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 122806
+            [total_time_us] => 158389
+        )
+
+)
+
+2021-01-25 12:08:18	Array
+(
+    [res] => {"_index":"testowy_1","_type":"post","_id":"358","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/358
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 200
+            [header_size] => 389
+            [request_size] => 315
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.154487
+            [namelookup_time] => 0.001234
+            [connect_time] => 0.044321
+            [pretransfer_time] => 0.095681
+            [size_upload] => 1034
+            [size_download] => 144
+            [speed_download] => 935
+            [speed_upload] => 6714
+            [download_content_length] => 144
+            [upload_content_length] => 1034
+            [starttransfer_time] => 0.122011
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61674
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 95610
+            [connect_time_us] => 44321
+            [namelookup_time_us] => 1234
+            [pretransfer_time_us] => 95681
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 122011
+            [total_time_us] => 154487
+        )
+
+)
+
+2021-01-25 12:08:20	Array
+(
+    [res] => {"msg":"Not Found","path":"/testowy_1/post/359","query":{},"statusCode":404,"response":"{\"found\":false,\"_index\":\"testowy_1\",\"_type\":\"post\",\"_id\":\"359\",\"_version\":9,\"result\":\"not_found\",\"_shards\":{\"total\":2,\"successful\":1,\"failed\":0}}"}
+    [info] => Array
+        (
+            [url] => https://elasticsearch.sputnik.pl/api/documents/1/doc-id/359
+            [content_type] => application/json; charset=utf-8
+            [http_code] => 404
+            [header_size] => 372
+            [request_size] => 274
+            [filetime] => -1
+            [ssl_verify_result] => 20
+            [redirect_count] => 0
+            [total_time] => 0.122662
+            [namelookup_time] => 0.001338
+            [connect_time] => 0.041993
+            [pretransfer_time] => 0.094941
+            [size_upload] => 0
+            [size_download] => 263
+            [speed_download] => 2155
+            [speed_upload] => 0
+            [download_content_length] => 263
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.122624
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 35.158.146.123
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 192.168.0.101
+            [local_port] => 61718
+            [http_version] => 2
+            [protocol] => 2
+            [ssl_verifyresult] => 0
+            [scheme] => HTTPS
+            [appconnect_time_us] => 94876
+            [connect_time_us] => 41993
+            [namelookup_time_us] => 1338
+            [pretransfer_time_us] => 94941
+            [redirect_time_us] => 0
+            [starttransfer_time_us] => 122624
+            [total_time_us] => 122662
+        )
+
+)
+

@@ -34,6 +34,10 @@ body {
   z-index: 100000; /* Above WP toolbar. */
 }
 
+#page-wrapper {
+  overflow: hidden;
+}
+
 .page-section {
   &-heading {
     display: flex;

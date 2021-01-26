@@ -48,8 +48,11 @@ if(isset($_POST['first-name'])) :
 
         $subject = 'Formularz kontaktowy - '. $topic;
 
+        $headers[] = 'MIME-Version: 1.0';
+        $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+
         foreach($emails_array as $email) :
-            if(mail( $email, $subject, $message)) :
+            if(mail( $email, $subject, $message, implode("\r\n", $headers))) :
                 echo 'Wiadomość została wysłana poprawnie.';
 
                 header('Location: '. $_SERVER['HTTP_REFERER']);
