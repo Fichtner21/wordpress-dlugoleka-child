@@ -1,2 +1,25 @@
 @import "./front-page/news";
 
+.page-sections-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 0 2rem;
+
+  .attractions {
+    .posts-loop {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+  }
+
+  .act-locally {
+    .posts-loop {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+  }
+}
