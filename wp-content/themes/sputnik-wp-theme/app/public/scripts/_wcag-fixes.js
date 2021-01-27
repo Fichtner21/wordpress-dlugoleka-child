@@ -3,10 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuAnchors = document.querySelectorAll(".menu .menu-item a");
 
     menuAnchors.forEach((anchor) => {
-      const correctTitle = anchor.querySelector(".menu-item__title").textContent;
+      if (anchor.querySelector(".menu-item__title")) {
+        const correctTitle = anchor.querySelector(".menu-item__title").textContent;
 
-      if (anchor.title != correctTitle) {
-        anchor.title = anchor.querySelector(".menu-item__title").textContent;
+        if (anchor.title != correctTitle) {
+          anchor.title = anchor.querySelector(".menu-item__title").textContent;
+        }
       }
     });
   }

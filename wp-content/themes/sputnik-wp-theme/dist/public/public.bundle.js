@@ -129,6 +129,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fullcalendar_core_locales_pl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fullcalendar/core/locales/pl */ "./node_modules/@fullcalendar/core/locales/pl.js");
 /* harmony import */ var _fullcalendar_core_locales_pl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_fullcalendar_core_locales_pl__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fullcalendar/daygrid */ "./node_modules/@fullcalendar/daygrid/main.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 
 
  // ! allEvents variable is from WordPress passed by php
@@ -138,15 +150,15 @@ document.addEventListener("DOMContentLoaded", function () {
   var allEventsArr = allEvents.allEvents;
   var calendarEvents = [];
   allEventsArr.forEach(function (event) {
-    console.log(event.event_type.value);
-
     if (event.event_type.value == "oneday") {
       var obj = {
         id: event.ID,
         title: event.post_title,
+        url: event.event_permalink,
         type: event.event_type.label,
-        start: event.event_type_data[0].date_start // display: "background",
-
+        start: event.event_type_data[0].date_start,
+        thumbnail: event.event_thumbnail,
+        display: "auto"
       };
       calendarEvents.push(obj);
     }
@@ -155,9 +167,69 @@ document.addEventListener("DOMContentLoaded", function () {
     locale: _fullcalendar_core_locales_pl__WEBPACK_IMPORTED_MODULE_1___default.a,
     plugins: [_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_2__["default"]],
     events: calendarEvents,
+    eventContent: function eventContent(element) {
+      var eventItem = document.createElement("div");
+      var eventContent = document.createElement("div");
+      var title = document.createElement("span");
+      var url = document.createElement("span");
+      var type = document.createElement("span");
+      var date = document.createElement("span");
+      var thumbnail = document.createElement("div");
+
+      if (element.event.extendedProps.thumbnail != false) {
+        var img = document.createElement("img");
+        thumbnail.className = "event__thumbnail";
+        thumbnail.appendChild(img);
+        img.src = element.event.extendedProps.thumbnail;
+      }
+
+      eventItem.className = "event";
+      eventContent.className = "event__content";
+      title.className = "event__title";
+      url.className = "event__url";
+      type.className = "event__type";
+      date.className = "event__date";
+      title.textContent = element.event.title;
+      url.textContent = element.event.url;
+      type.textContent = element.event.extendedProps.type;
+      date.textContent = element.event.start;
+      eventContent.appendChild(title);
+      eventContent.appendChild(url);
+      eventContent.appendChild(type);
+      eventContent.appendChild(date);
+      eventItem.appendChild(thumbnail);
+      eventItem.appendChild(eventContent);
+      var arrayOfDomNodes = [eventItem];
+      return {
+        domNodes: arrayOfDomNodes
+      };
+    },
     height: "auto"
   });
   calendar.render();
+  var calendarDays = document.querySelectorAll(".fc-daygrid-day-top");
+  var calendarResults = document.querySelector(".calendar-results");
+  calendarDays.forEach(function (day) {
+    var eventsWrapper = day.nextSibling;
+
+    var events = _toConsumableArray(eventsWrapper.querySelectorAll(".fc-daygrid-event-harness"));
+
+    var eventsCount = events.length;
+
+    if (eventsCount > 0) {
+      day.classList.add("has-events");
+      var eventsCountElement = document.createElement("span");
+      eventsCountElement.className = "events-count";
+      eventsCountElement.textContent = eventsCount;
+      day.appendChild(eventsCountElement);
+    }
+
+    day.addEventListener("click", function () {
+      var eventsData = this.nextSibling.cloneNode(true);
+      calendarResults.innerHTML = "";
+      calendarResults.appendChild(eventsData);
+    });
+  });
 });
 
 /***/ }),
@@ -462,7 +534,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie-exposed.js");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js?f970");
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_0__);
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -495,10 +567,12 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelectorAll(".menu .menu-item a").length > 0) {
     var menuAnchors = document.querySelectorAll(".menu .menu-item a");
     menuAnchors.forEach(function (anchor) {
-      var correctTitle = anchor.querySelector(".menu-item__title").textContent;
+      if (anchor.querySelector(".menu-item__title")) {
+        var correctTitle = anchor.querySelector(".menu-item__title").textContent;
 
-      if (anchor.title != correctTitle) {
-        anchor.title = anchor.querySelector(".menu-item__title").textContent;
+        if (anchor.title != correctTitle) {
+          anchor.title = anchor.querySelector(".menu-item__title").textContent;
+        }
       }
     });
   }
@@ -515,7 +589,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie-exposed.js");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js?f970");
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_0__);
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -25494,24 +25568,7 @@ module.exports = function () {
 
 /***/ }),
 
-/***/ "./node_modules/js-cookie/src/js.cookie-exposed.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/js-cookie/src/js.cookie-exposed.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var ___EXPOSE_LOADER_IMPORT___ = __webpack_require__(/*! -!./js.cookie.js */ "./node_modules/js-cookie/src/js.cookie.js");
-var ___EXPOSE_LOADER_GET_GLOBAL_THIS___ = __webpack_require__(/*! ../../expose-loader/dist/runtime/getGlobalThis.js */ "./node_modules/expose-loader/dist/runtime/getGlobalThis.js");
-var ___EXPOSE_LOADER_GLOBAL_THIS___ = ___EXPOSE_LOADER_GET_GLOBAL_THIS___;
-if (typeof ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] === 'undefined') ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] = ___EXPOSE_LOADER_IMPORT___;
-else throw new Error('[exposes-loader] The "Cookies" value exists in the global scope, it may not be safe to overwrite it, use the "override" option')
-module.exports = ___EXPOSE_LOADER_IMPORT___;
-
-
-/***/ }),
-
-/***/ "./node_modules/js-cookie/src/js.cookie.js":
+/***/ "./node_modules/js-cookie/src/js.cookie.js?a78e":
 /*!*************************************************!*\
   !*** ./node_modules/js-cookie/src/js.cookie.js ***!
   \*************************************************/
@@ -25685,6 +25742,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 	return init(function () {});
 }));
+
+
+/***/ }),
+
+/***/ "./node_modules/js-cookie/src/js.cookie.js?f970":
+/*!*************************************************!*\
+  !*** ./node_modules/js-cookie/src/js.cookie.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var ___EXPOSE_LOADER_IMPORT___ = __webpack_require__(/*! -!./js.cookie.js */ "./node_modules/js-cookie/src/js.cookie.js?a78e");
+var ___EXPOSE_LOADER_GET_GLOBAL_THIS___ = __webpack_require__(/*! ../../expose-loader/dist/runtime/getGlobalThis.js */ "./node_modules/expose-loader/dist/runtime/getGlobalThis.js");
+var ___EXPOSE_LOADER_GLOBAL_THIS___ = ___EXPOSE_LOADER_GET_GLOBAL_THIS___;
+if (typeof ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] === 'undefined') ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] = ___EXPOSE_LOADER_IMPORT___;
+else throw new Error('[exposes-loader] The "Cookies" value exists in the global scope, it may not be safe to overwrite it, use the "override" option')
+module.exports = ___EXPOSE_LOADER_IMPORT___;
 
 
 /***/ }),

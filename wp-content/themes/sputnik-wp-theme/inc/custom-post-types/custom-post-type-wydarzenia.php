@@ -111,6 +111,10 @@ if(!function_exists('all_events_js_data')) {
 
             $event_data->event_type = $event_type;
 
+            $event_data->event_permalink = get_the_permalink($event_data->ID);
+
+            $event_data->event_thumbnail = get_the_post_thumbnail_url($event_data->ID);
+
             if($event_type['value'] == 'oneday') {
                 $event_data->event_type_data = get_field('oneday_event');
             } elseif($event_type['value'] == 'endless') {
