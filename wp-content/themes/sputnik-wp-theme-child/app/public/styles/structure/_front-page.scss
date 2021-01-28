@@ -1,14 +1,15 @@
 @import "./front-page/news";
+@import "./front-page/apps";
 
 .page-sections-wrapper {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0 2rem;
 
   .attractions {
     .posts-loop {
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       gap: 2rem;
       margin-top: 3rem;
     }
@@ -17,9 +18,20 @@
   .act-locally {
     .posts-loop {
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       gap: 2rem;
       margin-top: 3rem;
+    }
+  }
+}
+
+.poll-map-apps {
+  & > .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    @include extra-large {
+      grid-template-columns: 1fr;
     }
   }
 }

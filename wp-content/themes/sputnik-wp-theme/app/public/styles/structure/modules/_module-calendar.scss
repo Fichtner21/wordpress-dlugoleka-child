@@ -102,7 +102,7 @@
 .calendar-results {
   .fc-daygrid-day-events {
     display: grid;
-    grid-template-columns: repeat(4, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 3rem;
     margin: 3rem 0;
     &::before,

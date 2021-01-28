@@ -65,8 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
       loop: false,
       speed: 500,
       spaceBetween: 30,
-      slidesPerView: slidesVisible,
-
       // Navigation arrows
       navigation: {
         prevEl: ".slider-icon-links .swiper-button-prev",
@@ -75,11 +73,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // ! Get from _responsive.scss breakpoints
       breakpoints: {
-        360: {},
-        580: {},
-        768: {},
-        992: {},
-        1170: {},
+        360: {
+          slidesPerView: 2,
+        },
+        580: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        992: {
+          slidesPerView: 5,
+        },
+        1170: {
+          slidesPerView: slidesVisible,
+        },
       },
     });
   }
@@ -91,7 +99,6 @@ document.addEventListener("DOMContentLoaded", function () {
       loop: false,
       speed: 500,
       spaceBetween: 15,
-      slidesPerView: slidesVisible,
 
       // Navigation arrows
       navigation: {
@@ -101,11 +108,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // ! Get from _responsive.scss breakpoints
       breakpoints: {
-        360: {},
-        580: {},
-        768: {},
-        992: {},
-        1170: {},
+        360: {
+          slidesPerView: 2,
+        },
+        580: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        992: {
+          slidesPerView: 5,
+        },
+        1170: {
+          slidesPerView: slidesVisible,
+        },
       },
     });
   }

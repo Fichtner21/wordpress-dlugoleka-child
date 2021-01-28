@@ -118,6 +118,10 @@ You can have only one question per poll.
 
 == Changelog ==
 
+= 6.2.5 =
+* fix issue with notification message not being updated on successfull votes
+* added reset for radio and checkbox controls on page refresh
+
 = 6.2.4 =
 * fixed issue with GDPR/CCPA checkbox when having multiple polls on the same page
 * fixed issue with Results and Get Code icons not showing

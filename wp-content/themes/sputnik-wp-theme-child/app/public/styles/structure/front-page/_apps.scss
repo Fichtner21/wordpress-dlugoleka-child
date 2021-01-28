@@ -1,0 +1,56 @@
+.apps {
+  position: relative;
+  background: #edeeeb;
+  padding: 5rem;
+  text-align: center;
+  margin-top: 2rem;
+  &__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  &__phones {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__buttons {
+    margin-top: 3rem;
+  }
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 4rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    &:nth-child(1) {
+      background: black;
+      color: white;
+      i,
+      svg {
+        fill: white;
+        margin-right: 0.8rem;
+      }
+    }
+    &:nth-child(2) {
+      background: transparent;
+      color: black;
+      border: 0.1rem solid black;
+      i,
+      svg {
+        fill: black;
+        margin-right: 0.8rem;
+      }
+    }
+  }
+}
