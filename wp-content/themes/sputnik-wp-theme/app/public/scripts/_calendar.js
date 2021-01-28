@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
       date.textContent = fromatedDate;
 
       eventContent.appendChild(title);
-      eventContent.appendChild(type);
+      // eventContent.appendChild(type);
       eventContent.appendChild(date);
       eventContent.appendChild(url);
 

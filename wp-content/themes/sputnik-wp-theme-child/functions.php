@@ -37,7 +37,9 @@ function sputnik_wp_theme_posted_on_dlugoleka() {
     );
 
     if($post_type == 'wydarzenia') {
-        echo '<span class="post-date"><i class="fas fa-clock"></i> '. __('Kiedy?', 'sputnik-wp-theme') . ' ' . get_field('date_start') . '</span>';
+        $date_start = get_field('oneday_event')[0]['date_start'];
+
+        echo '<span class="post-date"><i class="fas fa-clock"></i> '. __('Kiedy?', 'sputnik-wp-theme') . ' ' . $date_start . '</span>';
     } else {
         echo '<span class="post-date"><i class="fas fa-clock"></i> '. $posted_on . '</span>';
     }
@@ -208,3 +210,10 @@ if(!function_exists('formatSizeUnits')) {
 		return $bytes;
 	}
 }
+
+function dl_upload_mime_types($mime_types){
+    $mime_types['pdf'] = 'application/pdf';
+
+    return $mime_types;
+}
+add_filter('upload_mimes', 'dl_upload_mime_types', 1, 1);

@@ -115,6 +115,7 @@
         background: transparent;
         border: 0;
         .event {
+          max-width: 30rem;
           &__content {
             margin: 1rem 0;
           }
