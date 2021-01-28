@@ -1,4 +1,4 @@
-import { Calendar } from "@fullcalendar/core";
+import { Calendar, formatDate } from "@fullcalendar/core";
 import plLocale from "@fullcalendar/core/locales/pl";
 
 import dayGridPlugin from "@fullcalendar/daygrid";
@@ -35,11 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const eventItem = document.createElement("div");
       const eventContent = document.createElement("div");
       const title = document.createElement("span");
-      const url = document.createElement("span");
+      const url = document.createElement("a");
       const type = document.createElement("span");
       const date = document.createElement("span");
 
-      const thumbnail = document.createElement("div");
+      const thumbnail = document.createElement("a");
 
       if (element.event.extendedProps.thumbnail != false) {
         const img = document.createElement("img");
@@ -59,14 +59,33 @@ document.addEventListener("DOMContentLoaded", function () {
       date.className = "event__date";
 
       title.textContent = element.event.title;
-      url.textContent = element.event.url;
+
+      url.href = element.event.url;
+      url.title = "Czytaj";
+      url.textContent = "Czytaj";
+
+      thumbnail.href = element.event.url;
+      thumbnail.title = element.event.title;
+
       type.textContent = element.event.extendedProps.type;
-      date.textContent = element.event.start;
+
+      let fromatedDate = formatDate(element.event.start, {
+        month: "numeric",
+        year: "numeric",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        // timeZoneName: "short",
+        // timeZone: "UTC",
+        locale: "pl",
+      });
+
+      date.textContent = fromatedDate;
 
       eventContent.appendChild(title);
-      eventContent.appendChild(url);
       eventContent.appendChild(type);
       eventContent.appendChild(date);
+      eventContent.appendChild(url);
 
       eventItem.appendChild(thumbnail);
       eventItem.appendChild(eventContent);

@@ -171,10 +171,10 @@ document.addEventListener("DOMContentLoaded", function () {
       var eventItem = document.createElement("div");
       var eventContent = document.createElement("div");
       var title = document.createElement("span");
-      var url = document.createElement("span");
+      var url = document.createElement("a");
       var type = document.createElement("span");
       var date = document.createElement("span");
-      var thumbnail = document.createElement("div");
+      var thumbnail = document.createElement("a");
 
       if (element.event.extendedProps.thumbnail != false) {
         var img = document.createElement("img");
@@ -190,13 +190,27 @@ document.addEventListener("DOMContentLoaded", function () {
       type.className = "event__type";
       date.className = "event__date";
       title.textContent = element.event.title;
-      url.textContent = element.event.url;
+      url.href = element.event.url;
+      url.title = "Czytaj";
+      url.textContent = "Czytaj";
+      thumbnail.href = element.event.url;
+      thumbnail.title = element.event.title;
       type.textContent = element.event.extendedProps.type;
-      date.textContent = element.event.start;
+      var fromatedDate = Object(_fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__["formatDate"])(element.event.start, {
+        month: "numeric",
+        year: "numeric",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        // timeZoneName: "short",
+        // timeZone: "UTC",
+        locale: "pl"
+      });
+      date.textContent = fromatedDate;
       eventContent.appendChild(title);
-      eventContent.appendChild(url);
       eventContent.appendChild(type);
       eventContent.appendChild(date);
+      eventContent.appendChild(url);
       eventItem.appendChild(thumbnail);
       eventItem.appendChild(eventContent);
       var arrayOfDomNodes = [eventItem];
@@ -534,7 +548,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js?f970");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie-exposed.js");
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_0__);
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -589,7 +603,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js?f970");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie-exposed.js");
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_0__);
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -25568,7 +25582,24 @@ module.exports = function () {
 
 /***/ }),
 
-/***/ "./node_modules/js-cookie/src/js.cookie.js?a78e":
+/***/ "./node_modules/js-cookie/src/js.cookie-exposed.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/js-cookie/src/js.cookie-exposed.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var ___EXPOSE_LOADER_IMPORT___ = __webpack_require__(/*! -!./js.cookie.js */ "./node_modules/js-cookie/src/js.cookie.js");
+var ___EXPOSE_LOADER_GET_GLOBAL_THIS___ = __webpack_require__(/*! ../../expose-loader/dist/runtime/getGlobalThis.js */ "./node_modules/expose-loader/dist/runtime/getGlobalThis.js");
+var ___EXPOSE_LOADER_GLOBAL_THIS___ = ___EXPOSE_LOADER_GET_GLOBAL_THIS___;
+if (typeof ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] === 'undefined') ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] = ___EXPOSE_LOADER_IMPORT___;
+else throw new Error('[exposes-loader] The "Cookies" value exists in the global scope, it may not be safe to overwrite it, use the "override" option')
+module.exports = ___EXPOSE_LOADER_IMPORT___;
+
+
+/***/ }),
+
+/***/ "./node_modules/js-cookie/src/js.cookie.js":
 /*!*************************************************!*\
   !*** ./node_modules/js-cookie/src/js.cookie.js ***!
   \*************************************************/
@@ -25742,23 +25773,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 	return init(function () {});
 }));
-
-
-/***/ }),
-
-/***/ "./node_modules/js-cookie/src/js.cookie.js?f970":
-/*!*************************************************!*\
-  !*** ./node_modules/js-cookie/src/js.cookie.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var ___EXPOSE_LOADER_IMPORT___ = __webpack_require__(/*! -!./js.cookie.js */ "./node_modules/js-cookie/src/js.cookie.js?a78e");
-var ___EXPOSE_LOADER_GET_GLOBAL_THIS___ = __webpack_require__(/*! ../../expose-loader/dist/runtime/getGlobalThis.js */ "./node_modules/expose-loader/dist/runtime/getGlobalThis.js");
-var ___EXPOSE_LOADER_GLOBAL_THIS___ = ___EXPOSE_LOADER_GET_GLOBAL_THIS___;
-if (typeof ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] === 'undefined') ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] = ___EXPOSE_LOADER_IMPORT___;
-else throw new Error('[exposes-loader] The "Cookies" value exists in the global scope, it may not be safe to overwrite it, use the "override" option')
-module.exports = ___EXPOSE_LOADER_IMPORT___;
 
 
 /***/ }),

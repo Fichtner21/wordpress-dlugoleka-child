@@ -101,9 +101,53 @@
 
 .calendar-results {
   .fc-daygrid-day-events {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20rem, 1fr));
+    gap: 3rem;
+    margin: 3rem 0;
+    &::before,
+    &::after {
+      content: none;
+    }
     .fc-daygrid-event-harness {
       visibility: visible !important;
+      .fc-h-event {
+        background: transparent;
+        border: 0;
+        .event {
+          &__content {
+            margin: 1rem 0;
+          }
+          &__title {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 1rem;
+          }
+          &__type {
+            display: block;
+            font-size: 1.4rem;
+            color: black;
+            margin: 0.5rem 0;
+          }
+          &__date {
+            display: block;
+            font-size: 1.2rem;
+            color: black;
+            margin: 0.5rem 0;
+          }
+          &__url {
+            display: inline-block;
+            text-decoration: none;
+            padding: 0.5rem 2rem;
+            cursor: pointer;
+            background: #ffd800;
+            color: black;
+            margin-top: 1rem;
+          }
+        }
+      }
     }
   }
 }
