@@ -111,7 +111,9 @@
     }
     .fc-daygrid-event-harness {
       visibility: visible !important;
-      .fc-h-event {
+      .fc-h-event,
+      .fc-event,
+      .fc-daygrid-event {
         background: transparent;
         border: 0;
         .event {

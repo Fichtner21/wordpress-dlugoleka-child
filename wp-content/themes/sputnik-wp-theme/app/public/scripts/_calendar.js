@@ -1,4 +1,4 @@
-import { Calendar, formatDate } from "@fullcalendar/core";
+import { Calendar, formatDate, formatRange } from "@fullcalendar/core";
 import plLocale from "@fullcalendar/core/locales/pl";
 
 import dayGridPlugin from "@fullcalendar/daygrid";
@@ -10,12 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const allEventsArr = allEvents.allEvents;
   const calendarEvents = [];
 
-  // console.log(allEventsArr);
-
   allEventsArr.forEach((event) => {
     if (event.event_type.value == "oneday") {
-      const dateTimeStart = `${event.event_type_data[0].date_start} ${event.event_type_data[0].event_times[0].time_start}`;
-      const dateTimeEnd = `${event.event_type_data[0].date_start} ${event.event_type_data[0].event_times[0].time_end}`;
+      let dateTimeStart, dateTimeEnd;
+
+      if (event.event_type_data[0].event_times) {
+        dateTimeStart = `${event.event_type_data[0].date_start} ${event.event_type_data[0].event_times[0].time_start}`;
+        dateTimeEnd = `${event.event_type_data[0].date_start} ${event.event_type_data[0].event_times[0].time_end}`;
+      } else {
+        dateTimeStart = event.event_type_data[0].date_start;
+        dateTimeEnd = event.event_type_data[0].date_start;
+      }
 
       const obj = {
         id: event.ID,
@@ -29,6 +34,35 @@ document.addEventListener("DOMContentLoaded", function () {
       };
 
       calendarEvents.push(obj);
+    }
+
+    if (event.event_type.value == "multiple") {
+      let dateTimeStart, dateTimeEnd, obj;
+
+      const eventDates = event.event_type_data;
+
+      eventDates.forEach((date) => {
+        if (date.event_times) {
+          dateTimeStart = `${date.date_start} ${date.event_times[0].time_start}`;
+          dateTimeEnd = `${date.date_start} ${date.event_times[0].time_end}`;
+        } else {
+          dateTimeStart = date.date_start;
+          dateTimeEnd = date.date_start;
+        }
+
+        obj = {
+          id: event.ID,
+          title: event.post_title,
+          url: event.event_permalink,
+          type: event.event_type.label,
+          start: dateTimeStart,
+          end: dateTimeEnd,
+          thumbnail: event.event_thumbnail,
+          display: "auto",
+        };
+
+        calendarEvents.push(obj);
+      });
     }
   });
 
@@ -75,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       type.textContent = element.event.extendedProps.type;
 
-      let fromatedDate = formatDate(element.event.start, {
+      let formatedDate = formatDate(element.event.start, {
         month: "numeric",
         year: "numeric",
         day: "numeric",
@@ -86,7 +120,17 @@ document.addEventListener("DOMContentLoaded", function () {
         locale: "pl",
       });
 
-      date.textContent = fromatedDate;
+      formatedDate = formatRange(element.event.start, element.event.end, {
+        month: "numeric",
+        year: "numeric",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        to: " - ",
+        locale: "pl",
+      });
+
+      date.textContent = formatedDate;
 
       eventContent.appendChild(title);
       // eventContent.appendChild(type);
@@ -106,31 +150,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
   calendar.render();
 
-  const calendarDays = document.querySelectorAll(".fc-daygrid-day-top");
-  const calendarResults = document.querySelector(".calendar-results");
+  function displayCalendarEvents() {
+    const calendarDays = document.querySelectorAll(".fc-daygrid-day-top");
+    const calendarResults = document.querySelector(".calendar-results");
 
-  calendarDays.forEach((day) => {
-    const eventsWrapper = day.nextSibling;
-    const events = [...eventsWrapper.querySelectorAll(".fc-daygrid-event-harness")];
-    const eventsCount = events.length;
+    calendarDays.forEach((day) => {
+      const eventsWrapper = day.nextSibling;
+      const events = [...eventsWrapper.querySelectorAll(".fc-daygrid-event-harness")];
+      const eventsCount = events.length;
 
-    if (eventsCount > 0) {
-      day.classList.add("has-events");
+      if (eventsCount > 0) {
+        day.classList.add("has-events");
 
-      const eventsCountElement = document.createElement("span");
+        const eventsCountElement = document.createElement("span");
 
-      eventsCountElement.className = "events-count";
-      eventsCountElement.textContent = eventsCount;
+        eventsCountElement.className = "events-count";
+        eventsCountElement.textContent = eventsCount;
 
-      day.appendChild(eventsCountElement);
-    }
+        day.appendChild(eventsCountElement);
+      }
 
-    day.addEventListener("click", function () {
-      const eventsData = this.nextSibling.cloneNode(true);
+      day.addEventListener("click", function () {
+        const eventsData = this.nextSibling.cloneNode(true);
 
-      calendarResults.innerHTML = "";
+        calendarResults.innerHTML = "";
 
-      calendarResults.appendChild(eventsData);
+        calendarResults.appendChild(eventsData);
+      });
     });
-  });
+  }
+
+  window.addEventListener("load", displayCalendarEvents);
+
+  document.querySelectorAll(".fc-button").forEach((button) => button.addEventListener("click", displayCalendarEvents));
 });
