@@ -10,14 +10,20 @@ document.addEventListener("DOMContentLoaded", function () {
   const allEventsArr = allEvents.allEvents;
   const calendarEvents = [];
 
+  // console.log(allEventsArr);
+
   allEventsArr.forEach((event) => {
     if (event.event_type.value == "oneday") {
+      const dateTimeStart = `${event.event_type_data[0].date_start} ${event.event_type_data[0].event_times[0].time_start}`;
+      const dateTimeEnd = `${event.event_type_data[0].date_start} ${event.event_type_data[0].event_times[0].time_end}`;
+
       const obj = {
         id: event.ID,
         title: event.post_title,
         url: event.event_permalink,
         type: event.event_type.label,
-        start: event.event_type_data[0].date_start,
+        start: dateTimeStart,
+        end: dateTimeEnd,
         thumbnail: event.event_thumbnail,
         display: "auto",
       };

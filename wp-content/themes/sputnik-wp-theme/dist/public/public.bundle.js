@@ -148,15 +148,19 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 document.addEventListener("DOMContentLoaded", function () {
   var calendarEl = document.getElementById("js-calendar");
   var allEventsArr = allEvents.allEvents;
-  var calendarEvents = [];
+  var calendarEvents = []; // console.log(allEventsArr);
+
   allEventsArr.forEach(function (event) {
     if (event.event_type.value == "oneday") {
+      var dateTimeStart = "".concat(event.event_type_data[0].date_start, " ").concat(event.event_type_data[0].event_times[0].time_start);
+      var dateTimeEnd = "".concat(event.event_type_data[0].date_start, " ").concat(event.event_type_data[0].event_times[0].time_end);
       var obj = {
         id: event.ID,
         title: event.post_title,
         url: event.event_permalink,
         type: event.event_type.label,
-        start: event.event_type_data[0].date_start,
+        start: dateTimeStart,
+        end: dateTimeEnd,
         thumbnail: event.event_thumbnail,
         display: "auto"
       };
