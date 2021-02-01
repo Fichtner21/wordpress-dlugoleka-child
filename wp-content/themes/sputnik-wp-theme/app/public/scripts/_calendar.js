@@ -132,6 +132,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       daysBetween.forEach(function (date, index, array) {
         const startDate = formatDateCustom(date).replace(",", "");
+        const endDate = formatDateCustom(dateEndFormated).replace(",", "");
+
+        console.log(endDate);
 
         obj = {
           id: event.ID,
@@ -139,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
           url: event.event_permalink,
           type: event.event_type.label,
           start: startDate,
-          end: dateEndFormated,
+          end: endDate,
           thumbnail: event.event_thumbnail,
           display: "auto",
         };

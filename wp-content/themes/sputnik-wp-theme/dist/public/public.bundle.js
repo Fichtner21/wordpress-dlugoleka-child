@@ -250,13 +250,15 @@ document.addEventListener("DOMContentLoaded", function () {
       var daysBetween = getDates(dateStartFormated, dateEndFormated);
       daysBetween.forEach(function (date, index, array) {
         var startDate = formatDateCustom(date).replace(",", "");
+        var endDate = formatDateCustom(dateEndFormated).replace(",", "");
+        console.log(endDate);
         obj = {
           id: event.ID,
           title: event.post_title,
           url: event.event_permalink,
           type: event.event_type.label,
           start: startDate,
-          end: dateEndFormated,
+          end: endDate,
           thumbnail: event.event_thumbnail,
           display: "auto"
         };

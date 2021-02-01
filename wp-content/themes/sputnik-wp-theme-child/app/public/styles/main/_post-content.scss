@@ -1,0 +1,24 @@
+.entry-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  a,
+  img,
+  li {
+    margin: 1rem 0;
+  }
+  ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+  }
+  ol {
+    list-style-type: decimal;
+    margin-left: 1.5rem;
+  }
+}

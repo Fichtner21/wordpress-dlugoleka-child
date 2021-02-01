@@ -11,7 +11,7 @@ Array
             [filetime] => -1
             [ssl_verify_result] => 0
             [redirect_count] => 0
-            [total_time] => 0.000302
+            [total_time] => 0.012318
             [namelookup_time] => 0
             [connect_time] => 0
             [pretransfer_time] => 0
@@ -42,7 +42,7 @@ Array
             [pretransfer_time_us] => 0
             [redirect_time_us] => 0
             [starttransfer_time_us] => 0
-            [total_time_us] => 302
+            [total_time_us] => 12318
         )
 
 )

@@ -116,8 +116,8 @@
       .fc-daygrid-event {
         background: transparent;
         border: 0;
+        max-width: 30rem;
         .event {
-          max-width: 30rem;
           &__content {
             margin: 1rem 0;
           }
