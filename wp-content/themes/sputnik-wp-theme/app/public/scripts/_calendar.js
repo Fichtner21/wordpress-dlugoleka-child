@@ -6,14 +6,64 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 // ! allEvents variable is from WordPress passed by php
 
 document.addEventListener("DOMContentLoaded", function () {
+  // Returns an array of dates between the two dates
+  const getDates = function (startDate, endDate) {
+    const dates = [];
+
+    let currentDate = startDate;
+
+    function addDays(days) {
+      const date = new Date(this.valueOf());
+
+      date.setDate(date.getDate() + days);
+
+      return date;
+    }
+
+    while (currentDate <= endDate) {
+      dates.push(currentDate);
+
+      currentDate = addDays.call(currentDate, 1);
+    }
+
+    return dates;
+  };
+
+  function formatDateCustom(date) {
+    let d = new Date(date),
+      month = "" + (d.getMonth() + 1),
+      day = "" + d.getDate(),
+      year = d.getFullYear(),
+      hours = d.getHours(),
+      minutes = d.getMinutes(),
+      time,
+      formatedDate;
+
+    if (hours.toString().length < 2) hours = "0" + hours;
+
+    if (minutes.toString().length < 2) minutes = "0" + minutes;
+
+    time = `${hours}:${minutes}`;
+
+    if (month.length < 2) month = "0" + month;
+
+    if (day.length < 2) day = "0" + day;
+
+    formatedDate = [year, month, day].join("-");
+
+    formatedDate = `${formatedDate} ${time}`;
+
+    return formatedDate;
+  }
+
   const calendarEl = document.getElementById("js-calendar");
   const allEventsArr = allEvents.allEvents;
   const calendarEvents = [];
 
+  let dateTimeStart, dateTimeEnd, obj;
+
   allEventsArr.forEach((event) => {
     if (event.event_type.value == "oneday") {
-      let dateTimeStart, dateTimeEnd;
-
       if (event.event_type_data[0].event_times) {
         dateTimeStart = `${event.event_type_data[0].date_start} ${event.event_type_data[0].event_times[0].time_start}`;
         dateTimeEnd = `${event.event_type_data[0].date_start} ${event.event_type_data[0].event_times[0].time_end}`;
@@ -37,8 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (event.event_type.value == "multiple") {
-      let dateTimeStart, dateTimeEnd, obj;
-
       const eventDates = event.event_type_data;
 
       eventDates.forEach((date) => {
@@ -57,6 +105,41 @@ document.addEventListener("DOMContentLoaded", function () {
           type: event.event_type.label,
           start: dateTimeStart,
           end: dateTimeEnd,
+          thumbnail: event.event_thumbnail,
+          display: "auto",
+        };
+
+        calendarEvents.push(obj);
+      });
+    }
+
+    if (event.event_type.value == "endless") {
+      let dateStartFormated, dateEndFormated;
+
+      if (event.event_type_data[0].event_times) {
+        dateStartFormated = new Date(
+          `${event.event_type_data[0].date_start}, ${event.event_type_data[0].event_times[0].time_start}`
+        );
+        dateEndFormated = new Date(
+          `${event.event_type_data[0].date_end}, ${event.event_type_data[0].event_times[0].time_end}`
+        );
+      } else {
+        dateStartFormated = new Date(event.event_type_data[0].date_start);
+        dateEndFormated = new Date(event.event_type_data[0].date_end);
+      }
+
+      const daysBetween = getDates(dateStartFormated, dateEndFormated);
+
+      daysBetween.forEach(function (date, index, array) {
+        const startDate = formatDateCustom(date).replace(",", "");
+
+        obj = {
+          id: event.ID,
+          title: event.post_title,
+          url: event.event_permalink,
+          type: event.event_type.label,
+          start: startDate,
+          end: dateEndFormated,
           thumbnail: event.event_thumbnail,
           display: "auto",
         };
@@ -115,8 +198,6 @@ document.addEventListener("DOMContentLoaded", function () {
         day: "numeric",
         hour: "2-digit",
         minute: "2-digit",
-        // timeZoneName: "short",
-        // timeZone: "UTC",
         locale: "pl",
       });
 

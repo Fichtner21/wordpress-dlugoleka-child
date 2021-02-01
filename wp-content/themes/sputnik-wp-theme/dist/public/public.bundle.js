@@ -146,13 +146,50 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
  // ! allEvents variable is from WordPress passed by php
 
 document.addEventListener("DOMContentLoaded", function () {
+  // Returns an array of dates between the two dates
+  var getDates = function getDates(startDate, endDate) {
+    var dates = [];
+    var currentDate = startDate;
+
+    function addDays(days) {
+      var date = new Date(this.valueOf());
+      date.setDate(date.getDate() + days);
+      return date;
+    }
+
+    while (currentDate <= endDate) {
+      dates.push(currentDate);
+      currentDate = addDays.call(currentDate, 1);
+    }
+
+    return dates;
+  };
+
+  function formatDateCustom(date) {
+    var d = new Date(date),
+        month = "" + (d.getMonth() + 1),
+        day = "" + d.getDate(),
+        year = d.getFullYear(),
+        hours = d.getHours(),
+        minutes = d.getMinutes(),
+        time,
+        formatedDate;
+    if (hours.toString().length < 2) hours = "0" + hours;
+    if (minutes.toString().length < 2) minutes = "0" + minutes;
+    time = "".concat(hours, ":").concat(minutes);
+    if (month.length < 2) month = "0" + month;
+    if (day.length < 2) day = "0" + day;
+    formatedDate = [year, month, day].join("-");
+    formatedDate = "".concat(formatedDate, " ").concat(time);
+    return formatedDate;
+  }
+
   var calendarEl = document.getElementById("js-calendar");
   var allEventsArr = allEvents.allEvents;
   var calendarEvents = [];
+  var dateTimeStart, dateTimeEnd, obj;
   allEventsArr.forEach(function (event) {
     if (event.event_type.value == "oneday") {
-      var dateTimeStart, dateTimeEnd;
-
       if (event.event_type_data[0].event_times) {
         dateTimeStart = "".concat(event.event_type_data[0].date_start, " ").concat(event.event_type_data[0].event_times[0].time_start);
         dateTimeEnd = "".concat(event.event_type_data[0].date_start, " ").concat(event.event_type_data[0].event_times[0].time_end);
@@ -161,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
         dateTimeEnd = event.event_type_data[0].date_start;
       }
 
-      var obj = {
+      var _obj = {
         id: event.ID,
         title: event.post_title,
         url: event.event_permalink,
@@ -171,38 +208,59 @@ document.addEventListener("DOMContentLoaded", function () {
         thumbnail: event.event_thumbnail,
         display: "auto"
       };
-      calendarEvents.push(obj);
+      calendarEvents.push(_obj);
     }
 
     if (event.event_type.value == "multiple") {
-      var _dateTimeStart, _dateTimeEnd, _obj;
-
-      var eventDates = event.event_type_data; // console.log(eventDates);
-
+      var eventDates = event.event_type_data;
       eventDates.forEach(function (date) {
-        // console.log(date);
-        console.log(date.event_times);
-
         if (date.event_times) {
-          _dateTimeStart = "".concat(date.date_start, " ").concat(date.event_times[0].time_start);
-          _dateTimeEnd = "".concat(date.date_start, " ").concat(date.event_times[0].time_end);
+          dateTimeStart = "".concat(date.date_start, " ").concat(date.event_times[0].time_start);
+          dateTimeEnd = "".concat(date.date_start, " ").concat(date.event_times[0].time_end);
         } else {
-          _dateTimeStart = date.date_start;
-          _dateTimeEnd = date.date_start;
+          dateTimeStart = date.date_start;
+          dateTimeEnd = date.date_start;
         }
 
-        _obj = {
+        obj = {
           id: event.ID,
           title: event.post_title,
           url: event.event_permalink,
           type: event.event_type.label,
-          start: _dateTimeStart,
-          end: _dateTimeEnd,
+          start: dateTimeStart,
+          end: dateTimeEnd,
           thumbnail: event.event_thumbnail,
           display: "auto"
         };
-        console.log(_obj);
-        calendarEvents.push(_obj);
+        calendarEvents.push(obj);
+      });
+    }
+
+    if (event.event_type.value == "endless") {
+      var dateStartFormated, dateEndFormated;
+
+      if (event.event_type_data[0].event_times) {
+        dateStartFormated = new Date("".concat(event.event_type_data[0].date_start, ", ").concat(event.event_type_data[0].event_times[0].time_start));
+        dateEndFormated = new Date("".concat(event.event_type_data[0].date_end, ", ").concat(event.event_type_data[0].event_times[0].time_end));
+      } else {
+        dateStartFormated = new Date(event.event_type_data[0].date_start);
+        dateEndFormated = new Date(event.event_type_data[0].date_end);
+      }
+
+      var daysBetween = getDates(dateStartFormated, dateEndFormated);
+      daysBetween.forEach(function (date, index, array) {
+        var startDate = formatDateCustom(date).replace(",", "");
+        obj = {
+          id: event.ID,
+          title: event.post_title,
+          url: event.event_permalink,
+          type: event.event_type.label,
+          start: startDate,
+          end: dateEndFormated,
+          thumbnail: event.event_thumbnail,
+          display: "auto"
+        };
+        calendarEvents.push(obj);
       });
     }
   });
@@ -245,8 +303,6 @@ document.addEventListener("DOMContentLoaded", function () {
         day: "numeric",
         hour: "2-digit",
         minute: "2-digit",
-        // timeZoneName: "short",
-        // timeZone: "UTC",
         locale: "pl"
       });
       formatedDate = Object(_fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__["formatRange"])(element.event.start, element.event.end, {
