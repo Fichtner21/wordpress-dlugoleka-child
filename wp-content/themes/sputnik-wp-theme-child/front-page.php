@@ -40,6 +40,8 @@ get_header(); ?>
 
 					<?php require CUSTOM_PARTS . '/loops/loop-events.php'; ?>
 				</div>
+
+				<div class="calendar-results"></div>
 			</div>
 		</section>
 

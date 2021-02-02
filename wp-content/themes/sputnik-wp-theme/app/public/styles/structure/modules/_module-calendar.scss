@@ -35,15 +35,122 @@
       justify-content: center;
       text-align: center;
       height: 100%;
+      &.has-events {
+        cursor: pointer;
+        .events-count {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          background: lightgrey;
+          position: absolute;
+          top: 1.5rem;
+          right: 1.2rem;
+          width: 1.5rem;
+          height: 1.5rem;
+          font-size: 1rem;
+          font-weight: bold;
+          color: black;
+          border-radius: 100%;
+          z-index: 10;
+        }
+        .fc-daygrid-day-number {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          background: #ffd600;
+          padding: 1rem;
+          border-radius: 100%;
+          width: 3rem;
+          height: 3rem;
+        }
+      }
     }
     &-number {
       font-size: 1.4rem;
     }
     &-events {
       display: none;
-      position: absolute !important;
-      top: 0;
-      left: 0;
+    }
+    &-bg {
+      .fc-daygrid-bg-harness {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100%;
+        top: calc(50% - 1.5rem) !important;
+        left: calc(50% - 1.5rem) !important;
+        .fc-bg-event {
+          background: #ffd600;
+          border-radius: 100%;
+          opacity: 1 !important;
+          .fc-event-title {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.fc-day-past {
+  .fc-daygrid-day-bg .fc-daygrid-bg-harness .fc-bg-event {
+    background: rgba(#ffd600, 0.1);
+  }
+}
+
+.calendar-results {
+  .fc-daygrid-day-events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem;
+    margin: 3rem 0;
+    &::before,
+    &::after {
+      content: none;
+    }
+    .fc-daygrid-event-harness {
+      visibility: visible !important;
+      .fc-h-event,
+      .fc-event,
+      .fc-daygrid-event {
+        background: transparent;
+        border: 0;
+        max-width: 30rem;
+        .event {
+          &__content {
+            margin: 1rem 0;
+          }
+          &__title {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 1rem;
+          }
+          &__type {
+            display: block;
+            font-size: 1.4rem;
+            color: black;
+            margin: 0.5rem 0;
+          }
+          &__date {
+            display: block;
+            font-size: 1.2rem;
+            color: black;
+            margin: 0.5rem 0;
+          }
+          &__url {
+            display: inline-block;
+            text-decoration: none;
+            padding: 0.5rem 2rem;
+            cursor: pointer;
+            background: #ffd800;
+            color: black;
+            margin-top: 1rem;
+          }
+        }
+      }
     }
   }
 }

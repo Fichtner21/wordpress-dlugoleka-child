@@ -13,6 +13,7 @@ if(!function_exists('custom_mobile_apps_page')) {
     if(!function_exists('register_custom_mobile_apps_settings')) {
         function register_custom_mobile_apps_settings() {
             // Register all options
+            register_setting('custom_mobile_apps_group','apps_text');
             register_setting('custom_mobile_apps_group','google_play_link');
             register_setting('custom_mobile_apps_group','app_store_link');
         }
@@ -30,6 +31,11 @@ if(!function_exists('custom_mobile_apps_page')) {
                     ?>
 
                     <table class="form-table">
+                        <tr valign="top">
+                            <th scope="row"><?= __('Podaj tekst','sputnik-wp-theme'); ?></th>
+                            <td><textarea name="apps_text" value="<?= esc_attr( get_option('apps_text') ); ?>" rows="10"><?= esc_attr( get_option('apps_text') ); ?></textarea></td>
+                        </tr>
+
                         <tr valign="top">
                             <th scope="row"><?= __('Google Play Link','sputnik-wp-theme'); ?></th>
                             <td><input type="text" name="google_play_link" value="<?= esc_attr( get_option('google_play_link') ); ?>" /></td>

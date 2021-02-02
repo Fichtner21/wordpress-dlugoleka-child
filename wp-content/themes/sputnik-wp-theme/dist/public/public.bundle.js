@@ -129,35 +129,239 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fullcalendar_core_locales_pl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fullcalendar/core/locales/pl */ "./node_modules/@fullcalendar/core/locales/pl.js");
 /* harmony import */ var _fullcalendar_core_locales_pl__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_fullcalendar_core_locales_pl__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fullcalendar/daygrid */ "./node_modules/@fullcalendar/daygrid/main.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 
 
  // ! allEvents variable is from WordPress passed by php
 
 document.addEventListener("DOMContentLoaded", function () {
+  // Returns an array of dates between the two dates
+  var getDates = function getDates(startDate, endDate) {
+    var dates = [];
+    var currentDate = startDate;
+
+    function addDays(days) {
+      var date = new Date(this.valueOf());
+      date.setDate(date.getDate() + days);
+      return date;
+    }
+
+    while (currentDate <= endDate) {
+      dates.push(currentDate);
+      currentDate = addDays.call(currentDate, 1);
+    }
+
+    return dates;
+  };
+
+  function formatDateCustom(date) {
+    var d = new Date(date),
+        month = "" + (d.getMonth() + 1),
+        day = "" + d.getDate(),
+        year = d.getFullYear(),
+        hours = d.getHours(),
+        minutes = d.getMinutes(),
+        time,
+        formatedDate;
+    if (hours.toString().length < 2) hours = "0" + hours;
+    if (minutes.toString().length < 2) minutes = "0" + minutes;
+    time = "".concat(hours, ":").concat(minutes);
+    if (month.length < 2) month = "0" + month;
+    if (day.length < 2) day = "0" + day;
+    formatedDate = [year, month, day].join("-");
+    formatedDate = "".concat(formatedDate, " ").concat(time);
+    return formatedDate;
+  }
+
   var calendarEl = document.getElementById("js-calendar");
   var allEventsArr = allEvents.allEvents;
   var calendarEvents = [];
+  var dateTimeStart, dateTimeEnd, obj;
   allEventsArr.forEach(function (event) {
-    console.log(event.event_type.value);
-
     if (event.event_type.value == "oneday") {
-      var obj = {
+      if (event.event_type_data[0].event_times) {
+        dateTimeStart = "".concat(event.event_type_data[0].date_start, " ").concat(event.event_type_data[0].event_times[0].time_start);
+        dateTimeEnd = "".concat(event.event_type_data[0].date_start, " ").concat(event.event_type_data[0].event_times[0].time_end);
+      } else {
+        dateTimeStart = event.event_type_data[0].date_start;
+        dateTimeEnd = event.event_type_data[0].date_start;
+      }
+
+      var _obj = {
         id: event.ID,
         title: event.post_title,
+        url: event.event_permalink,
         type: event.event_type.label,
-        start: event.event_type_data[0].date_start // display: "background",
-
+        start: dateTimeStart,
+        end: dateTimeEnd,
+        thumbnail: event.event_thumbnail,
+        display: "auto"
       };
-      calendarEvents.push(obj);
+      calendarEvents.push(_obj);
+    }
+
+    if (event.event_type.value == "multiple") {
+      var eventDates = event.event_type_data;
+      eventDates.forEach(function (date) {
+        if (date.event_times) {
+          dateTimeStart = "".concat(date.date_start, " ").concat(date.event_times[0].time_start);
+          dateTimeEnd = "".concat(date.date_start, " ").concat(date.event_times[0].time_end);
+        } else {
+          dateTimeStart = date.date_start;
+          dateTimeEnd = date.date_start;
+        }
+
+        obj = {
+          id: event.ID,
+          title: event.post_title,
+          url: event.event_permalink,
+          type: event.event_type.label,
+          start: dateTimeStart,
+          end: dateTimeEnd,
+          thumbnail: event.event_thumbnail,
+          display: "auto"
+        };
+        calendarEvents.push(obj);
+      });
+    }
+
+    if (event.event_type.value == "endless") {
+      var dateStartFormated, dateEndFormated;
+
+      if (event.event_type_data[0].event_times) {
+        dateStartFormated = new Date("".concat(event.event_type_data[0].date_start, ", ").concat(event.event_type_data[0].event_times[0].time_start));
+        dateEndFormated = new Date("".concat(event.event_type_data[0].date_end, ", ").concat(event.event_type_data[0].event_times[0].time_end));
+      } else {
+        dateStartFormated = new Date(event.event_type_data[0].date_start);
+        dateEndFormated = new Date(event.event_type_data[0].date_end);
+      }
+
+      var daysBetween = getDates(dateStartFormated, dateEndFormated);
+      daysBetween.forEach(function (date, index, array) {
+        var startDate = formatDateCustom(date).replace(",", "");
+        var endDate = formatDateCustom(dateEndFormated).replace(",", "");
+        console.log(endDate);
+        obj = {
+          id: event.ID,
+          title: event.post_title,
+          url: event.event_permalink,
+          type: event.event_type.label,
+          start: startDate,
+          end: endDate,
+          thumbnail: event.event_thumbnail,
+          display: "auto"
+        };
+        calendarEvents.push(obj);
+      });
     }
   });
   var calendar = new _fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__["Calendar"](calendarEl, {
     locale: _fullcalendar_core_locales_pl__WEBPACK_IMPORTED_MODULE_1___default.a,
     plugins: [_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_2__["default"]],
     events: calendarEvents,
+    eventContent: function eventContent(element) {
+      var eventItem = document.createElement("div");
+      var eventContent = document.createElement("div");
+      var title = document.createElement("span");
+      var url = document.createElement("a");
+      var type = document.createElement("span");
+      var date = document.createElement("span");
+      var thumbnail = document.createElement("a");
+
+      if (element.event.extendedProps.thumbnail != false) {
+        var img = document.createElement("img");
+        thumbnail.className = "event__thumbnail";
+        thumbnail.appendChild(img);
+        img.src = element.event.extendedProps.thumbnail;
+      }
+
+      eventItem.className = "event";
+      eventContent.className = "event__content";
+      title.className = "event__title";
+      url.className = "event__url";
+      type.className = "event__type";
+      date.className = "event__date";
+      title.textContent = element.event.title;
+      url.href = element.event.url;
+      url.title = "Czytaj";
+      url.textContent = "Czytaj";
+      thumbnail.href = element.event.url;
+      thumbnail.title = element.event.title;
+      type.textContent = element.event.extendedProps.type;
+      var formatedDate = Object(_fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__["formatDate"])(element.event.start, {
+        month: "numeric",
+        year: "numeric",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        locale: "pl"
+      });
+      formatedDate = Object(_fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__["formatRange"])(element.event.start, element.event.end, {
+        month: "numeric",
+        year: "numeric",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        to: " - ",
+        locale: "pl"
+      });
+      date.textContent = formatedDate;
+      eventContent.appendChild(title); // eventContent.appendChild(type);
+
+      eventContent.appendChild(date);
+      eventContent.appendChild(url);
+      eventItem.appendChild(thumbnail);
+      eventItem.appendChild(eventContent);
+      var arrayOfDomNodes = [eventItem];
+      return {
+        domNodes: arrayOfDomNodes
+      };
+    },
     height: "auto"
   });
   calendar.render();
+
+  function displayCalendarEvents() {
+    var calendarDays = document.querySelectorAll(".fc-daygrid-day-top");
+    var calendarResults = document.querySelector(".calendar-results");
+    calendarDays.forEach(function (day) {
+      var eventsWrapper = day.nextSibling;
+
+      var events = _toConsumableArray(eventsWrapper.querySelectorAll(".fc-daygrid-event-harness"));
+
+      var eventsCount = events.length;
+
+      if (eventsCount > 0) {
+        day.classList.add("has-events");
+        var eventsCountElement = document.createElement("span");
+        eventsCountElement.className = "events-count";
+        eventsCountElement.textContent = eventsCount;
+        day.appendChild(eventsCountElement);
+      }
+
+      day.addEventListener("click", function () {
+        var eventsData = this.nextSibling.cloneNode(true);
+        calendarResults.innerHTML = "";
+        calendarResults.appendChild(eventsData);
+      });
+    });
+  }
+
+  window.addEventListener("load", displayCalendarEvents);
+  document.querySelectorAll(".fc-button").forEach(function (button) {
+    return button.addEventListener("click", displayCalendarEvents);
+  });
 });
 
 /***/ }),
@@ -495,10 +699,12 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelectorAll(".menu .menu-item a").length > 0) {
     var menuAnchors = document.querySelectorAll(".menu .menu-item a");
     menuAnchors.forEach(function (anchor) {
-      var correctTitle = anchor.querySelector(".menu-item__title").textContent;
+      if (anchor.querySelector(".menu-item__title")) {
+        var correctTitle = anchor.querySelector(".menu-item__title").textContent;
 
-      if (anchor.title != correctTitle) {
-        anchor.title = anchor.querySelector(".menu-item__title").textContent;
+        if (anchor.title != correctTitle) {
+          anchor.title = anchor.querySelector(".menu-item__title").textContent;
+        }
       }
     });
   }
