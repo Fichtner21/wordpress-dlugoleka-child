@@ -1,9 +1,13 @@
 .pages-loop {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 3rem;
   margin: 5rem 0;
-
+  &:not(.swiper-container) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+    .page {
+      max-width: 25rem;
+    }
+  }
   &--background {
     padding: 5rem 0;
     position: relative;
@@ -22,8 +26,25 @@
     }
   }
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 5.5rem;
+    height: 5.5rem;
+    background: white;
+    border: 0;
+    border-radius: 100%;
+    cursor: pointer;
+    @include medium {
+      display: none !important;
+    }
+    &::after {
+      color: black;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+  }
+
   .page {
-    max-width: 25rem;
     .wp-post-image {
       width: 100%;
     }

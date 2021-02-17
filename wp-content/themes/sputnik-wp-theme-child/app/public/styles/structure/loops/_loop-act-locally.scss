@@ -6,6 +6,7 @@
     margin-top: 4rem;
     .dzialaj-lokalnie {
       position: relative;
+      max-width: 29rem;
       &:hover,
       &:focus {
         .post-heading {
@@ -25,6 +26,7 @@
         z-index: 1;
         opacity: 0;
         transition: all 200ms ease-in-out;
+        width: 80%;
         &__title {
           font-size: 1.4rem;
           text-transform: uppercase;
@@ -36,6 +38,87 @@
               text-decoration: underline;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+.archive-posts {
+  article {
+    &.dzialaj-lokalnie {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 0 1.5rem;
+      min-height: 20rem;
+      box-shadow: 0px 0.3rem 0.7rem 0px rgba(40, 40, 40, 0.1);
+      margin-bottom: 3rem;
+
+      img {
+        grid-column: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .post-heading {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 1.2rem;
+
+        &__title {
+          font-size: 1.4rem;
+          margin-bottom: 1rem;
+
+          a {
+            color: #000;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        &-meta {
+          margin: 1rem 0;
+          .post-date {
+            svg {
+              color: $secondaryColor;
+            }
+          }
+        }
+      }
+
+      .post-content {
+        grid-column: 2;
+        grid-row: 2;
+        margin-bottom: 1rem;
+
+        &__excerpt {
+          font-size: 1.2rem;
+          line-height: 2rem;
+          max-height: 10rem;
+          overflow: hidden;
+        }
+      }
+
+      .post-footer {
+        grid-column: 2;
+        grid-row: 3;
+        display: flex;
+        justify-content: flex-end;
+
+        &__button {
+          padding: 0.3rem 2rem;
+          background-color: $secondaryColor;
+          color: #000;
+          text-decoration: none;
+          transition: all 0.3s;
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin-right: 1rem;
         }
       }
     }

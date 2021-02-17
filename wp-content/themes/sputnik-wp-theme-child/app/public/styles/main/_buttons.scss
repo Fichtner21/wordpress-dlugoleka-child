@@ -1,6 +1,7 @@
 .btn {
   text-decoration: none;
   padding: 0.5rem 2rem;
+  border: 0;
   cursor: pointer;
   &--primary {
     background: $secondaryColor;

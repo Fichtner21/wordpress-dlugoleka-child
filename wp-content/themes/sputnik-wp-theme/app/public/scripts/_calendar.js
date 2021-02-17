@@ -72,11 +72,14 @@ document.addEventListener("DOMContentLoaded", function () {
         dateTimeEnd = event.event_type_data[0].date_start;
       }
 
-      const obj = {
+      obj = {
         id: event.ID,
         title: event.post_title,
         url: event.event_permalink,
         type: event.event_type.label,
+        localization: event.event_type_data[0].localization,
+        latitude: event.event_type_data[0].latitude,
+        longitude: event.event_type_data[0].longitude,
         start: dateTimeStart,
         end: dateTimeEnd,
         thumbnail: event.event_thumbnail,
@@ -103,6 +106,9 @@ document.addEventListener("DOMContentLoaded", function () {
           title: event.post_title,
           url: event.event_permalink,
           type: event.event_type.label,
+          localization: event.event_type_data[0].localization,
+          latitude: event.event_type_data[0].latitude,
+          longitude: event.event_type_data[0].longitude,
           start: dateTimeStart,
           end: dateTimeEnd,
           thumbnail: event.event_thumbnail,
@@ -134,13 +140,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const startDate = formatDateCustom(date).replace(",", "");
         const endDate = formatDateCustom(dateEndFormated).replace(",", "");
 
-        console.log(endDate);
-
         obj = {
           id: event.ID,
           title: event.post_title,
           url: event.event_permalink,
           type: event.event_type.label,
+          localization: event.event_type_data[0].localization,
+          latitude: event.event_type_data[0].latitude,
+          longitude: event.event_type_data[0].longitude,
           start: startDate,
           end: endDate,
           thumbnail: event.event_thumbnail,
@@ -164,6 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const url = document.createElement("a");
       const type = document.createElement("span");
       const date = document.createElement("span");
+      const localization = document.createElement("span");
 
       const thumbnail = document.createElement("a");
 
@@ -183,8 +191,11 @@ document.addEventListener("DOMContentLoaded", function () {
       url.className = "event__url";
       type.className = "event__type";
       date.className = "event__date";
+      localization.className = "event__localization";
 
       title.textContent = element.event.title;
+
+      localization.textContent = element.event.extendedProps.localization;
 
       url.href = element.event.url;
       url.title = "Czytaj";
@@ -217,6 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
       date.textContent = formatedDate;
 
       eventContent.appendChild(title);
+      eventContent.appendChild(localization);
       // eventContent.appendChild(type);
       eventContent.appendChild(date);
       eventContent.appendChild(url);

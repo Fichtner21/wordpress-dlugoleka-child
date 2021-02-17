@@ -19,6 +19,7 @@ if(!function_exists('public_custom_assets_child')) {
 
 	add_action( 'wp_enqueue_scripts', 'public_custom_assets_child', 20 );
 }
+
 function sputnik_wp_theme_posted_on_dlugoleka() {
     $post_type = get_post_type();
 
@@ -37,7 +38,13 @@ function sputnik_wp_theme_posted_on_dlugoleka() {
     );
 
     if($post_type == 'wydarzenia') {
-        $date_start = get_field('oneday_event')[0]['date_start'];
+        if(get_field('oneday_event')[0]['localization']) {
+            $date_start = get_field('oneday_event')[0]['date_start'];
+        } elseif(get_field('multiple_event')[0]['date_start']) {
+            $date_start = get_field('multiple_event')[0]['date_start'];
+        } elseif(get_field('endless_event')[0]['date_start']) {
+            $date_start = get_field('endless_event')[0]['date_start'];
+        }
 
         echo '<span class="post-date"><i class="fas fa-clock"></i> '. __('Kiedy?', 'sputnik-wp-theme') . ' ' . $date_start . '</span>';
     } else {
@@ -51,14 +58,21 @@ function custom_post_loop_template_dlugoleka($heading_level = 'h2', $thumb_size 
         <figure>
             <?php sputnik_wp_theme_post_thumbnail($thumb_size); ?>
         </figure>
+
         <section class="post-bulk">
             <header class="post-heading">
                 <div class="post-heading-meta">
                     <?php sputnik_wp_theme_posted_on_dlugoleka(); ?>
+
+                    <?php if(get_field('oneday_event')[0]['localization']) : $localization = get_field('oneday_event')[0]['localization']; ?>
+                        <p class="post-localization"><i class="fas fa-map-marker-alt"></i> <?= __('Gdzie?', 'sputnik-wp-theme'); ?> <?= $localization; ?></p>
+                    <?php elseif(get_field('multiple_event')[0]['localization']) : $localization = get_field('multiple_event')[0]['localization']; ?>
+                        <p class="post-localization"><i class="fas fa-map-marker-alt"></i> <?= __('Gdzie?', 'sputnik-wp-theme'); ?> <?= $localization; ?></p>
+                    <?php elseif(get_field('endless_event')[0]['localization']) : $localization = get_field('endless_event')[0]['localization']; ?>
+                        <p class="post-localization"><i class="fas fa-map-marker-alt"></i> <?= __('Gdzie?', 'sputnik-wp-theme'); ?> <?= $localization; ?></p>
+                    <?php endif; ?>
                 </div>
                 <?php the_title( '<'. $heading_level .' class="post-heading__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></'. $heading_level .'>' ); ?>
-
-
             </header><!-- .entry-header -->
 
             <div class="post-content">

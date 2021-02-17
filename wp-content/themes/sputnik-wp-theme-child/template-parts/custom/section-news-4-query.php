@@ -33,11 +33,6 @@
 				<div class='page-section-heading__meta'>
 					<a href='<?= get_the_permalink(get_page_by_path(__('aktualnosci', 'sputnik-wp-theme'))); ?>' class='page-section-heading__anchor' title='<?= __('Zobacz wszystkie','sputnik-wp-theme'); ?>'><?= __('Zobacz wszystkie','sputnik-wp-theme'); ?></a>
 
-						<!-- <div class="page-section-heading__terms">
-							<span><?= __('Filtry','sputnik-wp-theme'); ?>:</span>
-							<?= function_exists('show_terms_with_childrens') ? show_terms_with_childrens('category') : null; ?>
-            </div> -->
-
             <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php"     method="POST" id="filter">
               <?php
                 if( $terms = get_terms( array( 'taxonomy' => 'category', 'orderby' => 'name' ) ) ) :
@@ -50,15 +45,6 @@
                 endif;
               ?>
 
-              <!-- <label>
-                <input type="radio" name="date" value="ASC" /> Data: rosnąco
-              </label>
-              <label>
-                <input type="radio" name="date" value="DESC" selected="selected" /> Data: malęjąco
-              </label>
-              <label>
-                <input type="checkbox" name="featured_image" /> Tylko posty z miniaturką
-              </label> -->
               <button><?= __('Filtruj','sputnik-wp-theme'); ?></button>
 
               <input type="hidden" name="action" value="myfilter">
@@ -110,13 +96,15 @@
                           <!-- Category -->
                           <?php
                           $categories = get_the_category();
-                          $separator = ', ';
+
                           $output = '';
                           if ( ! empty( $categories ) ) {
-                            foreach( $categories as $category ) {
-                              $output .= '<div class="category-list">Kategoria: <a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '" class="category-link">' . esc_html( $category->name ) . '</a></div>';
-                            }
-                              echo trim( $output, $separator );
+                            echo '<div class="category-list">Kategorie:';
+                              foreach( $categories as $category ) {
+                                $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'Zobacz wszystkie wpisy w: %s', 'textdomain' ), $category->name ) ) . '" class="category-link">' . esc_html( $category->name ) . '</a>';
+                              }
+                              echo trim( $output );
+                            echo '</div>';
                           } ?>
                           <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme'); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
                         </footer><!-- .entry-footer -->

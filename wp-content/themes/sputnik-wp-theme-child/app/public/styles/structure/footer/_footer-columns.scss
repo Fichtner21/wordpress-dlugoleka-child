@@ -30,6 +30,9 @@
       }
       &__menu {
         margin-bottom: 1.5rem;
+        .sub-menu {
+          display: none;
+        }
         .menu {
           &-item {
             a {

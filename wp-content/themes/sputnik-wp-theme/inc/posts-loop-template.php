@@ -149,7 +149,9 @@ if(!function_exists('child_pages_loop_template')) {
     function child_pages_loop_template($heading_level = 'h2', $thumb_size = 'thumbnail', $excerpt_length = 200) {
 		$post_type = get_post_type(); ?>
 		<article id="post-<?= get_the_ID(); ?>" <?php post_class(); ?>>
-			<?php sputnik_wp_theme_post_thumbnail($thumb_size); ?>
+			<figure class="post-thumbnail-wrapper">
+				<?php sputnik_wp_theme_post_thumbnail($thumb_size); ?>
+			</figure>
 
 			<header class="post-heading">
 				<?php the_title( '<'. $heading_level .' class="post-heading__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></'. $heading_level .'>' ); ?>
@@ -167,7 +169,9 @@ if(!function_exists('title_on_hover_loop_template')) {
     function title_on_hover_loop_template($heading_level = 'h2', $thumb_size = 'thumbnail') {
 		$post_type = get_post_type(); ?>
 		<article id="post-<?= get_the_ID(); ?>" <?php post_class(); ?>>
-			<?php sputnik_wp_theme_post_thumbnail($thumb_size); ?>
+			<figure class="post-thumbnail-wrapper">
+				<?php sputnik_wp_theme_post_thumbnail($thumb_size); ?>
+			</figure>
 
 			<header class="post-heading">
 				<?php the_title( '<'. $heading_level .' class="post-heading__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></'. $heading_level .'>' ); ?>
