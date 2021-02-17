@@ -38,7 +38,7 @@ Array
             [scheme] => 
             [appconnect_time_us] => 0
             [connect_time_us] => 0
-            [namelookup_time_us] => 0
+            [namelookup_time_us] => 1230
             [pretransfer_time_us] => 0
             [redirect_time_us] => 0
             [starttransfer_time_us] => 0

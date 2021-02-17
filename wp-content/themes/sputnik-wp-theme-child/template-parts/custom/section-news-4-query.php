@@ -94,6 +94,7 @@
 
                         <footer class="post-footer">
                           <!-- Category -->
+                          <div class="category-list">Kategoria:
                           <?php
                           $categories = get_the_category();
 
@@ -106,6 +107,7 @@
                               echo trim( $output );
                             echo '</div>';
                           } ?>
+                          </div>
                           <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme'); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
                         </footer><!-- .entry-footer -->
                     </section>
