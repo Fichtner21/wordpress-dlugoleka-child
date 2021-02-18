@@ -20,27 +20,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    gap: 2rem 2rem;    
+    gap: 2rem 2rem;
 
-    @media screen and (max-width: 899px){
+    @media screen and (max-width: 899px) {
       grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 500px) {
       display: block;
     }
 
     .child-page {
       position: relative;
       overflow: hidden;
-      border: .2rem solid $primaryColor;  
-      transition: all .4s;
+      border: 0.2rem solid $primaryColor;
+      transition: all 0.4s;
 
       &:hover {
-        box-shadow: 0 .8rem .4rem -0.4rem $primaryColor;
+        box-shadow: 0 0.8rem 0.4rem -0.4rem $primaryColor;
       }
-      
-      @media screen and (max-width: 500px){
+
+      @media screen and (max-width: 500px) {
         margin-bottom: 2rem;
       }
 
@@ -50,10 +50,10 @@
         align-items: center;
         position: relative;
         opacity: 1;
-        transition: all 0.4s;       
+        transition: all 0.4s;
 
         &:hover {
-          box-shadow: 0 .8rem .4rem -0.4rem $primaryColor;
+          box-shadow: 0 0.8rem 0.4rem -0.4rem $primaryColor;
 
           .child-page-title {
             transform: translateY(-1rem);
@@ -81,7 +81,7 @@
           top: 50%;
           left: 2rem;
           transition: all 0.5s;
-          padding: .5rem;
+          padding: 0.5rem;
           max-height: 12.4rem;
           overflow: hidden;
 
@@ -89,14 +89,14 @@
             font-size: 1.5rem;
             background-color: $primaryColor;
             opacity: 0.8;
-            padding: .5rem;
+            padding: 0.5rem;
             color: #fff;
           }
 
           .child-page-excerpt-main {
             color: #fff;
             background-color: rgba(0, 0, 0, 0.7);
-            padding: .5rem;
+            padding: 0.5rem;
             font-size: 1.2rem;
             max-height: 7.6rem;
           }
@@ -133,7 +133,7 @@
       position: relative;
       opacity: 1;
 
-      img {        
+      img {
         height: 100%;
 
         :hover .title__img {
@@ -160,7 +160,7 @@
           padding: 1rem;
           top: 45%;
           left: 0;
-          letter-spacing: .3rem;
+          letter-spacing: 0.3rem;
 
           a {
             color: #fff;
@@ -187,6 +187,23 @@
       color: red;
       display: none;
       transition: all 0.4s;
+    }
+  }
+}
+
+body.page:not(.home) {
+  ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+  ol {
+    list-style: decimal;
+    margin-left: 1.5rem;
+    li {
+      margin-bottom: 1rem;
     }
   }
 }
