@@ -35,7 +35,7 @@
 
 	<?php if(get_field('eu_image', 'option')) : $eu_image = get_field('eu_image', 'option'); ?>
 		<div class='container' style='text-align: center;'>
-			<img src='<?= $eu_image["url"]; ?>' alt='<?= $eu_image["alt"]; ?>'>
+			<img src='<?= $eu_image["url"]; ?>' alt='<?= $eu_image["alt"]; ?>' class="eu-image">
 		</div>
 	<?php endif; ?>
 </div><!-- #page-wrapper -->

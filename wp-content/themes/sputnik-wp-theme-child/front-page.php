@@ -49,6 +49,8 @@ get_header(); ?>
 			<section class='page-section attractions'>
 				<header class="page-section-heading">
 					<h2 class="page-section-heading__title"><?= __('Atrakcje','sputnik-wp-theme'); ?></h2>
+
+					<a href='<?= get_post_type_archive_link('atrakcje') ?>' class='page-section-heading__anchor' title='<?= __('Zobacz wszystkie','sputnik-wp-theme'); ?>'><?= __('Zobacz wszystkie','sputnik-wp-theme'); ?></a>
 				</header>
 
 				<?php require CUSTOM_PARTS . '/loops/loop-attractions.php'; ?>
@@ -57,6 +59,8 @@ get_header(); ?>
 			<section class='page-section act-locally'>
 				<header class="page-section-heading">
 					<h2 class="page-section-heading__title"><?= __('Działaj lokalnie','sputnik-wp-theme'); ?></h2>
+
+					<a href='<?= get_post_type_archive_link('dzialaj-lokalnie') ?>' class='page-section-heading__anchor' title='<?= __('Zobacz wszystkie','sputnik-wp-theme'); ?>'><?= __('Zobacz wszystkie','sputnik-wp-theme'); ?></a>
 				</header>
 
 				<?php require CUSTOM_PARTS . '/loops/loop-act-locally.php'; ?>

@@ -2,11 +2,18 @@
   background: $primaryColor;
   color: white;
   padding: 3rem;
+  html.contrast-mode & {
+    background: $contrastColor;
+    color: $contrastBackground;
+  }
   &__title {
     font-size: 1.8rem;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 4rem;
+    html.contrast-mode & {
+      color: $contrastBackground;
+    }
   }
   &-list {
     &__item {
@@ -18,6 +25,9 @@
       text-transform: uppercase;
       font-size: 1.6rem;
       margin-left: 3rem;
+      html.contrast-mode & {
+        color: $contrastBackground;
+      }
       &:hover,
       &:focus {
         text-decoration: underline;

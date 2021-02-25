@@ -1,0 +1,25 @@
+.sputnik-search-form__toggle {
+  html.contrast-mode & {
+    background: $contrastColor;
+  }
+}
+
+.sputnik-search-form {
+  html.contrast-mode & {
+    background: $contrastBackground;
+    color: $contrastColor;
+  }
+  input[type="text"],
+  input[type="date"],
+  select {
+    html.contrast-mode & {
+      background: $contrastColor;
+    }
+  }
+  &__submit {
+    html.contrast-mode & {
+      color: $contrastBackground;
+      background: $contrastColor;
+    }
+  }
+}

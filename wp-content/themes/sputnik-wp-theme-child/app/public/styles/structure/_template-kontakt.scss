@@ -12,12 +12,19 @@
     background: white;
     padding: 0;
     margin-top: 3rem;
+    html.contrast-mode & {
+      background: $contrastBackground;
+      color: $contrastColor;
+    }
     &__row {
       position: relative;
       padding-left: 5rem;
       padding-bottom: 3rem;
       margin-bottom: 3rem;
       border-bottom: 0.2rem solid #f3f3f3;
+      html.contrast-mode & {
+        border-color: $contrastColor;
+      }
       &:last-child {
         border-bottom: 0;
       }
@@ -29,6 +36,10 @@
         fill: #00a0e3;
         color: #00a0e3;
         font-size: 3rem;
+        html.contrast-mode & {
+          fill: $contrastColor;
+          color: $contrastColor;
+        }
       }
     }
     &__subtitle {
@@ -36,6 +47,12 @@
     }
     &__data {
       color: #5c6f70;
+      html.contrast-mode & {
+        color: $contrastColor;
+        a {
+          color: $contrastColor;
+        }
+      }
     }
   }
 

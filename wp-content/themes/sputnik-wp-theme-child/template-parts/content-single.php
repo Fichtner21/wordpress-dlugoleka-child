@@ -7,6 +7,8 @@
  * @package sputnik_wp_theme
  */
 
+$title_font_size = get_field('title_font_size');
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -14,21 +16,21 @@
     <div class="post-grid-left">
       <div class="post-nav">
         <div class="post-nav__category">
-          Kategoria: 
-        <?php 
+          Kategoria:
+        <?php
           $categories = get_the_category();
           $separator = ', ';
           $output = '';
           if ( ! empty( $categories ) ) {
               foreach( $categories as $category ) {
                   $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '" class="category-color">' . esc_html( $category->name ) . '</a>' . $separator;
-                  
+
               }
               echo trim( $output, $separator );
           } ?>
         </div>
         <div class="post-nav__date">
-          <?php echo '<i class="fas fa-clock"></i> Data publikacji: ' . get_the_date('d.m.Y') . 'r.'; ?> 
+          <?php echo '<i class="fas fa-clock"></i> Data publikacji: ' . get_the_date('d.m.Y') . 'r.'; ?>
         </div>
         <div class="post-nav__download">
           Pobierz
@@ -38,7 +40,7 @@
         </div>
       </div>
       <header class="entry-header">
-        <?php the_title(); ?>
+        <?php the_title('<h1 style="font-size:'. $title_font_size .'px">', '</h1>'); ?>
       </header><!-- .entry-header -->
       <div class="post-excerpt">
         <?php echo get_the_excerpt(); ?>
@@ -49,7 +51,7 @@
         <?php sputnik_wp_theme_post_thumbnail('full'); ?>
       </figure>
     </div>
-  </div>	
+  </div>
 
   <div class="post-grid-bottom">
     <div class="entry-content">
@@ -67,9 +69,9 @@
             'posts_per_page' => 4,
             'post_status' => 'publish',
             'orderby' => 'date',
-            'order' => 'DESC',							
+            'order' => 'DESC',
           );
-          
+
           $news_others = new WP_Query($news_sidebar);
           if($news_others->have_posts()) : ?>
             <h2>Inne aktualności</h2>
@@ -78,40 +80,40 @@
                     <article id="post-<?= get_the_ID(); ?>" <?php post_class(); ?>>
                     <div class="post-others-left">
                       <div class="post-others-left__category">
-                        <?php 
+                        <?php
                         $categories = get_the_category();
                         $separator = ', ';
                         $output = '';
                         if ( ! empty( $categories ) ) {
                             foreach( $categories as $category ) {
                                 $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '" style="background-color:'.get_field('category_color', $category).'" class="category-color">' . esc_html( $category->name ) . '</a>' . $separator;
-                                
+
                             }
                             echo trim( $output, $separator );
                         } ?>
                       </div>
-                      <figure>												
+                      <figure>
                           <?php sputnik_wp_theme_post_thumbnail('medium'); ?>
-                      </figure>		
+                      </figure>
                     </div>
                     <section class="post-bulk">
                         <header class="post-heading">
                             <div class="post-heading-meta">
-                                <?php echo '<i class="fas fa-clock"></i> Data publikacji: ' . get_the_date('d.m.Y') . 'r.'; ?>                   
+                                <?php echo '<i class="fas fa-clock"></i> Data publikacji: ' . get_the_date('d.m.Y') . 'r.'; ?>
                             </div>
-                            <?php the_title( '<div class="post-heading__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></div>' ); ?>    
-                            
-                        </header><!-- .entry-header -->			
-            
+                            <?php the_title( '<div class="post-heading__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></div>' ); ?>
+
+                        </header><!-- .entry-header -->
+
                         <div class="post-content">
                             <?= get_custom_excerpt(200); ?>
-                            
+
                         </div><!-- .entry-content -->
-            
+
                         <footer class="post-footer">
                             <!-- Category -->
                             <?php  ?>
-            
+
                             <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme'); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
                         </footer><!-- .entry-footer -->
                     </section>

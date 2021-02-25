@@ -150,7 +150,9 @@ if(!function_exists('child_pages_loop_template')) {
 		$post_type = get_post_type(); ?>
 		<article id="post-<?= get_the_ID(); ?>" <?php post_class(); ?>>
 			<figure class="post-thumbnail-wrapper">
-				<?php sputnik_wp_theme_post_thumbnail($thumb_size); ?>
+				<a href="<?= get_the_permalink(); ?>" title="<?= get_the_title(); ?>">
+					<?php sputnik_wp_theme_post_thumbnail($thumb_size); ?>
+				</a>
 			</figure>
 
 			<header class="post-heading">

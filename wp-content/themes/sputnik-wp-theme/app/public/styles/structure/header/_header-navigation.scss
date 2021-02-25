@@ -1,7 +1,42 @@
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .site-header {
+  html.contrast-mode & {
+    background: $contrastBackground;
+    color: $contrastColor;
+  }
+  &.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: $fixedMenuIndex;
+    background: white;
+    animation: slideIn 300ms ease-in-out both;
+    box-shadow: 0 1.5rem 3.5rem -0.5rem rgba(black, 0.1);
+
+    html.contrast-mode & {
+      background: $contrastBackground;
+    }
+  }
   &__top {
     display: flex;
     align-items: center;
+    html.contrast-mode & {
+      background: $contrastBackground;
+      color: $contrastColor;
+      border-color: $contrastColor;
+    }
   }
 
   &__bottom {
@@ -21,6 +56,9 @@
           justify-content: center;
           text-align: center;
           padding: 1.5rem;
+          html.contrast-mode & {
+            color: $contrastColor;
+          }
         }
       }
     }

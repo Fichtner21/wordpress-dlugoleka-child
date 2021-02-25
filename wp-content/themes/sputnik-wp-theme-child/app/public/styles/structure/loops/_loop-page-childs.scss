@@ -45,6 +45,12 @@
   }
 
   .page {
+    .post-thumbnail-wrapper {
+      border: 0.1rem solid darken(#ededed, 10%);
+      html.contrast-mode & {
+        border-color: $contrastColor;
+      }
+    }
     .wp-post-image {
       width: 100%;
     }
@@ -56,6 +62,9 @@
         a {
           color: #0a3255;
           text-decoration: none;
+          html.contrast-mode & {
+            color: $contrastColor;
+          }
           &:hover,
           &:focus {
             text-decoration: underline;

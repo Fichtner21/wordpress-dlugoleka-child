@@ -34,6 +34,8 @@
 						<?php require CUSTOM_PARTS . '/header/header-wcag-fonts.php'; ?>
 
 						<?php require CUSTOM_PARTS . '/header/header-wcag-contrast.php'; ?>
+
+						<?php require CUSTOM_PARTS . '/header/header-languages.php'; ?>
 					</div>
 				</nav>
 

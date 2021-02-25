@@ -1,0 +1,17 @@
+.basic-yop-poll-container {
+  html.contrast-mode & {
+    background: $contrastBackground !important;
+    color: $contrastColor !important;
+    border-color: $contrastColor !important;
+    .basic-text {
+      color: $contrastColor !important;
+    }
+    .basic-vote-button {
+      background: $contrastColor !important;
+      color: $contrastBackground !important;
+    }
+    .basic-question-title h5 {
+      color: $contrastColor !important;
+    }
+  }
+}

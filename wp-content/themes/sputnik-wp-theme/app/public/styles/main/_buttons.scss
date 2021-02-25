@@ -1,7 +1,15 @@
 .btn {
   &--primary {
+    html.contrast-mode & {
+      background: $contrastColor;
+      color: $contrastBackground;
+    }
   }
   &--secondary {
+    html.contrast-mode & {
+      background: $contrastColor;
+      color: $contrastBackground;
+    }
   }
   &--outline {
   }

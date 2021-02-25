@@ -192,14 +192,14 @@
 }
 
 body.page:not(.home) {
-  ul {
+  ul:not(.menu):not(.levels-menu-list):not(.children) {
     list-style: disc;
     margin-left: 1.5rem;
     li {
       margin-bottom: 1rem;
     }
   }
-  ol {
+  ol:not(.menu):not(.levels-menu-list):not(.children) {
     list-style: decimal;
     margin-left: 1.5rem;
     li {

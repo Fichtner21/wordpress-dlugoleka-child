@@ -4,6 +4,9 @@
     &__title {
       font-weight: bold;
       margin-bottom: 2rem;
+      html.contrast-mode & {
+        color: $contrastColor;
+      }
     }
 
     &__file {
@@ -15,6 +18,10 @@
       border-bottom: 0.2rem solid #eaeaea;
       text-decoration: none;
       color: #5c7071;
+      html.contrast-mode & {
+        border-color: $contrastColor;
+        color: $contrastColor;
+      }
       &:hover,
       &:focus {
         text-decoration: underline;
@@ -24,6 +31,10 @@
         margin-right: 1.5rem;
         color: #0d72b8;
         fill: #0d72b8;
+        html.contrast-mode & {
+          fill: $contrastColor;
+          color: $contrastColor;
+        }
       }
     }
   }

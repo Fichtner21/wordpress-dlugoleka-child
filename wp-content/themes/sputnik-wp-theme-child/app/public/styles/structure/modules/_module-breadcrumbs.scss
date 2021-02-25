@@ -6,6 +6,10 @@
     text-decoration: none;
     color: #000;
 
+    html.contrast-mode & {
+      color: $contrastColor;
+    }
+
     &:hover {
       text-decoration: underline;
     }

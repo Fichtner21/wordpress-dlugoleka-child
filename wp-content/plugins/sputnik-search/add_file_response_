@@ -3,7 +3,7 @@ Array
     [res] => 
     [info] => Array
         (
-            [url] => https://elasticsearch.sputnik.pl/api/auth
+            [url] => https://elasticsearch.sputnik.pl/api/indices/1
             [content_type] => 
             [http_code] => 0
             [header_size] => 0
@@ -11,7 +11,7 @@ Array
             [filetime] => -1
             [ssl_verify_result] => 0
             [redirect_count] => 0
-            [total_time] => 0.012318
+            [total_time] => 0.001351
             [namelookup_time] => 0
             [connect_time] => 0
             [pretransfer_time] => 0
@@ -38,11 +38,11 @@ Array
             [scheme] => 
             [appconnect_time_us] => 0
             [connect_time_us] => 0
-            [namelookup_time_us] => 1230
+            [namelookup_time_us] => 0
             [pretransfer_time_us] => 0
             [redirect_time_us] => 0
             [starttransfer_time_us] => 0
-            [total_time_us] => 12318
+            [total_time_us] => 1351
         )
 
 )

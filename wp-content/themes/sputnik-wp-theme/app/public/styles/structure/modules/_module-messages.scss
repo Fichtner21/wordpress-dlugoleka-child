@@ -1,4 +1,8 @@
 .module-messages {
+  html.contrast-mode & {
+    background: $contrastBackground;
+    color: $contrastColor;
+  }
   & > .container {
     display: flex;
     align-items: center;

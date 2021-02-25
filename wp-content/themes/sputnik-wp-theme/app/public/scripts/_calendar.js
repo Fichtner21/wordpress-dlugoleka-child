@@ -248,7 +248,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function displayCalendarEvents() {
     const calendarDays = document.querySelectorAll(".fc-daygrid-day-top");
-    const calendarResults = document.querySelector(".calendar-results");
+    const calendarResults = document.querySelector(".events .events__wrapper .posts-loop");
 
     calendarDays.forEach((day) => {
       const eventsWrapper = day.nextSibling;

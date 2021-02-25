@@ -3,5 +3,12 @@
     color: white;
     text-decoration: none;
     cursor: pointer;
+
+    svg,
+    path {
+      html.contrast-mode & {
+        fill: $contrastColor;
+      }
+    }
   }
 }

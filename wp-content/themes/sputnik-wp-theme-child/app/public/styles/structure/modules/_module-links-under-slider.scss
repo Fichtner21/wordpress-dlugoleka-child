@@ -13,9 +13,17 @@
     color: black;
     text-decoration: none;
     border-bottom: 0.2rem solid transparent;
+    html.contrast-mode & {
+      background: $contrastColor;
+      color: $contrastBackground;
+      border: 0.2rem solid $contrastBackground;
+    }
     &:hover,
     &:focus {
       border-bottom: 0.2rem solid black;
+      html.contrast-mode & {
+        border-color: $contrastBackground;
+      }
     }
     i,
     svg {
@@ -23,6 +31,10 @@
     }
     &:nth-child(even) {
       background: #ededed;
+      html.contrast-mode & {
+        background: $contrastColor;
+        color: $contrastBackground;
+      }
     }
   }
 }

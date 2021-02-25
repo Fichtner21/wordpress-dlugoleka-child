@@ -1,4 +1,7 @@
 .site-branding {
+  html.contrast-mode & {
+    filter: invert(1);
+  }
   &__title {
     @extend .screen-reader-text;
   }

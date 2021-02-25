@@ -52,11 +52,19 @@ form#filter {
     padding: 1rem 2rem;
     border: 0.1rem solid rgba(black, 0.2);
     border-radius: 0.3rem;
+    html.contrast-mode & {
+      background: $contrastColor;
+      border-color: $contrastColor;
+    }
   }
   button {
     @extend .btn;
     @extend .btn--primary;
     padding: 1.2rem 2rem;
     border-radius: 0.3rem;
+    html.contrast-mode & {
+      background: $contrastColor;
+      color: $contrastBackground;
+    }
   }
 }

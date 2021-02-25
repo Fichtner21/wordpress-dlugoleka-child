@@ -7,6 +7,8 @@ require("./scripts/_navigation");
 require("./scripts/_sliders");
 require("./scripts/_calendar");
 require("./scripts/_google-map");
+require("./scripts/_fixed-menu");
+require("./scripts/_levels-menu");
 
 // require main styles
 require("./styles/style.scss");

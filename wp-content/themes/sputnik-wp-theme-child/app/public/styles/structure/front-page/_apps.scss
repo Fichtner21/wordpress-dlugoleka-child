@@ -5,6 +5,9 @@
   text-align: center;
   margin-top: 2rem;
   z-index: 0;
+  html.contrast-mode & {
+    background: $contrastBackground;
+  }
   &__title {
     font-size: 1.8rem;
     font-weight: bold;
@@ -41,20 +44,36 @@
     &:nth-child(1) {
       background: black;
       color: white;
+      html.contrast-mode & {
+        background: $contrastBackground;
+        color: $contrastColor;
+        border: 0.1rem solid $contrastColor;
+      }
       i,
       svg {
         fill: white;
         margin-right: 0.8rem;
+        html.contrast-mode & {
+          fill: $contrastColor;
+        }
       }
     }
     &:nth-child(2) {
       background: transparent;
       color: black;
       border: 0.1rem solid black;
+      html.contrast-mode & {
+        background: $contrastBackground;
+        color: $contrastColor;
+        border-color: $contrastColor;
+      }
       i,
       svg {
         fill: black;
         margin-right: 0.8rem;
+        html.contrast-mode & {
+          fill: $contrastColor;
+        }
       }
     }
   }

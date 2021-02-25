@@ -10,7 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const itemLink = document.createElement("a");
 
       itemLink.setAttribute("data-fslightbox", "wp-gallery");
-      itemLink.setAttribute("href", itemImage.dataset.fullUrl);
+
+      if (itemImage.dataset.fullUrl) {
+        itemLink.setAttribute("href", itemImage.dataset.fullUrl);
+      } else if (itemImage.src) {
+        itemLink.setAttribute("href", itemImage.src);
+      }
 
       itemLink.appendChild(itemImage);
 

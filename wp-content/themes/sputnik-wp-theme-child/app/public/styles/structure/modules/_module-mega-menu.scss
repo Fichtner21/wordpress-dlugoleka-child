@@ -11,6 +11,7 @@
             transform: translateY(0);
             opacity: 1;
             visibility: visible;
+            transition: all 350ms ease;
             @include extra-large {
               overflow: visible;
               padding: 0 1rem;
@@ -33,10 +34,15 @@
           transform: translateY(5rem);
           opacity: 0;
           visibility: hidden;
-          transition: all 350ms ease;
+          transition: all 700ms ease;
           border: 0.1rem solid rgba(black, 0.25);
           border-top: 0;
           box-shadow: 0 1.5rem 3.5rem -0.8rem rgba(black, 0.25);
+
+          html.contrast-mode & {
+            background: $contrastBackground;
+          }
+
           @include extra-large {
             position: static;
             height: auto;
@@ -55,6 +61,10 @@
               &:hover,
               &:focus {
                 color: $primaryColor;
+
+                html.contrast-mode & {
+                  color: $contrastColor;
+                }
               }
               @include extra-large {
                 padding: 0.75rem 1.25rem;

@@ -15,6 +15,9 @@
       background: #f7fafb;
       height: 3.5rem;
       padding-top: 0.5rem !important;
+      html.contrast-mode & {
+        background: $contrastBackground;
+      }
       &-cushion {
         font-size: 1.4rem;
         font-weight: bold;
@@ -53,6 +56,10 @@
           color: black;
           border-radius: 100%;
           z-index: 10;
+          html.contrast-mode & {
+            background: $contrastBackground;
+            color: $contrastColor;
+          }
         }
         .fc-daygrid-day-number {
           display: inline-flex;
@@ -64,6 +71,10 @@
           border-radius: 100%;
           width: 3rem;
           height: 3rem;
+          html.contrast-mode & {
+            background: $contrastColor;
+            color: $contrastBackground;
+          }
         }
       }
     }
@@ -84,6 +95,9 @@
           background: #ffd600;
           border-radius: 100%;
           opacity: 1 !important;
+          html.contrast-mode & {
+            background: $contrastBackground;
+          }
           .fc-event-title {
             display: none;
           }
@@ -99,6 +113,7 @@
   }
 }
 
+.events .events__wrapper .posts-loop,
 .calendar-results {
   .fc-daygrid-day-events {
     display: grid;
@@ -118,6 +133,7 @@
         border: 0;
         max-width: 30rem;
         .event {
+          width: 100%;
           &__thumbnail {
             display: block;
             width: 100%;
@@ -150,6 +166,9 @@
             font-size: 1.4rem;
             color: black;
             margin: 0.5rem 0;
+            html.contrast-mode & {
+              color: $contrastColor;
+            }
           }
           &__localization {
             display: block;
@@ -157,12 +176,18 @@
             font-weight: 600;
             color: black;
             margin: 0.5rem 0;
+            html.contrast-mode & {
+              color: $contrastColor;
+            }
           }
           &__date {
             display: block;
             font-size: 1.2rem;
             color: black;
             margin: 0.5rem 0;
+            html.contrast-mode & {
+              color: $contrastColor;
+            }
           }
           &__url {
             display: inline-block;
@@ -172,6 +197,10 @@
             background: #ffd800;
             color: black;
             margin-top: 1rem;
+            html.contrast-mode & {
+              background: $contrastBackground;
+              color: $contrastColor;
+            }
           }
         }
       }

@@ -3,6 +3,9 @@
   color: white;
   padding-top: 6rem;
   padding-bottom: 3rem;
+  html.contrast-mode & {
+    color: $contrastColor;
+  }
   &-columns {
     &-column {
       &__image {
@@ -22,6 +25,9 @@
           color: white;
           text-decoration: none;
           font-size: 1.2rem;
+          html.contrast-mode & {
+            color: $contrastColor;
+          }
           &:hover,
           &:focus {
             text-decoration: underline;
@@ -39,6 +45,9 @@
               color: white;
               text-decoration: none;
               font-size: 1.2rem;
+              html.contrast-mode & {
+                color: $contrastColor;
+              }
               &:hover,
               &:focus {
                 text-decoration: underline;

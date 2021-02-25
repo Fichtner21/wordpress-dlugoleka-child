@@ -1,2 +1,8 @@
 @import "./footer/footer-columns";
 @import "./footer/footer-bottom-bar";
+
+.eu-image {
+  html.contrast-mode & {
+    filter: invert(1);
+  }
+}

@@ -3,6 +3,9 @@
   padding-bottom: 6rem;
   background: #f7f6fb;
   position: relative;
+  html.contrast-mode & {
+    background: $contrastBackground;
+  }
   &__title {
     text-transform: uppercase;
     font-size: 3rem;
@@ -25,6 +28,9 @@
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
     color: #282728;
+    html.contrast-mode & {
+      color: $contrastColor;
+    }
   }
   &__input {
     font-size: 1.6rem;
@@ -34,6 +40,11 @@
     background: white;
     border: 0.1rem solid #b6b6b6;
     width: 100%;
+    html.contrast-mode & {
+      border-color: $contrastBackground;
+      color: $contrastBackground;
+      background: $contrastColor;
+    }
     &--textarea {
       height: 13rem;
     }
@@ -47,5 +58,9 @@
     border: 0;
     padding: 1rem 1.5rem;
     cursor: pointer;
+    html.contrast-mode & {
+      background: $contrastColor;
+      color: $contrastBackground;
+    }
   }
 }
