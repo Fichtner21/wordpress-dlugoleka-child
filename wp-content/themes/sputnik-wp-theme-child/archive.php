@@ -15,27 +15,25 @@
 get_header(); ?>
 
 	<main id="primary" class="site-main">
-		<div class="container">			
+		<div class="container">
 			<?php require CUSTOM_PARTS . '/modules/module-breadcrumbs.php'; ?>
 			<div class="container-news">
-				<div class='archive-posts'>			
+				<div class='archive-posts'>
 					<header class="page-section-heading">
 						<h2 class="page-section-heading__title"><?php echo single_term_title(); ?></h2>
-
-						
 					</header>
 					<?php
-					$exclude = array();					
+					$exclude = array();
 
 					if(have_posts()) : ?>
-							<div class='posts-loop'>							
-									<?php while(have_posts()) : the_post();			
+							<div class='posts-loop'>
+									<?php while(have_posts()) : the_post();
 											array_push( $exclude, get_the_ID());
 											custom_post_loop_template_dlugoleka();
 									endwhile; ?>
 							</div>
-					<?php endif; wp_reset_query(); wp_reset_postdata(); ?>			
-				</div>			
+					<?php endif; wp_reset_query(); wp_reset_postdata(); ?>
+				</div>
 
 				<div class="archive-sidebar">
 					<?php
@@ -45,9 +43,9 @@ get_header(); ?>
 							'posts_per_page' => 8,
 							'post_status' => 'publish',
 							'orderby' => 'date',
-							'order' => 'DESC',							
+							'order' => 'DESC',
 						);
-						
+
 						$news_others = new WP_Query($news_sidebar);
 						if($news_others->have_posts()) : ?>
 							<h2>Inne aktualności</h2>
@@ -56,40 +54,40 @@ get_header(); ?>
 											<article id="post-<?= get_the_ID(); ?>" <?php post_class(); ?>>
 											<div class="post-others-left">
 												<div class="post-others-left__category">
-													<?php 
+													<?php
 													$categories = get_the_category();
 													$separator = ', ';
 													$output = '';
 													if ( ! empty( $categories ) ) {
 															foreach( $categories as $category ) {
 																	$output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '" style="background-color:'.get_field('category_color', $category).'" class="category-color">' . esc_html( $category->name ) . '</a>' . $separator;
-																  
+
 															}
 															echo trim( $output, $separator );
 													} ?>
 												</div>
-												<figure>												
+												<figure>
 														<?php sputnik_wp_theme_post_thumbnail('medium'); ?>
-												</figure>		
+												</figure>
 											</div>
 											<section class="post-bulk">
 													<header class="post-heading">
 															<div class="post-heading-meta">
-																	<?php echo '<i class="fas fa-clock"></i> Data publikacji: ' . get_the_date('d.m.Y') . 'r.'; ?>                   
+																	<?php echo '<i class="fas fa-clock"></i> Data publikacji: ' . get_the_date('d.m.Y') . 'r.'; ?>
 															</div>
-															<?php the_title( '<div class="post-heading__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></div>' ); ?>    
-															
-													</header><!-- .entry-header -->			
-							
+															<?php the_title( '<div class="post-heading__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></div>' ); ?>
+
+													</header><!-- .entry-header -->
+
 													<div class="post-content">
 															<?= get_custom_excerpt(200); ?>
-															
+
 													</div><!-- .entry-content -->
-							
+
 													<footer class="post-footer">
 															<!-- Category -->
 															<?php  ?>
-							
+
 															<a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme'); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
 													</footer><!-- .entry-footer -->
 											</section>
@@ -100,7 +98,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<?php require CUSTOM_PARTS . '/modules/module-pagination.php'; ?>
-		</div>		
+		</div>
 	</main><!-- #main -->
 
 <?php get_footer();

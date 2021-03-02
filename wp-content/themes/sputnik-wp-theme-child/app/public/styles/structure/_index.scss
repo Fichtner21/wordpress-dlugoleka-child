@@ -4,7 +4,7 @@
   grid-template-columns: 1fr 41rem;
   gap: 0 2rem;
 
-  @media screen and (max-width: 992px){
+  @media screen and (max-width: 992px) {
     display: block;
   }
 
@@ -19,14 +19,14 @@
         text-transform: uppercase;
         font-size: 2.4rem;
         letter-spacing: 0.3rem;
-      } 
-      
-      &__meta {        
+      }
+
+      &__meta {
         .page-section-heading__terms {
           display: flex;
           font-size: 1.4rem;
 
-          @media screen and (max-width: 500px){
+          @media screen and (max-width: 500px) {
             display: block;
           }
 
@@ -34,22 +34,23 @@
             display: inline-block;
             margin-right: 1rem;
 
-            @media screen and (max-width: 500px){
+            @media screen and (max-width: 500px) {
               margin-left: 1rem;
             }
           }
 
           .custom-terms {
             display: flex;
-            @media screen and (max-width: 500px){
+            flex-wrap: wrap;
+            @media screen and (max-width: 500px) {
               display: block;
             }
             &__item {
               .custom-terms__anchor {
-                padding: 0.3rem 1rem;                
-                transition: all .3s;
+                padding: 0.3rem 1rem;
+                transition: all 0.3s;
                 text-decoration: none;
-                color: #000;               
+                color: #000;
 
                 &:hover {
                   background-color: $primaryColor;
@@ -63,19 +64,19 @@
     }
 
     .post {
-      height: 20rem;
+      min-height: 20rem;
       display: grid;
       grid-template-columns: 21rem 1fr;
       grid-template-rows: auto;
       gap: 0 3rem;
       margin-bottom: 3rem;
-      box-shadow: 0px 0.3rem 0.7rem 0px rgba(40,40,40,0.1);
+      box-shadow: 0px 0.3rem 0.7rem 0px rgba(40, 40, 40, 0.1);
 
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 768px) {
         grid-template-columns: 12rem 1fr;
-        gap: 0 1rem;        
+        gap: 0 1rem;
       }
-  
+
       figure {
         overflow: hidden;
         display: flex;
@@ -83,16 +84,16 @@
         justify-content: center;
         max-height: 20rem;
 
-        @media screen and (max-width: 500px){
+        @media screen and (max-width: 500px) {
           max-height: 12rem;
         }
-  
+
         img {
           max-width: initial;
           height: initial;
         }
       }
-  
+
       .post-bulk {
         padding-right: 1rem;
 
@@ -105,31 +106,31 @@
               }
             }
           }
-  
+
           &__title a {
             font-size: 1.8rem;
             text-decoration: none;
             color: #000;
             text-transform: uppercase;
             font-weight: 400;
-  
+
             .contrast-mode & {
               color: $contrastColor;
             }
-  
+
             &:hover {
               text-decoration: underline;
             }
           }
         }
-  
+
         .post-content {
           &__excerpt {
-            font-size: 1.2rem; 
+            font-size: 1.2rem;
             line-height: 2rem;
             max-height: 6rem;
             overflow: hidden;
-          }               
+          }
         }
 
         .post-footer {
@@ -138,7 +139,7 @@
           justify-content: space-between;
           align-items: center;
 
-          @media screen and (max-width: 768px){
+          @media screen and (max-width: 768px) {
             margin-top: 0.5rem;
           }
 
@@ -154,7 +155,7 @@
               }
 
               &:hover {
-                text-decoration: underline;                
+                text-decoration: underline;
               }
             }
           }
@@ -164,7 +165,7 @@
             background-color: $secondaryColor;
             color: #000;
             text-decoration: none;
-            transition: all .3s;
+            transition: all 0.3s;
             font-size: 1.2rem;
             font-weight: 700;
 
@@ -177,7 +178,7 @@
       }
     }
   }
-  
+
   .archive-sidebar {
     h2 {
       text-transform: uppercase;
@@ -194,41 +195,40 @@
         gap: 0 1.5rem;
         position: relative;
         margin-bottom: 3rem;
-        box-shadow: 0px 0.3rem 0.7rem 0px rgba(40,40,40,0.1);
-        max-height: 18rem;
+        box-shadow: 0px 0.3rem 0.7rem 0px rgba(40, 40, 40, 0.1);
+        min-height: 18rem;
 
-        @media screen and (max-width: 500px){
-          grid-template-columns: 12rem 1fr;
+        @include small {
+          display: block;
         }
-  
-        .post-others-left {       
 
+        .post-others-left {
           &__category {
             position: absolute;
             overflow: hidden;
             top: 0;
-            left: 0;                    
+            left: 0;
 
             a {
               text-decoration: none;
               color: #fff;
               padding: 0.7rem 1rem;
-              font-size: 1.2rem;  
+              font-size: 1.2rem;
 
               &:hover {
                 text-decoration: underline;
-              } 
+              }
             }
           }
-  
+
           figure {
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            max-height: 18rem;
+            min-height: 18rem;
 
-            @media screen and (max-width: 500px){
+            @media screen and (max-width: 500px) {
               max-height: 12rem;
             }
 
@@ -238,8 +238,9 @@
             }
           }
         }
-  
+
         .post-bulk {
+          padding: 1rem;
           .post-heading {
             .post-heading-meta {
               font-size: 1.2rem;
@@ -253,8 +254,8 @@
             &__title {
               font-size: 1.4rem;
               font-weight: 700;
-              text-transform: uppercase;  
-              margin-bottom: 1rem;            
+              text-transform: uppercase;
+              margin-bottom: 1rem;
 
               a {
                 text-decoration: none;
@@ -274,24 +275,24 @@
               line-height: 2rem;
               max-height: 6rem;
               overflow: hidden;
-            }           
+            }
           }
 
-          .post-footer {           
+          .post-footer {
             display: flex;
             justify-content: flex-end;
-            align-items: center; 
-            margin-right: 1rem;         
-  
+            align-items: center;
+            margin-right: 1rem;
+
             &__button {
               padding: 0.3rem 2rem;
               background-color: $secondaryColor;
               color: #000;
               text-decoration: none;
-              transition: all .3s;
+              transition: all 0.3s;
               font-size: 1.2rem;
               font-weight: 700;
-  
+
               &:hover {
                 background-color: lighten($secondaryColor, 5%);
                 text-decoration: underline;
@@ -300,7 +301,6 @@
           }
         }
       }
-    }    
+    }
   }
 }
-

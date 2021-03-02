@@ -113,11 +113,12 @@
   }
 }
 
-.events .events__wrapper .posts-loop,
+.events__wrapper .posts-loop.from-calendar,
 .calendar-results {
+  display: block;
   .fc-daygrid-day-events {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
     margin: 3rem 0;
     &::before,
@@ -131,13 +132,17 @@
       .fc-daygrid-event {
         background: transparent;
         border: 0;
-        max-width: 30rem;
         .event {
+          display: grid;
+          grid-template-columns: 20rem 1fr;
           width: 100%;
+          gap: 2rem;
+          box-shadow: 0px 0.3rem 0.7rem 0px rgba(40, 40, 40, 0.1);
+
           &__thumbnail {
             display: block;
             width: 100%;
-            height: 29rem;
+            height: 20rem;
             overflow: hidden;
             position: relative;
             img {
@@ -152,18 +157,20 @@
           }
           &__content {
             margin: 1rem 0;
+            padding: 1.5rem;
           }
           &__title {
             display: block;
-            font-size: 2rem;
+            font-size: 1.4rem;
             font-weight: bold;
             color: black;
             margin-bottom: 1rem;
             white-space: pre-wrap;
+            text-transform: uppercase;
           }
           &__type {
             display: block;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             color: black;
             margin: 0.5rem 0;
             html.contrast-mode & {
@@ -172,19 +179,27 @@
           }
           &__localization {
             display: block;
-            font-size: 1.4rem;
+            font-size: 1.1rem;
             font-weight: 600;
             color: black;
             margin: 0.5rem 0;
+            i,
+            svg {
+              color: $secondaryColor;
+            }
             html.contrast-mode & {
               color: $contrastColor;
             }
           }
           &__date {
             display: block;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: black;
             margin: 0.5rem 0;
+            i,
+            svg {
+              color: $secondaryColor;
+            }
             html.contrast-mode & {
               color: $contrastColor;
             }

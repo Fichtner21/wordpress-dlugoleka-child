@@ -3,7 +3,7 @@
 if(!function_exists('choose_poll_page')) {
     function choose_poll_page() {
         add_submenu_page(
-            'options-general.php', 'Choose poll', 'Choose poll', 'manage_options', 'choose-poll-options', 'choose_poll_template'
+            'options-general.php', 'Choose poll', 'Wstaw Ankietę', 'manage_options', 'choose-poll-options', 'choose_poll_template'
         );
 
         //call register settings function
@@ -20,7 +20,7 @@ if(!function_exists('choose_poll_page')) {
     if(!function_exists('choose_poll_template')) {
         function choose_poll_template() { ?>
             <div class="wrap">
-                <h1><?= __('Choose poll','sputnik-wp-theme'); ?></h1>
+                <h1><?= __('Wstaw ankietę','sputnik-wp-theme'); ?></h1>
 
                 <form method="post" action="options.php">
                     <?php
@@ -30,7 +30,7 @@ if(!function_exists('choose_poll_page')) {
 
                     <table class="form-table">
                         <tr valign="top">
-                            <th scope="row"><?= __('Choose poll shortcode','sputnik-wp-theme'); ?></th>
+                            <th scope="row"><?= __('Shortcode','sputnik-wp-theme'); ?></th>
                             <td><input type="text" name="choose_poll_shortcode" value="<?= esc_attr( get_option('choose_poll_shortcode') ); ?>" /></td>
                         </tr>
                     </table>

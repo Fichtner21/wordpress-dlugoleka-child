@@ -133,6 +133,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (pagesLoopCount > 4) {
       document.querySelectorAll(".pages-loop .page").forEach((page) => page.classList.add("swiper-slide"));
 
+      let changeCount;
+
+      if (document.body.classList.contains("page-template-template-custom-post-type")) {
+        changeCount = 3;
+      } else {
+        changeCount = 4;
+      }
+
       const pagesLoopSlider = new Swiper(".pages-loop", {
         loop: false,
         speed: 500,
@@ -153,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
             slidesPerView: 3,
           },
           768: {
-            slidesPerView: 4,
+            slidesPerView: changeCount,
           },
         },
       });

@@ -64,6 +64,10 @@
       top: 3rem;
       left: 6rem;
       z-index: 1;
+      @include extra-large {
+        top: 1.5rem;
+        left: 1.5rem;
+      }
     }
     #searchform {
       width: 100%;

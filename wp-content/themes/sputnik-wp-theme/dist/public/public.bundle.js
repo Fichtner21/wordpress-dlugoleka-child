@@ -307,7 +307,7 @@ document.addEventListener("DOMContentLoaded", function () {
       date.className = "event__date";
       localization.className = "event__localization";
       title.textContent = element.event.title;
-      localization.textContent = element.event.extendedProps.localization;
+      localization.innerHTML = "<i class=\"fas fa-map-marker-alt\"></i> ".concat(element.event.extendedProps.localization);
       url.href = element.event.url;
       url.title = "Czytaj";
       url.textContent = "Czytaj";
@@ -331,7 +331,7 @@ document.addEventListener("DOMContentLoaded", function () {
         to: " - ",
         locale: "pl"
       });
-      date.textContent = formatedDate;
+      date.innerHTML = "<i class=\"fas fa-clock\"></i> ".concat(formatedDate);
       eventContent.appendChild(title);
       eventContent.appendChild(localization); // eventContent.appendChild(type);
 
@@ -369,6 +369,7 @@ document.addEventListener("DOMContentLoaded", function () {
       day.addEventListener("click", function () {
         var eventsData = this.nextSibling.cloneNode(true);
         calendarResults.innerHTML = "";
+        calendarResults.classList.add("from-calendar");
         calendarResults.appendChild(eventsData);
       });
     });
@@ -585,11 +586,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var levelsMenuItems = _toConsumableArray(document.querySelectorAll(".levels-menu-list li"));
 
-    levelsMenuItems.forEach(function (item) {
+    levelsMenuItems.forEach(function (item, index) {
       if (item.classList.contains("page_item_has_children")) {
         var toggleIcon = document.createElement("button");
         toggleIcon.className = "levels-menu-list__toggle";
         toggleIcon.textContent = "+";
+        toggleIcon.setAttribute("data-menu-item", "item-" + index);
         item.appendChild(toggleIcon);
         toggleIcon.addEventListener("click", function () {
           this.classList.toggle(activeClass);
@@ -604,6 +606,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
     });
+
+    if (levelsMenuItems[0].classList.contains("page_item_has_children")) {
+      levelsMenuItems[0].classList.add(activeClass);
+      levelsMenuItems[0].querySelector("button[data-menu-item='item-0']").textContent = "-";
+      levelsMenuItems[0].querySelector("button[data-menu-item='item-0']").classList.add(activeClass);
+    }
   }
 });
 
@@ -888,6 +896,14 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelectorAll(".pages-loop .page").forEach(function (page) {
         return page.classList.add("swiper-slide");
       });
+      var changeCount;
+
+      if (document.body.classList.contains("page-template-template-custom-post-type")) {
+        changeCount = 3;
+      } else {
+        changeCount = 4;
+      }
+
       var pagesLoopSlider = new swiper_swiper_esm_js__WEBPACK_IMPORTED_MODULE_0__["Swiper"](".pages-loop", {
         loop: false,
         speed: 500,
@@ -906,7 +922,7 @@ document.addEventListener("DOMContentLoaded", function () {
             slidesPerView: 3
           },
           768: {
-            slidesPerView: 4
+            slidesPerView: changeCount
           }
         }
       });
@@ -925,7 +941,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js?f970");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie-exposed.js");
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_0__);
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -980,7 +996,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js?f970");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie-exposed.js");
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_0__);
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -27748,7 +27764,24 @@ module.exports = function () {
 
 /***/ }),
 
-/***/ "./node_modules/js-cookie/src/js.cookie.js?a78e":
+/***/ "./node_modules/js-cookie/src/js.cookie-exposed.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/js-cookie/src/js.cookie-exposed.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var ___EXPOSE_LOADER_IMPORT___ = __webpack_require__(/*! -!./js.cookie.js */ "./node_modules/js-cookie/src/js.cookie.js");
+var ___EXPOSE_LOADER_GET_GLOBAL_THIS___ = __webpack_require__(/*! ../../expose-loader/dist/runtime/getGlobalThis.js */ "./node_modules/expose-loader/dist/runtime/getGlobalThis.js");
+var ___EXPOSE_LOADER_GLOBAL_THIS___ = ___EXPOSE_LOADER_GET_GLOBAL_THIS___;
+if (typeof ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] === 'undefined') ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] = ___EXPOSE_LOADER_IMPORT___;
+else throw new Error('[exposes-loader] The "Cookies" value exists in the global scope, it may not be safe to overwrite it, use the "override" option')
+module.exports = ___EXPOSE_LOADER_IMPORT___;
+
+
+/***/ }),
+
+/***/ "./node_modules/js-cookie/src/js.cookie.js":
 /*!*************************************************!*\
   !*** ./node_modules/js-cookie/src/js.cookie.js ***!
   \*************************************************/
@@ -27922,23 +27955,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 	return init(function () {});
 }));
-
-
-/***/ }),
-
-/***/ "./node_modules/js-cookie/src/js.cookie.js?f970":
-/*!*************************************************!*\
-  !*** ./node_modules/js-cookie/src/js.cookie.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var ___EXPOSE_LOADER_IMPORT___ = __webpack_require__(/*! -!./js.cookie.js */ "./node_modules/js-cookie/src/js.cookie.js?a78e");
-var ___EXPOSE_LOADER_GET_GLOBAL_THIS___ = __webpack_require__(/*! ../../expose-loader/dist/runtime/getGlobalThis.js */ "./node_modules/expose-loader/dist/runtime/getGlobalThis.js");
-var ___EXPOSE_LOADER_GLOBAL_THIS___ = ___EXPOSE_LOADER_GET_GLOBAL_THIS___;
-if (typeof ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] === 'undefined') ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] = ___EXPOSE_LOADER_IMPORT___;
-else throw new Error('[exposes-loader] The "Cookies" value exists in the global scope, it may not be safe to overwrite it, use the "override" option')
-module.exports = ___EXPOSE_LOADER_IMPORT___;
 
 
 /***/ }),

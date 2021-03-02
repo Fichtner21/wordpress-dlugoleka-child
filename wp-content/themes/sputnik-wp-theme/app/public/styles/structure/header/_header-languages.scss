@@ -6,6 +6,9 @@
   padding: 0;
   cursor: pointer;
   z-index: $languagesIndex;
+  @include extra-large {
+    color: white;
+  }
   &__title {
     margin-bottom: 0;
     font-size: 1.4rem;

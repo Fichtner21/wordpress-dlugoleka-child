@@ -2,6 +2,9 @@
   max-width: 40rem;
   width: 100%;
   margin: 3rem 0;
+  &__title {
+    margin-bottom: 1.5rem;
+  }
   ul {
     list-style-type: none;
     margin-left: 0;
@@ -11,10 +14,18 @@
       a {
         display: block;
         padding: 0.8rem 1.2rem;
+        text-decoration: none;
+        color: black;
+        background: rgba(black, 0.02);
+        border-bottom: 0.1rem solid rgba(black, 0.05);
+        &:hover,
+        &:focus {
+          background: rgba(black, 0.03);
+        }
       }
       button {
         position: absolute;
-        right: 0;
+        right: 1rem;
         top: 1rem;
         cursor: pointer;
       }
@@ -23,6 +34,13 @@
         max-height: 0;
         overflow: hidden;
         li {
+          & > .children {
+            li {
+              a {
+                padding-left: 3.6rem;
+              }
+            }
+          }
           a {
             padding-left: 2.4rem;
           }

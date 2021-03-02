@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       title.textContent = element.event.title;
 
-      localization.textContent = element.event.extendedProps.localization;
+      localization.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${element.event.extendedProps.localization}`;
 
       url.href = element.event.url;
       url.title = "Czytaj";
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
         locale: "pl",
       });
 
-      date.textContent = formatedDate;
+      date.innerHTML = `<i class="fas fa-clock"></i> ${formatedDate}`;
 
       eventContent.appendChild(title);
       eventContent.appendChild(localization);
@@ -270,7 +270,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const eventsData = this.nextSibling.cloneNode(true);
 
         calendarResults.innerHTML = "";
-
+        calendarResults.classList.add("from-calendar");
         calendarResults.appendChild(eventsData);
       });
     });

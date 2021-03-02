@@ -90,7 +90,10 @@
           position: relative;
           margin-bottom: 3rem;
           box-shadow: 0px 0.3rem 0.7rem 0px rgba(40, 40, 40, 0.1);
-          max-height: 18rem;
+          min-height: 18rem;
+          @include small {
+            display: block;
+          }
 
           .post-others-left {
             &__category {
@@ -116,7 +119,7 @@
               display: flex;
               align-items: center;
               justify-content: center;
-              max-height: 18rem;
+              min-height: 18rem;
 
               img {
                 max-width: initial;
@@ -126,6 +129,7 @@
           }
 
           .post-bulk {
+            padding: 1rem;
             .post-heading {
               .post-heading-meta {
                 font-size: 1.2rem;

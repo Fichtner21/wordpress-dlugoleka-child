@@ -1,0 +1,34 @@
+.cpt-wrapper {
+  display: flex;
+  @include extra-large {
+    flex-wrap: wrap;
+  }
+  .cpt-content {
+    width: calc(100% - 40rem - 6rem);
+    margin-right: 6rem;
+    @include extra-large {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
+
+    .news {
+      .posts-loop {
+        display: block;
+        article {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  .cpt-sidebar {
+    max-width: 40rem;
+    width: 100%;
+    @include extra-large {
+      max-width: 100%;
+      .levels-menu {
+        max-width: 100%;
+      }
+    }
+  }
+}

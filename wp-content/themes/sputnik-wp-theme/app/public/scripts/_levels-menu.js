@@ -4,12 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const levelsMenuItems = [...document.querySelectorAll(".levels-menu-list li")];
 
-    levelsMenuItems.forEach((item) => {
+    levelsMenuItems.forEach((item, index) => {
       if (item.classList.contains("page_item_has_children")) {
         const toggleIcon = document.createElement("button");
 
         toggleIcon.className = "levels-menu-list__toggle";
         toggleIcon.textContent = "+";
+        toggleIcon.setAttribute("data-menu-item", "item-" + index);
 
         item.appendChild(toggleIcon);
 
@@ -26,5 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
     });
+
+    if (levelsMenuItems[0].classList.contains("page_item_has_children")) {
+      levelsMenuItems[0].classList.add(activeClass);
+      levelsMenuItems[0].querySelector("button[data-menu-item='item-0']").textContent = "-";
+      levelsMenuItems[0].querySelector("button[data-menu-item='item-0']").classList.add(activeClass);
+    }
   }
 });

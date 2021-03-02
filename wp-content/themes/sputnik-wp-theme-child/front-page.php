@@ -33,6 +33,8 @@ get_header(); ?>
 			<div class='container'>
 				<header class="page-section-heading">
 					<h2 class="page-section-heading__title"><?= __('Wydarzenia','sputnik-wp-theme'); ?></h2>
+
+					<a href='<?= get_post_type_archive_link('wydarzenia') ?>' class='page-section-heading__anchor' title='<?= __('Zobacz wszystkie','sputnik-wp-theme'); ?>'><?= __('Zobacz wszystkie','sputnik-wp-theme'); ?></a>
 				</header>
 
 				<div class='events__wrapper'>

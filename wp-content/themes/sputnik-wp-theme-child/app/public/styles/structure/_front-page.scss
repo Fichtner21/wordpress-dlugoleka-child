@@ -7,6 +7,10 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 0 2rem;
 
+  @include small {
+    display: block;
+  }
+
   .attractions {
     .posts-loop {
       display: grid;

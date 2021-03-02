@@ -15,9 +15,12 @@
                 foreach ($pages as $page) $page_ids[] = $page->ID;
 
                 $list_args = array(
-                    'include' => $page_ids,
-                    'echo' => 0,
-                    'title_li' => null,
+                    'post_type'   => 'page',
+                    'include'     => $parent . ',' . implode(',', $page_ids),
+                    'echo'        => 0,
+                    'title_li'    => null,
+                    'link_before' => '<span>',
+                    'link_after'  => '</span>',
                 );
 
                 $children = wp_list_pages($list_args);
