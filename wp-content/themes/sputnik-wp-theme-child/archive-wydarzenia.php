@@ -66,7 +66,7 @@ get_header(); ?>
 
 						$events_args = array(
 							'post_type' => 'wydarzenia',
-							'posts_per_page' => '-1',
+							'posts_per_page' => 2,
 							'post_status' => 'publish',
 							'orderby' => 'date',
 							'order' => 'ASC',
@@ -112,10 +112,12 @@ get_header(); ?>
 								if($now_value <= $date_start_value) echo eventTemplate(); endwhile; ?>
 						</div>
 
+						<?php require CUSTOM_PARTS . '/modules/module-pagination.php'; ?>
+
 						<?php endif; wp_reset_query(); wp_reset_postdata(); ?>
 					</div>
 
-					<?php require CUSTOM_PARTS . '/modules/module-pagination.php'; ?>
+
 				</div>
 
 				<div class="archive-sidebar">
