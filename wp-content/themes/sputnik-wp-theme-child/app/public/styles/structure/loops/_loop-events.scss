@@ -112,3 +112,52 @@
     }
   }
 }
+
+.events-archive {
+  &__content {
+    @include extra-large {
+      margin-bottom: 5rem;
+    }
+  }
+  .entry-title {
+    margin-bottom: 3rem;
+  }
+  #js-calendar {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 40rem;
+    gap: 3rem;
+    @include extra-large {
+      display: block;
+    }
+  }
+  .events__wrapper {
+    display: block;
+    .posts-loop {
+      display: block;
+      margin-bottom: 5rem;
+      article {
+        margin-bottom: 2rem;
+        grid-template-columns: 20rem 1fr;
+      }
+    }
+  }
+}
+
+.events__wrapper__title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.archive-calendar-results {
+  .fc-daygrid-day-events {
+    display: block !important;
+  }
+  .fc-daygrid-event-harness {
+    margin-bottom: 2rem;
+  }
+}

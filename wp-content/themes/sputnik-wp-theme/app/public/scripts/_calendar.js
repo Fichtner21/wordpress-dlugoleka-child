@@ -249,6 +249,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function displayCalendarEvents() {
     const calendarDays = document.querySelectorAll(".fc-daygrid-day-top");
     const calendarResults = document.querySelector(".events .events__wrapper .posts-loop");
+    const calendarResultsArchive = document.querySelector(".archive-calendar-results");
 
     calendarDays.forEach((day) => {
       const eventsWrapper = day.nextSibling;
@@ -269,9 +270,15 @@ document.addEventListener("DOMContentLoaded", function () {
       day.addEventListener("click", function () {
         const eventsData = this.nextSibling.cloneNode(true);
 
-        calendarResults.innerHTML = "";
-        calendarResults.classList.add("from-calendar");
-        calendarResults.appendChild(eventsData);
+        if (calendarResults != null) {
+          calendarResults.innerHTML = "";
+          calendarResults.classList.add("from-calendar");
+          calendarResults.appendChild(eventsData);
+        } else if (calendarResultsArchive != null) {
+          calendarResultsArchive.innerHTML = "";
+          calendarResultsArchive.classList.add("from-calendar");
+          calendarResultsArchive.appendChild(eventsData);
+        }
       });
     });
   }
