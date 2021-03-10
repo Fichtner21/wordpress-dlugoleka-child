@@ -27,7 +27,7 @@ if(!function_exists('custom_post_type_ochrona_srodowiska')) {
             // Features this CPT supports in Post Editor
             'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', 'page-attributes', 'post-formats', 'trackbacks'),
             // You can associate this CPT with a taxonomy or custom taxonomy.
-            'taxonomies'          => array( 'kategorie' ),
+            'taxonomies'          => array( 'kategorie-ochrona-srodowiska' ),
             /* A hierarchical CPT is like Pages and can have
             * Parent and child items. A non-hierarchical CPT
             * is like Posts.

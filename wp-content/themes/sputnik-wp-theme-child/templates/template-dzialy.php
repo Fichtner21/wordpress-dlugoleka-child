@@ -1,4 +1,4 @@
-<?php /* Template Name: Custom post type */
+<?php /* Template Name: Działy */
 
 $choosed_elements = get_field('choose_elements');
 

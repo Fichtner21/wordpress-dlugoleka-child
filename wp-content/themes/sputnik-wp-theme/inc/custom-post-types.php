@@ -1,13 +1,11 @@
 <?php
 
-if(get_option('choose_cpt_wydarzenia')) require CUSTOM_INC . '/custom-post-types/custom-post-type-wydarzenia.php';
+$custom_post_types_files = scandir(CUSTOM_INC . './custom-post-types/');
 
-if(get_option('choose_cpt_galerie')) require CUSTOM_INC . '/custom-post-types/custom-post-type-galerie.php';
+foreach($custom_post_types_files as $file) {
+    if($file != '.' && $file != '..') {
+        $custom_post_type_name = trim(str_replace('custom-post-type-', '', $file));
 
-if(get_option('choose_cpt_komunikaty')) require CUSTOM_INC . '/custom-post-types/custom-post-type-komunikaty.php';
-
-if(get_option('choose_cpt_atrakcje')) require CUSTOM_INC . '/custom-post-types/custom-post-type-atrakcje.php';
-
-if(get_option('choose_cpt_dzialaj-lokalnie')) require CUSTOM_INC . '/custom-post-types/custom-post-type-dzialaj-lokalnie.php';
-
-if(get_option('choose_cpt_ochrona-srodowiska')) require CUSTOM_INC . '/custom-post-types/custom-post-type-ochrona-srodowiska.php';
+        if(get_option('choose_cpt_' . str_replace('.php', '', $custom_post_type_name))) require CUSTOM_INC . '/custom-post-types/custom-post-type-' . $custom_post_type_name;
+    }
+}
