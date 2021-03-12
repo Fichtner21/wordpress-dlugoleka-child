@@ -2,6 +2,9 @@
 // dzialaj lokalnie CPT
 if(!function_exists('custom_post_type_dzialaj_lokalnie')) {
     function custom_post_type_dzialaj_lokalnie() {
+        $post_type_name = 'dzialaj-lokalnie';
+        $taxonomy_name = 'kategorie-dzialaj-lokalnie';
+
         $labels = array(
             'name'                => _x( 'Działaj lokalnie', 'Post Type General Name', 'sputnik-wp-theme' ),
             'singular_name'       => _x( 'Działaj lokalnie', 'Post Type Singular Name', 'sputnik-wp-theme' ),
@@ -34,10 +37,10 @@ if(!function_exists('custom_post_type_dzialaj_lokalnie')) {
             'hierarchical'        => false,
             'public'              => true,
             'show_ui'             => true,
-            'show_in_menu'        => true,
+            'show_in_menu'        => false,
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
-            'menu_position'       => 5,
+            'menu_position'       => 200,
             'can_export'          => true,
             'has_archive'         => true,
             'exclude_from_search' => false,
@@ -45,11 +48,10 @@ if(!function_exists('custom_post_type_dzialaj_lokalnie')) {
             'capability_type'     => 'post',
             'show_in_rest' => true,
             // Set cpt icon
-            'menu_icon'           => 'dashicons-location-alt',
+            'menu_icon'           => 'dashicons-arrow-right-alt',
         );
 
-        // Registering your Custom Post Type
-        register_post_type( 'dzialaj-lokalnie', $args );
+        custom_register_post_type_with_option($post_type_name, $taxonomy_name, $args);
     }
 
     add_action( 'init', 'custom_post_type_dzialaj_lokalnie', 0 );
@@ -59,7 +61,7 @@ if(!function_exists('tax_custom_post_type_dzialaj_lokalnie_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_dzialaj_lokalnie_categories() {
         $labels = array(
-            'name' => _x( 'Kategorie', 'taxonomy general name', 'sputnik-wp-theme' ),
+            'name' => _x( 'Kategorie działaj lokalnie', 'taxonomy general name', 'sputnik-wp-theme' ),
             'singular_name' => _x( 'Kategoria', 'taxonomy singular name', 'sputnik-wp-theme' ),
             'search_items' =>  __( 'Wyszukaj kategorie', 'sputnik-wp-theme' ),
             'all_items' => __( 'Wszystkie kategorie', 'sputnik-wp-theme' ),
@@ -73,8 +75,8 @@ if(!function_exists('tax_custom_post_type_dzialaj_lokalnie_categories')) {
         );
 
         register_taxonomy(
-            'kategorie-dzialaj-lokalnie',
-            array('dzialaj-lokalnie'),
+            $taxonomy_name,
+            array($post_type_name),
 
             array(
                 'hierarchical' => true,
@@ -83,6 +85,7 @@ if(!function_exists('tax_custom_post_type_dzialaj_lokalnie_categories')) {
                 'show_admin_column' => true,
                 'query_var' => true,
                 'rewrite' => true,
+                'show_in_rest' => true,
             ));
     }
 

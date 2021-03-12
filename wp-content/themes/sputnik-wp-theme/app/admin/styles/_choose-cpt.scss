@@ -1,0 +1,18 @@
+.choose-cpt-form {
+  .form-table {
+    tbody {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      tr {
+        border-bottom: 0.1rem solid rgba(black, 0.2);
+        border-right: 0.1rem solid rgba(black, 0.2);
+        &:nth-child(4n) {
+          border-right: 0;
+        }
+        &:nth-child(even) {
+          background: rgba(white, 0.5);
+        }
+      }
+    }
+  }
+}

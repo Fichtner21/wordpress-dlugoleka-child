@@ -3,7 +3,7 @@
 if(!function_exists('custom_mobile_apps_page')) {
     function custom_mobile_apps_page() {
         add_submenu_page(
-            'options-general.php', 'Mobile Apps', 'Mobile Apps', 'manage_options', 'mobile-apps-options', 'custom_mobile_apps_template'
+            'options-general.php', 'Aplikacje mobilne', 'Aplikacje mobilne', 'manage_options', 'mobile-apps-options', 'custom_mobile_apps_template'
         );
 
         //call register settings function
@@ -22,7 +22,7 @@ if(!function_exists('custom_mobile_apps_page')) {
     if(!function_exists('custom_mobile_apps_template')) {
         function custom_mobile_apps_template() { ?>
             <div class="wrap">
-                <h1><?= __('Mobile Apps','sputnik-wp-theme'); ?></h1>
+                <h1><?= __('Aplikacje mobilne','sputnik-wp-theme'); ?></h1>
 
                 <form method="post" action="options.php">
                     <?php

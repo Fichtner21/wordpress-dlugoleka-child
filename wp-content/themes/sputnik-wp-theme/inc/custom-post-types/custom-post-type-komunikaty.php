@@ -2,6 +2,9 @@
 // komunikaty CPT
 if(!function_exists('custom_post_type_komunikaty')) {
     function custom_post_type_komunikaty() {
+        $post_type_name = 'komunikaty';
+        $taxonomy_name = 'kategorie-komunikatow';
+
         $labels = array(
             'name'                => _x( 'Komunikaty', 'Post Type General Name', 'sputnik-wp-theme' ),
             'singular_name'       => _x( 'Komunikat', 'Post Type Singular Name', 'sputnik-wp-theme' ),
@@ -26,7 +29,7 @@ if(!function_exists('custom_post_type_komunikaty')) {
             // Features this CPT supports in Post Editor
             'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
             // You can associate this CPT with a taxonomy or custom taxonomy.
-            'taxonomies'          => array( 'kategorie' ),
+            'taxonomies'          => array( $taxonomy_name ),
             /* A hierarchical CPT is like Pages and can have
             * Parent and child items. A non-hierarchical CPT
             * is like Posts.
@@ -34,10 +37,10 @@ if(!function_exists('custom_post_type_komunikaty')) {
             'hierarchical'        => false,
             'public'              => true,
             'show_ui'             => true,
-            'show_in_menu'        => true,
+            'show_in_menu'        => false,
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
-            'menu_position'       => 5,
+            'menu_position'       => 200,
             'can_export'          => true,
             'has_archive'         => true,
             'exclude_from_search' => false,
@@ -45,11 +48,10 @@ if(!function_exists('custom_post_type_komunikaty')) {
             'capability_type'     => 'post',
             'show_in_rest' => true,
             // Set cpt icon
-            'menu_icon'           => 'dashicons-warning',
+            'menu_icon'           => 'dashicons-arrow-right-alt',
         );
 
-        // Registering your Custom Post Type
-        register_post_type( 'komunikaty', $args );
+        custom_register_post_type_with_option($post_type_name, $taxonomy_name, $args);
     }
 
     add_action( 'init', 'custom_post_type_komunikaty', 0 );
@@ -59,7 +61,7 @@ if(!function_exists('tax_custom_post_type_komunikaty_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_komunikaty_categories() {
         $labels = array(
-            'name' => _x( 'Kategorie', 'taxonomy general name', 'sputnik-wp-theme' ),
+            'name' => _x( 'Kategorie komunikaty', 'taxonomy general name', 'sputnik-wp-theme' ),
             'singular_name' => _x( 'Kategoria', 'taxonomy singular name', 'sputnik-wp-theme' ),
             'search_items' =>  __( 'Wyszukaj kategorie', 'sputnik-wp-theme' ),
             'all_items' => __( 'Wszystkie kategorie', 'sputnik-wp-theme' ),
@@ -73,8 +75,8 @@ if(!function_exists('tax_custom_post_type_komunikaty_categories')) {
         );
 
         register_taxonomy(
-            'kategorie-komunikatow',
-            array('komunikaty'),
+            $taxonomy_name,
+            array($post_type_name),
 
             array(
                 'hierarchical' => true,
@@ -83,6 +85,7 @@ if(!function_exists('tax_custom_post_type_komunikaty_categories')) {
                 'show_admin_column' => true,
                 'query_var' => true,
                 'rewrite' => true,
+                'show_in_rest' => true,
             ));
     }
 

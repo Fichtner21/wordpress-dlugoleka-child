@@ -3,7 +3,7 @@
 if(!function_exists('choose_cpt')) {
     function choose_cpt() {
         add_submenu_page(
-            'options-general.php', 'Wybierz "Custom post types"', 'Wybierz "Custom post types"', 'manage_options', 'choose-cpt-options', 'choose_cpt_template'
+            'options-general.php', 'Wybierz Działy', 'Wybierz Działy', 'manage_options', 'choose-cpt-options', 'choose_cpt_template'
         );
 
         //call register settings function
@@ -26,17 +26,19 @@ if(!function_exists('choose_cpt')) {
     if(!function_exists('choose_cpt_template')) {
         function choose_cpt_template() { $all_post_types = get_all_custom_post_types(); ?>
             <div class="wrap">
-                <h1><?= __('Wybierz, które "Custom Post Types" mają być aktywne','sputnik-wp-theme'); ?></h1>
+                <h1><?= __('Wybierz, które działy mają być aktywne','sputnik-wp-theme'); ?></h1>
 
-                <form method="post" action="options.php">
+                <small><?= __('Działy mogą mieć maksymalnie 20 znaków w nazwie','sputnik-wp-theme'); ?>
+
+                <div class='cpt-count'><?= __('Ilość działów','sputnik-wp-theme') . ': ' . count($all_post_types); ?></div>
+
+                <form class='choose-cpt-form' method="post" action="options.php">
                     <?php
                     settings_fields( 'choose_cpt_group' );
                     do_settings_sections( 'choose_cpt_group' );
                     ?>
-
                     <table class="form-table">
                         <?php foreach($all_post_types as $post_type) :
-
                             $cpt_option = 'choose_cpt_' . strtolower($post_type);
 
                             $isExists = !empty(esc_attr( get_option( $cpt_option ) )) ? get_option( $cpt_option ) : $cpt_option;
