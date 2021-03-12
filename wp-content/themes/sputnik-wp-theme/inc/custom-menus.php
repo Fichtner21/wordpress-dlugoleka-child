@@ -164,7 +164,7 @@ if(!function_exists('clean_custom_menu')) {
 
 // Display theme menus Slider || Simple
 if(!function_exists('display_custom_theme_menu')) {
-    function display_custom_theme_menu($location, $type = 'simple-menu', $slides_visible = null) {
+    function display_custom_theme_menu($location, $type = 'simple-menu', $slides_visible = null, $menuID = '') {
         $theme_location = $location;
         $theme_locations = get_nav_menu_locations();
         $menu_obj = get_term( $theme_locations[$theme_location], 'nav_menu' );
@@ -176,7 +176,7 @@ if(!function_exists('display_custom_theme_menu')) {
                     wp_nav_menu(
                         array(
                             'theme_location' => $theme_location,
-                            'menu_id'        => uniqid() . '-' . $menu_slug,
+                            'menu_id'        => !empty($menuID) ? $menuID : uniqid() . '-' . $menu_slug,
                             'menu_class'     => 'menu swiper-wrapper',
                             'container'      => false,
                         )
@@ -187,7 +187,7 @@ if(!function_exists('display_custom_theme_menu')) {
                     wp_nav_menu(
                         array(
                             'theme_location' => $theme_location,
-                            'menu_id'        => uniqid() . '-' . $menu_slug,
+                            'menu_id'        => !empty($menuID) ? $menuID : uniqid() . '-' . $menu_slug,
                             'menu_class'     => 'menu ' . $type,
                             'container'      => false,
                         )
