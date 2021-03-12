@@ -3,21 +3,25 @@
 if(!get_option('our_post_types')) add_option('our_post_types');
 
 if(!function_exists('custom_register_post_type_with_option')) {
-    function custom_register_post_type_with_option($post_type_name, $taxonomy_name, $args) {
+    function custom_register_post_type_with_option($post_type_name, $taxonomy_name = '', $args) {
         // Registering your Custom Post Type
         register_post_type( $post_type_name, $args );
 
+        if(!get_option($post_type_name)) add_option($post_type_name, $taxonomy_name);
+
         $our_post_types = get_option('our_post_types');
 
-        $post_type_array = array(
-            'post-type' => $post_type_name,
-            'taxonomy' => $taxonomy_name,
-        );
+        $our_post_types_arr = explode(',', $our_post_types);
 
-        if(is_array($our_post_types) && !array_search($post_type_name, $our_post_types)) {
-            update_option('our_post_types', $post_type_array);
-        } elseif(empty($our_post_types)) {
-            update_option('our_post_types', $post_type_array);
+        // $post_type_array = array(
+        //     'post-type' => $post_type_name,
+        //     'taxonomy' => $taxonomy_name,
+        // );
+
+        if(is_array($our_post_types_arr) && !array_search($post_type_name, $our_post_types_arr )) {
+            update_option('our_post_types', $our_post_types . ',' . $post_type_name);
+        } elseif(empty($our_post_types_arr)) {
+            update_option('our_post_types', $post_type_name);
         }
     }
 }
@@ -65,7 +69,7 @@ if(!function_exists('custom_post_types_admin_menu')) {
         }
      }
 
-    //  add_action( 'admin_menu', 'custom_post_types_admin_menu' );
+     add_action( 'admin_menu', 'custom_post_types_admin_menu' );
 }
 
 
@@ -76,10 +80,13 @@ if(!function_exists('add_extra_button')) {
         $post_types = explode(',',get_option('our_post_types'));
 
         foreach($post_types as $post_type) {
-            if ($post_type_object->name === $post_type) { ?>
-                <a href='#' class='button post-type-add-taxonomies' title='<?= __('Kategorie','sputnik-wp-theme'); ?>'><?= __('Kategorie','sputnik-wp-theme'); ?></a>
+            if ($post_type_object->name === $post_type) {
+                $taxonomy_of_post_type = get_option($post_type);
+                $taxonomy_archive = "edit-tags.php?taxonomy=$taxonomy_of_post_type&post_type=$post_type";
+                ?>
+                <a href='<?= $taxonomy_archive; ?>' class='button post-type-add-taxonomies' title='<?= __('Kategorie','sputnik-wp-theme'); ?>'><?= __('Kategorie','sputnik-wp-theme'); ?></a>
             <?php }
         }
     }
-    // add_action('manage_posts_extra_tablenav', 'add_extra_button');
+    add_action('manage_posts_extra_tablenav', 'add_extra_button');
 }

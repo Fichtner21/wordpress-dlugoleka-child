@@ -60,6 +60,9 @@ if(!function_exists('custom_post_type_atrakcje')) {
 if(!function_exists('tax_custom_post_type_atrakcje_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_atrakcje_categories() {
+        $post_type_name = 'atrakcje';
+        $taxonomy_name = 'kategorie-atrakcji';
+
         $labels = array(
             'name' => _x( 'Kategorie atrakcji', 'taxonomy general name', 'sputnik-wp-theme' ),
             'singular_name' => _x( 'Kategoria', 'taxonomy singular name', 'sputnik-wp-theme' ),

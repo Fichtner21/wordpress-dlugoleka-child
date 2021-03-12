@@ -60,6 +60,9 @@ if(!function_exists('custom_post_type_wydarzenia')) {
 if(!function_exists('tax_custom_post_type_wydarzenia_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_wydarzenia_categories() {
+        $post_type_name = 'wydarzenia';
+        $taxonomy_name = 'kategorie-wydarzen';
+
         $labels = array(
             'name' => _x( 'Kategorie wydarzenia', 'taxonomy general name', 'sputnik-wp-theme' ),
             'singular_name' => _x( 'Kategoria', 'taxonomy singular name', 'sputnik-wp-theme' ),

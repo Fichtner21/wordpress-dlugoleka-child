@@ -62,6 +62,9 @@ if(!function_exists('custom_post_type_org_pozarzadowe')) {
 if(!function_exists('tax_custom_post_type_org_pozarzadowe_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_org_pozarzadowe_categories() {
+        $post_type_name = 'org-pozarzadowe';
+        $taxonomy_name = 'kategorie-pozarzadowe';
+
         $labels = array(
             'name' => _x( 'Kategorie organizacje pozarządowe', 'taxonomy general name', 'sputnik-wp-theme' ),
             'singular_name' => _x( 'Kategoria', 'taxonomy singular name', 'sputnik-wp-theme' ),

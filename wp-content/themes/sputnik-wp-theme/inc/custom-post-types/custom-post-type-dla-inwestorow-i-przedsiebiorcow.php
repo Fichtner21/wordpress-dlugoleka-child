@@ -61,6 +61,9 @@ if(!function_exists('custom_post_type_inwestorzy')) {
 if(!function_exists('tax_custom_post_type_inwestorzy_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_inwestorzy_categories() {
+        $post_type_name = 'inwesotrzy';
+        $taxonomy_name = 'kategorie-inwestorzy';
+
         $labels = array(
             'name' => _x( 'Kategorie dla inwestorów i przedsiębiorców', 'taxonomy general name', 'sputnik-wp-theme' ),
             'singular_name' => _x( 'Kategoria', 'taxonomy singular name', 'sputnik-wp-theme' ),

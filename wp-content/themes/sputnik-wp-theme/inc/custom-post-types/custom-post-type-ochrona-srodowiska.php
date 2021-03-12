@@ -61,6 +61,9 @@ if(!function_exists('custom_post_type_ochrona_srodowiska')) {
 if(!function_exists('tax_custom_post_type_ochrona_srodowiska_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_ochrona_srodowiska_categories() {
+        $post_type_name = 'ochrona-srodowiska';
+        $taxonomy_name = 'kategorie-ochrony-srodowiska';
+
         $labels = array(
             'name' => _x( 'Kategorie ochrona środowiska', 'taxonomy general name', 'sputnik-wp-theme' ),
             'singular_name' => _x( 'Kategoria', 'taxonomy singular name', 'sputnik-wp-theme' ),
