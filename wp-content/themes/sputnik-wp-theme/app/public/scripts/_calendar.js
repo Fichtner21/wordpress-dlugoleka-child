@@ -286,4 +286,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("load", displayCalendarEvents);
 
   document.querySelectorAll(".fc-button").forEach((button) => button.addEventListener("click", displayCalendarEvents));
+
+  const fcScrollGrid = document.querySelector('.fc-scrollgrid');
+  fcScrollGrid.setAttribute('role', 'presentation');  
 });
