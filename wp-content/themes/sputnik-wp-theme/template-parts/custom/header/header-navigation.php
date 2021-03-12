@@ -8,5 +8,5 @@
         <span class="menu-toggle__line"></span>
     </button>
 
-    <?= function_exists('display_custom_theme_menu') ? display_custom_theme_menu('menu-1') : null; ?>
+    <?= function_exists('display_custom_theme_menu') ? display_custom_theme_menu('menu-1','simple-menu', null, 'primary-menu') : null; ?>
 </nav><!-- #site-navigation -->

@@ -993,6 +993,24 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+  var is = document.querySelectorAll("i");
+  is.forEach(function (i) {
+    var iClass = i.classList[0];
+    var iIconClass = i.classList[1];
+
+    if (iClass.includes("fa")) {
+      var iParent = i.parentNode;
+      var iParentTag = iParent.tagName;
+      i.setAttribute("focusable", "false");
+      i.setAttribute("title", iIconClass);
+      i.setAttribute("aria-labelledby", iIconClass);
+
+      if ((iParentTag == "A" || iParentTag == "BUTTON") && iParent.getAttribute("aria-label") == null) {
+        iParent.setAttribute("aria-label", iIconClass);
+      }
+    }
+  });
 });
 
 /***/ }),
