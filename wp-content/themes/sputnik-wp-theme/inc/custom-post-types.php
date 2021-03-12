@@ -26,7 +26,7 @@ if(!function_exists('custom_register_post_type_with_option')) {
     }
 }
 
-$custom_post_types_files = scandir(CUSTOM_INC . './custom-post-types/');
+$custom_post_types_files = scandir(CUSTOM_INC . '/custom-post-types');
 
 foreach($custom_post_types_files as $file) {
     if($file != '.' && $file != '..') {
@@ -57,7 +57,7 @@ if(!function_exists('custom_post_types_admin_menu')) {
             'dzialy',
             'custom_post_types_admin_template',
             'dashicons-format-aside',
-            200
+            3
         );
 
         $post_types = explode(',', get_option('our_post_types'));
