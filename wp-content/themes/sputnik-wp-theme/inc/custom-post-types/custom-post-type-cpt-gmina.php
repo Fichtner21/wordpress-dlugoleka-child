@@ -2,7 +2,7 @@
 // gmina CPT
 if(!function_exists('custom_post_type_gmina')) {
     function custom_post_type_gmina() {
-        $post_type_name = 'gmina';
+        $post_type_name = 'cpt-gmina';
         $taxonomy_name = 'kategorie-gmina';
 
         $labels = array(
@@ -61,7 +61,7 @@ if(!function_exists('custom_post_type_gmina')) {
 if(!function_exists('tax_custom_post_type_gmina_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_gmina_categories() {
-        $post_type_name = 'gmina';
+        $post_type_name = 'cpt-gmina';
         $taxonomy_name = 'kategorie-gmina';
 
         $labels = array(
