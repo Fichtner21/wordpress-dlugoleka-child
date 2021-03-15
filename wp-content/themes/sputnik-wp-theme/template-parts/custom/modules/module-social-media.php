@@ -6,7 +6,14 @@
         $twitter = get_option('twitter_link');
         $youtube = get_option('youtube_link');
         $instagram = get_option('instagram_link');
+        $bip = get_option('bip_link');
     ?>
+    <?php //if(isset($bip) && !empty($bip) && $bip != null) : ?>
+        <a target='_blank' href='<?= $bip; ?>' class='social-media__anchor' title='<?= __('Biuletyn Informacji Publicznej ' . get_bloginfo(),'sputnik-wp-theme'); ?>'>
+            <img src="<?php echo get_template_directory_uri() ?>/app/public/images/bip-icon.svg" class="bip-icon">
+            <span class='screen-reader-text'><?= __('Biuletyn informacji publicznej','sputnik-wp-theme'); ?></span>
+        </a>
+    <?php //endif; ?>
 
     <?php if(isset($facebook) && !empty($facebook) && $facebook != null) : ?>
         <a target='_blank' href='<?= $facebook; ?>' class='social-media__anchor' title='<?= __('Facebook','sputnik-wp-theme'); ?>'>

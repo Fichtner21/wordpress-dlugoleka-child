@@ -52,6 +52,10 @@
         }
         &[title="RSS"] {
           background: #e67f11;
+        }       
+
+        .bip-icon {
+          max-width: 2rem;
         }
       }
     }
@@ -208,3 +212,4 @@
     visibility: visible;
   }
 }
+

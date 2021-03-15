@@ -57,6 +57,10 @@ if(!function_exists('custom_social_media_page')) {
                             <th scope="row"><?= __('RSS link','sputnik-wp-theme'); ?></th>
                             <td><input type="text" name="rss_link" value="<?= esc_attr( get_option('rss_link') ); ?>" /></td>
                         </tr>
+                        <tr valign="top">
+                            <th scope="row"><?= __('BIP link','sputnik-wp-theme'); ?></th>
+                            <td><input type="text" name="bip_link" value="<?= esc_attr( get_option('bip_link') ); ?>" /></td>
+                        </tr>
                     </table>
 
                     <?php submit_button(); ?>

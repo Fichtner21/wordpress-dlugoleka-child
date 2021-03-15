@@ -1,6 +1,36 @@
 .site-header__bottom {
   position: relative;
 
+  .menu-item-has-children {
+    > a {
+      position: relative;
+      &:after {
+        content: '\f0d7';
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        font-size: 1.5rem;
+        position: absolute;
+        right: 0;  
+      }
+    }
+
+    &:hover {
+      > a {
+        &:after {
+          position: relative;
+          transform: rotate(180deg);
+          transition: all .6s;
+          content: "\f0d7";
+          position: absolute;
+          right: 0;                       
+          font-family:"Font Awesome 5 Free";
+          font-weight: 900;
+          font-size: 1.5rem;
+        }              
+      }
+    }
+  }
+
   .menu {
     &-item {
       &-has-children {
@@ -20,10 +50,14 @@
           }
         }
         & > .sub-menu {
-          display: flex;
-          flex-wrap: wrap;
-          flex-direction: column;
-          height: 45rem;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: auto;
+          gap: 1.5rem;          
+          // display: flex;
+          // flex-wrap: wrap;
+          // flex-direction: column;
+          // height: 45rem;
           position: absolute;
           top: 100%;
           left: 0;
@@ -72,9 +106,9 @@
             }
 
             & > .sub-menu {
-              position: static;
-              transform: none;
-              height: auto;
+              // position: static;
+              // transform: none;
+              // height: auto;
             }
           }
         }
