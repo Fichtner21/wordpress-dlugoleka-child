@@ -96,17 +96,24 @@
           }
 
           .post-others-left {
+            position: relative;
+            overflow: hidden;
+
             &__category {
               position: absolute;
               overflow: hidden;
               top: 0;
               left: 0;
+              background-color: #fff;
+              display: flex;
+              flex-wrap: wrap;
 
               a {
                 text-decoration: none;
-                color: #fff;
+                color: $primaryColor;
                 padding: 0.7rem 1rem;
                 font-size: 1.2rem;
+                color: #fff;
 
                 &:hover {
                   text-decoration: underline;
@@ -120,6 +127,10 @@
               align-items: center;
               justify-content: center;
               min-height: 18rem;
+
+              .mock-img {
+                max-width: 100%;
+              }
 
               img {
                 max-width: initial;

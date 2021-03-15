@@ -1,3 +1,16 @@
+.post-nav__print {
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
 @media print {
-    
+    .module-messages, header, #breadcrumbs, .emergency-numbers, footer, .posts-other {
+      display: none;
+    }
+
+    .post-grid-bottom {
+      display: block;
+    }
 }
