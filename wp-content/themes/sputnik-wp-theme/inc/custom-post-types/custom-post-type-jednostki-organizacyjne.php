@@ -3,7 +3,7 @@
 if(!function_exists('custom_post_type_organizacyjne')) {
     function custom_post_type_organizacyjne() {
         $post_type_name = 'organizacyjne';
-        $taxonomy_name = 'kategorie-organizacyjne';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name'                => _x( 'Jednostki Organizacyjne', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -62,7 +62,7 @@ if(!function_exists('tax_custom_post_type_organizacyjne_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_organizacyjne_categories() {
         $post_type_name = 'organizacyjne';
-        $taxonomy_name = 'kategorie-organizacyjne';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name' => _x( 'Kategorie jednostki organizacyjne', 'taxonomy general name', 'sputnik-wp-theme' ),

@@ -3,7 +3,7 @@
 if(!function_exists('custom_post_type_gpieugd')) {
     function custom_post_type_gpieugd() {
         $post_type_name = 'gpieugd';
-        $taxonomy_name = 'kategorie-gpieugd';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name'                => _x( 'Gminny punkt informacji europejskiej Urzędu Gminy Długołęka', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -62,7 +62,7 @@ if(!function_exists('tax_custom_post_type_gpieugd_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_gpieugd_categories() {
         $post_type_name = 'gpieugd';
-        $taxonomy_name = 'kategorie-gpieugd';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name' => _x( 'Kategorie GPIEUGD', 'taxonomy general name', 'sputnik-wp-theme' ),

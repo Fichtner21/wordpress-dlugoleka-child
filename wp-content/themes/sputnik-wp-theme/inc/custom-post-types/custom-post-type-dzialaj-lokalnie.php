@@ -3,7 +3,7 @@
 if(!function_exists('custom_post_type_dzialaj_lokalnie')) {
     function custom_post_type_dzialaj_lokalnie() {
         $post_type_name = 'dzialaj-lokalnie';
-        $taxonomy_name = 'kategorie-dzialaj-lokalnie';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name'                => _x( 'Działaj lokalnie', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -61,7 +61,7 @@ if(!function_exists('tax_custom_post_type_dzialaj_lokalnie_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_dzialaj_lokalnie_categories() {
         $post_type_name = 'dzialaj-lokalnie';
-        $taxonomy_name = 'kategorie-dzialaj-lokalnie';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name' => _x( 'Kategorie działaj lokalnie', 'taxonomy general name', 'sputnik-wp-theme' ),

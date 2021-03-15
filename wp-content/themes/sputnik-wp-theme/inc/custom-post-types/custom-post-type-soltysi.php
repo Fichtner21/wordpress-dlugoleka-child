@@ -3,7 +3,7 @@
 if(!function_exists('custom_post_type_soltysi')) {
     function custom_post_type_soltysi() {
         $post_type_name = 'soltysi';
-        $taxonomy_name = 'kategorie-soltysow';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name'                => _x( 'Sołtysi', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -62,7 +62,7 @@ if(!function_exists('tax_custom_post_type_soltysi_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_soltysi_categories() {
         $post_type_name = 'soltysi';
-        $taxonomy_name = 'kategorie-soltysow';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name' => _x( 'Kategorie sołtysi', 'taxonomy general name', 'sputnik-wp-theme' ),

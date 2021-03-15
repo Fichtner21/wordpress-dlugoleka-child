@@ -3,7 +3,7 @@
 if(!function_exists('custom_post_type_rodzina_i_zdrowie')) {
     function custom_post_type_rodzina_i_zdrowie() {
         $post_type_name = 'rodzina-i-zdrowie';
-        $taxonomy_name = 'kategorie-rodzina-i-zdrowie';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name'                => _x( 'Rodzina i Zdrowie', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -62,7 +62,7 @@ if(!function_exists('tax_custom_post_type_rodzina_i_zdrowie_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_rodzina_i_zdrowie_categories() {
         $post_type_name = 'rodzina-i-zdrowie';
-        $taxonomy_name = 'kategorie-rodzina-i-zdrowie';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name' => _x( 'Kategorie rodzina i zdrowie', 'taxonomy general name', 'sputnik-wp-theme' ),

@@ -3,7 +3,7 @@
 if(!function_exists('custom_post_type_inwestorzy')) {
     function custom_post_type_inwestorzy() {
         $post_type_name = 'inwesotrzy';
-        $taxonomy_name = 'kategorie-inwestorzy';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name'                => _x( 'Dla Inwestorów i Przedsiębiorców', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -62,7 +62,7 @@ if(!function_exists('tax_custom_post_type_inwestorzy_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_inwestorzy_categories() {
         $post_type_name = 'inwesotrzy';
-        $taxonomy_name = 'kategorie-inwestorzy';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name' => _x( 'Kategorie dla inwestorów i przedsiębiorców', 'taxonomy general name', 'sputnik-wp-theme' ),

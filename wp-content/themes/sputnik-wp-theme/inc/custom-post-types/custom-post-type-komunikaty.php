@@ -3,7 +3,7 @@
 if(!function_exists('custom_post_type_komunikaty')) {
     function custom_post_type_komunikaty() {
         $post_type_name = 'komunikaty';
-        $taxonomy_name = 'kategorie-komunikatow';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name'                => _x( 'Komunikaty', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -61,7 +61,7 @@ if(!function_exists('tax_custom_post_type_komunikaty_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_komunikaty_categories() {
         $post_type_name = 'komunikaty';
-        $taxonomy_name = 'kategorie-komunikatow';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name' => _x( 'Kategorie komunikaty', 'taxonomy general name', 'sputnik-wp-theme' ),

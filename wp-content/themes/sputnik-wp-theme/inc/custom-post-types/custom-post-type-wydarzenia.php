@@ -3,7 +3,7 @@
 if(!function_exists('custom_post_type_wydarzenia')) {
     function custom_post_type_wydarzenia() {
         $post_type_name = 'wydarzenia';
-        $taxonomy_name = 'kategorie-wydarzen';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name'                => _x( 'Wydarzenia', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -61,7 +61,7 @@ if(!function_exists('tax_custom_post_type_wydarzenia_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_wydarzenia_categories() {
         $post_type_name = 'wydarzenia';
-        $taxonomy_name = 'kategorie-wydarzen';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name' => _x( 'Kategorie wydarzenia', 'taxonomy general name', 'sputnik-wp-theme' ),

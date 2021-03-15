@@ -3,7 +3,7 @@
 if(!function_exists('custom_post_type_galerie')) {
     function custom_post_type_galerie() {
         $post_type_name = 'galerie';
-        $taxonomy_name = 'kategorie-galerii';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name'                => _x( 'Galerie', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -62,7 +62,7 @@ if(!function_exists('tax_custom_post_type_galerie_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_galerie_categories() {
         $post_type_name = 'galerie';
-        $taxonomy_name = 'kategorie-galerii';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name' => _x( 'Kategorie galerii', 'taxonomy general name', 'sputnik-wp-theme' ),

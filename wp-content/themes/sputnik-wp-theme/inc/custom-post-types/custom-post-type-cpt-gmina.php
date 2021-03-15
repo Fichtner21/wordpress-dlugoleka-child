@@ -3,7 +3,7 @@
 if(!function_exists('custom_post_type_gmina')) {
     function custom_post_type_gmina() {
         $post_type_name = 'cpt-gmina';
-        $taxonomy_name = 'kategorie-gmina';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name'                => _x( 'Gmina', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -62,7 +62,7 @@ if(!function_exists('tax_custom_post_type_gmina_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_gmina_categories() {
         $post_type_name = 'cpt-gmina';
-        $taxonomy_name = 'kategorie-gmina';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name' => _x( 'Kategorie gmina', 'taxonomy general name', 'sputnik-wp-theme' ),
