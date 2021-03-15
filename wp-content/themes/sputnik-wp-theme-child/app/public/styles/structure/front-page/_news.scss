@@ -36,6 +36,8 @@ body.home {
           overflow: hidden;
           top: 0;
           left: 0;
+          background: $primaryColor;
+          color: white;
 
           a {
             text-decoration: none;
