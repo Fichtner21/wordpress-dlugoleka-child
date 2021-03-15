@@ -6,20 +6,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     galleryItems.forEach((item) => {
       const itemImage = item.querySelector("img");
-
       const itemLink = document.createElement("a");
+      const itemText = document.createElement("span");
+
+      itemText.className = "screen-reader-text";
 
       itemLink.setAttribute("data-fslightbox", "wp-gallery");
 
       if (itemImage.dataset.fullUrl) {
         itemLink.setAttribute("href", itemImage.dataset.fullUrl);
+        itemText.textContent = itemImage.dataset.fullUrl;
       } else if (itemImage.src) {
         itemLink.setAttribute("href", itemImage.src);
+        itemText.textContent = itemImage.src;
       }
 
+      itemLink.appendChild(itemText);
       itemLink.appendChild(itemImage);
-
-      //   itemImage.remove();
 
       item.querySelector("figure").appendChild(itemLink);
     });

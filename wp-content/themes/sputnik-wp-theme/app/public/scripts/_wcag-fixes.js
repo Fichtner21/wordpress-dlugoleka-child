@@ -32,4 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
+
+  if (document.querySelector(".page-template-declaration")) {
+    const declarationBody = document.querySelector(".page-template-declaration");
+    const declarationCont = declarationBody.querySelector("main .custom-container");
+
+    declarationCont.id = "primary";
+  }
 });
