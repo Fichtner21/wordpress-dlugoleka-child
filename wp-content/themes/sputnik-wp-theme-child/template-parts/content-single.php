@@ -35,7 +35,7 @@ $title_font_size = get_field('title_font_size');
         <div class="post-nav__download">
           Pobierz
         </div>
-        <div class="post-nav__print">
+        <div class="post-nav__print" onclick="window.print()" title="Drukuj <?php the_title(); ?>">
           Drukuj
         </div>
       </div>
@@ -93,8 +93,15 @@ $title_font_size = get_field('title_font_size');
                         } ?>
                       </div>
                       <figure>
-                          <?php sputnik_wp_theme_post_thumbnail('medium'); ?>
+                      <?php if(has_post_thumbnail()) : ?>
+                        <?php sputnik_wp_theme_post_thumbnail('medium'); ?>
+                      <?php else : ?>
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/app/public/images/dlugoleka-logo.png" title="<?php get_bloginfo() ?>" class="mock-img">
+                      <?php endif; ?>
                       </figure>
+                      <!-- <figure>
+                          <?php// echo sputnik_wp_theme_post_thumbnail() ? sputnik_wp_theme_post_thumbnail('medium') : get_template_directory_uri(  ) . '/app/public/images/dlugoleka-logo.png'; ?>
+                      </figure> -->
                     </div>
                     <section class="post-bulk">
                         <header class="post-heading">

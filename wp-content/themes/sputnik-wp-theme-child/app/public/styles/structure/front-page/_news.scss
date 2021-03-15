@@ -36,12 +36,11 @@ body.home {
           overflow: hidden;
           top: 0;
           left: 0;
-          background: $primaryColor;
-          color: white;
+          background-color: #fff;
 
           a {
             text-decoration: none;
-            color: #fff;
+            color: $primaryColor;
             padding: 0.7rem 1rem;
             font-size: 1.2rem;
 
