@@ -3,7 +3,7 @@
 if(!function_exists('custom_post_type_org_pozarzadowe')) {
     function custom_post_type_org_pozarzadowe() {
         $post_type_name = 'org-pozarzadowe';
-        $taxonomy_name = 'kategorie-pozarzadowe';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name'                => _x( 'Organizacje Pozarządowe', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -63,7 +63,7 @@ if(!function_exists('tax_custom_post_type_org_pozarzadowe_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_org_pozarzadowe_categories() {
         $post_type_name = 'org-pozarzadowe';
-        $taxonomy_name = 'kategorie-pozarzadowe';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name' => _x( 'Kategorie organizacje pozarządowe', 'taxonomy general name', 'sputnik-wp-theme' ),

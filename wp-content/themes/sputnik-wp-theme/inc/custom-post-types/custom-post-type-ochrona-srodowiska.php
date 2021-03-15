@@ -3,7 +3,7 @@
 if(!function_exists('custom_post_type_ochrona_srodowiska')) {
     function custom_post_type_ochrona_srodowiska() {
         $post_type_name = 'ochrona-srodowiska';
-        $taxonomy_name = 'kategorie-ochrony-srodowiska';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name'                => _x( 'Ochrona Środowiska', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -62,7 +62,7 @@ if(!function_exists('tax_custom_post_type_ochrona_srodowiska_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_ochrona_srodowiska_categories() {
         $post_type_name = 'ochrona-srodowiska';
-        $taxonomy_name = 'kategorie-ochrony-srodowiska';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name' => _x( 'Kategorie ochrona środowiska', 'taxonomy general name', 'sputnik-wp-theme' ),

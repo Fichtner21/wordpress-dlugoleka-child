@@ -7,7 +7,7 @@ if(!function_exists('custom_register_post_type_with_option')) {
         // Registering your Custom Post Type
         register_post_type( $post_type_name, $args );
 
-        if(!get_option($post_type_name)) add_option($post_type_name, $taxonomy_name);
+        update_option($post_type_name, $taxonomy_name);
 
         $our_post_types = get_option('our_post_types');
 

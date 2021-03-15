@@ -3,7 +3,7 @@
 if(!function_exists('custom_post_type_kryzysowe')) {
     function custom_post_type_kryzysowe() {
         $post_type_name = 'kryzysowe';
-        $taxonomy_name = 'kategorie-kryzysowe';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name'                => _x( 'Zarządzanie Kryzysowe', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -62,7 +62,7 @@ if(!function_exists('tax_custom_post_type_kryzysowe_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_kryzysowe_categories() {
         $post_type_name = 'kryzysowe';
-        $taxonomy_name = 'kategorie-kryzysowe';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name' => _x( 'Kategorie zarządzanie kryzysowe', 'taxonomy general name', 'sputnik-wp-theme' ),

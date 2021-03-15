@@ -6,8 +6,10 @@
 
     <?php
 
+    $posts_sections = get_field('posts_sections') ? get_field('posts_sections') : 'post';
+
     $news_args = array(
-        'post_type' => 'ochrona_srodowiska',
+        'post_type' => $posts_sections,
         'posts_per_page' => 6,
         'post_status' => 'publish',
         'orderby' => 'date',
@@ -53,11 +55,18 @@
                         <!-- Category -->
                         <div class="category-list">
 
-                        <?php $categories = get_the_terms('', 'kategorie_' . get_post_type());
+                        <?php
+
+                        $taxonomy = 'kategorie-' . $posts_sections;
+
+                        $categories = get_terms( array(
+                          'taxonomy' => $taxonomy,
+                          'hide_empty' => false,
+                        ) );
 
                         $output = '';
 
-                        if ( ! empty( $categories ) ) {
+                        if ( ! empty( $categories ) && ! is_wp_error( $categories ) ) {
                           echo '<div class="category-list">Kategorie:';
                             foreach( $categories as $category ) {
                               $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'Zobacz wszystkie wpisy w: %s', 'textdomain' ), $category->name ) ) . '" class="category-link">' . esc_html( $category->name ) . '</a>';

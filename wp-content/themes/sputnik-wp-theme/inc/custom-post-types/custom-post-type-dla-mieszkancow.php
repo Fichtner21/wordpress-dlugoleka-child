@@ -3,7 +3,7 @@
 if(!function_exists('custom_post_type_dla_mieszkancow')) {
     function custom_post_type_dla_mieszkancow() {
         $post_type_name = 'dla-mieszkancow';
-        $taxonomy_name = 'kategorie-dla-mieszkancow';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name'                => _x( 'Dla Mieszkańców', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -62,7 +62,7 @@ if(!function_exists('tax_custom_post_type_dla_mieszkancow_categories')) {
     //create a custom taxonomy name it "type" for your posts
     function tax_custom_post_type_dla_mieszkancow_categories() {
         $post_type_name = 'dla-mieszkancow';
-        $taxonomy_name = 'kategorie-dla-mieszkancow';
+        $taxonomy_name = 'kategorie-' . $post_type_name;
 
         $labels = array(
             'name' => _x( 'Kategorie dla mieszkańca', 'taxonomy general name', 'sputnik-wp-theme' ),
