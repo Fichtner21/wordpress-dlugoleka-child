@@ -4,6 +4,7 @@ if(!function_exists('custom_post_type_gpieugd')) {
     function custom_post_type_gpieugd() {
         $post_type_name = 'gpieugd';
         $taxonomy_name = 'kategorie-' . $post_type_name;
+        $post_type_rewrite = $post_type_name . '-' . 'lista';
 
         $labels = array(
             'name'                => _x( 'Gminny punkt informacji europejskiej Urzędu Gminy Długołęka', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -35,6 +36,7 @@ if(!function_exists('custom_post_type_gpieugd')) {
             * Parent and child items. A non-hierarchical CPT
             * is like Posts.
             */
+            'rewrite'             => array('slug' => $post_type_rewrite),
             'hierarchical'        => true,
             'public'              => true,
             'show_ui'             => true,

@@ -4,6 +4,7 @@ if(!function_exists('custom_post_type_org_pozarzadowe')) {
     function custom_post_type_org_pozarzadowe() {
         $post_type_name = 'org-pozarzadowe';
         $taxonomy_name = 'kategorie-' . $post_type_name;
+        $post_type_rewrite = $post_type_name . '-' . 'lista';
 
         $labels = array(
             'name'                => _x( 'Organizacje Pozarządowe', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -35,6 +36,7 @@ if(!function_exists('custom_post_type_org_pozarzadowe')) {
             * Parent and child items. A non-hierarchical CPT
             * is like Posts.
             */
+            'rewrite'             => array('slug' => $post_type_rewrite),
             'hierarchical'        => true,
             'public'              => true,
             'show_ui'             => true,

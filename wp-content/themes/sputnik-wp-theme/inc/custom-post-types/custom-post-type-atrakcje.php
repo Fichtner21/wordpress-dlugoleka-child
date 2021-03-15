@@ -4,6 +4,7 @@ if(!function_exists('custom_post_type_atrakcje')) {
     function custom_post_type_atrakcje() {
         $post_type_name = 'atrakcje';
         $taxonomy_name = 'kategorie-' . $post_type_name;
+        $post_type_rewrite = $post_type_name . '-' . 'lista';
 
         $labels = array(
             'name'                => _x( 'Atrakcje', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -34,6 +35,7 @@ if(!function_exists('custom_post_type_atrakcje')) {
             * Parent and child items. A non-hierarchical CPT
             * is like Posts.
             */
+            'rewrite'             => array('slug' => $post_type_rewrite),
             'hierarchical'        => false,
             'public'              => true,
             'show_ui'             => true,

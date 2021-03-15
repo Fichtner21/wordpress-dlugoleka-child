@@ -4,6 +4,7 @@ if(!function_exists('custom_post_type_rodzina_i_zdrowie')) {
     function custom_post_type_rodzina_i_zdrowie() {
         $post_type_name = 'rodzina-i-zdrowie';
         $taxonomy_name = 'kategorie-' . $post_type_name;
+        $post_type_rewrite = $post_type_name . '-' . 'lista';
 
         $labels = array(
             'name'                => _x( 'Rodzina i Zdrowie', 'Post Type General Name', 'sputnik-wp-theme' ),
@@ -35,6 +36,7 @@ if(!function_exists('custom_post_type_rodzina_i_zdrowie')) {
             * Parent and child items. A non-hierarchical CPT
             * is like Posts.
             */
+            'rewrite'             => array('slug' => $post_type_rewrite),
             'hierarchical'        => true,
             'public'              => true,
             'show_ui'             => true,
