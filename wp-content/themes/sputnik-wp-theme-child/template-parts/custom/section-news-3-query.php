@@ -41,7 +41,7 @@
               <?php
                 if( $terms = get_terms( array( 'taxonomy' => 'category', 'orderby' => 'name' ) ) ) :
 
-                  echo '<select name="categoryfilter"><option value="'.$terms.'">Wybierz kategorie...</option>';
+                  echo '<label for="categoryfilter" class="screen-reader-text"></label><select name="categoryfilter" id="categoryfilter" aria-label="Choose category"><option value="'.$terms.'">Wybierz kategorie...</option>';
                   foreach ( $terms as $term ) :
                     echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as the value of an option
                   endforeach;

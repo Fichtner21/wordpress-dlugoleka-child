@@ -1011,7 +1011,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
-});
+}); //Add title to iframe
+
+document.getElementsByTagName('iframe').title = 'Mapa'; // mapTitle.setAttribute('title', 'mapa');
 
 /***/ }),
 
