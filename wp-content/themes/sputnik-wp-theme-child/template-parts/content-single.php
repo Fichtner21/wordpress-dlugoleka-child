@@ -32,8 +32,8 @@ $title_font_size = get_field('title_font_size');
         <div class="post-nav__date">
           <?php echo '<i class="fas fa-clock"></i> Data publikacji: ' . get_the_date('d.m.Y') . 'r.'; ?>
         </div>
-        <div class="post-nav__download">
-          Pobierz
+        <div class="post-nav__download" title="Pobierz do PDF <?php echo the_title(); ?>">
+          <?= shortcode_exists('dkpdf-button') ? do_shortcode('[dkpdf-button]') : false; ?>
         </div>
         <div class="post-nav__print" onclick="window.print()" title="Drukuj <?php the_title(); ?>">
           Drukuj

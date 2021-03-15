@@ -128,8 +128,23 @@
 		    	    ?>
 
 		    	    <div class="dkpdf-content">
+							<div style="margin-bottom: 20px">Kategoria:
+							<?php
+								$categories = get_the_category();
+								$separator = ', ';
+								$output = '';
+								if ( ! empty( $categories ) ) {
+										foreach( $categories as $category ) {
+												$output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '" class="category-color">' . esc_html( $category->name ) . '</a>' . $separator;
 
-		    	    	<?php the_content(); ?>
+										}
+										echo trim( $output, $separator );
+								} ?>
+							<?php echo 'Data publikacji: ' . get_the_date('d.m.Y') . 'r.'; ?>
+							</div>
+							<?php echo get_the_post_thumbnail( $post_id, 'medium', array( 'class' => 'alignleft' ) ); ?>
+								<?php the_content(); ?>
+								
 
 		    		</div>
 

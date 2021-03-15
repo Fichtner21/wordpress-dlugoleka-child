@@ -5,6 +5,26 @@
   }
 }
 
+.post-nav__download {
+  .dkpdf-button-container {
+    width: initial;
+    padding: 0;
+
+    .dkpdf-button {
+      text-decoration: none;
+      color: #000;
+
+      &:hover {
+        text-decoration: underline;
+      }
+      
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
 @media print {
     .module-messages, header, #breadcrumbs, .emergency-numbers, footer, .posts-other {
       display: none;
