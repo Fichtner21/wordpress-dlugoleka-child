@@ -62,7 +62,8 @@
           top: 100%;
           left: 0;
           right: 0;
-          background-color: white;
+          // background-color: white;
+          background-color: lighten(#333, 75%);
           z-index: $subMenuIndex;
           padding: 1rem;
           transform: translateY(5rem);
@@ -106,6 +107,7 @@
             }
 
             & > .sub-menu {
+              background-color: lighten(#333, 70%);
               // position: static;
               // transform: none;
               // height: auto;
