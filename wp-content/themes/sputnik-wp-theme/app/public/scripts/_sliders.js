@@ -27,6 +27,22 @@ document.addEventListener("DOMContentLoaded", function () {
         1170: {},
       },
     });
+
+    const animToggleButton = document.querySelector(".module-messages__animtoggle");
+
+    animToggleButton.addEventListener("click", function () {
+      const span = this.querySelector("span");
+
+      if (span.textContent === "Zatrzymaj") {
+        messagesSlider.autoplay.stop();
+        this.title = "Wznów";
+        span.textContent = "Wznów";
+      } else {
+        messagesSlider.autoplay.start();
+        this.title = "Zatrzymaj";
+        span.textContent = "Zatrzymaj";
+      }
+    });
   }
 
   if (document.querySelector(".hero")) {

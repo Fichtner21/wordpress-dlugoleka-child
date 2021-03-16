@@ -7,112 +7,150 @@
   @media screen and (max-width: 992px) {
     display: block;
   }
+}
 
-  .archive-posts {
-    .page-section-heading {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 3rem;
+.archive-posts {
+  .page-section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
 
-      &__title {
-        text-transform: uppercase;
-        font-size: 2.4rem;
-        letter-spacing: 0.3rem;
-      }
+    &__title {
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      letter-spacing: 0.3rem;
+    }
 
-      &__meta {
-        .page-section-heading__terms {
+    &__meta {
+      .page-section-heading__terms {
+        display: flex;
+        font-size: 1.4rem;
+
+        @media screen and (max-width: 500px) {
+          display: block;
+        }
+
+        span {
+          display: inline-block;
+          margin-right: 1rem;
+
+          @media screen and (max-width: 500px) {
+            margin-left: 1rem;
+          }
+        }
+
+        .custom-terms {
           display: flex;
-          font-size: 1.4rem;
-
+          flex-wrap: wrap;
           @media screen and (max-width: 500px) {
             display: block;
           }
+          &__item {
+            .custom-terms__anchor {
+              padding: 0.3rem 1rem;
+              transition: all 0.3s;
+              text-decoration: none;
+              color: #000;
 
-          span {
-            display: inline-block;
-            margin-right: 1rem;
-
-            @media screen and (max-width: 500px) {
-              margin-left: 1rem;
-            }
-          }
-
-          .custom-terms {
-            display: flex;
-            flex-wrap: wrap;
-            @media screen and (max-width: 500px) {
-              display: block;
-            }
-            &__item {
-              .custom-terms__anchor {
-                padding: 0.3rem 1rem;
-                transition: all 0.3s;
-                text-decoration: none;
-                color: #000;
-
-                &:hover {
-                  background-color: $primaryColor;
-                  color: #fff;
-                }
+              &:hover {
+                background-color: $primaryColor;
+                color: #fff;
               }
             }
           }
         }
       }
     }
+  }
 
-    .post {
-      min-height: 20rem;
-      display: grid;
-      grid-template-columns: 21rem 1fr;
-      grid-template-rows: auto;
-      gap: 0 3rem;
-      margin-bottom: 3rem;
-      box-shadow: 0px 0.3rem 0.7rem 0px rgba(40, 40, 40, 0.1);
+  .post,
+  [class*="type"] {
+    min-height: 20rem;
+    display: grid;
+    grid-template-columns: 21rem 1fr;
+    grid-template-rows: auto;
+    gap: 0 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0.3rem 0.7rem 0px rgba(40, 40, 40, 0.1);
 
-      @media screen and (max-width: 768px) {
-        grid-template-columns: 12rem 1fr;
-        gap: 0 1rem;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 12rem 1fr;
+      gap: 0 1rem;
+    }
+
+    figure {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-height: 20rem;
+
+      @media screen and (max-width: 500px) {
+        max-height: 12rem;
       }
 
-      figure {
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-height: 20rem;
-
-        @media screen and (max-width: 500px) {
-          max-height: 12rem;
-        }
-
-        img {
-          max-width: initial;
-          height: initial;
-        }
+      img {
+        max-width: initial;
+        height: initial;
       }
+    }
 
-      .post-bulk {
-        padding-right: 1rem;
+    .post-bulk {
+      padding-right: 1rem;
 
-        .post-heading {
-          .post-heading-meta {
-            .post-date {
-              font-size: 1.2rem;
-              svg {
-                color: $secondaryColor;
-              }
+      .post-heading {
+        .post-heading-meta {
+          .post-date {
+            font-size: 1.2rem;
+            svg {
+              color: $secondaryColor;
             }
           }
+        }
 
-          &__title a {
-            font-size: 1.8rem;
+        &__title a {
+          font-size: 1.8rem;
+          text-decoration: none;
+          color: #000;
+          text-transform: uppercase;
+          font-weight: 400;
+
+          .contrast-mode & {
+            color: $contrastColor;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .post-content {
+        &__excerpt {
+          font-size: 1.2rem;
+          line-height: 2rem;
+          max-height: 6rem;
+          overflow: hidden;
+        }
+      }
+
+      .post-footer {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 768px) {
+          margin-top: 0.5rem;
+        }
+
+        &__categories {
+          font-size: 1.2rem;
+          .post-footer__category {
             text-decoration: none;
+            margin: 0 5px;
             color: #000;
-            text-transform: uppercase;
-            font-weight: 400;
 
             .contrast-mode & {
               color: $contrastColor;
@@ -124,55 +162,18 @@
           }
         }
 
-        .post-content {
-          &__excerpt {
-            font-size: 1.2rem;
-            line-height: 2rem;
-            max-height: 6rem;
-            overflow: hidden;
-          }
-        }
+        &__button {
+          padding: 0.3rem 2rem;
+          background-color: $secondaryColor;
+          color: #000;
+          text-decoration: none;
+          transition: all 0.3s;
+          font-size: 1.2rem;
+          font-weight: 700;
 
-        .post-footer {
-          margin-top: 3rem;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          @media screen and (max-width: 768px) {
-            margin-top: 0.5rem;
-          }
-
-          &__categories {
-            font-size: 1.2rem;
-            .post-footer__category {
-              text-decoration: none;
-              margin: 0 5px;
-              color: #000;
-
-              .contrast-mode & {
-                color: $contrastColor;
-              }
-
-              &:hover {
-                text-decoration: underline;
-              }
-            }
-          }
-
-          &__button {
-            padding: 0.3rem 2rem;
-            background-color: $secondaryColor;
-            color: #000;
-            text-decoration: none;
-            transition: all 0.3s;
-            font-size: 1.2rem;
-            font-weight: 700;
-
-            &:hover {
-              background-color: lighten($secondaryColor, 5%);
-              text-decoration: underline;
-            }
+          &:hover {
+            background-color: lighten($secondaryColor, 5%);
+            text-decoration: underline;
           }
         }
       }

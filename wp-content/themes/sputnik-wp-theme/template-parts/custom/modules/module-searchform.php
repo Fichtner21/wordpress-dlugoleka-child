@@ -6,6 +6,6 @@
 
     <input type="text" class="search-field" id='d-search-form-input-<?= $ID; ?>' name="s" placeholder="<?= __('Szukaj...','sputnik-wp-theme'); ?>" value="<?= get_search_query(); ?>">
 
-    <input type="submit" value="<?= __('Szukaj','sputnik-wp-theme'); ?>">
+    <button type="submit" title="<?= __('Szukaj','sputnik-wp-theme'); ?>"><?= __('Szukaj','sputnik-wp-theme'); ?><span class='screen-reader-text'>-<?= $ID; ?></span></button>
     <!-- /* Add There custom post types Example: <input type="hidden" name="post_type[]" value="book" /> -->
 </form>

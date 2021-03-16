@@ -16,6 +16,10 @@ if($messages_query->have_posts()) : ?>
         <div class="container">
             <i class="fas fa-bullhorn"></i>
 
+            <button class="module-messages__animtoggle" title='<?= __('Zatrzymaj',''); ?>'>
+                <span><?= __('Zatrzymaj',''); ?></span>
+            </button>
+
             <div class="swiper-container" id="communicat">
                 <div class="swiper-wrapper">
                     <?php while($messages_query->have_posts()) : $messages_query->the_post(); ?>

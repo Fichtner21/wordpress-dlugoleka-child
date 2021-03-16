@@ -1,12 +1,14 @@
+<?php $posts_sections = get_field('posts_sections') ? get_field('posts_sections') : 'post'; ?>
+
 <section class='page-section news'>
   <div class='posts-front'>
     <header class="page-section-heading">
       <h2 class="page-section-heading__title"><?= __('Aktualności','sputnik-wp-theme'); ?></h2>
+
+      <a href='<?= get_post_type_archive_link($posts_sections) ?>' class='page-section-heading__anchor' title='<?= __('Zobacz wszystkie','sputnik-wp-theme'); ?>'><?= __('Zobacz wszystkie','sputnik-wp-theme'); ?></a>
     </header>
 
     <?php
-
-    $posts_sections = get_field('posts_sections') ? get_field('posts_sections') : 'post';
 
     $news_args = array(
         'post_type' => $posts_sections,
