@@ -39,4 +39,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     declarationCont.id = "primary";
   }
+
+  const allSvgNodeList = document.querySelectorAll('svg');  
+  const allSvgArray = [...allSvgNodeList];  
+  allSvgArray.forEach((el) => {
+    let dataIcon = el.dataset.icon;
+    el.setAttribute('role', 'img');
+    el.setAttribute('aria-label', dataIcon);    
+  });
 });
