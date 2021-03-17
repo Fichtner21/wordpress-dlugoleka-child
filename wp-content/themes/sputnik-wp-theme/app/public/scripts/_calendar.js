@@ -293,6 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     eventText.className = "screen-reader-text";
 
+    eventText.alt = "Wydarzenie";
     eventText.textContent = "Wydarzenie";
 
     event.title = "Wydarzenie";
