@@ -118,3 +118,51 @@
     }
   }
 }
+
+#top-bar-links {
+  display: flex;
+  align-items: initial;
+
+  >:nth-child(n){
+    border-right: 1px solid #000;    
+  }
+
+  >:last-child(){
+    border: none;
+  }
+
+  li {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    padding-right: 1rem;
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+[title="e-PUAP"]{
+  span {
+    display: none;
+  }
+}
+
+[title="eUrząd"]{
+  span {
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+  }
+}
+
+[title="Biuletyn Informacji Publicznej"]{
+  span {
+    display: inline-block;
+    max-width: 12rem;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+  }
+}
