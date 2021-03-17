@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const is = document.querySelectorAll("i");
+  const svgs = document.querySelectorAll("svg");
 
   is.forEach((i) => {
     const iClass = i.classList[0];
@@ -25,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       i.setAttribute("focusable", "false");
       i.setAttribute("title", iIconClass);
+      i.setAttribute("aria-hidden", "true");
       i.setAttribute("aria-labelledby", iIconClass);
-      i.setAttribute("aria-label", iIconClass);
 
       if ((iParentTag == "A" || iParentTag == "BUTTON") && iParent.getAttribute("aria-label") == null) {
         iParent.setAttribute("aria-label", iIconClass);
