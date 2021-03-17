@@ -24,3 +24,17 @@ html.wcagfocus .pe-panels.tabs .pn-list li a:focus,
 html.wcagfocus *:focus {
   outline: 0.2rem dashed red;
 }
+
+.sputnik-search-form--hidden {
+  display: block !important;
+  opacity: 0;
+  max-height: 0;
+  pointer-events: none;
+}
+
+.sputnik-search-form--active {
+  display: block !important;
+  opacity: 1;
+  max-height: fit-content;
+  pointer-events: all;
+}

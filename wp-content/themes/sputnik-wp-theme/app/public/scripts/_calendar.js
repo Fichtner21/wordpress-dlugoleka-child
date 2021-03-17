@@ -287,6 +287,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelectorAll(".fc-button").forEach((button) => button.addEventListener("click", displayCalendarEvents));
 
-  const fcScrollGrid = document.querySelector('.fc-scrollgrid');
-  fcScrollGrid.setAttribute('role', 'presentation');  
+  // WCAG FIXES
+  document.querySelectorAll(".fc-daygrid-event").forEach((event) => {
+    const eventText = document.createElement("span");
+
+    eventText.className = "screen-reader-text";
+
+    eventText.textContent = "Wydarzenie";
+
+    event.title = "Wydarzenie";
+
+    event.appendChild(eventText);
+  });
+
+  const fcScrollGrid = document.querySelector(".fc-scrollgrid");
+
+  fcScrollGrid.setAttribute("role", "presentation");
 });
