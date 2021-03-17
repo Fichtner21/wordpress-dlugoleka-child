@@ -386,9 +386,17 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("load", displayCalendarEvents);
   document.querySelectorAll(".fc-button").forEach(function (button) {
     return button.addEventListener("click", displayCalendarEvents);
+  }); // WCAG FIXES
+
+  document.querySelectorAll(".fc-daygrid-event").forEach(function (event) {
+    var eventText = document.createElement("span");
+    eventText.className = "screen-reader-text";
+    eventText.textContent = "Wydarzenie";
+    event.title = "Wydarzenie";
+    event.appendChild(eventText);
   });
-  var fcScrollGrid = document.querySelector('.fc-scrollgrid');
-  fcScrollGrid.setAttribute('role', 'presentation');
+  var fcScrollGrid = document.querySelector(".fc-scrollgrid");
+  fcScrollGrid.setAttribute("role", "presentation");
 });
 
 /***/ }),
@@ -1022,6 +1030,7 @@ document.addEventListener("DOMContentLoaded", function () {
       i.setAttribute("focusable", "false");
       i.setAttribute("title", iIconClass);
       i.setAttribute("aria-labelledby", iIconClass);
+      i.setAttribute("aria-label", iIconClass);
 
       if ((iParentTag == "A" || iParentTag == "BUTTON") && iParent.getAttribute("aria-label") == null) {
         iParent.setAttribute("aria-label", iIconClass);
