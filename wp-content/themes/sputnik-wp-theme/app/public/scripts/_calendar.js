@@ -227,10 +227,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       date.innerHTML = `<i class="fas fa-clock"></i> ${formatedDate}`;
 
+      console.log(element.event.extendedProps.localization);
       eventContent.appendChild(title);
-      eventContent.appendChild(localization);
-      // eventContent.appendChild(type);
-      eventContent.appendChild(date);
+      if (element.event.extendedProps.localization != null) eventContent.appendChild(localization);
+      if (formatedDate != null) eventContent.appendChild(date);
       eventContent.appendChild(url);
 
       eventItem.appendChild(thumbnail);
