@@ -138,23 +138,15 @@ class YOP_Poll_Public {
 		return $this->generate_poll( $params );
 	}
     public function parse_archive_shortcode( $atts ) {
-        $content = '';
-        $sql = 'SELECT `id` FROM ' . $GLOBALS['wpdb']->yop_poll_polls;
-        $polls = $GLOBALS['wpdb']->get_results( $sql, ARRAY_A );
-        if ( count( $polls ) > 0 ) {
-            foreach ( $polls as $p ) {
-                $params = shortcode_atts(
-                    array(
-                        'id'      => $p['id'],
-                        'results' => 0,
-                        'tracking_id'   => '',
-                        'show_results' => ''
-                    ),
-                    $atts, 'yop_poll' );
-                $content .= $this->generate_poll( $params );
-            }
-        }
-        return $content;
+		$params = shortcode_atts(
+			array(
+				'max' => 0,
+				'sort' => 'date_added',
+				'sortdir' => 'asc'
+			),
+			$atts, 'yop_poll_archive'
+		);
+		return $this->generate_polls_for_archive( $params );
 	}
 	public function generate_poll( $params ){
 		if ( isset( $params['id'] ) && ( '' !== $params['id'] ) && ( '0' != $params['id'] )  ) {
@@ -237,6 +229,62 @@ class YOP_Poll_Public {
 		} else {
 			return false;
 		}
+	}
+	public function generate_polls_for_archive( $params ) {
+		$order_by = '';
+		switch ( $params['sort']) {
+			case 'date_added': {
+				$order_by = "ORDER BY `added_date`";
+				break;
+			}
+			case 'num_votes': {
+				$order_by = "ORDER BY `total_submits`";
+				break;
+			}
+			default: {
+				$order_by = "ORDER BY `added_date`";
+				break;
+			}
+		}
+		switch ( $params['sortdir'] ) {
+			case 'asc': {
+				$order_by .= " ASC";
+				break;
+			}
+			case 'desc': {
+				$order_by .= " DESC";
+				break;
+			}
+			default: {
+				$order_by .= " ASC";
+				break;
+			}
+		}
+		$limit = '';
+		if ( 0 !== $params['max'] ) {
+			$limit = "LIMIT %d";
+			$query = "SELECT `id` FROM `{$GLOBALS['wpdb']->yop_poll_polls}` WHERE `status` != 'deleted' {$order_by} LIMIT %d";
+			$query_ready =$GLOBALS['wpdb']->prepare(
+				$query,
+				$params['max']
+			);
+		} else {
+			$query_ready = "SELECT `id` FROM `{$GLOBALS['wpdb']->yop_poll_polls}` WHERE `status` != 'deleted' {$order_by}";
+		}
+        $polls = $GLOBALS['wpdb']->get_results( $query_ready, ARRAY_A );
+		$content = '';
+        if ( count( $polls ) > 0 ) {
+            foreach ( $polls as $poll ) {
+				$poll_params = array(
+					'id' => $poll['id'],
+					'results' => 0,
+					'tracking_id' => '',
+					'show_results' => ''
+				);
+                $content .= $this->generate_poll( $poll_params );
+            }
+        }
+        return $content;
 	}
 	public function cron() {
 		$polls = YOP_Poll_Polls::get_polls_for_cron();

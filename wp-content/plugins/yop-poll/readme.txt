@@ -3,7 +3,7 @@ Contributors: yourownprogrammer
 Donate Link: https://www.yop-poll.com
 Tags: booth, create poll, poll plugin, poll, polls, wordpress poll, vote, voting, survey, polling, yop poll, yop
 Requires at least: 3.3
-Tested up to: 5.6
+Tested up to: 5.7
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.htm
@@ -76,6 +76,7 @@ Yes
 Current Active Poll ID = -1:   [yop_poll id="-1"]
 Latest Poll id = -2:           [yop_poll id="-2"]
 Random Poll id = -3:           [yop_poll id="-3"]
+List all polls:                [yop_poll_archive max=0 sort="date_added|num_votes" sort_dir="asc|desc"] 
 
 = Can I have more than one poll active? =
 
@@ -117,6 +118,11 @@ You can have only one question per poll.
 12. Poll With Vertical Display Showing Results Before Vote
 
 == Changelog ==
+
+= 6.2.6 =
+* fixed error showing up when activating the plugin via wp cli
+* remove scrolling effect when voting
+* added more parameters to [yop_poll_archive]
 
 = 6.2.5 =
 * fix issue with notification message not being updated on successfull votes

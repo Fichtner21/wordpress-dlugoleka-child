@@ -122,6 +122,9 @@ class YOP_POLL_Maintenance {
 	public function update_to_version_6_2_5() {
 		update_option( 'yop_poll_version', '6.2.5' );
 	}
+	public function update_to_version_6_2_6() {
+		update_option( 'yop_poll_version', '6.2.6' );
+	}
     public function create_archive_page() {
         $poll_archive_page = get_page_by_path( 'yop-poll-archive', ARRAY_A );
         if ( ! $poll_archive_page ) {

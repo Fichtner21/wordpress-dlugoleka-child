@@ -9,6 +9,7 @@ require("./scripts/_calendar");
 require("./scripts/_google-map");
 require("./scripts/_fixed-menu");
 require("./scripts/_levels-menu");
+require("./scripts/_posts-grid");
 
 // require main styles
 require("./styles/style.scss");
