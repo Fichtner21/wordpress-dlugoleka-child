@@ -4,7 +4,7 @@
 $messages_args = array(
     'post_type' => 'komunikaty',
     'posts_per_page' => 6,
-    'post_status' => 'published',
+    'post_status' => 'publish',
     'orderby' => 'date',
     'order' => 'DESC',
 );
