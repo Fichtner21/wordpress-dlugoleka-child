@@ -1,6 +1,9 @@
 .module-messages {
   background: $secondaryColor;
   padding: 1rem 0;
+  @include small {
+    display: none;
+  }
   i,
   svg {
     margin-right: 2rem;

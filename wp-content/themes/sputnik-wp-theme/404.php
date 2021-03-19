@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<main id="primary" class="site-main">
 
-		<section class="error-404 not-found">
+		<section class="error-404 not-found container">
 			<header class="page-header">
 				<h1 class="page-title"><?php esc_html_e( 'Ups! Nie można znaleźć tej strony.', 'sputnik-wp-theme' ); ?></h1>
 			</header><!-- .page-header -->
