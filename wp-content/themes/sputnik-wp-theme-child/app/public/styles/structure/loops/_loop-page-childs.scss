@@ -47,6 +47,21 @@
   .page {
     .post-thumbnail-wrapper {
       border: 0.1rem solid darken(#ededed, 10%);
+      & > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        img {
+          position: static;
+          transform: none;
+          min-height: unset;
+          min-width: unset;
+          object-fit: unset;
+        }
+      }
       html.contrast-mode & {
         border-color: $contrastColor;
       }
