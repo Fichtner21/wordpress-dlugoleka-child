@@ -1,0 +1,34 @@
+#map {
+    height: 500px;
+}
+
+
+#settings_table.plugin-options-table {
+    width: 100%;
+    padding: 0;
+}
+
+#settings_table.plugin-options-table tr:nth-child(even) {
+    background: #f9f9f9
+}
+
+#settings_table.plugin-options-table tr:nth-child(odd) {
+    background: #FFF
+}
+
+#settings_table.plugin-options-table tr:first-child {
+    width: 35%;
+}
+
+#settings_table.plugin-options-table td {
+    vertical-align: middle;
+}
+
+#settings_table.plugin-options-table td + td {
+    width: auto
+}
+
+#settings_table.plugin-options-table td > p {
+    margin-top: 0;
+    margin-bottom: 0;
+}

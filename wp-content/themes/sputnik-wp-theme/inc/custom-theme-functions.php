@@ -99,7 +99,7 @@ if(!function_exists( 'remove_jquery_from_frontend' )) {
 			$scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
 		}
 	}
-	add_filter( 'wp_default_scripts', 'remove_jquery_from_frontend' );
+	//add_filter( 'wp_default_scripts', 'remove_jquery_from_frontend' );
 }
 
 // Svg icon display & dirname(__FILE__, 1) in main functions.php or dirname(__FILE__, 2) when file is in theme subdirectory
