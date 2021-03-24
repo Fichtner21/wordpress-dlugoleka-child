@@ -5,18 +5,17 @@ Swiper.use([Navigation, Pagination, Autoplay]);
 
 document.addEventListener("DOMContentLoaded", function () {
   //* Always check if element exist for secure
-  if (document.getElementById("communicat")) {
+  // if (document.getElementById("communicat")) {
     const messagesSlider = new Swiper("#communicat", {
-      spaceBetween: 0,
-      // centeredSlides: true,
-      speed: 7000,
+      direction: 'vertical',      
+      slidesPerView: 1,
       autoplay: {
-        delay: 0,
+        delay: 5000,
+        disableOnInteraction: false,
       },
+      speed: 1000,
       loop: true,
-      slidesPerView: 2,
-      allowTouchMove: false,
-      disableOnInteraction: true,
+      autoplayDisableOnInteraction: false,
 
       // ! Get from _responsive.scss breakpoints
       breakpoints: {
@@ -34,17 +33,18 @@ document.addEventListener("DOMContentLoaded", function () {
       const span = this.querySelector("span");
 
       if (span.textContent === "Zatrzymaj") {
-        messagesSlider.autoplay = false;
-        // messagesSlider.autoplay = false;
+        messagesSlider.autoplay.stop();
+        $('#communicat .swiper-wrapper').addClass('disabled-transition');
         this.title = "Wznów";
         span.textContent = "Wznów";
       } else {
-        messagesSlider.autoplay = true;
+        messagesSlider.autoplay.start();
+        $('#communicat .swiper-wrapper').removeClass('disabled-transition');
         this.title = "Zatrzymaj";
         span.textContent = "Zatrzymaj";
       }
     });
-  }
+  // }
 
   if (document.querySelector(".hero")) {
     const heroSlider = new Swiper(".hero .swiper-container", {

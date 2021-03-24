@@ -7,4 +7,38 @@
     display: flex;
     align-items: center;
   }
+
+  &__title {
+    a {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+#communicat {
+  max-height: 4rem;
+}
+
+.module-messages__animtoggle {
+  color: #fff;
+  background-color: #0a3255;
+  width: 10rem;
+  outline: none;
+  border: none;
+  padding: 1rem;  
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.module-messages {
+  #communicat,
+  .swiper-wrapper,
+  .swiper-slide{
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {    
+    font-size: 1.8rem;   
+    display: flex;    
+  }
 }

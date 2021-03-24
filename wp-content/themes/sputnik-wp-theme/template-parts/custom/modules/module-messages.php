@@ -18,7 +18,7 @@ if($messages_query->have_posts()) : ?>
 
             <button class="module-messages__animtoggle" title='<?= __('Zatrzymaj',''); ?>'>
                 <span><?= __('Zatrzymaj',''); ?></span>
-            </button>
+            </button>            
 
             <div class="swiper-container" id="communicat">
                 <div class="swiper-wrapper">
