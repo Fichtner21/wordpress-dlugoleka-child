@@ -181,6 +181,8 @@ document.addEventListener("DOMContentLoaded", function () {
         thumbnail.className = "event__thumbnail";
         thumbnail.appendChild(img);
 
+        img.title = element.event.title;
+        img.alt = element.event.title;
         img.src = element.event.extendedProps.thumbnail;
       }
 

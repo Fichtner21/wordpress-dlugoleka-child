@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // centeredSlides: true,
       speed: 7000,
       autoplay: {
-        delay: 1,
+        delay: 0,
       },
       loop: true,
       slidesPerView: 2,
@@ -34,11 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const span = this.querySelector("span");
 
       if (span.textContent === "Zatrzymaj") {
-        messagesSlider.autoplay.stop();
+        messagesSlider.autoplay = false;
+        // messagesSlider.autoplay = false;
         this.title = "Wznów";
         span.textContent = "Wznów";
       } else {
-        messagesSlider.autoplay.start();
+        messagesSlider.autoplay = true;
         this.title = "Zatrzymaj";
         span.textContent = "Zatrzymaj";
       }
