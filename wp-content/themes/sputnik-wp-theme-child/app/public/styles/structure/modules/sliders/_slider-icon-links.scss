@@ -10,6 +10,10 @@
     border: 0;
     top: 3rem;
     cursor: pointer;
+    @include custom-screen(1450) {
+      top: unset;
+      bottom: -15rem;
+    }
     html.contrast-mode & {
       background: $contrastBackground;
       color: $contrastColor;
@@ -20,9 +24,21 @@
   }
   .swiper-button-prev {
     left: -2rem;
+    @include custom-screen(1450) {
+      left: 45%;
+    }
+    @include medium {
+      left: 35%;
+    }
   }
   .swiper-button-next {
     right: -2rem;
+    @include custom-screen(1450) {
+      right: 45%;
+    }
+    @include medium {
+      right: 35%;
+    }
   }
 }
 
@@ -61,6 +77,12 @@
         border-radius: 0.5rem;
         html.contrast-mode & {
           color: $contrastColor;
+          img {
+            filter: invert(91%) sepia(75%) saturate(7496%) hue-rotate(356deg) brightness(105%) contrast(104%);
+          }
+        }
+        & > img {
+          height: 10rem;
         }
         &:hover,
         &:focus {
@@ -69,6 +91,12 @@
           html.contrast-mode & {
             background: $contrastColor;
             color: $contrastBackground;
+          }
+          img {
+            filter: invert(1);
+            html.contrast-mode & {
+              filter: invert(0);
+            }
           }
           svg,
           path {

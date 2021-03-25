@@ -55,14 +55,14 @@ $screen-xl-max: 1170px;
 
 // Custom devices
 @mixin custom-screen($screen) {
-  @media (max-width: $screen + "rem") {
+  @media (max-width: $screen + "px") {
     @content;
   }
 }
 
 // Custom devices
 @mixin custom-screen-between($min_screen, $max_screen) {
-  @media (min-width: $min_screen + "rem") and (max-width: $max_screen + "rem") {
+  @media (min-width: $min_screen + "px") and (max-width: $max_screen + "px") {
     @content;
   }
 }
