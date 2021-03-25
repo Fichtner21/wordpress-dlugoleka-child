@@ -20,7 +20,7 @@ get_header(); ?>
 			<div class="container-news">
 				<div class='archive-posts'>
 					<header class="page-section-heading">
-						<h2 class="page-section-heading__title"><?php echo single_term_title(); ?></h2>
+						<h1 class="page-section-heading__title"><?php echo single_term_title(); ?></h1>
 					</header>
 					<?php
 					$exclude = array();
