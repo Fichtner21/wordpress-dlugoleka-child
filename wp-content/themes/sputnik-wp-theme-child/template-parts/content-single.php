@@ -139,7 +139,7 @@ $title_font_size = get_field('title_font_size');
                             <!-- Category -->
                             <?php  ?>
 
-                            <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme'); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
+                            <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme') . ' - ' . get_the_title(); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
                         </footer><!-- .entry-footer -->
 
                     </section>

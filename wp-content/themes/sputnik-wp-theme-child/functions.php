@@ -83,7 +83,7 @@ function custom_post_loop_template_dlugoleka($heading_level = 'h2', $thumb_size 
                 <!-- Category -->
                 <?php sputnik_wp_theme_categories($categories_count); ?>
 
-                <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme'); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
+                <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme') . ' - ' . get_the_title(); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
             </footer><!-- .entry-footer -->
         </section>
 	</article><!-- #post-<?= get_the_ID(); ?> -->
@@ -172,7 +172,7 @@ function custom_post_loop_template_dlugoleka($heading_level = 'h2', $thumb_size 
                             } ?>
 
 
-                        <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme'); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
+                        <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme') . ' - ' . get_the_title(); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
                         </footer><!-- .entry-footer -->
                     </section>
                 </article><!-- #post-<?= get_the_ID(); ?> -->
@@ -236,9 +236,9 @@ add_filter('upload_mimes', 'dl_upload_mime_types', 1, 1);
 // Wyłączenie gutenberga dla Mapy Interaktywnej (dla konkretnego template)
 add_filter( 'use_block_editor_for_post', 'my_disable_gutenberg', 10, 2 );
 
-function my_disable_gutenberg( $can_edit, $post ) {    
+function my_disable_gutenberg( $can_edit, $post ) {
   if( get_page_template_slug(  ) == 'template-parts/content-map.php') {
       return false;
-  } 
+  }
   return true;
 }
