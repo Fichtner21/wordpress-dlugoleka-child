@@ -1110,7 +1110,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie-exposed.js");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js?f970");
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_0__);
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -1152,6 +1152,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToAr
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 document.addEventListener("DOMContentLoaded", function () {
+  //
   if (document.querySelectorAll(".menu .menu-item a").length > 0) {
     var menuAnchors = document.querySelectorAll(".menu .menu-item a");
     menuAnchors.forEach(function (anchor) {
@@ -1163,7 +1164,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     });
-  }
+  } //
+
 
   var is = document.querySelectorAll("i");
   var svgs = document.querySelectorAll("svg");
@@ -1171,7 +1173,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var iClass = i.classList[0];
     var iIconClass = i.classList[1];
 
-    if (iClass.includes("fa")) {
+    if (iClass != null && iClass != undefined && iClass.includes("fa")) {
       var iParent = i.parentNode;
       var iParentTag = iParent.tagName;
       i.setAttribute("focusable", "false");
@@ -1183,22 +1185,28 @@ document.addEventListener("DOMContentLoaded", function () {
         iParent.setAttribute("aria-label", iIconClass);
       }
     }
-  });
+  }); //
 
   if (document.querySelector(".page-template-declaration")) {
     var declarationBody = document.querySelector(".page-template-declaration");
     var declarationCont = declarationBody.querySelector("main .custom-container");
     declarationCont.id = "primary";
-  }
+  } //
 
-  var allSvgNodeList = document.querySelectorAll('svg');
+
+  var allSvgNodeList = document.querySelectorAll("svg");
 
   var allSvgArray = _toConsumableArray(allSvgNodeList);
 
   allSvgArray.forEach(function (el) {
     var dataIcon = el.dataset.icon;
-    el.setAttribute('role', 'img');
-    el.setAttribute('aria-label', dataIcon);
+    el.setAttribute("role", "img");
+    el.setAttribute("aria-label", dataIcon);
+  }); //
+
+  var aTags = document.querySelectorAll("a");
+  aTags.forEach(function (a) {
+    if (!a.getAttribute("title")) a.setAttribute("title", a.textContent);
   });
 });
 
@@ -1213,7 +1221,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie-exposed.js");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js?f970");
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_0__);
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -38882,24 +38890,7 @@ return jQuery;
 
 /***/ }),
 
-/***/ "./node_modules/js-cookie/src/js.cookie-exposed.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/js-cookie/src/js.cookie-exposed.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var ___EXPOSE_LOADER_IMPORT___ = __webpack_require__(/*! -!./js.cookie.js */ "./node_modules/js-cookie/src/js.cookie.js");
-var ___EXPOSE_LOADER_GET_GLOBAL_THIS___ = __webpack_require__(/*! ../../expose-loader/dist/runtime/getGlobalThis.js */ "./node_modules/expose-loader/dist/runtime/getGlobalThis.js");
-var ___EXPOSE_LOADER_GLOBAL_THIS___ = ___EXPOSE_LOADER_GET_GLOBAL_THIS___;
-if (typeof ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] === 'undefined') ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] = ___EXPOSE_LOADER_IMPORT___;
-else throw new Error('[exposes-loader] The "Cookies" value exists in the global scope, it may not be safe to overwrite it, use the "override" option')
-module.exports = ___EXPOSE_LOADER_IMPORT___;
-
-
-/***/ }),
-
-/***/ "./node_modules/js-cookie/src/js.cookie.js":
+/***/ "./node_modules/js-cookie/src/js.cookie.js?a78e":
 /*!*************************************************!*\
   !*** ./node_modules/js-cookie/src/js.cookie.js ***!
   \*************************************************/
@@ -39073,6 +39064,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 	return init(function () {});
 }));
+
+
+/***/ }),
+
+/***/ "./node_modules/js-cookie/src/js.cookie.js?f970":
+/*!*************************************************!*\
+  !*** ./node_modules/js-cookie/src/js.cookie.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var ___EXPOSE_LOADER_IMPORT___ = __webpack_require__(/*! -!./js.cookie.js */ "./node_modules/js-cookie/src/js.cookie.js?a78e");
+var ___EXPOSE_LOADER_GET_GLOBAL_THIS___ = __webpack_require__(/*! ../../expose-loader/dist/runtime/getGlobalThis.js */ "./node_modules/expose-loader/dist/runtime/getGlobalThis.js");
+var ___EXPOSE_LOADER_GLOBAL_THIS___ = ___EXPOSE_LOADER_GET_GLOBAL_THIS___;
+if (typeof ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] === 'undefined') ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] = ___EXPOSE_LOADER_IMPORT___;
+else throw new Error('[exposes-loader] The "Cookies" value exists in the global scope, it may not be safe to overwrite it, use the "override" option')
+module.exports = ___EXPOSE_LOADER_IMPORT___;
 
 
 /***/ }),
