@@ -114,13 +114,12 @@ if(!function_exists('clean_custom_menu')) {
     function clean_custom_menu( $menu_id ) {
         $menu_items = wp_get_nav_menu_items($menu_id);
 
-        $menu_list .= '<ul class="menu">' . "\n";
+        $menu_list = '<ul class="menu">' . "\n";
 
         $count = 0;
         $submenu = false;
 
         foreach( $menu_items as $menu_item ) {
-
             $link = $menu_item->url;
             $title = $menu_item->title;
 

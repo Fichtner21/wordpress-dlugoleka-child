@@ -131,6 +131,8 @@ document.addEventListener("DOMContentLoaded", function () {
     $(document).ready(function () {
       $(".acf-map").each(function () {
         render_map($(this));
+
+        $("iframe").attr("title", "Google map");
       });
     });
   })(jQuery);

@@ -634,6 +634,7 @@ _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__["dom"].watch();
     $(document).ready(function () {
       $(".acf-map").each(function () {
         render_map($(this));
+        $("iframe").attr("title", "Google map");
       });
     });
   })(jQuery);
@@ -1207,7 +1208,13 @@ document.addEventListener("DOMContentLoaded", function () {
   var aTags = document.querySelectorAll("a");
   aTags.forEach(function (a) {
     if (!a.getAttribute("title")) a.setAttribute("title", a.textContent);
-  });
+  }); //
+
+  var searchForm = document.getElementById("sputnik-search-form");
+  var searchFormSinputs = searchForm.querySelectorAll('input[id="s"]');
+  searchFormSinputs[1].id = "".concat(searchFormSinputs[1].id, "-1");
+  searchFormSinputs[1].name = searchFormSinputs[1].id;
+  searchFormSinputs[1].parentNode.querySelector("label").setAttribute("for", searchFormSinputs[1].id);
 });
 
 /***/ }),
