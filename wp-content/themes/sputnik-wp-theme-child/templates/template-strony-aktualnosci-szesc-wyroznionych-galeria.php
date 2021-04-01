@@ -24,7 +24,7 @@ get_header(); ?>
 		<section class='page-section galleries'>
 			<div class='container'>
 				<header class="entry-header">
-					<h2 class='entry-title'><?= __('Galeria','sputnik-wp-theme'); ?></h2>
+					<h1 class='entry-title'><?= __('Galeria','sputnik-wp-theme'); ?></h1>
 					<a href="<?= get_the_permalink(get_page_by_path('galerie')); ?>" class="entry-header__anchor" title='<?= __('Zobacz więcej','sputnik-wp-theme'); ?>'><?= __('Zobacz więcej','sputnik-wp-theme'); ?></a>
 				</header><!-- .entry-header -->
 

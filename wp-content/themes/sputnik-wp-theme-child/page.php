@@ -18,7 +18,6 @@ get_header(); ?>
 
 	<main id="primary" class="site-main">
 		<div class="container">
-
 			<?php if(in_array('slider-hero', $choosed_elements)) require CUSTOM_PARTS . '/modules/sliders/slider-hero.php'; ?>
 
 			<?php if(in_array('links-under-slider', $choosed_elements)) require CUSTOM_PARTS . '/modules/module-links-under-slider.php'; ?>

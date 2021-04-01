@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  //
   if (document.querySelectorAll(".menu .menu-item a").length > 0) {
     const menuAnchors = document.querySelectorAll(".menu .menu-item a");
 
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-
+  //
   const is = document.querySelectorAll("i");
   const svgs = document.querySelectorAll("svg");
 
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const iClass = i.classList[0];
     const iIconClass = i.classList[1];
 
-    if (iClass.includes("fa")) {
+    if (iClass != null && iClass != undefined && iClass.includes("fa")) {
       const iParent = i.parentNode;
       const iParentTag = iParent.tagName;
 
@@ -34,19 +35,35 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
-
+  //
   if (document.querySelector(".page-template-declaration")) {
     const declarationBody = document.querySelector(".page-template-declaration");
     const declarationCont = declarationBody.querySelector("main .custom-container");
 
     declarationCont.id = "primary";
   }
+  //
+  const allSvgNodeList = document.querySelectorAll("svg");
+  const allSvgArray = [...allSvgNodeList];
 
-  const allSvgNodeList = document.querySelectorAll('svg');  
-  const allSvgArray = [...allSvgNodeList];  
   allSvgArray.forEach((el) => {
     let dataIcon = el.dataset.icon;
-    el.setAttribute('role', 'img');
-    el.setAttribute('aria-label', dataIcon);    
+
+    el.setAttribute("role", "img");
+    el.setAttribute("aria-label", dataIcon);
   });
+  //
+  const aTags = document.querySelectorAll("a");
+
+  aTags.forEach((a) => {
+    if (!a.getAttribute("title")) a.setAttribute("title", a.textContent);
+  });
+  //
+
+  const searchForm = document.getElementById("sputnik-search-form");
+  const searchFormSinputs = searchForm.querySelectorAll('input[id="s"]');
+
+  searchFormSinputs[1].id = `${searchFormSinputs[1].id}-1`;
+  searchFormSinputs[1].name = searchFormSinputs[1].id;
+  searchFormSinputs[1].parentNode.querySelector("label").setAttribute("for", searchFormSinputs[1].id);
 });

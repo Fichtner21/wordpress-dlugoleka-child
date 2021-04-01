@@ -54,9 +54,11 @@ if(!function_exists('menu_item_page_boxes_images')) {
 
                 $require_svg_icon = requireToVariable($menu_item_icon_PATH);
 
+                $menu_icon_img = '<img src="'. $menu_item_icon_URL .'" alt="">';
+
                 $item->attr_title = $item->title;
 
-                $item->title = $require_svg_icon . '<span class="menu-item__title menu-item__title--icon">'. $item->title .'</span>';
+                $item->title = $menu_icon_img . '<span class="menu-item__title menu-item__title--icon">'. $item->title .'</span>';
             } elseif(!empty($menu_item_image) && $menu_item_image != null) {
                 $menu_item_image_URL = $menu_item_image['url'];
 
@@ -112,13 +114,12 @@ if(!function_exists('clean_custom_menu')) {
     function clean_custom_menu( $menu_id ) {
         $menu_items = wp_get_nav_menu_items($menu_id);
 
-        $menu_list .= '<ul class="menu">' . "\n";
+        $menu_list = '<ul class="menu">' . "\n";
 
         $count = 0;
         $submenu = false;
 
         foreach( $menu_items as $menu_item ) {
-
             $link = $menu_item->url;
             $title = $menu_item->title;
 

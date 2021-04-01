@@ -20,7 +20,7 @@ get_header(); ?>
 		<section class='page-section events'>
 			<div class='container'>
 				<header class="page-section-heading">
-					<h2 class="page-section-heading__title"><?= __('Wydarzenia','sputnik-wp-theme'); ?></h2>
+					<h1 class="page-section-heading__title"><?= __('Wydarzenia','sputnik-wp-theme'); ?></h1>
 				</header>
 
 				<div class='events__wrapper'>

@@ -17,7 +17,7 @@ get_header(); ?>
 
 				<div class='contact-informations-wrapper'>
 					<header class="page-section-heading">
-						<h2 class="page-section-heading__title"><?= __('Kontakt','sputnik-wp-theme'); ?></h2>
+						<h1 class="page-section-heading__title"><?= __('Kontakt','sputnik-wp-theme'); ?></h1>
 					</header>
 					<?php if(in_array('contact-informations', $choosed_elements)) require CUSTOM_PARTS . '/modules/module-contact-informations.php'; ?>
 				</div>

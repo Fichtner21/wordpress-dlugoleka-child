@@ -20,7 +20,7 @@ get_header(); ?>
 			<div class="container-news">
 				<div class='archive-posts'>
 					<header class="page-section-heading">
-						<h2 class="page-section-heading__title"><?php echo single_term_title(); ?></h2>
+						<h1 class="page-section-heading__title"><?php echo single_term_title(); ?></h1>
 					</header>
 					<?php
 					$exclude = array();
@@ -88,7 +88,7 @@ get_header(); ?>
 															<!-- Category -->
 															<?php  ?>
 
-															<a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme'); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
+															<a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme') . ' - ' . get_the_title(); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
 													</footer><!-- .entry-footer -->
 											</section>
 									</article><!-- #post-<?= get_the_ID(); ?> -->

@@ -36,8 +36,7 @@
             <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php"     method="POST" id="filter">
               <?php
                 if( $terms = get_terms( array( 'taxonomy' => 'category', 'orderby' => 'name' ) ) ) :
-
-                  echo '<label for="categoryfilter" class="screen-reader-text">Wybierz kategorię</label><select name="categoryfilter" id="categoryfilter" aria-label="Choose category"><option value="'.$terms.'">Wybierz kategorie...</option>';
+                  echo '<label for="categoryfilter" class="screen-reader-text">Wybierz kategorię</label><select name="categoryfilter" id="categoryfilter" aria-label="Choose category"><option value="'.$terms[0]->id.'">Wybierz kategorie...</option>';
                   foreach ( $terms as $term ) :
                     echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as the value of an option
                   endforeach;
@@ -108,7 +107,7 @@
                             echo '</div>';
                           } ?>
                           </div>
-                          <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme'); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
+                          <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme') . ' - ' . get_the_title(); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
                         </footer><!-- .entry-footer -->
                     </section>
                 </article><!-- #post-<?= get_the_ID(); ?> -->

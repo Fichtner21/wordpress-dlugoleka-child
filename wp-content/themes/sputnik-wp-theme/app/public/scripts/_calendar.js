@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
       localization.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${element.event.extendedProps.localization}`;
 
       url.href = element.event.url;
-      url.title = "Czytaj";
+      url.title = "Czytaj" + element.event.title;
       url.textContent = "Czytaj";
 
       thumbnail.href = element.event.url;

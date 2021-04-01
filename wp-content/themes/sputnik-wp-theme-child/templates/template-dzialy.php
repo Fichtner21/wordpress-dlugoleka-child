@@ -10,6 +10,8 @@ get_header(); ?>
 		<?php if(in_array('links-under-slider', $choosed_elements)) require CUSTOM_PARTS . '/modules/module-links-under-slider.php'; ?>
 
 		<div class='container'>
+			<h1 class="screen-reader-text"><?= get_the_title(); ?></h1>
+
 			<?php require CUSTOM_PARTS . '/modules/module-breadcrumbs.php'; ?>
 
 			<div class="cpt-wrapper">
