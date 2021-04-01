@@ -35,7 +35,7 @@ html {
 
 ::selection {
   background-color: $primaryColor;
-  color: $secondaryColor;
+  color: white;
   html.contrast-mode & {
     background: $contrastBackground;
     color: $contrastColor;
