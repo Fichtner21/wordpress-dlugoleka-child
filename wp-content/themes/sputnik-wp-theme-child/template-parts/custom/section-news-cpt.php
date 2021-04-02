@@ -40,13 +40,13 @@
                     <?php } ?>
                   </div>
 
-                  <section class="post-bulk">
+                  <div class="post-bulk">
                       <header class="post-heading">
                         <div class="post-heading-meta">
                           <?php echo '<i class="fas fa-clock"></i> Data publikacji: ' . get_the_date('d.m.Y') . 'r.'; ?>
                         </div>
 
-                        <?php the_title( '<div class="post-heading__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></div>' ); ?>
+                        <?php the_title( '<div class="post-heading__title"><h3><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3></div>' ); ?>
                       </header><!-- .entry-header -->
 
                       <div class="post-content">
@@ -80,7 +80,7 @@
 
                         <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme') . ' - ' . get_the_title(); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
                       </footer><!-- .entry-footer -->
-                  </section>
+                  </div>
               </article><!-- #post-<?= get_the_ID(); ?> -->
 
             <?php endwhile; ?>

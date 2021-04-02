@@ -1,6 +1,6 @@
 <?php if((get_option('google_play_link') || get_option('app_store_link'))) : ?>
     <div class="apps">
-        <img class="apps__phones" src='<?= get_template_directory_uri(); ?>/dist/public/images/app-phones.png' alt=''>
+        <img class="apps__phones" src='<?= get_template_directory_uri(); ?>/dist/public/images/app-phones.png' alt='Dwa telefony komórkowe'>
 
         <h2 class="apps__title"><?= __('Pobierz Aplikację mobilna','sputnik-wp-theme'); ?></h2>
         <p class="apps__text"><?= !empty(get_option('apps_text')) ? get_option('apps_text') : null; ?></p>

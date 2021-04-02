@@ -49,12 +49,13 @@ if(!function_exists('menu_item_page_boxes_images')) {
 
             if(!empty($menu_item_icon) && $menu_item_icon != null) {
                 $menu_item_icon_URL = $menu_item_icon['url'];
+                $menu_item_icon_ALT = $menu_item_icon['alt'];
 
                 $menu_item_icon_PATH = getFullPath($menu_item_icon_URL);
 
                 $require_svg_icon = requireToVariable($menu_item_icon_PATH);
 
-                $menu_icon_img = '<img src="'. $menu_item_icon_URL .'" alt="">';
+                $menu_icon_img = '<img src="'. $menu_item_icon_URL .'" alt="'. $menu_item_icon_ALT .'">';
 
                 $item->attr_title = $item->title;
 
