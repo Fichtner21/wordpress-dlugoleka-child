@@ -63,7 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const searchForm = document.getElementById("sputnik-search-form");
   const searchFormSinputs = searchForm.querySelectorAll('input[id="s"]');
 
-  searchFormSinputs[1].id = `${searchFormSinputs[1].id}-1`;
-  searchFormSinputs[1].name = searchFormSinputs[1].id;
-  searchFormSinputs[1].parentNode.querySelector("label").setAttribute("for", searchFormSinputs[1].id);
+  if (searchFormSinputs[1] != undefined) {
+    searchFormSinputs[1].id = `${searchFormSinputs[1].id}-1`;
+    searchFormSinputs[1].name = searchFormSinputs[1].id;
+    searchFormSinputs[1].parentNode.querySelector("label").setAttribute("for", searchFormSinputs[1].id);
+  }
 });
