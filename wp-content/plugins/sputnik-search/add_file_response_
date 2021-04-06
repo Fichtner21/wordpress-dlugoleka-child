@@ -11,8 +11,8 @@ Array
             [filetime] => -1
             [ssl_verify_result] => 0
             [redirect_count] => 0
-            [total_time] => 21.361757
-            [namelookup_time] => 0.001515
+            [total_time] => 21.368487
+            [namelookup_time] => 0.001324
             [connect_time] => 0
             [pretransfer_time] => 0
             [size_upload] => 0
@@ -38,11 +38,11 @@ Array
             [scheme] => 
             [appconnect_time_us] => 0
             [connect_time_us] => 0
-            [namelookup_time_us] => 1515
+            [namelookup_time_us] => 1324
             [pretransfer_time_us] => 0
             [redirect_time_us] => 0
             [starttransfer_time_us] => 0
-            [total_time_us] => 21361757
+            [total_time_us] => 21368487
         )
 
 )

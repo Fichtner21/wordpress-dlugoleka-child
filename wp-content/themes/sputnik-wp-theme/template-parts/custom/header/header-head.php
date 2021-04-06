@@ -28,7 +28,7 @@ $post_type = get_post_type();
 
 	<?php if(is_page('kontakt')) : ?>
 		<script src="https://www.google.com/recaptcha/api.js?render=6LecWjsaAAAAAEOse8zcdG1kotODFs05U2DY3Jl1"></script>
-	<?php endif; ?>
+	<?php endif; ?>		
 </head>
 
 <body <?php body_class([$active_theme]); ?> <?= (isset($post_type) && $post_type != '') ? "id='$post_type'" : false; ?>>
