@@ -9142,3 +9142,291 @@
 [06-Apr-2021 09:48:42 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
 [06-Apr-2021 09:48:42 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
 [06-Apr-2021 09:48:42 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:49:34 UTC] PHP Notice:  Undefined offset: 16 in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:49:34 UTC] PHP Stack trace:
+[06-Apr-2021 09:49:34 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:49:34 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:49:34 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:49:34 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:49:34 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:49:34 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:49:34 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:49:34 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:49:34 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:49:34 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:49:34 UTC] PHP Notice:  Trying to get property 'menu_item_parent' of non-object in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:49:34 UTC] PHP Stack trace:
+[06-Apr-2021 09:49:34 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:49:34 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:49:34 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:49:34 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:49:34 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:49:34 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:49:34 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:49:34 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:49:34 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:49:34 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:49:34 UTC] PHP Notice:  Undefined offset: 16 in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:49:34 UTC] PHP Stack trace:
+[06-Apr-2021 09:49:34 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:49:34 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:49:34 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:49:34 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:49:34 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:49:34 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:49:34 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:49:34 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:49:34 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:49:34 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:49:34 UTC] PHP Notice:  Trying to get property 'menu_item_parent' of non-object in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:49:34 UTC] PHP Stack trace:
+[06-Apr-2021 09:49:34 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:49:34 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:49:34 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:49:34 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:49:34 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:49:34 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:49:34 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:49:34 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:49:34 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:49:34 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:49:51 UTC] PHP Notice:  Undefined offset: 16 in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:49:51 UTC] PHP Stack trace:
+[06-Apr-2021 09:49:51 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:49:51 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:49:51 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:49:51 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:49:51 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:49:51 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:49:51 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:49:51 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:49:51 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:49:51 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:49:51 UTC] PHP Notice:  Trying to get property 'menu_item_parent' of non-object in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:49:51 UTC] PHP Stack trace:
+[06-Apr-2021 09:49:51 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:49:51 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:49:51 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:49:51 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:49:51 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:49:51 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:49:51 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:49:51 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:49:51 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:49:51 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:49:51 UTC] PHP Notice:  Undefined offset: 16 in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:49:51 UTC] PHP Stack trace:
+[06-Apr-2021 09:49:51 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:49:51 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:49:51 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:49:51 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:49:51 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:49:51 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:49:51 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:49:51 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:49:51 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:49:51 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:49:51 UTC] PHP Notice:  Trying to get property 'menu_item_parent' of non-object in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:49:51 UTC] PHP Stack trace:
+[06-Apr-2021 09:49:51 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:49:51 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:49:51 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:49:51 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:49:51 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:49:51 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:49:51 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:49:51 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:49:51 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:49:51 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:52:28 UTC] PHP Notice:  Undefined offset: 16 in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:52:28 UTC] PHP Stack trace:
+[06-Apr-2021 09:52:28 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:52:28 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:52:28 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:52:28 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:52:28 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:52:28 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:52:28 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:52:28 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:52:28 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:52:28 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:52:28 UTC] PHP Notice:  Trying to get property 'menu_item_parent' of non-object in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:52:28 UTC] PHP Stack trace:
+[06-Apr-2021 09:52:28 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:52:28 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:52:28 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:52:28 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:52:28 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:52:28 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:52:28 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:52:28 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:52:28 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:52:28 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:52:28 UTC] PHP Notice:  Undefined offset: 16 in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:52:28 UTC] PHP Stack trace:
+[06-Apr-2021 09:52:28 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:52:28 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:52:28 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:52:28 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:52:28 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:52:28 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:52:28 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:52:28 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:52:28 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:52:28 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:52:28 UTC] PHP Notice:  Trying to get property 'menu_item_parent' of non-object in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:52:28 UTC] PHP Stack trace:
+[06-Apr-2021 09:52:28 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:52:28 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:52:28 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:52:28 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:52:28 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:52:28 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:52:28 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:52:28 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:52:28 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:52:28 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:52:54 UTC] PHP Notice:  Undefined offset: 16 in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:52:54 UTC] PHP Stack trace:
+[06-Apr-2021 09:52:54 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:52:54 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:52:54 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:52:54 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:52:54 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:52:54 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:52:54 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:52:54 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:52:54 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:52:54 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:52:54 UTC] PHP Notice:  Trying to get property 'menu_item_parent' of non-object in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:52:54 UTC] PHP Stack trace:
+[06-Apr-2021 09:52:54 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:52:54 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:52:54 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:52:54 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:52:54 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:52:54 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:52:54 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:52:54 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:52:54 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:52:54 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:52:54 UTC] PHP Notice:  Undefined offset: 16 in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:52:54 UTC] PHP Stack trace:
+[06-Apr-2021 09:52:54 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:52:54 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:52:54 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:52:54 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:52:54 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:52:54 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:52:54 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:52:54 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:52:54 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:52:54 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 09:52:54 UTC] PHP Notice:  Trying to get property 'menu_item_parent' of non-object in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 09:52:54 UTC] PHP Stack trace:
+[06-Apr-2021 09:52:54 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 09:52:54 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 09:52:54 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 09:52:54 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 09:52:54 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 09:52:54 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 09:52:54 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 09:52:54 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 09:52:54 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 09:52:54 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 10:29:15 UTC] PHP Notice:  Undefined offset: 16 in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 10:29:15 UTC] PHP Stack trace:
+[06-Apr-2021 10:29:15 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 10:29:15 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 10:29:15 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 10:29:15 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 10:29:15 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 10:29:15 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 10:29:15 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 10:29:15 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 10:29:15 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 10:29:15 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 10:29:15 UTC] PHP Notice:  Trying to get property 'menu_item_parent' of non-object in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 10:29:15 UTC] PHP Stack trace:
+[06-Apr-2021 10:29:15 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 10:29:15 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 10:29:15 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 10:29:15 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 10:29:15 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 10:29:15 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 10:29:15 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 10:29:15 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 10:29:15 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 10:29:15 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 10:29:15 UTC] PHP Notice:  Undefined offset: 16 in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 10:29:15 UTC] PHP Stack trace:
+[06-Apr-2021 10:29:15 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 10:29:15 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 10:29:15 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 10:29:15 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 10:29:15 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 10:29:15 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 10:29:15 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 10:29:15 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 10:29:15 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 10:29:15 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 10:29:15 UTC] PHP Notice:  Trying to get property 'menu_item_parent' of non-object in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 10:29:15 UTC] PHP Stack trace:
+[06-Apr-2021 10:29:15 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 10:29:15 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 10:29:15 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 10:29:15 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 10:29:15 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\front-page.php:109
+[06-Apr-2021 10:29:15 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 10:29:15 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 10:29:15 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 10:29:15 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 10:29:15 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 10:29:18 UTC] PHP Notice:  Undefined offset: 16 in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 10:29:18 UTC] PHP Stack trace:
+[06-Apr-2021 10:29:18 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 10:29:18 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 10:29:18 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 10:29:18 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 10:29:18 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\declaration.php:130
+[06-Apr-2021 10:29:18 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 10:29:18 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 10:29:18 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 10:29:18 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 10:29:18 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 10:29:18 UTC] PHP Notice:  Trying to get property 'menu_item_parent' of non-object in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 10:29:18 UTC] PHP Stack trace:
+[06-Apr-2021 10:29:18 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 10:29:18 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 10:29:18 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 10:29:18 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 10:29:18 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\declaration.php:130
+[06-Apr-2021 10:29:18 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 10:29:18 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 10:29:18 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 10:29:18 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 10:29:18 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 10:29:19 UTC] PHP Notice:  Undefined offset: 16 in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 10:29:19 UTC] PHP Stack trace:
+[06-Apr-2021 10:29:19 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 10:29:19 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 10:29:19 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 10:29:19 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 10:29:19 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\declaration.php:130
+[06-Apr-2021 10:29:19 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 10:29:19 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 10:29:19 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 10:29:19 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 10:29:19 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
+[06-Apr-2021 10:29:19 UTC] PHP Notice:  Trying to get property 'menu_item_parent' of non-object in C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\inc\custom-menus.php on line 153
+[06-Apr-2021 10:29:19 UTC] PHP Stack trace:
+[06-Apr-2021 10:29:19 UTC] PHP   1. {main}() C:\wamp64\www\wordpress.dlugoleka\index.php:0
+[06-Apr-2021 10:29:19 UTC] PHP   2. require() C:\wamp64\www\wordpress.dlugoleka\index.php:17
+[06-Apr-2021 10:29:19 UTC] PHP   3. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-blog-header.php:19
+[06-Apr-2021 10:29:19 UTC] PHP   4. include() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template-loader.php:106
+[06-Apr-2021 10:29:19 UTC] PHP   5. get_footer() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\declaration.php:130
+[06-Apr-2021 10:29:19 UTC] PHP   6. locate_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\general-template.php:92
+[06-Apr-2021 10:29:19 UTC] PHP   7. load_template() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:676
+[06-Apr-2021 10:29:19 UTC] PHP   8. require_once() C:\wamp64\www\wordpress.dlugoleka\wp-includes\template.php:730
+[06-Apr-2021 10:29:19 UTC] PHP   9. require() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme-child\footer.php:30
+[06-Apr-2021 10:29:19 UTC] PHP  10. clean_custom_menu() C:\wamp64\www\wordpress.dlugoleka\wp-content\themes\sputnik-wp-theme\template-parts\custom\footer\footer-columns.php:34
