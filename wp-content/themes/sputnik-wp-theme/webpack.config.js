@@ -10,7 +10,7 @@ module.exports = {
   entry: {
     public: "./app/public/public.js",
     admin: "./app/admin/admin.js",
-  },
+  },  
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name]/[name].bundle.js",

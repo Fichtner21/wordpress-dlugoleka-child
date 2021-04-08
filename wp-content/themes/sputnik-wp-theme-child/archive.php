@@ -16,7 +16,8 @@ get_header(); ?>
 
 	<main id="primary" class="site-main">
 		<div class="container">
-			<?php require CUSTOM_PARTS . '/modules/module-breadcrumbs.php'; ?>
+			<?php require CUSTOM_PARTS . '/modules/module-breadcrumbs.php'; ?>			
+			
 			<div class="container-news">
 				<div class='archive-posts'>
 					<header class="page-section-heading">
