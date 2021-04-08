@@ -356,6 +356,35 @@
 			        </select>
 				</div>
 			</div>
+			<div class="form-group">
+				<div class="col-md-3">
+					<?php _e( 'Location for Notification', 'yop-poll' );?>
+				</div>
+				<div class="col-md-9">
+					<?php
+					$poll_options_notification_message_location_top = 'selected';
+					$poll_options_notification_message_location_bottom = '';
+					if ( true === isset( $poll->meta_data['options']['poll']['notificationMessageLocation'] ) ) {
+						if ( 'bottom' === $poll->meta_data['options']['poll']['notificationMessageLocation'] ) {
+							$poll_options_notification_message_location_bottom = 'selected';
+						} else {
+							$poll_options_notification_message_location_top = 'selected';
+						}
+					} else {
+						$poll_options_notification_message_location_top = 'selected';
+						$poll_options_notification_message_location_bottom = '';
+					}
+					?>
+					<select class="poll-options-notification-message-location admin-select" style="width: 100%">
+						<option value="top" <?php echo $poll_options_notification_message_location_top;?>>
+							<?php _e( 'Top', 'yop-poll' );?>
+						</option>
+						<option value="bottom" <?php echo $poll_options_notification_message_location_bottom;?>>
+							<?php _e( 'Bottom', 'yop-poll' );?>
+						</option>
+					</select>
+				</div>
+			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">

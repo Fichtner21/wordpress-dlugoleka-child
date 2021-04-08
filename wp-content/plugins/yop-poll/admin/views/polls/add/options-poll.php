@@ -213,6 +213,21 @@
 			        </select>
 				</div>
 			</div>
+			<div class="form-group">
+				<div class="col-md-3">
+					<?php _e( 'Location for Notification', 'yop-poll' );?>
+				</div>
+				<div class="col-md-9">
+					<select class="poll-options-notification-message-location admin-select" style="width: 100%">
+						<option value="top" selected>
+							<?php _e( 'Top', 'yop-poll' );?>
+						</option>
+						<option value="bottom">
+							<?php _e( 'Bottom', 'yop-poll' );?>
+						</option>
+					</select>
+				</div>
+			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">

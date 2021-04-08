@@ -735,7 +735,8 @@ class YOP_Poll_Polls {
 					'enableGdpr' => $poll->options->poll->enableGdpr,
 					'gdprSolution' => $poll->options->poll->gdprSolution,
 					'gdprConsentText' => $poll->options->poll->gdprConsentText,
-					'loadWithAjax' => $poll->options->poll->loadWithAjax
+					'loadWithAjax' => $poll->options->poll->loadWithAjax,
+					'notificationMessageLocation' => $poll->options->poll->notificationMessageLocation
 				),
 				'results' => array(
 					'showResultsMoment' => $poll->options->results->showResultsMoment,
