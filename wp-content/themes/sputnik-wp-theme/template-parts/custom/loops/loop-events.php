@@ -52,14 +52,14 @@ if(!empty($allEvents)) : ?>
                 $ID = $event->ID;
                 $event_title = $event->post_title;
                 $permalink = get_the_permalink($ID);
-                $event_thumbnail = get_the_post_thumbnail($ID, 'thumbnail');
+                $event_thumbnail = get_the_post_thumbnail($ID, 'medium');
                 $event_date_start = $event->date_start;
                 $event_localization = $event->localization;
             ?>
 
             <article id="post-<?= $ID; ?>" <?php post_class(); ?>>
                 <figure>
-                    <?php the_post_thumbnail($ID, 'thumbnail'); ?>
+                    <?= $event_thumbnail; ?>
                 </figure>
 
                 <div class="post-bulk">
