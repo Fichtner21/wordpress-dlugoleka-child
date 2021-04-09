@@ -9,7 +9,7 @@
   &__title {
     font-size: 1.8rem;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: none;
     margin-bottom: 4rem;
     html.contrast-mode & {
       color: $contrastBackground;
@@ -19,7 +19,7 @@
     margin-bottom: 3rem;
   }
   &__subtitle {
-    text-transform: uppercase;
+    text-transform: none;
   }
   &__data {
     font-size: 1.4rem;
