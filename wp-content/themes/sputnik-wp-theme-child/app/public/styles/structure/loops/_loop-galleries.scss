@@ -31,9 +31,15 @@
         &__title {
           margin-bottom: 1rem;
           font-size: 1.8rem;
+          html.contrast-mode & {
+            color: $contrastColor;
+          }
           a {
             text-decoration: none;
             color: #0a3255;
+            html.contrast-mode & {
+              color: $contrastColor;
+            }
             &:hover,
             &:focus {
               text-decoration: underline;

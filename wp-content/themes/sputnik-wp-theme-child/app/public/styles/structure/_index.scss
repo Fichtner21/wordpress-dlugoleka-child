@@ -116,7 +116,7 @@
           text-transform: none;
           font-weight: 400;
 
-          .contrast-mode & {
+          html.contrast-mode & {
             color: $contrastColor;
           }
 
@@ -260,6 +260,9 @@
             font-weight: 700;
             text-transform: none;
             margin-bottom: 1rem;
+            html.contrast-mode & {
+              color: $contrastColor;
+            }
 
             a {
               text-decoration: none;

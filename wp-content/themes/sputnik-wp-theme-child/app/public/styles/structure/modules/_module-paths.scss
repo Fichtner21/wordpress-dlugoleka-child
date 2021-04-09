@@ -21,6 +21,9 @@
       font-size: 1.6rem;
       text-transform: none;
       text-decoration: underline;
+      html.contrast-mode & {
+        color: $contrastColor;
+      }
     }
   }
   &-content {

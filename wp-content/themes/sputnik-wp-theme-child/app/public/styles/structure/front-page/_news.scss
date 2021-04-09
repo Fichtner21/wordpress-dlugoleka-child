@@ -84,6 +84,9 @@ body.home {
             font-weight: 700;
             text-transform: none;
             margin-bottom: 1rem;
+            html.contrast-mode & {
+              color: $contrastColor;
+            }
 
             a {
               text-decoration: none;

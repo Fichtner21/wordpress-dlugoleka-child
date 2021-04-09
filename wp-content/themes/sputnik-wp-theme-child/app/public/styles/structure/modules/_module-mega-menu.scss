@@ -12,6 +12,9 @@
         border-right: 0.5rem solid transparent;
         transition: all 200ms ease-in-out;
         margin-left: 0.6rem;
+        html.contrast-mode & {
+          border-top: 1rem solid $contrastColor;
+        }
       }
     }
 
@@ -109,6 +112,10 @@
               transition: all 350ms ease;
               @include extra-large {
                 background: lighten($primaryColor, 10%);
+
+                html.contrast-mode & {
+                  background: $contrastBackground;
+                }
               }
             }
           }

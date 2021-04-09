@@ -59,11 +59,17 @@
           &__title {
             font-size: 1.4rem;
             margin-bottom: 1rem;
+            html.contrast-mode & {
+              color: $contrastColor;
+            }
 
             a {
               color: #000;
               text-transform: none;
               text-decoration: none;
+              html.contrast-mode & {
+                color: $contrastColor;
+              }
 
               &:hover {
                 text-decoration: underline;
