@@ -1,0 +1,46 @@
+.dataTables_wrapper {
+  table {
+    @media screen and (max-width: 800px){
+      display: block;
+      max-width: fit-content;
+      margin: 0 auto;
+      overflow-x: auto;
+      white-space: nowrap;
+    }   
+
+    .contrast-mode & {
+      .row-1 {
+        background-color: $contrastColor;
+        color: $contrastBackground;
+      }
+
+      th {
+        background-color: unset;
+      }
+
+      .row-hover {
+        >:nth-child(n):hover{
+          background-color: unset;
+        }
+
+        a {
+          color: $contrastColor;
+        }
+
+        .even {
+          background-color: lighten($contrastBackground, 10%);
+          color: $contrastColor;
+        }
+
+        .odd {
+          background-color: $contrastBackground;
+          color: $contrastColor;
+        }
+
+        td {
+          background-color: unset;
+        }
+      }
+    }
+  }
+}
