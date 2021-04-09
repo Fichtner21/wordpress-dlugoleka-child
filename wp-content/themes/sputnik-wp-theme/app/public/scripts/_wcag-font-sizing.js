@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
       const thisDataAction = this.dataset.action;
 
       if (thisDataAction === "font-smaller") {
-        if (fontSizeValue > 52.5) {
+        if (fontSizeValue > 42.5) {
           document.documentElement.style.fontSize = `${(fontSizeValue -= 5)}%`;
 
           Cookies.set(cookieName, fontSizeValue);
         }
       } else if (thisDataAction === "font-bigger") {
-        if (fontSizeValue < 72.5) {
+        if (fontSizeValue < 82.5) {
           document.documentElement.style.fontSize = `${(fontSizeValue += 5)}%`;
 
           Cookies.set(cookieName, fontSizeValue);

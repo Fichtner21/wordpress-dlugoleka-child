@@ -9,7 +9,7 @@
   &__title {
     font-size: 1.8rem;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: none;
     margin-bottom: 4rem;
     html.contrast-mode & {
       color: $contrastBackground;
@@ -22,7 +22,7 @@
     &__anchor {
       text-decoration: none;
       color: white;
-      text-transform: uppercase;
+      text-transform: none;
       font-size: 1.6rem;
       margin-left: 3rem;
       html.contrast-mode & {

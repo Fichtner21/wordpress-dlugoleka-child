@@ -10,7 +10,7 @@
   }
   &__title {
     font-size: 1.2rem;
-    text-transform: uppercase;
+    text-transform: none;
     a {
       color: $primaryColor;
       text-decoration: none;
@@ -28,8 +28,8 @@
     transition-timing-function: linear !important;
     position: relative;
 
-    .swiper-slide {     
-      align-items: center;      
+    .swiper-slide {
+      align-items: center;
       padding: 0 50px;
     }
   }

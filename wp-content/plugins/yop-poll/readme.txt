@@ -76,7 +76,7 @@ Yes
 Current Active Poll ID = -1:   [yop_poll id="-1"]
 Latest Poll id = -2:           [yop_poll id="-2"]
 Random Poll id = -3:           [yop_poll id="-3"]
-List all polls:                [yop_poll_archive max=0 sort="date_added|num_votes" sort_dir="asc|desc"] 
+List with all polls:            [yop_poll_archive max=0 sort="date_added|num_votes" sort_dir="asc|desc"] 
 
 = Can I have more than one poll active? =
 
@@ -119,8 +119,12 @@ You can have only one question per poll.
 
 == Changelog ==
 
+= 6.2.7 =
+* fixed issue with answers set as default not showing selected
+* added an option to choose the location for the notification section. When set to "Bottom" scrolling to the top of the poll is disabled
+
 = 6.2.6 =
-* fixed error showing up when activating the plugin via wp cli
+* fixed error showing up when activating the plugin via cli
 * remove scrolling effect when voting
 * added more parameters to [yop_poll_archive]
 

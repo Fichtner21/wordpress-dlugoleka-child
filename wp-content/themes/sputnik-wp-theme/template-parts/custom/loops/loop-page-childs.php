@@ -4,8 +4,8 @@ $child_pages_args = array(
     'post_type' => 'page',
     'posts_per_page' => '-1',
     'post_status' => 'publish',
-    'orderby' => 'date',
-    'order' => 'DESC',
+    'orderby' => 'menu_order',
+    'order' => 'ASC',
     'post_parent' => get_the_ID(),
 );
 

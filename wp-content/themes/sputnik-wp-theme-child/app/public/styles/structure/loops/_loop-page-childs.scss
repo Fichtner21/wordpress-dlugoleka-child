@@ -74,9 +74,15 @@
       &__title {
         font-size: 1.6rem;
         color: #0a3255;
+        html.contrast-mode & {
+          color: $contrastColor;
+        }
         a {
           color: #0a3255;
           text-decoration: none;
+          html.contrast-mode & {
+            color: $contrastColor;
+          }
           html.contrast-mode & {
             color: $contrastColor;
           }

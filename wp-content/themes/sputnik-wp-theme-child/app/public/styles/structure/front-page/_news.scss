@@ -82,8 +82,11 @@ body.home {
           &__title {
             font-size: 1.4rem;
             font-weight: 700;
-            text-transform: uppercase;
+            text-transform: none;
             margin-bottom: 1rem;
+            html.contrast-mode & {
+              color: $contrastColor;
+            }
 
             a {
               text-decoration: none;

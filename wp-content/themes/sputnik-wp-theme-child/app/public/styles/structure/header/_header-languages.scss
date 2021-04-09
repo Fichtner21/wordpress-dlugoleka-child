@@ -1,3 +1,9 @@
+.languages__title {
+  html.contrast-mode & {
+    color: $contrastColor;
+  }
+}
+
 .languages-list .glink {
   background: $secondaryColor;
   color: black;

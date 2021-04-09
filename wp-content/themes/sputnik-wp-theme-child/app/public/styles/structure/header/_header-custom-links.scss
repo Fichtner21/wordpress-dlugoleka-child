@@ -1,1 +1,7 @@
-
+#top-bar-links {
+  img {
+    html.contrast-mode & {
+      filter: brightness(0) invert(1);
+    }
+  }
+}

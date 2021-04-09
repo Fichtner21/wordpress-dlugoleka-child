@@ -48,6 +48,7 @@
   "dependencies": {
     "@fullcalendar/core": "^5.4.0",
     "@fullcalendar/daygrid": "^5.4.0",
+    "fslightbox": "^3.2.3",
     "js-cookie": "^2.2.1",
     "swiper": "^6.0.1"
   }
