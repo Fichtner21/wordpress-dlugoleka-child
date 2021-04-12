@@ -17,6 +17,6 @@ document.addEventListener('DOMContentLoaded',function() {
 
       Cookies.set(cookieName, `${thisDataAction}`);
     }
-  });
+  });  
 });
 
