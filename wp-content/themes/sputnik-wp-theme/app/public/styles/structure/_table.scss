@@ -1,46 +1,64 @@
-.dataTables_wrapper {
-  table {
-    @media screen and (max-width: 800px){
-      display: block;
-      max-width: fit-content;
-      margin: 0 auto;
-      overflow-x: auto;
-      white-space: nowrap;
-    }   
+html.contrast-mode table.row-hover tr:hover td {
+  background-color: $contrastBackground !important;
+} 
 
-    .contrast-mode & {
-      .row-1 {
-        background-color: $contrastColor;
-        color: $contrastBackground;
+.tablepress {
+  @media screen and (max-width: 800px){
+    display: block;
+    max-width: fit-content;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+  }     
+
+  .row-hover {
+    tr {
+      .column-1 {
+        width: 10%;
       }
 
-      th {
-        background-color: unset;
+      .column-2 {
+        width: 50%;
       }
 
-      .row-hover {
-        >:nth-child(n):hover{
-          background-color: unset;
-        }
-
-        a {
-          color: $contrastColor;
-        }
-
-        .even {
-          background-color: lighten($contrastBackground, 10%);
-          color: $contrastColor;
-        }
-
-        .odd {
-          background-color: $contrastBackground;
-          color: $contrastColor;
-        }
-
-        td {
-          background-color: unset;
-        }
+      .column-3, .column-4 {
+        width: 20%;
       }
+    }
+  }
+
+  .contrast-mode & {
+    .row-1 {
+      background-color: $contrastColor;
+      color: $contrastBackground;
+    }
+
+    th {
+      background-color: unset;
+    }      
+
+    .row-hover { 
+      a {
+        color: $contrastColor;
+      }
+
+      .even {
+        background-color: lighten($contrastBackground, 10%);
+        color: $contrastColor;          
+      }
+
+      .odd {
+        background-color: $contrastBackground;
+        color: $contrastColor;
+      }
+
+      .even:hover td, .odd:hover td {
+        background-color: unset !important;
+      }
+
+      td, td:hover {
+        background-color: unset !important;
+      }        
     }
   }
 }
