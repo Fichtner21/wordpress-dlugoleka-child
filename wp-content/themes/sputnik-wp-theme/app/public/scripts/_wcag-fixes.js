@@ -68,4 +68,17 @@ document.addEventListener("DOMContentLoaded", function () {
     searchFormSinputs[1].name = searchFormSinputs[1].id;
     searchFormSinputs[1].parentNode.querySelector("label").setAttribute("for", searchFormSinputs[1].id);
   }
+  //
+  aTags.forEach((a) => {
+    if (a.target === "_blank") {
+      const aSpan = document.createElement("span");
+
+      aSpan.className = "screen-reader-text";
+      aSpan.textContent = "(Otworzy się w nowej zakładce)";
+
+      a.title = `${a.title} (Otworzy się w nowej zakładce)`;
+
+      a.appendChild(aSpan);
+    }
+  });
 });

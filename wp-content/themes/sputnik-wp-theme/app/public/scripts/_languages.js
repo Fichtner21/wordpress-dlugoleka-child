@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  if(document.getElementById('languages-btn')) {
-    const chooseLanguageBtn = document.getElementById('languages-btn');
+  if (document.getElementById("languages-btn")) {
+    const chooseLanguageBtn = document.getElementById("languages-btn");
     const languagesList = document.querySelector(".languages-list");
     const languagesListItems = [...document.querySelectorAll(".languages-list .glink")];
 

@@ -38,19 +38,19 @@
             fill: $contrastBackground !important;
           }
         }
-        &[title="Facebook"] {
+        &[data-sm="Facebook"] {
           background: #3d599b;
         }
-        &[title="YouTube"] {
+        &[data-sm="YouTube"] {
           background: #b22b2b;
         }
-        &[title="Instagram"] {
+        &[data-sm="Instagram"] {
           background: #d045c1;
         }
-        &[title="Twitter"] {
+        &[data-sm="Twitter"] {
           background: #11bbe6;
         }
-        &[title="RSS"] {
+        &[data-sm="RSS"] {
           background: #e67f11;
         }
 

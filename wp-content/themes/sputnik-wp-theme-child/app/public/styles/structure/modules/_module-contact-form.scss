@@ -3,6 +3,7 @@
   padding-bottom: 6rem;
   background: #f7f6fb;
   position: relative;
+  margin-bottom: 6rem;
   html.contrast-mode & {
     background: $contrastBackground;
   }
@@ -23,7 +24,8 @@
   &__wrap {
     width: 100%;
   }
-  &__label {
+  &__label,
+  label {
     display: block;
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
@@ -32,7 +34,9 @@
       color: $contrastColor;
     }
   }
-  &__input {
+  &__input,
+  input,
+  textarea {
     font-size: 1.6rem;
     font-family: "Open sans", sans-serif;
     color: black;
@@ -49,7 +53,11 @@
       height: 13rem;
     }
   }
-  &__submit {
+  textarea {
+    height: 13rem;
+  }
+  &__submit,
+  input[type="submit"] {
     position: absolute;
     right: 3rem;
     bottom: 3rem;
@@ -58,6 +66,7 @@
     border: 0;
     padding: 1rem 1.5rem;
     cursor: pointer;
+    max-width: 20rem;
     html.contrast-mode & {
       background: $contrastColor;
       color: $contrastBackground;

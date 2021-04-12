@@ -10,14 +10,29 @@
     }
 
     &__file {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 2fr 1.15fr 1.15fr 0.7fr;
+      gap: 1.5rem;
       padding: 1rem 0;
       margin: 1rem 0;
       border-bottom: 0.2rem solid #eaeaea;
       text-decoration: none;
       color: #5c7071;
+      @include large {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      @include small {
+        flex-wrap: wrap;
+      }
+      span,
+      em {
+        @include large {
+          display: inline-block;
+          margin: 1rem;
+        }
+      }
       html.contrast-mode & {
         border-color: $contrastColor;
         color: $contrastColor;

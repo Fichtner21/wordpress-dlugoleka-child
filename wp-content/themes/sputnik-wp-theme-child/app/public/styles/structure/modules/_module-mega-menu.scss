@@ -18,8 +18,7 @@
       }
     }
 
-    &:hover,
-    &:focus {
+    &.focus {
       > a {
         &:after {
           transform: rotate(180deg);
@@ -31,8 +30,8 @@
   .menu {
     &-item {
       &-has-children {
-        &:hover,
-        &:focus,
+        // &:hover,
+        // &:focus,
         &.focus {
           & > .sub-menu {
             transform: translateY(0);

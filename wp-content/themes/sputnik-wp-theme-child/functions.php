@@ -242,3 +242,7 @@ function my_disable_gutenberg( $can_edit, $post ) {
   }
   return true;
 }
+
+// rmeove cf7 auto p and br
+add_filter( 'wpcf7_autop_or_not', '__return_false' );
+

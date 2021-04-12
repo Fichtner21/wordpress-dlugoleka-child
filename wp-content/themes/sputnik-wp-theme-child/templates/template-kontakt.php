@@ -17,7 +17,11 @@ get_header(); ?>
                     </div>
 
                     <div class="contact-page__col">
-                        <?php require CUSTOM_PARTS . '/modules/module-contact-form.php'; ?>
+                        <?php if(!shortcode_exists('contact-form-7')) {
+                            require CUSTOM_PARTS . '/modules/module-contact-form.php';
+                        } else {
+                            echo do_shortcode('[contact-form-7 id="1365" title="Formularz kontaktowy"]');
+                        } ?>
                     </div>
                 </div>
 
