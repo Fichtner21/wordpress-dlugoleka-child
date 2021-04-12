@@ -20,7 +20,7 @@ get_header(); ?>
                         <?php if(!shortcode_exists('contact-form-7')) {
                             require CUSTOM_PARTS . '/modules/module-contact-form.php';
                         } else {
-                            echo do_shortcode('[contact-form-7 id="1365" title="Formularz kontaktowy"]');
+                            echo do_shortcode(get_option('contact_formshortcode'));
                         } ?>
                     </div>
                 </div>
