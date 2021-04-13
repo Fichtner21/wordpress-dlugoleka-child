@@ -65,7 +65,7 @@ if(!empty($allEvents)) : ?>
                 <div class="post-bulk">
                     <header class="post-heading">
                         <div class="post-heading-meta">
-                            <span class="post-date"><i class="fas fa-clock"></i> <?=  __('Kiedy?', 'sputnik-wp-theme') . ' <b>' . $event_date_start . '</b>'; ?></</span>
+                            <span class="post-date"><i class="fas fa-clock"></i> <?=  __('Kiedy?', 'sputnik-wp-theme') . ' <b>' . $event_date_start . '</b>'; ?></span>
 
                             <p class="post-localization"><i class="fas fa-map-marker-alt"></i> <?= __('Gdzie?', 'sputnik-wp-theme'); ?> <b><?= $event_localization; ?></b></p>
                         </div>
