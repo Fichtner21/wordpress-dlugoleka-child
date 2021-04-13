@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2021-01-26 14:20+0100\n"
+"PO-Revision-Date: 2021-04-13 11:52+0200\n"
 "Language-Team: \n"
 "X-Generator: Poedit 2.2\n"
 "Last-Translator: \n"
@@ -18,65 +18,71 @@ msgstr ""
 
 #: admin/admin.php:79
 msgid "We're sorry to see you go."
-msgstr ""
+msgstr "Przykro nam że odchodzisz."
 
 #: admin/admin.php:80
 msgid "If you have a moment, please share why you are deactivating YOP Poll:"
-msgstr ""
+msgstr "Jeśli masz chwilę, powiedz, dlaczego dezaktywujesz ankietę YOP:"
 
 #: admin/admin.php:87
 msgid "I couldn't get the plugin to work"
-msgstr ""
+msgstr "Nie udało mi się uruchomić wtyczki"
 
 #: admin/admin.php:88
 msgid ""
 "Please describe the issues below. This will help us test and solve these "
 "problems in a timely manner."
 msgstr ""
+"Opisz problemy poniżej. Pomoże nam to przetestować i rozwiązać te problemy w "
+"odpowiednim czasie."
 
 #: admin/admin.php:89
 msgid "Type the issues here..."
-msgstr ""
+msgstr "Tutaj wpisz problemy ..."
 
 #: admin/admin.php:96
 msgid "Missing features I need"
-msgstr ""
+msgstr "Brakujące funkcje, których potrzebuję"
 
 #: admin/admin.php:97
 msgid ""
 "Please describe the feature you need. This will help us prioritize our tasks "
 "and work on the most requested features."
 msgstr ""
+"Opisz potrzebną funkcję. Pomoże nam to ustalić priorytety naszych zadań i "
+"pracować nad najbardziej pożądanymi funkcjami."
 
 #: admin/admin.php:98
 msgid "Type the missing features here..."
-msgstr ""
+msgstr "Wpisz brakujące funkcje tutaj ..."
 
 #: admin/admin.php:105
 msgid "Other reason"
-msgstr "Inne"
+msgstr "Inny powód"
 
 #: admin/admin.php:106
 msgid ""
 "We are continuously improving YOP Poll and your feedback is extremely "
 "important to us. Please let us know how we can improve the plugin."
 msgstr ""
+"Stale ulepszamy ankietę YOP, a Twoja opinia jest dla nas niezwykle ważna. "
+"Daj nam znać, jak możemy ulepszyć wtyczkę."
 
 #: admin/admin.php:107
 msgid "Type your feedback here..."
-msgstr ""
+msgstr "Wpisz tutaj swoją opinię ..."
 
 #: admin/admin.php:117
 msgid "Submit & Deactivate"
-msgstr ""
+msgstr "Prześlij i dezaktywuj"
 
 #: admin/admin.php:118
 msgid "Skip and Deactivate"
-msgstr ""
+msgstr "Pomiń i dezaktywuj"
 
 #: admin/admin.php:297 admin/admin.php:298
 msgid "Yop Poll"
-msgstr ""
+msgstr "Yop Poll"
 
 #: admin/admin.php:311 admin/admin.php:312 admin/admin.php:610
 #: admin/views/results/view.php:17 admin/views/results/votes.php:95
@@ -204,7 +210,7 @@ msgstr "Anuluj"
 
 #: admin/admin.php:502
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: admin/admin.php:503
 msgid "Before generating the preview a template is required"
@@ -591,11 +597,11 @@ msgstr "Ustawienia zaktualizowane."
 
 #: admin/admin.php:1624
 msgid "Guide Sent"
-msgstr ""
+msgstr "Przewodnik wysłany"
 
 #. Plugin Name of the plugin/theme
 msgid "YOP Poll"
-msgstr ""
+msgstr "YOP Poll"
 
 #: admin/inc/ClassYOPPollWidget.php:8
 msgid "Add a poll to your site"
@@ -807,7 +813,7 @@ msgstr "klon"
 
 #: admin/models/polls.php:775
 msgid "Data for \"Poll Name\" is invalid"
-msgstr ""
+msgstr "Dane dla „nazwy ankiety” są nieprawidłowe"
 
 #: admin/models/polls.php:784
 msgid "Data for \"Template\" is invalid"
@@ -815,127 +821,128 @@ msgstr "Dane dla templejtu są nieprawidłowe"
 
 #: admin/models/polls.php:793
 msgid "Data for \"Poll Background Color\" is invalid"
-msgstr ""
+msgstr "Dane dla „Kolor tła odpytywania” są nieprawidłowe"
 
 #: admin/models/polls.php:802
 msgid "Data for \"Poll Border Thickness\" is invalid"
-msgstr ""
+msgstr "Dane dla „Poll Border Thickness” są nieprawidłowe"
 
 #: admin/models/polls.php:811
 msgid "Data for \"Poll Border Color\" is invalid"
-msgstr ""
+msgstr "Dane dla „Poll Border Color” są nieprawidłowe"
 
 #: admin/models/polls.php:820
 msgid "Data for \"Poll Border Radius\" is invalid"
-msgstr ""
+msgstr "Dane dla „Poll Border Radius” są nieprawidłowe"
 
 #: admin/models/polls.php:829
 msgid "Data for \"Poll Padding Left/Right\" is invalid"
-msgstr ""
+msgstr "Dane dla \"Wypełnienia odpytywania lewo / prawo\" są nieprawidłowe"
 
 #: admin/models/polls.php:838
 msgid "Data for \"Poll Padding Top/Bottom\" is invalid"
-msgstr ""
+msgstr "Dane dla „Wypełnienia odpytywania góra / dół” są nieprawidłowe"
 
 #: admin/models/polls.php:848
 msgid "Data for \"Question Text Color\" is invalid"
-msgstr ""
+msgstr "Dane dla „Koloru tekstu pytania” są nieprawidłowe"
 
 #: admin/models/polls.php:856
 msgid "Data for \"Question Text Size\" is invalid"
-msgstr ""
+msgstr "Dane dla „Rozmiaru tekstu pytania” są nieprawidłowe"
 
 #: admin/models/polls.php:865
 msgid "Data for \"Question Text Weight\" is invalid"
-msgstr ""
+msgstr "Dane dla „Wagi tekstu pytania” są nieprawidłowe"
 
 #: admin/models/polls.php:874
 msgid "Data for \"Question Text Align\" is invalid"
-msgstr ""
+msgstr "Dane dla „Wyrównywania tekstu pytania” są nieprawidłowe"
 
 #: admin/models/polls.php:884
 msgid "Data for \"Answers Padding Left/Right\" is invalid"
-msgstr ""
+msgstr "Dane dla „Wypełnienia odpowiedzi w lewo / w prawo” są nieprawidłowe"
 
 #: admin/models/polls.php:893
 msgid "Data for \"Answers Padding Top/Bottom\" is invalid"
-msgstr ""
+msgstr "Dane dla „Wypełnienia odpowiedzi u góry / u dołu” są nieprawidłowe"
 
 #: admin/models/polls.php:902
 msgid "Data for \"Answers Text Color\" is invalid"
-msgstr ""
+msgstr "Dane „Kolor tekstu odpowiedzi” są nieprawidłowe"
 
 #: admin/models/polls.php:910
 msgid "Data for \"Answers Text Size\" is invalid"
-msgstr ""
+msgstr "Dane „Rozmiar tekstu odpowiedzi” są nieprawidłowe"
 
 #: admin/models/polls.php:919
 msgid "Data for \"Answers Text Weight\" is invalid"
-msgstr ""
+msgstr "Dane dla „Grubości tekstu odpowiedzi” są nieprawidłowe"
 
 #: admin/models/polls.php:929
 msgid "Data for \"Buttons Background Color\" is invalid"
-msgstr ""
+msgstr "Dane dla „Buttons Background Color” są nieprawidłowe"
 
 #: admin/models/polls.php:938
 msgid "Data for \"Buttons Border Thickness\" is invalid"
-msgstr ""
+msgstr "Dane dla „Grubości obramowania przycisków” są nieprawidłowe"
 
 #: admin/models/polls.php:947
 msgid "Data for \"Buttons Border Color\" is invalid"
-msgstr ""
+msgstr "Dane dla „Buttons Border Color” są nieprawidłowe"
 
 #: admin/models/polls.php:956
 msgid "Data for \"Buttons Border Radius\" is invalid"
-msgstr ""
+msgstr "Dane dla „Buttons Border Radius” są nieprawidłowe"
 
 #: admin/models/polls.php:965
 msgid "Data for \"Buttons Padding Left/Right\" is invalid"
-msgstr ""
+msgstr "Dane dla „Wypełnienia przycisków w lewo / w prawo” są nieprawidłowe"
 
 #: admin/models/polls.php:974
 msgid "Data for \"Buttons Padding Top/Bottom\" is invalid"
-msgstr ""
+msgstr "Dane dla „Buttons Padding Top / Bottom” są nieprawidłowe"
 
 #: admin/models/polls.php:983 admin/models/polls.php:1046
 msgid "Data for \"Buttons Text Color\" is invalid"
-msgstr ""
+msgstr "Dane „Kolor tekstu przycisków” są nieprawidłowe"
 
 #: admin/models/polls.php:991
 msgid "Data for \"Buttons Text Size\" is invalid"
-msgstr ""
+msgstr "Dane dla „Rozmiar tekstu przycisków” są nieprawidłowe"
 
 #: admin/models/polls.php:1000
 msgid "Data for \"Buttons Text Weight\" is invalid"
-msgstr ""
+msgstr "Dane dla „Grubości tekstu przycisków” są nieprawidłowe"
 
 #: admin/models/polls.php:1010
 msgid "Data for \"Messages Border Color For Success\" is invalid"
 msgstr ""
+"Dane dla „Kolor obramowania wiadomości dla powodzenia” są nieprawidłowe"
 
 #: admin/models/polls.php:1019
 msgid "Data for \"Messages Border Color For Error\" is invalid"
-msgstr ""
+msgstr "Dane dla „Koloru obramowania komunikatów dla błędu” są nieprawidłowe"
 
 #: admin/models/polls.php:1028
 msgid "Data for \"Messages Border Left Thickness\" is invalid"
-msgstr ""
+msgstr "Dane dla „Messages Border Left Thickness” są nieprawidłowe"
 
 #: admin/models/polls.php:1037
 msgid "Data for \"Messages Padding Top/Bottom\" is invalid"
-msgstr ""
+msgstr "Dane dla „Wypełnienia wiadomości od góry / dołu” są nieprawidłowe"
 
 #: admin/models/polls.php:1054
 msgid "Data for \"Messages Text Size\" is invalid"
-msgstr ""
+msgstr "Dane „Rozmiar tekstu wiadomości” są nieprawidłowe"
 
 #: admin/models/polls.php:1063
 msgid "Data for \"Messages Text Weight\" is invalid"
-msgstr ""
+msgstr "Dane dla „Wagi tekstu wiadomości” są nieprawidłowe"
 
 #: admin/models/polls.php:1071
 msgid "No elements present"
-msgstr ""
+msgstr "Brak elementów"
 
 #: admin/models/polls.php:1083
 msgid "Data for \"Question\" is invalid"
@@ -952,7 +959,7 @@ msgstr "Odpowiedź jest nieprawidłowa"
 
 #: admin/models/polls.php:1109
 msgid "Data for default answer is invalid"
-msgstr "Nieprawidłowe dane"
+msgstr "Dane do domyślnej odpowiedzi są nieprawidłowe"
 
 #: admin/models/polls.php:1116
 msgid " Data for \"Answer Link\" is invalid"
@@ -960,11 +967,11 @@ msgstr "Nieprawidłowe dane"
 
 #: admin/models/polls.php:1126
 msgid "Data for \"Answer link\" is invalid"
-msgstr "Nieprawidłowe dane"
+msgstr "Dane dla „Łącza do odpowiedzi” są nieprawidłowe"
 
 #: admin/models/polls.php:1135
 msgid "Data for \"Allow other options\" is invalid"
-msgstr ""
+msgstr "Dane opcji „Zezwól na inne opcje” są nieprawidłowe"
 
 #: admin/models/polls.php:1143
 msgid "Data for \"Label for Other Answers\" is invalid"
@@ -973,6 +980,7 @@ msgstr "Opis do innych odpowiedzi"
 #: admin/models/polls.php:1150
 msgid "Data for \"Add other answers in answer list\" is invalid"
 msgstr ""
+"Dane dla opcji „Dodaj inne odpowiedzi do listy odpowiedzi” są nieprawidłowe"
 
 #: admin/models/polls.php:1157
 msgid "Data for \"Display other answers in results list\" is invalid"
@@ -1085,147 +1093,124 @@ msgid "Data for \"Message\" is invalid"
 msgstr "Dane „Wiadomość” są nieprawidłowe"
 
 #: admin/models/polls.php:1413
-#, fuzzy
 msgid "Data for \"Show results\" is invalid"
-msgstr "Nieprawidłowe dane"
+msgstr "Dane „Wyniki pokazów” są nieprawidłowe"
 
 #: admin/models/polls.php:1422
-#, fuzzy
 msgid "Data for \"Show Results\" is invalid"
-msgstr "Nieprawidłowe dane"
+msgstr "Dane dotyczące „wyników wystaw” są nieprawidłowe"
 
 #: admin/models/polls.php:1431
-#, fuzzy
 msgid "Data for \"Show results to\" is invalid"
-msgstr "Nieprawidłowe dane"
+msgstr "Dane dla „Pokaż wyniki do” są nieprawidłowe"
 
 #: admin/models/polls.php:1438
-#, fuzzy
 msgid "Data for \"Display [Back to vote] link\" is invalid"
-msgstr "Wyświetl link"
+msgstr "Dane dla „Wyświetl link [Powrót do głosowania]” są nieprawidłowe"
 
 #: admin/models/polls.php:1447
-#, fuzzy
 msgid "Data for \"[Back to vote] caption\" is invalid"
-msgstr "podpis"
+msgstr "Dane dotyczące podpisu „[Powrót do głosowania]” są nieprawidłowe"
 
 #: admin/models/polls.php:1454
-#, fuzzy
 msgid "Data for \"Sort Results\" is invalid"
-msgstr "Sortuj wyniki"
+msgstr "Dane „Wyniki sortowania” są nieprawidłowe"
 
 #: admin/models/polls.php:1462
-#, fuzzy
 msgid "Data for \"Sort rule\" is invalid"
-msgstr "Reguła sortowania"
+msgstr "Dane dla „reguły sortowania” są nieprawidłowe"
 
 #: admin/models/polls.php:1469
 msgid "Data for \"Display Results As\""
 msgstr "Dane do „Wyświetl wyniki jako”"
 
 #: admin/models/polls.php:1477
-#, fuzzy
 msgid "Data for \"Vote Permissions\" is invalid"
-msgstr "Dane głosu"
+msgstr "Dane dotyczące „Uprawnień do głosowania” są nieprawidłowe"
 
 #: admin/models/polls.php:1494
-#, fuzzy
 msgid "Data for \"Block Voters\" is invalid"
 msgstr "Dane dla „Block For” są nieprawidłowe"
 
 #: admin/models/polls.php:1506
-#, fuzzy
 msgid "Data for \"Block Period\" is invalid"
 msgstr "Dane dla „Block For” są nieprawidłowe"
 
 #: admin/models/polls.php:1513
-#, fuzzy
 msgid "Data for \"Limit Number Of Votes per User\" is invalid"
 msgstr "Limit liczby głosów na użytkownika"
 
 #: admin/models/polls.php:1521
-#, fuzzy
 msgid "Data for \"Votes per user\" is invalid"
 msgstr "Limit liczby głosów na użytkownika"
 
 #: admin/models/polls.php:2328
 msgid "Number of votes for each question should be the same"
-msgstr ""
+msgstr "Liczba głosów na każde pytanie powinna być taka sama"
 
 #: admin/models/polls.php:2332 admin/views/settings/view.php:397
-#, fuzzy
 msgid "Invalid Poll"
 msgstr "Nieprawidłowa ankieta"
 
 #: admin/models/settings.php:487
-#, fuzzy
 msgid "Data for \"Use Google reCaptcha\" is invalid"
-msgstr "Użyj Google reCaptcha:"
+msgstr "Użyj Google reCaptcha: "
 
 #: admin/models/settings.php:492 admin/models/settings.php:502
 #: admin/models/settings.php:512
-#, fuzzy
 msgid "Data for \"Site Key\" is invalid"
-msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
+msgstr "Dane „klucz witryny” są nieprawidłowe"
 
 #: admin/models/settings.php:496 admin/models/settings.php:506
 #: admin/models/settings.php:516
-#, fuzzy
 msgid "Data for \"Secret Key\" is invalid"
-msgstr "- klucz sekretny:"
+msgstr "- klucz sekretny: "
 
 #: admin/models/settings.php:520
 msgid "Data for \"Min Allowed Score\" is invalid"
-msgstr ""
+msgstr "Dane dla „Minimalnego dopuszczalnego wyniku” są nieprawidłowe"
 
 #: admin/models/settings.php:529
-#, fuzzy
 msgid "Data for \"Use Facebook integration\" is invalid"
-msgstr "Użyj integracji z Facebook:"
+msgstr "Użyj integracji z Facebook: "
 
 #: admin/models/settings.php:534 admin/models/settings.php:548
 msgid "Data for \"App ID\" is invalid"
 msgstr "Dane „ID aplikacji” są nieprawidłowe"
 
 #: admin/models/settings.php:543
-#, fuzzy
 msgid "Data for \"Use Google integration\" is invalid"
-msgstr "Użyj integracji z Google:"
+msgstr "Użyj integracji z Google: "
 
 #: admin/models/settings.php:552
-#, fuzzy
 msgid "Data for \"App Secret\" is invalid"
-msgstr "Dane „ID aplikacji” są nieprawidłowe"
+msgstr "Dane „klucz sekretny” są nieprawidłowe"
 
 #: admin/models/settings.php:561
-#, fuzzy
 msgid "Data for \"Vote as anonymous\" is invalid"
-msgstr "Głosuj jako anonim"
+msgstr "Głosuj jako anonim jest nieprawidłowe"
 
 #: admin/models/settings.php:569
 msgid "Data for \"Vote with your WordPress account\" is invalid"
-msgstr ""
+msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
 #: admin/models/settings.php:577
 msgid "Data for \"Vote with your Facebook account\" is invalid"
-msgstr ""
+msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
 #: admin/models/settings.php:585
 msgid "Data for \"Vote with your Google account\" is invalid"
-msgstr ""
+msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
 #: admin/models/settings.php:593
-#, fuzzy
 msgid "Data for \"Poll Ended\" is invalid"
 msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
 #: admin/models/settings.php:601
-#, fuzzy
 msgid "Data for \"Poll Not Started\" is invalid"
 msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
 #: admin/models/settings.php:609
-#, fuzzy
 msgid "Data for \"Already voted on poll\" is invalid"
 msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
@@ -1235,103 +1220,91 @@ msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
 #: admin/models/settings.php:625
 msgid "Data for \"No Answer(s) selected\" is invalid"
-msgstr ""
+msgstr "Brak wybranej odpowiedzi jest nieprawidłowe"
 
 #: admin/models/settings.php:649
-#, fuzzy
 msgid "Data for \"No value for other\" is invalid"
 msgstr "Dane „Wartość zakazu” są nieprawidłowe"
 
 #: admin/models/settings.php:657
-#, fuzzy
 msgid "Data for \"No value for custom field\" is invalid"
 msgstr "Brak wartości dla własnych pól"
 
 #: admin/models/settings.php:665
-#, fuzzy
 msgid "Data for \"Consent not checked\" is invalid"
 msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
 #: admin/models/settings.php:673
-#, fuzzy
 msgid "Data for \"Captcha missing\" is invalid"
 msgstr "Brakuje captchy"
 
 #: admin/models/settings.php:681
 msgid "Data for \"Vote not allowed by ban setting\" is invalid"
 msgstr ""
+"Dane dotyczące opcji „Głosowanie niedozwolone przez ustawienie blokady” są "
+"nieprawidłowe"
 
 #: admin/models/settings.php:689
 msgid "Data for \"Vote not allowed by block setting\" is invalid"
 msgstr ""
+"Dane „Głosowanie niedozwolone przez ustawienie blokowania” są nieprawidłowe"
 
 #: admin/models/settings.php:697
 msgid "Data for \"Vote not allowed by limit setting\" is invalid"
 msgstr ""
+"Dane „Głosowanie niedozwolone przez ustawienie limitu” są nieprawidłowe"
 
 #: admin/models/settings.php:705
 msgid "Data for \"Thank you for your vote\" is invalid"
-msgstr ""
+msgstr "Dane dotyczące „Dziękujemy za oddany głos” są nieprawidłowe"
 
 #: admin/models/settings.php:713
-#, fuzzy
 msgid "Data for \"Single Vote\" is invalid"
 msgstr "Nieprawidłowe dane"
 
 #: admin/models/settings.php:721
-#, fuzzy
 msgid "Data for \"Multiple Votes\" is invalid"
 msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
 #: admin/models/settings.php:729
-#, fuzzy
 msgid "Data for \"Single Answer\" is invalid"
 msgstr "Nieprawidłowe dane"
 
 #: admin/models/settings.php:737
-#, fuzzy
 msgid "Data for \"Multiple Answers\" is invalid"
 msgstr "Nieprawidłowe dane"
 
 #: admin/models/settings.php:745
-#, fuzzy
 msgid "Data for \"Accessibility Alt\" is invalid"
 msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
 #: admin/models/settings.php:753
-#, fuzzy
 msgid "Data for \"Accessibility Title\" is invalid"
 msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
 #: admin/models/settings.php:761
-#, fuzzy
 msgid "Data for \"Accessibility Description\" is invalid"
 msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
 #: admin/models/settings.php:769
-#, fuzzy
 msgid "Data for \"Accessibility Explanation\" is invalid"
 msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
 #: admin/models/settings.php:777
-#, fuzzy
 msgid "Data for \"Refresh Alt\" is invalid"
 msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
 #: admin/models/settings.php:785
-#, fuzzy
 msgid "Data for \"Refresh Title\" is invalid"
 msgstr "Dane „Nieprawidłowa ankieta” są nieprawidłowe"
 
 #: admin/models/subelements.php:56 admin/models/subelements.php:100
 #: admin/models/subelements.php:296
-#, fuzzy
 msgid "Error adding answers"
 msgstr "Błąd podczas dodawania elementu"
 
 #: admin/models/subelements.php:128 admin/models/subelements.php:155
 #: admin/models/subelements.php:179 admin/models/subelements.php:423
-#, fuzzy
 msgid "Error deleting answer"
 msgstr "Błąd podczas usuwania elementu"
 
@@ -1340,7 +1313,6 @@ msgid "Invalid answer id"
 msgstr "Nieprawidłowy identyfikator odpowiedzi"
 
 #: admin/models/votes.php:1337
-#, fuzzy
 msgid "Poll Name"
 msgstr "Nazwa ankiety"
 
@@ -1349,7 +1321,6 @@ msgid "Custom field - "
 msgstr "Własne pole -"
 
 #: admin/models/votes.php:1396 admin/models/votes.php:1427
-#, fuzzy
 msgid "Can't write votes!"
 msgstr "Nie możesz napisać nagłówka!"
 
@@ -1387,7 +1358,6 @@ msgstr "Szukaj zakazów"
 #: admin/views/logs/view.php:127 admin/views/logs/view.php:578
 #: admin/views/polls/view.php:226 admin/views/polls/view.php:744
 #: admin/views/results/votes.php:211 admin/views/results/votes.php:562
-#, fuzzy
 msgid "Select bulk action"
 msgstr "Nie wybrano akcji zbiorczej"
 
@@ -1395,7 +1365,6 @@ msgstr "Nie wybrano akcji zbiorczej"
 #: admin/views/logs/view.php:131 admin/views/logs/view.php:582
 #: admin/views/polls/view.php:230 admin/views/polls/view.php:748
 #: admin/views/results/votes.php:215 admin/views/results/votes.php:566
-#, fuzzy
 msgid "Bulk Actions"
 msgstr "Nie wybrano akcji zbiorczej"
 
@@ -1435,7 +1404,6 @@ msgstr "Nawigacja listy zakazów"
 #: admin/views/logs/view.php:144 admin/views/logs/view.php:595
 #: admin/views/polls/view.php:277 admin/views/polls/view.php:767
 #: admin/views/results/votes.php:228 admin/views/results/votes.php:579
-#, fuzzy
 msgid "%s item"
 msgid_plural "%s items"
 msgstr[0] "Edytuj"
@@ -1464,7 +1432,6 @@ msgid "Select"
 msgstr "Wybierz"
 
 #: admin/views/bans/view.php:391 admin/views/polls/view.php:507
-#, fuzzy
 msgid "Poll name"
 msgstr "Nazwa ankiety"
 
@@ -1619,7 +1586,7 @@ msgstr "Tak"
 #: admin/views/settings/view.php:204 admin/views/settings/view.php:257
 #: admin/views/settings/view.php:290
 msgid "No"
-msgstr ""
+msgstr "Nie"
 
 #: admin/views/general/migrate-old-tables.php:26
 #: admin/views/polls/add/options-poll.php:299
@@ -1628,24 +1595,20 @@ msgid "Solution"
 msgstr "Rozwiązanie"
 
 #: admin/views/general/migrate-old-tables.php:30
-#, fuzzy
 msgid "Migrate as is"
 msgstr "Przenoszenie starych rekordów"
 
 #: admin/views/general/migrate-old-tables.php:31
-#, fuzzy
 msgid "Anonymize Ip Addresses"
-msgstr "po IP"
+msgstr "po IP "
 
 #: admin/views/general/migrate-old-tables.php:32
-#, fuzzy
 msgid "Do not migrate Ip Addresses"
 msgstr "To ustawienie spowoduje migrację wszystkiego z wyjątkiem adresów IP."
 
 #: admin/views/general/migrate-old-tables.php:40
-#, fuzzy
 msgid "Start Migrating"
-msgstr "Brakuje daty początkowej ankiety"
+msgstr "Rozpocznij migrację"
 
 #: admin/views/logs/view.php:114 admin/views/logs/view.php:118
 #: admin/views/results/votes.php:127
@@ -1654,7 +1617,7 @@ msgstr "Szukaj logu"
 
 #: admin/views/logs/view.php:120 admin/views/results/votes.php:135
 msgid "Export"
-msgstr ""
+msgstr "Export"
 
 #: admin/views/logs/view.php:140
 msgid "Logs list navigation"
@@ -1663,42 +1626,42 @@ msgstr "Nawigacja listy logów"
 #: admin/views/logs/view.php:297 admin/views/logs/view.php:521
 #: admin/views/results/votes.php:358 admin/views/results/votes.php:528
 msgid "Ipaddress"
-msgstr ""
+msgstr "adres IP"
 
 #: admin/views/logs/view.php:367 admin/views/results/votes.php:403
 msgid "View details for this record"
 msgstr "Widok szczegółowy dla tego wyniku"
 
 #: admin/views/logs/view.php:371 admin/views/results/votes.php:408
-#, fuzzy
 msgid "Move this log record to the Trash"
 msgstr "Przenieś ten zakaz do Kosza"
 
 #: admin/views/polls/add/design-custom-styles.php:11
 msgid "You need to select a template first to be able to customize it"
-msgstr ""
+msgstr "Wpierw wybierz szablon do własnych ustawień"
 
 #: admin/views/polls/add/design-custom-styles.php:18
 msgid ""
 "You can select a template <a href=\"#\" class=\"custom-style-select-template"
 "\">here</a>"
-msgstr ""
+msgstr "Możesz wybrać szablon"
 
 #: admin/views/polls/add/design-custom-styles.php:29
 msgid "You need to select a skin to be able to customize it"
-msgstr ""
+msgstr "Musisz wybrać skórkę, aby móc ją dostosować"
 
 #: admin/views/polls/add/design-custom-styles.php:36
 msgid ""
 "You can select a skin <a href=\"#\" class=\"custom-style-select-skin\">here</"
 "a>"
 msgstr ""
+"Możesz wybrać skórkę <a href=\"#\" class=\"custom-style-select-skin\"> tutaj "
+"</a>"
 
 #: admin/views/polls/add/design-custom-styles.php:58
 #: admin/views/polls/add/design-custom-styles.php:288
 #: admin/views/polls/edit/design-custom-styles.php:22
 #: admin/views/polls/edit/design-custom-styles.php:447
-#, fuzzy
 msgid "Background color"
 msgstr "Kolor tła"
 
@@ -1729,9 +1692,8 @@ msgstr "Zaokrąglenie obramowania"
 #: admin/views/polls/edit/design-custom-styles.php:65
 #: admin/views/polls/edit/design-custom-styles.php:338
 #: admin/views/polls/edit/design-custom-styles.php:485
-#, fuzzy
 msgid "Padding Left/Right"
-msgstr "Odstęp do środka"
+msgstr "Odstęp lewo/prawo"
 
 #: admin/views/polls/add/design-custom-styles.php:107
 #: admin/views/polls/add/design-custom-styles.php:232
@@ -1741,9 +1703,8 @@ msgstr "Odstęp do środka"
 #: admin/views/polls/edit/design-custom-styles.php:354
 #: admin/views/polls/edit/design-custom-styles.php:501
 #: admin/views/polls/edit/design-custom-styles.php:636
-#, fuzzy
 msgid "Padding Top/Bottom"
-msgstr "Odstęp do środka"
+msgstr "Odstęp góra/dół"
 
 #: admin/views/polls/add/design-custom-styles.php:133
 #: admin/views/polls/add/design-custom-styles.php:243
@@ -1753,7 +1714,6 @@ msgstr "Odstęp do środka"
 #: admin/views/polls/edit/design-custom-styles.php:370
 #: admin/views/polls/edit/design-custom-styles.php:517
 #: admin/views/polls/edit/design-custom-styles.php:652
-#, fuzzy
 msgid "Text color"
 msgstr "Kolor tekstu"
 
@@ -1776,9 +1736,8 @@ msgstr "Rozmiar czcionki"
 #: admin/views/polls/edit/design-custom-styles.php:407
 #: admin/views/polls/edit/design-custom-styles.php:554
 #: admin/views/polls/edit/design-custom-styles.php:689
-#, fuzzy
 msgid "Text Weight"
-msgstr "Tekst odpowiedzi"
+msgstr "Grubość tekstu"
 
 #: admin/views/polls/add/design-custom-styles.php:156
 #: admin/views/polls/add/design-custom-styles.php:266
@@ -1788,9 +1747,8 @@ msgstr "Tekst odpowiedzi"
 #: admin/views/polls/edit/design-custom-styles.php:425
 #: admin/views/polls/edit/design-custom-styles.php:572
 #: admin/views/polls/edit/design-custom-styles.php:707
-#, fuzzy
 msgid "Normal"
-msgstr "Normalny - 70%"
+msgstr "Normalny"
 
 #: admin/views/polls/add/design-custom-styles.php:157
 #: admin/views/polls/add/design-custom-styles.php:267
@@ -1801,13 +1759,12 @@ msgstr "Normalny - 70%"
 #: admin/views/polls/edit/design-custom-styles.php:573
 #: admin/views/polls/edit/design-custom-styles.php:708
 msgid "Bold"
-msgstr ""
+msgstr "pogrubiony"
 
 #: admin/views/polls/add/design-custom-styles.php:163
 #: admin/views/polls/edit/design-custom-styles.php:169
-#, fuzzy
 msgid "Text Align"
-msgstr "Blok tekstu"
+msgstr "wyrównanie"
 
 #: admin/views/polls/add/design-custom-styles.php:167
 #: admin/views/polls/edit/design-custom-styles.php:207
@@ -1816,9 +1773,8 @@ msgstr "Lewo"
 
 #: admin/views/polls/add/design-custom-styles.php:168
 #: admin/views/polls/edit/design-custom-styles.php:208
-#, fuzzy
 msgid "Center"
-msgstr "Góra środek"
+msgstr "środek"
 
 #: admin/views/polls/add/design-custom-styles.php:169
 #: admin/views/polls/edit/design-custom-styles.php:209
@@ -1854,25 +1810,22 @@ msgstr "Schemat kolorów"
 #: admin/views/polls/edit/design-custom-styles.php:585
 #: admin/views/settings/view.php:35
 msgid "Messages"
-msgstr ""
+msgstr "wiadomości"
 
 #: admin/views/polls/add/design-custom-styles.php:393
 #: admin/views/polls/edit/design-custom-styles.php:594
-#, fuzzy
 msgid "Border color for success"
 msgstr "Kolor obramowania"
 
 #: admin/views/polls/add/design-custom-styles.php:401
 #: admin/views/polls/edit/design-custom-styles.php:607
-#, fuzzy
 msgid "Border color for error"
-msgstr "Kolor obramowania"
+msgstr "Kolor obramowania w przypadku błędu"
 
 #: admin/views/polls/add/design-custom-styles.php:409
 #: admin/views/polls/edit/design-custom-styles.php:620
-#, fuzzy
 msgid "Border Left Thickness"
-msgstr "Grubość obramowania"
+msgstr "Grubość lewej krawędzi"
 
 #: admin/views/polls/add/design-custom-styles.php:467
 #: admin/views/polls/edit/design-custom-styles.php:720
@@ -1882,7 +1835,7 @@ msgstr "Zaawansowane"
 #: admin/views/polls/add/design-predefined-styles.php:11
 #: admin/views/polls/edit/design-predefined-styles.php:30
 msgid "You need to select a template first to see the available skins for it"
-msgstr ""
+msgstr "Musisz najpierw wybrać szablon, aby zobaczyć dostępne dla niego skórki"
 
 #: admin/views/polls/add/design-predefined-styles.php:18
 #: admin/views/polls/edit/design-predefined-styles.php:37
@@ -1890,20 +1843,20 @@ msgid ""
 "You can select a template <a href=\"#\" class=\"skins-select-template"
 "\">here</a>"
 msgstr ""
+"Szablon możesz wybrać <a href=\"#\" class=\"skins-select-template\"> tutaj </"
+"a>"
 
 #: admin/views/polls/add/design-predefined-styles.php:81
 #: admin/views/polls/add/design-predefined-styles.php:155
 #: admin/views/polls/edit/design-predefined-styles.php:105
 #: admin/views/polls/edit/design-predefined-styles.php:174
-#, fuzzy
 msgid "Use as is"
-msgstr "Użyj Captcha"
+msgstr "Użyj jako"
 
 #: admin/views/polls/add/design-predefined-styles.php:88
 #: admin/views/polls/add/design-predefined-styles.php:162
 #: admin/views/polls/edit/design-predefined-styles.php:112
 #: admin/views/polls/edit/design-predefined-styles.php:181
-#, fuzzy
 msgid "Customize"
 msgstr "Użyj i stwórz "
 
@@ -1921,9 +1874,8 @@ msgid "Media Question"
 msgstr "Pytanie media"
 
 #: admin/views/polls/add/elements.php:41 admin/views/polls/edit/elements.php:41
-#, fuzzy
 msgid "Text Slider Question"
-msgstr "Brak tekstu pytania"
+msgstr "tekst slidera odpowiedź"
 
 #: admin/views/polls/add/elements.php:46 admin/views/polls/edit/elements.php:46
 msgid "Space Separator"
@@ -1934,17 +1886,14 @@ msgid "Text Block"
 msgstr "Blok tekstu"
 
 #: admin/views/polls/add/elements.php:57 admin/views/polls/edit/elements.php:57
-#, fuzzy
 msgid "Text Area"
-msgstr "Rozmiar czcionki"
+msgstr "obszar tekstowy"
 
 #: admin/views/polls/add/elements.php:62 admin/views/polls/edit/elements.php:62
-#, fuzzy
 msgid "Text Slider"
-msgstr "Tekst odpowiedzi"
+msgstr "Tekst slidera"
 
 #: admin/views/polls/add/elements.php:67 admin/views/polls/edit/elements.php:67
-#, fuzzy
 msgid "Countdown Timer"
 msgstr "Czas do automatycznego zamknięcia"
 
@@ -2035,7 +1984,6 @@ msgstr "Inne"
 
 #: admin/views/polls/add/elements.php:283
 #: admin/views/polls/edit/elements.php:247
-#, fuzzy
 msgid "Field Type"
 msgstr "Typ"
 
@@ -2044,14 +1992,14 @@ msgstr "Typ"
 #: admin/views/polls/edit/elements.php:546
 #: admin/views/polls/elements-definitions.php:49
 msgid "Textfield"
-msgstr ""
+msgstr "pole tekstowe"
 
 #: admin/views/polls/add/elements.php:288
 #: admin/views/polls/edit/elements.php:252
 #: admin/views/polls/edit/elements.php:549
 #: admin/views/polls/elements-definitions.php:52
 msgid "Textarea"
-msgstr ""
+msgstr "obszar tekstowy"
 
 #: admin/views/polls/add/elements.php:294
 #: admin/views/polls/edit/elements.php:258
@@ -2068,7 +2016,6 @@ msgstr "Wyświetl inne odpowiedzi na liście wyników"
 #: admin/views/polls/add/elements.php:317
 #: admin/views/polls/edit/elements.php:306
 #: admin/views/polls/elements-definitions.php:158
-#, fuzzy
 msgid "Results Color"
 msgstr "Kolor wyniku"
 
@@ -2118,9 +2065,8 @@ msgid "Columns"
 msgstr "Kolumny"
 
 #: admin/views/polls/add/elements.php:374
-#, fuzzy
 msgid "Number of columns"
-msgstr "liczba brakujących kolumn"
+msgstr "liczba kolumn"
 
 #: admin/views/polls/add/elements.php:377
 #: admin/views/polls/edit/elements.php:402
@@ -2130,7 +2076,6 @@ msgstr "kolumny"
 
 #: admin/views/polls/add/elements.php:385
 #: admin/views/polls/edit/elements.php:410
-#, fuzzy
 msgid "Sort Answers"
 msgstr "Sortuj wyniki"
 
@@ -2143,25 +2088,22 @@ msgstr "Jak zdefiniowano"
 
 #: admin/views/polls/add/elements.php:393
 #: admin/views/polls/edit/elements.php:451
-#, fuzzy
 msgid "Alphabetically Ascending"
-msgstr "rosnąco"
+msgstr "alfabetycznie rosnąco"
 
 #: admin/views/polls/add/elements.php:396
 #: admin/views/polls/edit/elements.php:454
-#, fuzzy
 msgid "Alphabetically Descending"
-msgstr "malejąco"
+msgstr "alfabetycznie malejąco"
 
 #: admin/views/polls/add/elements.php:399
 #: admin/views/polls/edit/elements.php:457
 msgid "Randomly"
-msgstr ""
+msgstr "losowo"
 
 #: admin/views/polls/add/main.php:3
-#, fuzzy
 msgid "Create Poll"
-msgstr "Podgląd ankiety"
+msgstr "stwórz ankietę"
 
 #: admin/views/polls/add/main.php:16 admin/views/polls/edit/main.php:31
 msgid "Name goes here"
@@ -2185,12 +2127,11 @@ msgstr "Wybierz szablon"
 
 #: admin/views/polls/add/main.php:51 admin/views/polls/edit/main.php:66
 msgid "Predefined Styles"
-msgstr ""
+msgstr "Preferowane style"
 
 #: admin/views/polls/add/main.php:56 admin/views/polls/edit/main.php:71
-#, fuzzy
 msgid "Custom Style"
-msgstr "Własne"
+msgstr "Własne style"
 
 #: admin/views/polls/add/main.php:81 admin/views/polls/edit/main.php:97
 msgid "Poll Elements"
@@ -2235,7 +2176,7 @@ msgstr "Szkic"
 
 #: admin/views/polls/add/main.php:185 admin/views/polls/edit/main.php:210
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: admin/views/polls/add/options-access.php:11
 #: admin/views/polls/edit/options-access.php:11
@@ -2256,9 +2197,8 @@ msgstr "Gość"
 
 #: admin/views/polls/add/options-access.php:30
 #: admin/views/polls/edit/options-access.php:48
-#, fuzzy
 msgid "WordPress"
-msgstr "Brakuje głosów oddanych przez użytkowników"
+msgstr "Wordpress"
 
 #: admin/views/polls/add/options-access.php:36
 #: admin/views/polls/edit/options-access.php:54
@@ -2267,9 +2207,8 @@ msgstr "Facebook"
 
 #: admin/views/polls/add/options-access.php:42
 #: admin/views/polls/edit/options-access.php:60
-#, fuzzy
 msgid "Google"
-msgstr "Google+"
+msgstr "Google"
 
 #: admin/views/polls/add/options-access.php:49
 #: admin/views/polls/edit/options-access.php:67
@@ -2289,39 +2228,37 @@ msgstr "po ciasteczkach"
 #: admin/views/polls/add/options-access.php:67
 #: admin/views/polls/edit/options-access.php:114
 msgid "By Ip"
-msgstr "po IP"
+msgstr "po IP "
 
 #: admin/views/polls/add/options-access.php:73
 #: admin/views/polls/edit/options-access.php:120
 msgid "By User Id"
-msgstr "po ID"
+msgstr "po ID "
 
 #: admin/views/polls/add/options-access.php:79
 #: admin/views/polls/edit/options-access.php:126
 msgid "By Fingerprint"
-msgstr ""
+msgstr "Przez odcisk palca"
 
 #: admin/views/polls/add/options-access.php:86
 #: admin/views/polls/edit/options-access.php:133
-#, fuzzy
 msgid "Block Period"
-msgstr "Blokuj po"
+msgstr "Okres blokowania"
 
 #: admin/views/polls/add/options-access.php:91
 #: admin/views/polls/edit/options-access.php:159
 msgid "Forever"
-msgstr ""
+msgstr "Na zawsze"
 
 #: admin/views/polls/add/options-access.php:94
 #: admin/views/polls/edit/options-access.php:162
-#, fuzzy
 msgid "Limited Time"
-msgstr "Format czasu:"
+msgstr "Ograniczony czas: "
 
 #: admin/views/polls/add/options-access.php:101
 #: admin/views/polls/edit/options-access.php:176
 msgid "Period"
-msgstr ""
+msgstr "Okres"
 
 #: admin/views/polls/add/options-access.php:108
 #: admin/views/polls/edit/options-access.php:202
@@ -2393,9 +2330,8 @@ msgstr "Preferencje"
 
 #: admin/views/polls/add/options-poll.php:76
 #: admin/views/polls/edit/options-poll.php:105
-#, fuzzy
 msgid "Load using AJAX"
-msgstr "Tryb AJAX?"
+msgstr "Ładowanie AJAXem"
 
 #: admin/views/polls/add/options-poll.php:87
 #: admin/views/polls/edit/options-poll.php:130 admin/views/polls/view.php:432
@@ -2467,27 +2403,23 @@ msgstr "Użyj Captcha"
 
 #: admin/views/polls/add/options-poll.php:208
 #: admin/views/polls/edit/options-poll.php:351
-#, fuzzy
 msgid "Use built in Captcha"
 msgstr "Tak, używaj wbudowanego w Captcha"
 
 #: admin/views/polls/add/options-poll.php:209
 #: admin/views/polls/edit/options-poll.php:352
-#, fuzzy
 msgid "Use reCaptcha v2 Checkbox"
-msgstr "Użyj Google reCaptcha:"
+msgstr "Użyj Google reCaptcha v2: "
 
 #: admin/views/polls/add/options-poll.php:210
 #: admin/views/polls/edit/options-poll.php:353
-#, fuzzy
 msgid "Use reCaptcha v2 Invisible"
-msgstr "Użyj Google reCaptcha:"
+msgstr "Użyj Google reCaptcha v2 invisible: "
 
 #: admin/views/polls/add/options-poll.php:211
 #: admin/views/polls/edit/options-poll.php:354
-#, fuzzy
 msgid "Use reCaptcha v3"
-msgstr "Tak, użyj Captcha"
+msgstr "Użyj reCaptcha v3"
 
 #: admin/views/polls/add/options-poll.php:220
 #: admin/views/polls/edit/options-poll.php:363 admin/views/settings/view.php:25
@@ -2501,32 +2433,30 @@ msgstr "Wyślij notyfikacje emailem"
 
 #: admin/views/polls/add/options-poll.php:238
 #: admin/views/polls/edit/options-poll.php:392 admin/views/settings/view.php:67
-#, fuzzy
 msgid "From Name"
-msgstr "Od"
+msgstr "Od Imienia"
 
 #: admin/views/polls/add/options-poll.php:246
 #: admin/views/polls/edit/options-poll.php:400 admin/views/settings/view.php:73
-#, fuzzy
 msgid "From Email"
-msgstr "Nieprawidłowy adres email"
+msgstr "Od E-mail"
 
 #: admin/views/polls/add/options-poll.php:254
 #: admin/views/polls/edit/options-poll.php:408 admin/views/settings/view.php:79
-#, fuzzy
 msgid "Recipients"
-msgstr "Dane dla „Odbiorców” są nieprawidłowe"
+msgstr "Odbiorcy"
 
 #: admin/views/polls/add/options-poll.php:257
 #: admin/views/polls/edit/options-poll.php:411 admin/views/settings/view.php:81
 msgid "Use comma separated email addresses: email@xmail.com,email2@ymail.com"
 msgstr ""
+"Użyj przecinek jako separator adresów email np. email@xmail.com,email2@ymail."
+"com"
 
 #: admin/views/polls/add/options-poll.php:263
 #: admin/views/polls/edit/options-poll.php:417 admin/views/settings/view.php:86
-#, fuzzy
 msgid "Subject"
-msgstr "Dane dla „Temat” są nieprawidłowe"
+msgstr "Temat"
 
 #: admin/views/polls/add/options-poll.php:281
 #: admin/views/polls/edit/options-poll.php:435
@@ -2542,15 +2472,14 @@ msgstr ""
 
 #: admin/views/polls/add/options-poll.php:304
 #: admin/views/polls/edit/options-poll.php:498
-#, fuzzy
 msgid "Anonymize Ip Addresses ( Cookies will be disabled ) "
 msgstr ""
-"Poproś o zgodę (adresy IP zostaną zapisane, a pliki cookie zostaną włączone)"
+"Poproś o zgodę (adresy IP zostaną zapisane, a pliki cookie zostaną włączone) "
 
 #: admin/views/polls/add/options-poll.php:305
 #: admin/views/polls/edit/options-poll.php:499
 msgid "Do not store Ip Addresses ( Cookies will be disabled ) "
-msgstr ""
+msgstr "Adresy IP nie są przechowywane (Cookies są wyłączone)"
 
 #: admin/views/polls/add/options-poll.php:311
 #: admin/views/polls/edit/options-poll.php:505
@@ -2633,7 +2562,6 @@ msgstr "Alfabetycznie"
 
 #: admin/views/polls/add/options-results.php:131
 #: admin/views/polls/edit/options-results.php:231
-#, fuzzy
 msgid "Number of votes"
 msgstr "Liczba głosów"
 
@@ -2645,12 +2573,12 @@ msgstr "Reguła sortowania"
 #: admin/views/polls/add/options-results.php:141
 #: admin/views/polls/edit/options-results.php:251
 msgid "Ascending"
-msgstr "rosnąco"
+msgstr "Rosnąco"
 
 #: admin/views/polls/add/options-results.php:142
 #: admin/views/polls/edit/options-results.php:252
 msgid "Descending"
-msgstr "malejąco"
+msgstr "Malejąco"
 
 #: admin/views/polls/add/options-results.php:151
 #: admin/views/polls/edit/options-results.php:261
@@ -2666,16 +2594,15 @@ msgstr "Paski"
 #: admin/views/polls/edit/options-results.php:275
 #: admin/views/results/view.php:122 admin/views/results/view.php:137
 msgid "Pie"
-msgstr ""
+msgstr "Okrągły"
 
 #: admin/views/polls/edit/design-custom-styles.php:13
-#, fuzzy
 msgid "Poll Container"
-msgstr "Podgląd ankiety"
+msgstr "Kontenery ankiety"
 
 #: admin/views/polls/edit/design-custom-styles.php:98
 msgid "Questions"
-msgstr ""
+msgstr "Pytania"
 
 #: admin/views/polls/edit/design-custom-styles.php:221
 #: admin/views/results/view.php:116
@@ -2684,7 +2611,7 @@ msgstr "Odpowiedzi"
 
 #: admin/views/polls/edit/design-custom-styles.php:438
 msgid "Buttons"
-msgstr ""
+msgstr "Przyciski"
 
 #: admin/views/polls/edit/elements.php:134
 #: admin/views/polls/elements-definitions.php:249
@@ -2703,41 +2630,36 @@ msgstr "Typ"
 
 #: admin/views/polls/edit/elements.php:559
 #: admin/views/polls/elements-definitions.php:62
-#, fuzzy
 msgid "Set as Required"
-msgstr "Wymagane"
+msgstr "Ustaw jako wymagane"
 
 #: admin/views/polls/edit/main.php:9
 msgid "immediately"
-msgstr "Natychmiast"
+msgstr "Ntychmiast"
 
 #: admin/views/polls/elements-definitions.php:86
-#, fuzzy
 msgid "Do you have a question"
-msgstr "Masz pytanie?"
+msgstr "Masz pytanie"
 
 #: admin/views/polls/elements-definitions.php:249
 msgid "New Answer"
 msgstr "Nowa odpowiedź"
 
 #: admin/views/polls/view.php:172
-#, fuzzy
 msgid "All"
-msgstr "Wszystkie zakazy"
+msgstr "Wszystkie"
 
 #: admin/views/polls/view.php:196 admin/views/polls/view.php:260
 msgid "Ending Soon"
 msgstr "Zakończone wkrótce"
 
 #: admin/views/polls/view.php:204
-#, fuzzy
 msgid "Ended"
 msgstr "Koniec ankiety"
 
 #: admin/views/polls/view.php:215 admin/views/polls/view.php:219
-#, fuzzy
 msgid "Search Polls"
-msgstr "Wszystkie ankiety"
+msgstr "Szukaj ankiet"
 
 #: admin/views/polls/view.php:236 admin/views/polls/view.php:534
 #: admin/views/polls/view.php:537 admin/views/polls/view.php:754
@@ -2745,22 +2667,20 @@ msgid "Clone"
 msgstr "Klonuj"
 
 #: admin/views/polls/view.php:239 admin/views/polls/view.php:757
-#, fuzzy
 msgid "Reset Votes"
-msgstr "Czy na pewno chcesz zresetować głosy dla tej ankiety?"
+msgstr "Resetowanie głosów"
 
 #: admin/views/polls/view.php:273
 msgid "items"
-msgstr ""
+msgstr "elementy"
 
 #: admin/views/polls/view.php:273
 msgid "page"
 msgstr "Strona"
 
 #: admin/views/polls/view.php:274
-#, fuzzy
 msgid "Set"
-msgstr "Ustaw min. szerokość dla tego popupu"
+msgstr "Ustaw"
 
 #: admin/views/polls/view.php:338 admin/views/polls/view.php:618
 msgid "Title"
@@ -2771,13 +2691,12 @@ msgid "Status"
 msgstr "Status"
 
 #: admin/views/polls/view.php:371 admin/views/polls/view.php:651
-#, fuzzy
 msgid "Code"
-msgstr "Kod skopiowany do schowka"
+msgstr "Kod"
 
 #: admin/views/polls/view.php:390 admin/views/polls/view.php:670
 msgid "Votes"
-msgstr "głosy"
+msgstr "Głosy"
 
 #: admin/views/polls/view.php:522
 msgid "Edit this poll"
@@ -2809,27 +2728,22 @@ msgid "To customize it, you can use the options below"
 msgstr "Aby go dostosować, możesz skorzystać z poniższych opcji"
 
 #: admin/views/polls/view.php:832
-#, fuzzy
 msgid "Tracking Id"
-msgstr "Post ID:"
+msgstr "Śledzenie ID:"
 
 #: admin/views/polls/view.php:835
-#, fuzzy
 msgid "Leave empty if none"
-msgstr "Żadna"
+msgstr "Opuść puste"
 
 #: admin/views/polls/view.php:840
-#, fuzzy
 msgid "Display Results Only"
-msgstr "Wyświetl wyniki jako"
+msgstr "Wyświetl tylko wyniki"
 
 #: admin/views/polls/view.php:852
-#, fuzzy
 msgid "Generate Code"
-msgstr "Kod"
+msgstr "Generuj kod"
 
 #: admin/views/results/view.php:5 admin/views/results/votes.php:83
-#, fuzzy
 msgid "Poll results for"
 msgstr "Wyświetl wyniki ankiety"
 
@@ -2848,7 +2762,7 @@ msgstr "Głosujący"
 #: admin/views/results/view.php:195 admin/views/results/view.php:226
 #: admin/views/results/view.php:289
 msgid " votes"
-msgstr "głosy"
+msgstr "Głosy"
 
 #: admin/views/results/view.php:197 admin/views/results/view.php:228
 #: admin/views/results/view.php:291
@@ -2861,31 +2775,27 @@ msgstr "Własne"
 
 #: admin/views/results/votes.php:133
 msgid "Search Votes"
-msgstr "szukaj głosów"
+msgstr "Szukaj głosów"
 
 #: admin/views/results/votes.php:138 admin/views/results/votes.php:199
 msgid "Add Votes"
-msgstr "dodaj głos"
+msgstr "Dodaj głosy"
 
 #: admin/views/results/votes.php:146
-#, fuzzy
 msgid "Add Votes Manually"
-msgstr "Nie wybrano głosów"
+msgstr "Dodaj głosy manualnie"
 
 #: admin/views/results/votes.php:176
-#, fuzzy
 msgid "Number of votes for this answer"
-msgstr "Liczba głosów"
+msgstr "Liczba głosów "
 
 #: admin/views/results/votes.php:224
-#, fuzzy
 msgid "Votes list navigation"
 msgstr "Nawigacja wszystkich stron"
 
 #: admin/views/settings/view.php:3
-#, fuzzy
 msgid "Poll Settings"
-msgstr "Ustawienia"
+msgstr "Ustawienia ankiet"
 
 #: admin/views/settings/view.php:20
 msgid "General"
@@ -2893,15 +2803,15 @@ msgstr "Ustawienia generalne"
 
 #: admin/views/settings/view.php:30
 msgid "Integrations"
-msgstr ""
+msgstr "Integracje"
 
 #: admin/views/settings/view.php:43
 msgid "Remove plugin data when uninstalling"
-msgstr ""
+msgstr "Usuń wtyczkę "
 
 #: admin/views/settings/view.php:92
 msgid "Body"
-msgstr ""
+msgstr "Rdzeń wtyczki"
 
 #: admin/views/settings/view.php:104
 msgid "Use Google reCaptcha:"
@@ -2918,19 +2828,16 @@ msgid "- Secret Key:"
 msgstr "- klucz sekretny:"
 
 #: admin/views/settings/view.php:146
-#, fuzzy
 msgid "Use Invisible reCaptcha v2:"
-msgstr "Użyj Google reCaptcha:"
+msgstr "Użyj Google reCaptcha v2:"
 
 #: admin/views/settings/view.php:188
-#, fuzzy
 msgid "Use Google reCaptcha v3:"
-msgstr "Użyj Google reCaptcha:"
+msgstr "Użyj Google reCaptcha v3:"
 
 #: admin/views/settings/view.php:228
-#, fuzzy
 msgid "- Min Allowed Score:"
-msgstr "Min. szerokość"
+msgstr "- Minimalny dopuszczalny wynik:"
 
 #: admin/views/settings/view.php:241
 msgid "Use Facebook integration:"
@@ -2945,17 +2852,14 @@ msgid "Use Google integration:"
 msgstr "Użyj integracji z Google:"
 
 #: admin/views/settings/view.php:305
-#, fuzzy
 msgid "- App Secret:"
 msgstr "- klucz sekretny:"
 
 #: admin/views/settings/view.php:319
-#, fuzzy
 msgid "Vote Buttons"
-msgstr "głos"
+msgstr "Przyciski głosowania"
 
 #: admin/views/settings/view.php:334
-#, fuzzy
 msgid "Captcha"
 msgstr "Tak, używaj wbudowanego w Captcha"
 
@@ -2964,18 +2868,16 @@ msgid "Vote as anonymous"
 msgstr "Głosuj jako anonim"
 
 #: admin/views/settings/view.php:350
-#, fuzzy
 msgid "Vote with your WordPress account"
-msgstr "Brakuje głosów oddanych przez użytkowników"
+msgstr "Głosuj jako użytkownik Wordpress"
 
 #: admin/views/settings/view.php:357
 msgid "Vote with your facebook account"
-msgstr ""
+msgstr "Glosuj jako użytkownik Facebook"
 
 #: admin/views/settings/view.php:364
-#, fuzzy
 msgid "Vote with your google account"
-msgstr "Twój Google+ url"
+msgstr "Głosuj jako użytkownik Google"
 
 #: admin/views/settings/view.php:376
 msgid "Poll Ended"
@@ -2990,9 +2892,8 @@ msgid "Already voted on poll"
 msgstr "Właśnie zagłosowałeś w ankiecie"
 
 #: admin/views/settings/view.php:404
-#, fuzzy
 msgid "No Answer(s) selected"
-msgstr "Odpowiedź jest nieprawidłowa"
+msgstr "Nie wybrano odpowiedzi"
 
 #: admin/views/settings/view.php:418
 msgid "Maximum answers required"
@@ -3007,9 +2908,8 @@ msgid "No value for custom field"
 msgstr "Brak wartości dla własnych pól"
 
 #: admin/views/settings/view.php:439
-#, fuzzy
 msgid "Consent not checked"
-msgstr "sprawdzone"
+msgstr "Zgoda nie została sprawdzona"
 
 #: admin/views/settings/view.php:446
 msgid "Captcha missing"
@@ -3017,67 +2917,59 @@ msgstr "Brakuje captchy"
 
 #: admin/views/settings/view.php:453
 msgid "Vote not allowed by ban setting"
-msgstr ""
+msgstr "Głosowanie niedostępne z powodu zbanowania"
 
 #: admin/views/settings/view.php:460
 msgid "Vote not allowed by block setting"
-msgstr ""
+msgstr "Głosowanie niedostępne"
 
 #: admin/views/settings/view.php:467
 msgid "Vote not allowed by limit setting"
-msgstr ""
+msgstr "Głosowanie niedostępne z powodu ustawienia limitu"
 
 #: admin/views/settings/view.php:474
-#, fuzzy
 msgid "Thank you for your vote"
-msgstr "Czy na pewno chcesz usunąć ten głos?"
+msgstr "Dziękuję za Twój głos"
 
 #: admin/views/settings/view.php:486
-#, fuzzy
 msgid "Single Vote"
-msgstr "głos"
+msgstr "Pojedynczy głos"
 
 #: admin/views/settings/view.php:493
-#, fuzzy
 msgid "Multiple Votes"
-msgstr "głosy"
+msgstr "Wiele głosów"
 
 #: admin/views/settings/view.php:500
-#, fuzzy
 msgid "Single Answer"
-msgstr "Odpowiedź"
+msgstr "Pojedyncza odpowiedź"
 
 #: admin/views/settings/view.php:507
-#, fuzzy
 msgid "Multiple Answers"
-msgstr "Zezwalaj na wiele odpowiedzi"
+msgstr "Wiele odpowiedzi"
 
 #: admin/views/settings/view.php:519
 msgid "Accessibility Alt"
-msgstr ""
+msgstr "Dostępny Alt"
 
 #: admin/views/settings/view.php:526
-#, fuzzy
 msgid "Accessibility Title"
-msgstr "Tytuł Mapy"
+msgstr "Dostępny Title"
 
 #: admin/views/settings/view.php:533
-#, fuzzy
 msgid "Accessibility Description"
-msgstr "Opis"
+msgstr "Dostępny Opis"
 
 #: admin/views/settings/view.php:540
 msgid "Accessibility Explanation"
-msgstr ""
+msgstr "Dostęp ekspitacji"
 
 #: admin/views/settings/view.php:547
 msgid "Refresh Alt"
-msgstr ""
+msgstr "Odśwież alty"
 
 #: admin/views/settings/view.php:554
-#, fuzzy
 msgid "Refresh Title"
-msgstr "Tytuł:"
+msgstr "Odśwież Tytuł:"
 
 #: admin/views/settings/view.php:590
 msgid "Save settings"
@@ -3085,14 +2977,17 @@ msgstr "Zapisz ustawienia"
 
 #. Author URI of the plugin/theme
 msgid "https://yop-poll.com"
-msgstr ""
+msgstr "https://yop-poll.com"
 
 #. Description of the plugin/theme
 msgid ""
 "Use a full option polling functionality to get the answers you need. YOP "
 "Poll is the perfect, easy to use poll plugin for your WordPress website."
 msgstr ""
+"Skorzystaj z pełnej funkcji sondowania, aby uzyskać potrzebne odpowiedzi. "
+"YOP Poll to idealna, łatwa w użyciu wtyczka do ankiety dla Twojej witryny "
+"WordPress."
 
 #. Author of the plugin/theme
 msgid "yourownprogrammer"
-msgstr ""
+msgstr "yourownprogrammer"

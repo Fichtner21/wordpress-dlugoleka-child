@@ -3,7 +3,7 @@ Array
     [res] => 
     [info] => Array
         (
-            [url] => https://elasticsearch.sputnik.pl/api/auth
+            [url] => https://elasticsearch.sputnik.pl/api/indices/1
             [content_type] => 
             [http_code] => 0
             [header_size] => 0
@@ -11,7 +11,7 @@ Array
             [filetime] => -1
             [ssl_verify_result] => 0
             [redirect_count] => 0
-            [total_time] => 12.003621
+            [total_time] => 11.851997
             [namelookup_time] => 0
             [connect_time] => 0
             [pretransfer_time] => 0
@@ -42,7 +42,7 @@ Array
             [pretransfer_time_us] => 0
             [redirect_time_us] => 0
             [starttransfer_time_us] => 0
-            [total_time_us] => 12003621
+            [total_time_us] => 11851997
         )
 
 )
