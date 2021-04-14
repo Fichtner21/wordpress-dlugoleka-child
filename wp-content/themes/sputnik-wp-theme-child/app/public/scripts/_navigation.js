@@ -74,15 +74,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const links = menu.getElementsByTagName("a");
 
     // Get all the link elements with children within the menu.
-    const liWithChildren = menu.querySelectorAll(".menu-item-has-children");
+    // const liWithChildren = menu.querySelectorAll(".menu-item-has-children");
 
-    liWithChildren.forEach((li) => {
-      li.addEventListener("click", function (e) {
-        e.preventDefault();
+    // liWithChildren.forEach((li) => {
+    //   li.addEventListener("click", function (e) {
+    //     e.preventDefault();
 
-        li.classList.add("focus");
-      });
-    });
+    //     li.classList.add("focus");
+    //   });
+    // });
     // Toggle focus each time a menu link is focused or blurred.
     // for (const link of links) {
     // link.addEventListener("focus", toggleFocus, true);
@@ -98,29 +98,29 @@ document.addEventListener("DOMContentLoaded", function () {
     /**
      * Sets or removes .focus class on an element.
      */
-    function toggleFocus() {
-      if (event.type === "focus" || event.type === "blur") {
-        let self = this;
-        // Move up through the ancestors of the current link until we hit .nav-menu.
-        while (!self.classList.contains("nav-menu")) {
-          // On li elements toggle the class .focus.
-          if ("li" === self.tagName.toLowerCase()) {
-            self.classList.toggle("focus");
-          }
-          self = self.parentNode;
-        }
-      }
+    // function toggleFocus() {
+    //   if (event.type === "focus" || event.type === "blur") {
+    //     let self = this;
+    //     // Move up through the ancestors of the current link until we hit .nav-menu.
+    //     while (!self.classList.contains("nav-menu")) {
+    //       // On li elements toggle the class .focus.
+    //       if ("li" === self.tagName.toLowerCase()) {
+    //         self.classList.toggle("focus");
+    //       }
+    //       self = self.parentNode;
+    //     }
+    //   }
 
-      if (event.type === "touchstart") {
-        const menuItem = this.parentNode;
-        event.preventDefault();
-        for (const link of menuItem.parentNode.children) {
-          if (menuItem !== link) {
-            link.classList.remove("focus");
-          }
-        }
-        menuItem.classList.toggle("focus");
-      }
-    }
+    //   if (event.type === "touchstart") {
+    //     const menuItem = this.parentNode;
+    //     event.preventDefault();
+    //     for (const link of menuItem.parentNode.children) {
+    //       if (menuItem !== link) {
+    //         link.classList.remove("focus");
+    //       }
+    //     }
+    //     menuItem.classList.toggle("focus");
+    //   }
+    // }
   })();
 });
