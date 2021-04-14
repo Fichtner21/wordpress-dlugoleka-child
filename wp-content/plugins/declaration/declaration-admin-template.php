@@ -120,6 +120,11 @@ $editor_settings = array(
     </div>
 
     <div class="declaration-meta-form__row">
+        <label for="accessibility-extra" class="declaration-meta-form__label"><h3><span class="dashicons dashicons-universal-access"></span> Dodatkowe pole uwag:</h3></label>
+        <?= wp_editor($accessibility_extra[0], "accessibility-extra", array('editor_height' => 200, 'quicktags' => false)); ?>
+    </div>
+
+    <div class="declaration-meta-form__row">
         <label for="mobile-app-android" class="declaration-meta-form__label"><h3><span class="dashicons dashicons-smartphone"></span> (Android) Wymienić aplikacje oraz informację skąd można je pobrać</h3></label>
         <?= wp_editor($mobile_app_android[0], "mobile-app-android", array('editor_height' => 100, 'quicktags' => false)); ?>
     </div>

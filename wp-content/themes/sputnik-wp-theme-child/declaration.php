@@ -35,6 +35,7 @@ get_header();
     $accessibility_4 = isset($custom["accessibility-4"][0]) ? $custom["accessibility-4"] : " ";
     $accessibility_5 = isset($custom["accessibility-5"][0]) ? $custom["accessibility-5"] : " ";
     $accessibility_6 = isset($custom["accessibility-6"][0]) ? $custom["accessibility-6"] : " ";
+    $accessibility_extra = isset($custom["accessibility-extra"][0]) ? $custom["accessibility-extra"] : " ";
 
     $mobile_app_android = isset($custom["mobile-app-android"][0]) ? $custom["mobile-app-android"] : " ";
     $mobile_app_ios = isset($custom["mobile-app-ios"][0]) ? $custom["mobile-app-ios"] : " ";
@@ -122,6 +123,7 @@ get_header();
             <li><?= $accessibility_5[0]; ?></li>
             <li><?= $accessibility_6[0]; ?></li>
         </ol>
+        <?= $accessibility_extra ? $accessibility_extra : 'brak wypełnienia'; ?>        
 
         <h3 id="a11y-aplikacje" class='add-margin'>Aplikacje mobilne</h3>
         <div class="mobile-app add-margin"><?= $mobile_app_android[0]; ?></div>

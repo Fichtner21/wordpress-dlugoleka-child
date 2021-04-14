@@ -135,8 +135,6 @@ if(! class_exists('Declaration')) {
                 remove_meta_box( 'postcustom' , 'page' , 'normal' );
                 remove_meta_box( 'slugdiv' , 'page' , 'normal' );
             }
-
-
         }
         // Add Metaboxes
         function add_custom_fields_boxes() {
