@@ -46,12 +46,6 @@ if (jQuery) {
             $(this).next().addClass("focus");
             $(this).attr("aria-expanded", "true");
           }
-
-          $(this).on("keyup", function (e) {
-            e.preventDefault();
-
-            // if (e.keyCode === 32) toggleMegaMenu();
-          });
         }
       });
     });
