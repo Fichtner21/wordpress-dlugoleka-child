@@ -87,10 +87,11 @@
         }
       }
       &-item {
-        margin: 0 calc(0.9rem / 2);
-        padding: 0 calc(0.9rem / 2);
+        // margin: 0 calc(0.9rem / 2);
+        // padding: 0 calc(0.9rem / 2);
         border-right: 0.1rem solid #d8d8d8;
         border-bottom: 0.2rem solid transparent;
+        transition: all .4s;
         @include extra-large {
           border: 0;
         }

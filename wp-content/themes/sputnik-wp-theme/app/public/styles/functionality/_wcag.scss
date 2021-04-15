@@ -50,3 +50,22 @@ html.wcagfocus *:focus {
   max-height: fit-content;
   pointer-events: all;
 }
+
+a {
+  .contrast-mode & {
+    color: $contrastColor;
+  }
+}
+
+.module-messages__animtoggle {
+  .contrast-mode & {
+    background-color: $contrastColor;
+    color: $contrastBackground;
+  }
+}
+
+p::selection {
+  .contrast-mode & {
+    background-color: $contrastBackground;
+  }
+}
