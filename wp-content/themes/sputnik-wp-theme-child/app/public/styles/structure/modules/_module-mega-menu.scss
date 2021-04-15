@@ -28,10 +28,11 @@
   }
 
   .menu {
+    @include extra-large {
+      overflow: auto;
+    }
     &-item {
       &-has-children {
-        // &:hover,
-
         & > .sub-menu {
           display: none;
           background: white;
@@ -43,11 +44,19 @@
           width: 100%;
           z-index: $subMenuIndex;
           border-top: 0.1rem solid rgba(black, 0.05);
+          @include extra-large {
+            position: static;
+            background: $primaryColor;
+            overflow: auto;
+          }
           &.focus,
           &:focus {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 3rem;
+            @include extra-large {
+              display: block;
+            }
           }
 
           html.contrast-mode & {

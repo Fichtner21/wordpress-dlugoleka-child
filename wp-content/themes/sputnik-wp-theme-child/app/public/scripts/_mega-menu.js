@@ -17,6 +17,11 @@ if (jQuery) {
 
         $allSubmenus.removeClass("focus");
 
+        $.each($allSubmenus, function (index, menu) {
+          $(menu).removeClass("focus");
+          $(menu).parent().find("a:first").attr("aria-expanded", "false");
+        });
+
         if ($(this).attr("aria-expanded") === "true") {
           $(this).attr("aria-expanded", "false");
           $megaMenu.removeClass("focus");
@@ -25,7 +30,23 @@ if (jQuery) {
           $megaMenu.addClass("focus");
         }
 
-        const $allMegaMenuLinks = $megaMenu.find("a");
+        // const $allMegaMenuLinks = $megaMenu.find("a");
+      });
+
+      const $menuItems = $("#primary-menu > li");
+
+      $menuItems.find("a:first").on("focus", function () {
+        if (!$(this).parent().hasClass("menu-item-has-children")) {
+          $(".sub-menu").removeClass("focus");
+        } else {
+          if ($(this).parent().prev().find("a:first").attr("aria-expanded") === "true") {
+            $(this).parent().prev().find("a:first").attr("aria-expanded", "false");
+            $(this).parent().prev().find("a:first").next().removeClass("focus");
+
+            $(this).next().addClass("focus");
+            $(this).attr("aria-expanded", "true");
+          }
+        }
       });
     });
   })(jQuery);
