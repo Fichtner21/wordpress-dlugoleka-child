@@ -9,7 +9,7 @@ if (jQuery) {
       $topLevelItems.find("a:first").attr("aria-expanded", "false");
       $topLevelItems.find("a:first").attr("aria-haspopup", "true");
 
-      $topLevelItems.find("a:first").on("click", function (e) {
+      function toggleMegaMenu(e) {
         e.preventDefault();
 
         const $megaMenu = $(this).next();
@@ -29,9 +29,9 @@ if (jQuery) {
           $(this).attr("aria-expanded", "true");
           $megaMenu.addClass("focus");
         }
+      }
 
-        // const $allMegaMenuLinks = $megaMenu.find("a");
-      });
+      $topLevelItems.find("a:first").on("click", toggleMegaMenu);
 
       const $menuItems = $("#primary-menu > li");
 
@@ -46,6 +46,12 @@ if (jQuery) {
             $(this).next().addClass("focus");
             $(this).attr("aria-expanded", "true");
           }
+
+          $(this).on("keyup", function (e) {
+            e.preventDefault();
+
+            // if (e.keyCode === 32) toggleMegaMenu();
+          });
         }
       });
     });
