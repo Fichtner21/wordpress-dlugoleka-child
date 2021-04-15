@@ -140,7 +140,7 @@ get_header();
         
         if($accessibility_7[0]){ ?>
             <h3 class="add-margin">Uwagi:</h3>
-            <div><?php $accessibility_7[0]; ?></div><?php
+            <div><?php echo $accessibility_7[0]; ?></div><?php
         } else {
             echo '';
         } ?>        
