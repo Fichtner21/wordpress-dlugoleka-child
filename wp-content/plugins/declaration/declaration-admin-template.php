@@ -137,7 +137,7 @@ $editor_settings = array(
     </div>
 
     <div class="declaration-meta-form__row">
-        <label for="accessibility-7" class="declaration-meta-form__label"><h3><span class="dashicons dashicons-universal-access"></span> Dostępnść architektoniczna uwagi:</h3></label>
+        <label for="accessibility-7" class="declaration-meta-form__label"><h3><span class="dashicons dashicons-universal-access"></span> Informacje dodatkowe:</h3></label>
         <?= wp_editor($accessibility_7[0], "accessibility-7", array('editor_height' => 200, 'quicktags' => false)); ?>
     </div>
 

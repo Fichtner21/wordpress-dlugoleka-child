@@ -1,5 +1,24 @@
+import $ from 'jquery';
+import 'webpack-jquery-ui/tooltip';
+
 document.addEventListener("DOMContentLoaded", function () {
-  //
+
+  const $title = $("a,input,p,label,textarea[title]");
+
+  jQuery.each($title, function(index, value) {
+    jQuery(this).tooltip({
+        show: {
+             effect: "explode",
+             delay: 250
+        },
+        hide: {
+            effect: "explode",
+            delay: 250
+       },
+       tooltipClass: "mytooltip",
+    });  
+  });
+    //
   if (document.querySelectorAll(".menu .menu-item a").length > 0) {
     const menuAnchors = document.querySelectorAll(".menu .menu-item a");
 

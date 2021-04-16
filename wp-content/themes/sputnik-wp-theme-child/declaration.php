@@ -70,7 +70,7 @@ get_header();
         ?>
 
         <h2 id=”a11y-deklaracja” class='add-margin'><?php the_title(); ?></h2>
-        <div id="a11y-wstep" class='add-margin'><span id="a11y-podmiot"><?php echo get_bloginfo('name'); ?></span> zobowiązuje się zapewnić dostępność swojej strony internetowej zgodnie z ustawą z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych. Oświadczenie w sprawie dostępności ma zastosowanie do <a href="<?php echo get_home_url(); ?>" id="a11y-url">strony internetowej <?php echo get_bloginfo('name'); ?></a>.</div>
+        <div id="a11y-wstep" class='add-margin'><span id="a11y-podmiot"><?php echo get_bloginfo('name'); ?></span> zobowiązuje się zapewnić dostępność swojej strony internetowej zgodnie z ustawą z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych. Oświadczenie w sprawie dostępności ma zastosowanie do <a href="<?php echo get_home_url(); ?>" data-title="strony internetowej <?php echo get_bloginfo('name'); ?>" id="a11y-url">strony internetowej <?php echo get_bloginfo('name'); ?></a>.</div>
 
         <p class='add-margin'>Data publikacji strony internetowej: <span id="a11y-data-publikacja"><?= $date_exist = ($publish_date[0] == true) ? $publish_date[0] : get_the_date('Y-m-d', $posts_array_oldest[0]); ?></span>. Data ostatniej istotnej aktualizacji: <span id="a11y-data-aktualizacja"><?php echo $update_date[0]; ?></span>.</p>
 
@@ -139,7 +139,7 @@ get_header();
         <?php
         
         if($accessibility_7[0]){ ?>
-            <h3 class="add-margin">Uwagi:</h3>
+            <h3 class="add-margin">Informacje dodatkowe:</h3>
             <div><?php echo $accessibility_7[0]; ?></div><?php
         } else {
             echo '';

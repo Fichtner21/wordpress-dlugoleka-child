@@ -64,6 +64,9 @@ $title_font_size = get_field('title_font_size');
       <div class="entry-content">
         <?php the_content(); ?>
       </div><!-- .entry-content -->
+      
+      <?php require CUSTOM_PARTS . '/modules/module-attachments.php'; ?>
+
     </div>
 
     <aside class="posts-other">
@@ -159,7 +162,7 @@ $title_font_size = get_field('title_font_size');
 
 	<footer class="entry-footer">
 
-		<?php require CUSTOM_PARTS . '/modules/module-attachments.php'; ?>
+		
 
 	</footer><!-- .entry-footer -->
 
