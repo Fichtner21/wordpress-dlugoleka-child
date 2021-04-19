@@ -13,7 +13,7 @@ if (jQuery) {
         e.preventDefault();
 
         const $megaMenu = $(this).next();
-        const $allSubmenus = $(".sub-menu");
+        const $allSubmenus = $(".sub-menu");        
 
         $allSubmenus.removeClass("focus");
 
@@ -29,7 +29,7 @@ if (jQuery) {
           $(this).attr("aria-expanded", "true");
           $megaMenu.addClass("focus");
         }
-      }
+      }            
 
       $topLevelItems.find("a:first").on("click", toggleMegaMenu);
 
@@ -46,6 +46,15 @@ if (jQuery) {
             $(this).next().addClass("focus");
             $(this).attr("aria-expanded", "true");
           }
+        }
+      });       
+     
+      $(document).click(function(event){     
+        const myTarget = $(".nav-menu");       
+        if(!myTarget.is(event.target) && myTarget.has(event.target).length === 0){
+          $('.focus').hide();
+        } else {
+          $('.focus').show();
         }
       });
     });
