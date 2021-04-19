@@ -118,10 +118,72 @@ __webpack_require__(/*! ./scripts/_posts-grid */ "./app/public/scripts/_posts-gr
 
 __webpack_require__(/*! ./scripts/_custom-lightbox */ "./app/public/scripts/_custom-lightbox.js");
 
-__webpack_require__(/*! ./scripts/_cookiebar */ "./app/public/scripts/_cookiebar.js"); // require main styles
+__webpack_require__(/*! ./scripts/_cookiebar */ "./app/public/scripts/_cookiebar.js");
+
+__webpack_require__(/*! ./scripts/_audio-control */ "./app/public/scripts/_audio-control.js"); // require main styles
 
 
 __webpack_require__(/*! ./styles/style.scss */ "./app/public/styles/style.scss");
+
+/***/ }),
+
+/***/ "./app/public/scripts/_audio-control.js":
+/*!**********************************************!*\
+  !*** ./app/public/scripts/_audio-control.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (document.querySelectorAll(".wp-block-audio audio").length >= 1) {
+    var audio = document.querySelectorAll(".wp-block-audio audio");
+    audio.forEach(function (au) {
+      // Audio container
+      var container = au.parentNode; // Audio control elements
+
+      var play = document.createElement("button");
+      var stop = document.createElement("button");
+      var reset = document.createElement("button");
+      var scroll_by_10_minus = document.createElement("button");
+      var scroll_by_10_plus = document.createElement("button");
+      play.className = "audio__play";
+      stop.className = "audio__stop";
+      reset.className = "audio__reset";
+      scroll_by_10_plus.className = "audio__scroll_by_10_plus";
+      scroll_by_10_minus.className = "audio__scroll_by_10_minus";
+      play.textContent = "Odtwarzaj";
+      stop.textContent = "Zatrzymaj";
+      reset.textContent = "Resetuj";
+      scroll_by_10_plus.textContent = "Przewiń o 10 sekund do przodu";
+      scroll_by_10_minus.textContent = "Przewiń o 10 sekund do tyłu";
+      play.title = "Odtwarzaj";
+      stop.title = "Zatrzymaj";
+      reset.title = "Resetuj";
+      scroll_by_10_plus.title = "Przewiń o 10 sekund do przodu";
+      scroll_by_10_minus.title = "Przewiń o 10 sekund do tyłu";
+      container.appendChild(scroll_by_10_minus);
+      container.appendChild(play);
+      container.appendChild(stop);
+      container.appendChild(reset);
+      container.appendChild(scroll_by_10_plus);
+      play.addEventListener("click", function () {
+        this.parentNode.querySelector("audio").play();
+      });
+      stop.addEventListener("click", function () {
+        this.parentNode.querySelector("audio").pause();
+      });
+      reset.addEventListener("click", function () {
+        this.parentNode.querySelector("audio").currentTime = 0;
+      });
+      scroll_by_10_minus.addEventListener("click", function () {
+        this.parentNode.querySelector("audio").currentTime = this.parentNode.querySelector("audio").currentTime - 10;
+      });
+      scroll_by_10_plus.addEventListener("click", function () {
+        this.parentNode.querySelector("audio").currentTime = this.parentNode.querySelector("audio").currentTime + 10;
+      });
+    });
+  }
+});
 
 /***/ }),
 
@@ -425,7 +487,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie-exposed.js");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js?f970");
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_0__);
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -712,7 +774,7 @@ _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__["dom"].watch();
     });
   })(jQuery);
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery-exposed.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js?ad7a")))
 
 /***/ }),
 
@@ -1027,7 +1089,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery-exposed.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js?ad7a")))
 
 /***/ }),
 
@@ -1040,7 +1102,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie-exposed.js");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js?f970");
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_0__);
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -1171,7 +1233,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie-exposed.js");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js?f970");
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_0__);
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -27955,24 +28017,7 @@ module.exports = function () {
 
 /***/ }),
 
-/***/ "./node_modules/jquery/dist/jquery-exposed.js":
-/*!****************************************************!*\
-  !*** ./node_modules/jquery/dist/jquery-exposed.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var ___EXPOSE_LOADER_IMPORT___ = __webpack_require__(/*! -!./jquery.js */ "./node_modules/jquery/dist/jquery.js");
-var ___EXPOSE_LOADER_GET_GLOBAL_THIS___ = __webpack_require__(/*! ../../expose-loader/dist/runtime/getGlobalThis.js */ "./node_modules/expose-loader/dist/runtime/getGlobalThis.js");
-var ___EXPOSE_LOADER_GLOBAL_THIS___ = ___EXPOSE_LOADER_GET_GLOBAL_THIS___;
-if (typeof ___EXPOSE_LOADER_GLOBAL_THIS___["$"] === 'undefined') ___EXPOSE_LOADER_GLOBAL_THIS___["$"] = {};
-___EXPOSE_LOADER_GLOBAL_THIS___["$"]["jQuery"] = ___EXPOSE_LOADER_IMPORT___;
-module.exports = ___EXPOSE_LOADER_IMPORT___;
-
-
-/***/ }),
-
-/***/ "./node_modules/jquery/dist/jquery.js":
+/***/ "./node_modules/jquery/dist/jquery.js?1157":
 /*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
   \********************************************/
@@ -38856,24 +38901,24 @@ return jQuery;
 
 /***/ }),
 
-/***/ "./node_modules/js-cookie/src/js.cookie-exposed.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/js-cookie/src/js.cookie-exposed.js ***!
-  \*********************************************************/
+/***/ "./node_modules/jquery/dist/jquery.js?ad7a":
+/*!********************************************!*\
+  !*** ./node_modules/jquery/dist/jquery.js ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ___EXPOSE_LOADER_IMPORT___ = __webpack_require__(/*! -!./js.cookie.js */ "./node_modules/js-cookie/src/js.cookie.js");
+var ___EXPOSE_LOADER_IMPORT___ = __webpack_require__(/*! -!./jquery.js */ "./node_modules/jquery/dist/jquery.js?1157");
 var ___EXPOSE_LOADER_GET_GLOBAL_THIS___ = __webpack_require__(/*! ../../expose-loader/dist/runtime/getGlobalThis.js */ "./node_modules/expose-loader/dist/runtime/getGlobalThis.js");
 var ___EXPOSE_LOADER_GLOBAL_THIS___ = ___EXPOSE_LOADER_GET_GLOBAL_THIS___;
-if (typeof ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] === 'undefined') ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] = ___EXPOSE_LOADER_IMPORT___;
-else throw new Error('[exposes-loader] The "Cookies" value exists in the global scope, it may not be safe to overwrite it, use the "override" option')
+if (typeof ___EXPOSE_LOADER_GLOBAL_THIS___["$"] === 'undefined') ___EXPOSE_LOADER_GLOBAL_THIS___["$"] = {};
+___EXPOSE_LOADER_GLOBAL_THIS___["$"]["jQuery"] = ___EXPOSE_LOADER_IMPORT___;
 module.exports = ___EXPOSE_LOADER_IMPORT___;
 
 
 /***/ }),
 
-/***/ "./node_modules/js-cookie/src/js.cookie.js":
+/***/ "./node_modules/js-cookie/src/js.cookie.js?a78e":
 /*!*************************************************!*\
   !*** ./node_modules/js-cookie/src/js.cookie.js ***!
   \*************************************************/
@@ -39047,6 +39092,23 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 	return init(function () {});
 }));
+
+
+/***/ }),
+
+/***/ "./node_modules/js-cookie/src/js.cookie.js?f970":
+/*!*************************************************!*\
+  !*** ./node_modules/js-cookie/src/js.cookie.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var ___EXPOSE_LOADER_IMPORT___ = __webpack_require__(/*! -!./js.cookie.js */ "./node_modules/js-cookie/src/js.cookie.js?a78e");
+var ___EXPOSE_LOADER_GET_GLOBAL_THIS___ = __webpack_require__(/*! ../../expose-loader/dist/runtime/getGlobalThis.js */ "./node_modules/expose-loader/dist/runtime/getGlobalThis.js");
+var ___EXPOSE_LOADER_GLOBAL_THIS___ = ___EXPOSE_LOADER_GET_GLOBAL_THIS___;
+if (typeof ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] === 'undefined') ___EXPOSE_LOADER_GLOBAL_THIS___["Cookies"] = ___EXPOSE_LOADER_IMPORT___;
+else throw new Error('[exposes-loader] The "Cookies" value exists in the global scope, it may not be safe to overwrite it, use the "override" option')
+module.exports = ___EXPOSE_LOADER_IMPORT___;
 
 
 /***/ }),

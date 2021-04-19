@@ -12,6 +12,7 @@ require("./scripts/_levels-menu");
 require("./scripts/_posts-grid");
 require("./scripts/_custom-lightbox");
 require("./scripts/_cookiebar");
+require("./scripts/_audio-control");
 
 // require main styles
 require("./styles/style.scss");
