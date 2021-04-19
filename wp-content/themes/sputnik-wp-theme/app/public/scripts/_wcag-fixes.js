@@ -100,4 +100,13 @@ document.addEventListener("DOMContentLoaded", function () {
       a.appendChild(aSpan);
     }
   });
+
+
+  const btnPoll = document.querySelector('.basic-vote-button');
+  const sectionPoll = document.querySelector('.poll-map-apps');
+  btnPoll.addEventListener('click', function(){
+    setTimeout(function(){
+      sectionPoll.scrollIntoView({ behavior: "smooth"}, 2000)
+    })    
+  })
 });
