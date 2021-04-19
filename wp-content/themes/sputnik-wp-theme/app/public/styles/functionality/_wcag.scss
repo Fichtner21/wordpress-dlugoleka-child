@@ -69,3 +69,46 @@ p::selection {
     background-color: $contrastBackground;
   }
 }
+
+.mytooltip:hover:after{  
+  background: #fff;  
+  bottom: 1.5rem;
+  color: #000;
+  content: attr(title);
+  right: 20%;
+  padding: 5px 15px;
+  position: absolute;
+  z-index: 98;
+
+  .contrast-mode & {
+    background-color: $contrastBackground;
+    color: $contrastColor;
+    border: 3px solid #ff0;
+  }
+  }
+.mytooltip:hover:before{
+    // border: solid;
+    // border-color: #333 transparent;
+    // border-width: 6px 6px 0 6px;
+    // bottom: 20px;
+    // content: "";
+    // right: 50%;
+    // position: absolute;
+    // z-index: 99;
+}
+
+.mytooltip {  
+  background-color: #fff;
+  color: #000;
+  padding: 5px 20px; 
+  text-align: center;   
+  // box-shadow: 0px 8px 10px gray, 
+  //       -10px 8px 15px gray, 10px 8px 15px gray;
+  border: 3px solid #000;
+
+  .contrast-mode & {
+    background-color: $contrastBackground;
+    color: $contrastColor;
+    border: 2px solid #ff0;
+  }
+}

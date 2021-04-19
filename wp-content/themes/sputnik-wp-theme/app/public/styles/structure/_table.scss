@@ -78,3 +78,27 @@ html.contrast-mode table.row-hover tr:hover td {
     width: 33% !important;
   }
 }
+
+.five-col {
+  .column-1, .column-2, .column-3, .column-4, .column-5 {
+    width: 20% !important;
+  }
+}
+
+.four-col {
+  .column-1, .column-2, .column-3, .column-4 {
+    width: 25% !important;
+  }
+}
+
+.three-col {
+  .column-1, .column-2, .column-3 {
+    width: 33% !important;
+  }
+}
+
+.two-col {
+  .column-1, .column-2 {
+    width: 50% !important;
+  }
+}
