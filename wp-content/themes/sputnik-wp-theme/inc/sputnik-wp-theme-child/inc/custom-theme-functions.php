@@ -21,3 +21,19 @@ if(!function_exists('public_custom_assets_child')) {
 
 	add_action( 'wp_enqueue_scripts', 'public_custom_assets_child' );
 }
+
+// function disable_plugin_updates( $value ) {
+//   if ( isset($value) && is_object($value) ) {
+//     if ( isset( $value->response['cookie-notice/cookie-notice.php'] ) ) {
+//       unset( $value->response['cookie-notice/cookie-notice.php'] );
+//     }
+//   }
+//   return $value;
+// }
+// add_filter( 'site_transient_update_plugins', 'disable_plugin_updates' );
+
+function disable_plugin_updates( $value ) {
+	unset( $value->response['cookie-notice/cookie-notice.php'] );
+	return $value;
+}
+add_filter( 'site_transient_update_plugins', 'disable_plugin_updates' );

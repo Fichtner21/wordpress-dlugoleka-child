@@ -2,8 +2,8 @@
 /*
 Plugin Name: YOP Poll
 Plugin URI:  https://yop-poll.com
-Description: Use a full option polling functionality to get the answers you need. YOP Poll is the perfect, easy to use poll plugin for your WordPress website.
-Version:     6.2.7
+Description: Proszę nie aktualizować wtyczki, aktualizacja spowoduje przywrócenie scrollowania po oddaniu głosu. Info dla developera (yop-poll-public-6.2.7.min.js zostało odminifikowane, zakomentowana funkcja linia 749). Zmieniona wersja wtyczki na 9999, w celu aktualizacji przywrócić 6.2.7
+Version:     9999
 Author:      yourownprogrammer
 Author URI:  https://yop-poll.com
 License:     GPL2
