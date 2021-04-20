@@ -6,6 +6,11 @@ if (jQuery) {
       // initialize the megamenu
       const $topLevelItems = $("#primary-menu > li.menu-item-has-children");
 
+      $.each($topLevelItems, function (index, value) {
+        $(value).attr("data-megamenu-ID", `megamenu-${index}`);
+        $(value).find(".sub-menu").attr("id", `megamenu-${index}`);
+      });
+
       $topLevelItems.find("a:first").attr("aria-expanded", "false");
       $topLevelItems.find("a:first").attr("aria-haspopup", "true");
 
@@ -13,14 +18,17 @@ if (jQuery) {
         e.preventDefault();
 
         const $megaMenu = $(this).next();
-        const $allSubmenus = $(".sub-menu");
 
-        $allSubmenus.removeClass("focus");
+        const prevEl = $(this).parent().prev().find("a:first");
+        const nextEl = $(this).parent().next().find("a:first");
 
-        $.each($allSubmenus, function (index, menu) {
-          $(menu).removeClass("focus");
-          $(menu).parent().find("a:first").attr("aria-expanded", "false");
-        });
+        if (prevEl.attr("aria-expanded") == "true") {
+          prevEl.attr("aria-expanded", "false");
+          prevEl.next().removeClass("focus");
+        } else if (nextEl.attr("aria-expanded") == "true") {
+          nextEl.attr("aria-expanded", "false");
+          nextEl.next().removeClass("focus");
+        }
 
         if ($(this).attr("aria-expanded") === "true") {
           $(this).attr("aria-expanded", "false");
@@ -51,6 +59,7 @@ if (jQuery) {
 
       $(document).click(function (event) {
         const myTarget = $(".nav-menu");
+
         if (!myTarget.is(event.target) && myTarget.has(event.target).length === 0) {
           $(".focus").hide();
         } else {
