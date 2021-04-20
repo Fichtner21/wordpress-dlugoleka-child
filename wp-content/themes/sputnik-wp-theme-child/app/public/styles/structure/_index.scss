@@ -116,9 +116,9 @@
           text-transform: none;
           font-weight: 400;
 
-          html.contrast-mode & {
+          .contrast-mode & {
             color: $contrastColor;
-          }
+          }          
 
           &:hover {
             text-decoration: underline;
@@ -267,6 +267,10 @@
             a {
               text-decoration: none;
               color: #000;
+
+              .contrast-mode & {
+                color: $contrastColor;
+              }
 
               &:hover {
                 text-decoration: underline;
