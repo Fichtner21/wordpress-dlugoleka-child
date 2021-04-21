@@ -3,7 +3,7 @@ import 'webpack-jquery-ui/tooltip';
 
 document.addEventListener("DOMContentLoaded", function () {
 
-  const $title = $("a,input,p,label,textarea[title]");
+  const $title = $("a,input,p,label,textarea[title],button,:not(.menu-item a)");
 
   jQuery.each($title, function(index, value) {
     jQuery(this).tooltip({
@@ -97,7 +97,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
       a.title = `${a.title} (Otworzy się w nowej zakładce)`;
 
-      a.appendChild(aSpan);
+      a.appendChild(aSpan);     
     }
   }); 
+
+  $('a[target="_blank"]').click(function( event ) {
+    event.preventDefault();    
+    var yesno = confirm("Uwaga! Strona otworzy się w nowej zakładce.");
+    if (yesno) window.open($(this).attr('href'));
+});
 });
