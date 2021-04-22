@@ -58,12 +58,11 @@ if (jQuery) {
       });
 
       $(document).click(function (event) {
-        const myTarget = $(".nav-menu");
+        const myTarget = $("#primary-menu");
 
         if (!myTarget.is(event.target) && myTarget.has(event.target).length === 0) {
-          $(".focus").hide();
-        } else {
-          $(".focus").show();
+          $("#primary-menu .sub-menu.focus").removeClass("focus");
+          $topLevelItems.find("a:first").attr("aria-expanded", "false");
         }
       });
     });
