@@ -93,15 +93,15 @@
 
                         <footer class="post-footer">
                           <!-- Category -->
-                          <div class="category-list">Kategoria:
+                          <div class="category-list">
                           <?php
                           $categories = get_the_category();
 
                           $output = '';
                           if ( ! empty( $categories ) ) {
-                            echo '<div class="category-list">Kategorie:';
+                            echo '<div class="category-list">Kategoria:';
                               foreach( $categories as $category ) {
-                                $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" title="' . esc_attr( sprintf( __( 'Zobacz wszystkie wpisy w: %s', 'textdomain' ), $category->name ) ) . '" class="category-link">' . esc_html( $category->name ) . '</a>';
+                                $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" title="' . esc_attr( sprintf( __( 'Zobacz wszystkie wpisy w kategorii: %s', 'textdomain' ), $category->name ) ) . '" class="category-link">' . esc_html( $category->name ) . '</a>';
                               }
                               echo trim( $output );
                             echo '</div>';

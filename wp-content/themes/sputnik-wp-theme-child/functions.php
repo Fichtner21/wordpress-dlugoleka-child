@@ -169,7 +169,8 @@ function custom_post_loop_template_dlugoleka($heading_level = 'h2', $thumb_size 
 
                                 }
                                 echo trim( $output, $separator );
-                            } ?>
+                            }
+                             ?>
 
 
                         <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme') . ' - ' . get_the_title(); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
