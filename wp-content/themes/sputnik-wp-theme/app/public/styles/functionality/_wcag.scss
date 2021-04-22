@@ -79,13 +79,14 @@ p::selection {
   padding: 5px 15px;
   position: absolute;
   z-index: 98;
+  font-size: 1.5rem;
 
   .contrast-mode & {
     background-color: $contrastBackground;
     color: $contrastColor;
     border: 3px solid #ff0;
   }
-  }
+}
 .mytooltip:hover:before{
     // border: solid;
     // border-color: #333 transparent;
