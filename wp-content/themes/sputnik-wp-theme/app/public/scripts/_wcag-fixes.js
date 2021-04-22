@@ -1,24 +1,23 @@
-import $ from 'jquery';
-import 'webpack-jquery-ui/tooltip';
+import $ from "jquery";
+import "webpack-jquery-ui/tooltip";
 
 document.addEventListener("DOMContentLoaded", function () {
-
   const $title = $("a,input,p,label,textarea[title]");
 
-  jQuery.each($title, function(index, value) {
+  jQuery.each($title, function (index, value) {
     jQuery(this).tooltip({
-        show: {
-             effect: "explode",
-             delay: 250
-        },
-        hide: {
-            effect: "explode",
-            delay: 250
-       },
-       tooltipClass: "mytooltip",
-    });  
+      show: {
+        effect: "explode",
+        delay: 250,
+      },
+      hide: {
+        effect: "explode",
+        delay: 250,
+      },
+      tooltipClass: "mytooltip",
+    });
   });
-    //
+  //
   if (document.querySelectorAll(".menu .menu-item a").length > 0) {
     const menuAnchors = document.querySelectorAll(".menu .menu-item a");
 
@@ -87,6 +86,31 @@ document.addEventListener("DOMContentLoaded", function () {
     searchFormSinputs[1].name = searchFormSinputs[1].id;
     searchFormSinputs[1].parentNode.querySelector("label").setAttribute("for", searchFormSinputs[1].id);
   }
+
+  searchForm.classList.add("hidden");
+
+  function searchFormTabIndex() {
+    if (!searchForm.classList.contains("sputnik-search-form--active")) {
+      searchForm.querySelector("button").setAttribute("tabindex", "-1");
+      searchForm.querySelectorAll("input").forEach((input) => {
+        input.setAttribute("tabindex", "-1");
+      });
+      searchForm.querySelector("button").addEventListener("blur", function () {
+        this.parentNode.parentNode.parentNode.parentNode.classList.remove("active");
+      });
+    } else {
+      searchForm.querySelector("button").setAttribute("tabindex", "0");
+      searchForm.querySelectorAll("input").forEach((input) => {
+        input.setAttribute("tabindex", "0");
+      });
+    }
+  }
+
+  window.addEventListener("load", searchFormTabIndex);
+  document.querySelector(".sputnik-search-form__toggle").addEventListener("click", searchFormTabIndex);
+  document.querySelector(".sputnik-search-form__toggle").addEventListener("click", function () {
+    searchForm.classList.toggle("active");
+  });
   //
   aTags.forEach((a) => {
     if (a.target === "_blank") {
@@ -99,5 +123,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
       a.appendChild(aSpan);
     }
-  }); 
+  });
 });

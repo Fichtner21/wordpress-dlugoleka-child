@@ -10,7 +10,7 @@
                     $searchform = get_sub_field('searchform');
                     $herb = get_sub_field('herb');
                 ?>
-                    <div class="swiper-slide hero-slide">
+                    <div class="swiper-slide hero-slide" tab-index="-1">
                         <?php if(!empty($url)) : ?><a href='<?= $url['url']; ?>' title='<?= $url['title']; ?>'><?php endif; ?>
                             <?php if(!empty($herb)) echo '<img class="hero-slide__herb" src="'. $herb['url'] .'" alt="'. $herb['alt'] .'">'; ?>
 

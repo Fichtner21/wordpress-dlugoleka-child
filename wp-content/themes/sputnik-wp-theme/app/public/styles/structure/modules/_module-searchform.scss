@@ -9,4 +9,12 @@
       @extend .screen-reader-text;
     }
   }
+
+  &.hidden {
+    display: none !important;
+  }
+  &--active,
+  &.active {
+    display: block !important;
+  }
 }
