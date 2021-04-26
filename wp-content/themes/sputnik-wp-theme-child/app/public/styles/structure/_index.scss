@@ -9,12 +9,21 @@
   }
 }
 
+.page-section-heading {
+  background-color: lighten($secondaryColor, 20%);
+  padding: 1rem;
+
+  .contrast-mode & {
+    background-color: lighten($contrastBackground, 10%);
+  }
+}
+
 .archive-posts {
   .page-section-heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem;    
 
     &__title {
       text-transform: none;
