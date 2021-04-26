@@ -102,20 +102,22 @@ if(!function_exists('sputnik_wp_theme_post_thumbnail')) {
 
 // Custom excerpt length
 if(!function_exists('get_custom_excerpt')) {
-    function get_custom_excerpt( $count ) {
+    function get_custom_excerpt( $count, $ID = '' ) {
 		global $post;
 
 		$excerpt;
 
-		if(empty(get_the_excerpt($post->ID))) {
-			$excerpt = get_the_content($post->ID);
+		$post_ID = $ID;
+
+		if(empty(get_the_excerpt($post_ID))) {
+			$excerpt = get_the_content($post_ID);
 			$excerpt = strip_shortcodes($excerpt);
 			$excerpt = strip_tags($excerpt);
 			$excerpt = substr($excerpt, 0, $count);
 			$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
 			if(!empty($excerpt)) $excerpt = '<p class="post-content__excerpt">' . $excerpt . '...</p>';
 		} else {
-			$excerpt = get_the_excerpt($post->ID);
+			$excerpt = get_the_excerpt($post_ID);
 			$excerpt = strip_shortcodes($excerpt);
 			$excerpt = strip_tags($excerpt);
 			$excerpt = substr($excerpt, 0, $count);
