@@ -74,7 +74,7 @@ if(!empty($allEvents)) : ?>
                     </header><!-- .entry-header -->
 
                     <div class="post-content">
-                        <?= get_custom_excerpt(128); ?>
+                        <?= get_the_excerpt($ID); ?>
                     </div><!-- .entry-content -->
 
                     <footer class="post-footer">
