@@ -27,7 +27,7 @@ get_header(); ?>
 			</div>
 		</div>
 
-		<?php require get_stylesheet_directory() . '/template-parts/custom/section-news-4-query.php'; ?>
+		<?php require get_stylesheet_directory() . '/template-parts/custom/section-news-4-query-home.php'; ?>
 
 		<section class='page-section events'>
 			<div class='container'>

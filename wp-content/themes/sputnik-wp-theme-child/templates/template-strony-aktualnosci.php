@@ -17,7 +17,7 @@ get_header(); ?>
 			<?php require CUSTOM_PARTS . '/loops/loop-page-childs.php'; ?>
 		</div>
 
-		<?php require get_stylesheet_directory() . '/template-parts/custom/section-news-4-query.php'; ?>
+		<?php require get_stylesheet_directory() . '/template-parts/custom/section-news-4-query-template.php'; ?>
 	</main><!-- #main -->
 
 <?php get_footer();

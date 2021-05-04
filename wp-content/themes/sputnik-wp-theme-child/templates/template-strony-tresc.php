@@ -1,6 +1,11 @@
 <?php /* Template Name: Treść */
 
-get_header(); ?>
+get_header();
+
+$choosed_post_type = get_field('posts_sections');
+$taxonomy = get_option($choosed_post_type);
+
+?>
 
 	<main id="primary" class="site-main content-template">
 
@@ -41,13 +46,13 @@ get_header(); ?>
 								},
 								success:function(data){
 									filter.find('button').text('Filtruj'); // changing the button label back
-									console.log('filter', filter);
+
 									if(data.length === 14){
 										$('.archive-sidebar .posts-loop').html("Nie znaleziono wpisów.")
 									} else {
 										$('.archive-sidebar .posts-loop').html(data); // insert data
-									}									
-								}							
+									}
+								}
 							});
 
 							return false;
@@ -57,7 +62,7 @@ get_header(); ?>
 
 					<?php
 					$news_sidebar = array(
-						'post_type' => 'post',
+						'post_type' => $choosed_post_type,
 						'post__not_in' => $exclude,
 						'posts_per_page' => 8,
 						'post_status' => 'publish',
@@ -70,7 +75,7 @@ get_header(); ?>
 					<h2>Aktualności</h2>
 					<form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter-sidebar">
               <?php
-                if( $terms = get_terms( array( 'taxonomy' => 'category', 'orderby' => 'name' ) ) ) :
+                if( $terms = get_terms( array( 'taxonomy' => $taxonomy, 'orderby' => 'name' ) ) ) :
                   echo '<label for="categoryfilter" class="screen-reader-text">Wybierz kategorię</label><select name="categoryfilter" id="categoryfilter" aria-label="Choose category"><option value="'.$terms[0]->id.'">Wybierz kategorie...</option>';
                   foreach ( $terms as $term ) :
                     echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as the value of an option
@@ -95,7 +100,7 @@ get_header(); ?>
 
 										if ( ! empty( $categories ) ) {
 											foreach( $categories as $category ) {
-												$output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '" style="background-color:'.get_field('category_color', $category).'" class="category-color">' . esc_html( $category->name ) . '</a>'; 
+												$output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '" style="background-color:'.get_field('category_color', $category).'" class="category-color">' . esc_html( $category->name ) . '</a>';
 												// . $separator;
 											}
 											echo trim( $output, $separator );

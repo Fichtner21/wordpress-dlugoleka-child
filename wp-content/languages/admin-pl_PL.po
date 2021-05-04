@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-05 17:32:56+0000\n"
+"PO-Revision-Date: 2021-04-20 06:32:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,7 +37,7 @@ msgstr "Teraz łatwo można ustawić, aby elementy iframe ładowały się leniwi
 
 #: wp-admin/about.php:237
 msgid "In 5.7, jQuery gets more focused and less intrusive, with fewer messages in the console."
-msgstr "W 5.7 jQuery stał się bardziej kompaktowy, mniej inwazyjny, z obniżoną ilością komunikatów w konsoli."
+msgstr "W 5.7, jQuery stało się bardziej kompaktowe, mniej inwazyjne i z obniżoną ilością komunikatów w konsoli."
 
 #: wp-admin/about.php:230
 msgid "The new Robots API lets you include the filter directives in the robots meta tag, and the API includes the <code>max-image-preview: large</code> directive by default. That means search engines can show bigger image previews, which can boost your traffic (unless the site is marked <em>not-public</em>)."
@@ -65,11 +65,11 @@ msgstr "Leniwe ładowanie iframe'ów"
 
 #: wp-admin/about.php:236
 msgid "For years jQuery helped make things move on the screen in ways the basic tools couldn’t—but that keeps changing, and so does jQuery."
-msgstr "Przez lata jQuery pozwalało na poruszaniu elementów na ekranie, na co nie pozwalły podstawowe narzędzia — ale to się zmienia, podobnie jak jQuery."
+msgstr "Przez lata jQuery pozwalało na poruszanie elementów na ekranie, na co nie pozwalały podstawowe narzędzia — ale to się zmienia, podobnie jak jQuery."
 
 #: wp-admin/about.php:235
 msgid "Ongoing cleanup after update to jQuery 3.5.1"
-msgstr "Czyszczenie po aktualizacji do jQuery 3.5.1"
+msgstr "Porządki po aktualizacji do jQuery 3.5.1"
 
 #: wp-admin/about.php:227
 msgid "New Robots API"
@@ -3990,7 +3990,7 @@ msgstr "<strong>Błąd:</strong> Wtyczka <strong>wymaga nowszej wersji PHP</stro
 #. translators: %s: Widget title.
 #: wp-admin/includes/widgets.php:255
 msgid "Add widget: %s"
-msgstr "Dodaj widget: %s"
+msgstr "Dodaj widżet: %s"
 
 #. translators: %s: Widgets sidebar name.
 #: wp-admin/includes/widgets.php:95
@@ -5867,7 +5867,7 @@ msgstr "Blog"
 
 #: wp-admin/includes/theme.php:313
 msgid "Footer Widgets"
-msgstr "Widgety Stopki"
+msgstr "Widżety stopki"
 
 #: wp-admin/includes/theme.php:322
 msgid "Grid Layout"
@@ -6609,11 +6609,11 @@ msgstr "Pliki w folderze %s są wykonywane automatycznie."
 
 #: wp-admin/widgets.php:496
 msgid "This will clear all items from the inactive widgets list. You will not be able to restore any customizations."
-msgstr "Spowoduje to usunięcie wszystkich pozycji z listy nieużywanych widgetów. Przywrócenie wprowadzonych do nich ustawień nie będzie możliwe."
+msgstr "Spowoduje to usunięcie wszystkich pozycji z listy nieużywanych widżetów. Przywrócenie wprowadzonych ich ustawień nie będzie możliwe."
 
 #: wp-admin/widgets.php:486
 msgid "Clear Inactive Widgets"
-msgstr "Usuń nieużywane widgety"
+msgstr "Usuń nieużywane widżety"
 
 #: wp-admin/users.php:150 wp-admin/network/site-users.php:159
 msgid "One of the selected users is not a member of this site."
@@ -7208,7 +7208,7 @@ msgstr "<a href=\"https://codex.wordpress.org/Dashboard_My_Sites_Screen\">Dokume
 
 #: wp-admin/widgets.php:88
 msgid "The theme you are currently using isn&#8217;t widget-aware, meaning that it has no sidebars that you are able to change. For information on making your theme widget-aware, please <a href=\"https://developer.wordpress.org/themes/functionality/widgets/\">follow these instructions</a>."
-msgstr "Motyw, z którego aktualnie korzysta witryna, nie pozwala na użycie widgetów, co oznacza, że nie posiada on konfigurowalnych bocznych paneli. Aby dowiedzieć się, jak sprawić, aby motyw zezwalał na używanie widgetów, proszę <a href=\"https://developer.wordpress.org/themes/functionality/widgets/\">podążyć za tymi instrukcjami [en]</a>."
+msgstr "Motyw, z którego aktualnie korzysta witryna, nie pozwala na użycie widżetów, co oznacza, że nie posiada on konfigurowalnych paneli bocznych. Aby dowiedzieć się, jak sprawić, aby motyw zezwalał na używanie widżetów, proszę <a href=\"https://developer.wordpress.org/themes/functionality/widgets/\">przejść do dokumentacji [en]</a>."
 
 #. translators: %s: Documentation URL.
 #: wp-admin/options-writing.php:209
@@ -7942,7 +7942,7 @@ msgstr "Zarządzaj menu"
 
 #: wp-admin/includes/dashboard.php:1962
 msgid "Manage widgets"
-msgstr "Zarządzaj widgetami"
+msgstr "Zarządzaj widżetami"
 
 #: wp-admin/credits.php:61 wp-admin/credits.php:76
 msgid "https://make.wordpress.org/"
@@ -8080,7 +8080,7 @@ msgstr "Ekran służy do zarządzania zainstalowanymi motywami. Obok standardowy
 
 #: wp-admin/widgets.php:449
 msgid "To activate a widget drag it to a sidebar or click on it. To deactivate a widget and delete its settings, drag it back."
-msgstr "Aby aktywować widget, przeciągnij go na panel boczny lub kliknij na nim. Aby wyłączyć widget i usunąć jego ustawienia, przeciągnij go z powrotem."
+msgstr "Aby aktywować widżet, proszę przeciągnąć go na panel boczny lub kliknąć na nim. Aby wyłączyć widżet i usunąć jego ustawienia, proszę przeciągnąć go z powrotem."
 
 #. translators: %s: The rating.
 #: wp-admin/includes/template.php:2645
@@ -8135,7 +8135,7 @@ msgstr "Pomyślnie zaktualizowano następujące wtyczki:"
 
 #: wp-admin/widgets.php:570
 msgid "Add Widget"
-msgstr "Dodaj widget"
+msgstr "Dodaj widżet"
 
 #: wp-admin/includes/theme.php:788 wp-admin/themes.php:910
 msgid "Show next theme"
@@ -8437,12 +8437,12 @@ msgstr "<strong>Kliknięcie strzałki znajdującej się po prawej od każdego el
 #. themes.
 #: wp-admin/nav-menus.php:597
 msgid "Menus can be displayed in locations defined by your theme, even used in sidebars by adding a &#8220;Navigation Menu&#8221; widget on the <a href=\"%1$s\">Widgets</a> screen. If your theme does not support the navigation menus feature (the default themes, %2$s and %3$s, do), you can learn about adding this support by following the Documentation link to the side."
-msgstr "Menu mogą być wyświetlane w miejscach określonych w używanym motywie, a także w panelach bocznych po dodaniu do nich widgetu &#8220;Własne menu&#8221; na ekranie <a href=\"%1$s\">Widgety</a>. Jeśli twój motyw nie obsługuje własnych menu (domyślne motywy %2$s i %3$s obsługują je), możesz dowiedzieć się jak dodać tę funkcję do swojego motywu z dokumentacji, do której odnośnik znajduje się obok."
+msgstr "Menu mogą być wyświetlane w miejscach określonych w używanym motywie, a także w panelach bocznych po dodaniu do nich widżetu &#8220;Własne menu&#8221; na ekranie <a href=\"%1$s\">Widżety</a>. Jeśli twój motyw nie obsługuje własnych menu (domyślne motywy %2$s i %3$s obsługują je), możesz dowiedzieć się jak dodać tę funkcję do swojego motywu z dokumentacji, do której odnośnik znajduje się obok."
 
 #. translators: %s: URL to Widgets screen.
 #: wp-admin/nav-menus.php:588
 msgid "Your theme does not natively support menus, but you can use them in sidebars by adding a &#8220;Navigation Menu&#8221; widget on the <a href=\"%s\">Widgets</a> screen."
-msgstr "Używany motyw natywnie nie obsługuje menu, ale można je dodać do panelu bocznego przy użyciu widgetu &#8222;Własne menu&#8221; dostępnego na ekranie <a href=\"%s\">Widgety</a>."
+msgstr "Używany motyw natywnie nie obsługuje menu, ale można je dodać do panelu bocznego przy użyciu widżetu &#8222;Własne menu&#8221; dostępnego na ekranie <a href=\"%s\">Widżety</a>."
 
 #: wp-admin/install.php:408
 msgid "Sorry, that isn&#8217;t a valid email address. Email addresses look like <code>username@example.com</code>."
@@ -9045,7 +9045,7 @@ msgstr "W celu zarządzania odnośnikami należy zainstalować wtyczkę <a href=
 
 #: wp-admin/widgets.php:77
 msgid "When changing themes, there is often some variation in the number and setup of widget areas/sidebars and sometimes these conflicts make the transition a bit less smooth. If you changed themes and seem to be missing widgets, scroll down on this screen to the Inactive Widgets area, where all of your widgets and their settings will have been saved."
-msgstr "Po włączeniu nowego motywu, często zmienia się liczba i rozmieszczenie bocznych paneli, co czasem utrudnia płynne przełączanie. Jeżeli został zmieniony motyw i brakuje widgetów, należy przewinąć stronę w dół. Nieużywane aktualnie widgety znajdują się w module Nieużywane widgety."
+msgstr "Po włączeniu nowego motywu, często zmienia się liczba i rozmieszczenie bocznych paneli, co czasem utrudnia płynne przełączanie. Jeżeli został zmieniony motyw i brakuje widżetów, należy przewinąć stronę w dół. Nieużywane aktualnie widżety znajdują się w części \"Nieużywane widżety\"."
 
 #: wp-admin/edit-tags.php:288
 msgid "<strong>Parent</strong> &mdash; Categories, unlike tags, can have a hierarchy. You might have a Jazz category, and under that have child categories for Bebop and Big Band. Totally optional. To create a subcategory, just choose another category from the Parent dropdown."
@@ -10194,7 +10194,7 @@ msgstr "Na tym ekranie możesz między innymi zmienić swoje hasło, włączyć 
 
 #: wp-admin/widgets.php:110
 msgid "This sidebar is no longer available and does not show anywhere on your site. Remove each of the widgets below to fully remove this inactive sidebar."
-msgstr "Ten panel boczny nie jest używany przez ten motyw i nie pojawia się nigdzie na witrynie. Usuń lub przenieś widgety z niego do obszaru „Nieużywane widgety”, aby pozbyć się go z tego ekranu."
+msgstr "Ten panel boczny nie jest używany przez motyw i nie pojawia się nigdzie na witrynie. Proszę usunąć lub przenieść widżety do obszaru „Nieużywane widżety”, aby pozbyć się go z tego ekranu."
 
 #: wp-admin/widgets.php:107
 msgid "Inactive Sidebar (not used)"
@@ -10218,7 +10218,7 @@ msgstr "Możesz pogrupować odnośniki przy użyciu kategorii odnośników. Nazw
 
 #: wp-admin/widgets.php:74
 msgid "Missing Widgets"
-msgstr "Brakujące widgety"
+msgstr "Brakujące widżety"
 
 #: wp-admin/widgets.php:64
 msgid "Removing and Reusing"
@@ -11160,7 +11160,7 @@ msgstr "%s &#8212; WordPress"
 
 #: wp-admin/widgets.php:58
 msgid "The Available Widgets section contains all the widgets you can choose from. Once you drag a widget into a sidebar, it will open to allow you to configure its settings. When you are happy with the widget settings, click the Save button and the widget will go live on your site. If you click Delete, it will remove the widget."
-msgstr "Sekcja &#8222;Dostępne widgety&#8221; zawiera wszystkie widgety, których możesz użyć. Przeciągnięcie widgetu do panelu bocznego spowoduje wyświetlenie jego ustawień, pozwalając Ci je zmienić. Kiedy już ustawisz widget tak, jak chcesz, kliknij przycisk &#8222;Zapisz&#8221;, a widget pojawi się na Twojej witrynie. Kliknięcie &#8222;Usuń&#8221; spowoduje skasowanie widgetu."
+msgstr "Sekcja \"Dostępne widżety\" zawiera wszystkie widżety, których można użyć. Przeciągnięcie widżetu do panelu bocznego spowoduje wyświetlenie jego ustawień, pozwalając je zmienić. Kiedy już widżet zostanie ustawiony, proszę kliknąć przycisk \"Zapisz\", a widżet pojawi się w witrynie. Kliknięcie \"Usuń\" spowoduje skasowanie widżetu."
 
 #: wp-admin/media.php:90 wp-admin/edit-form-advanced.php:349
 msgid "Remember to click Update Media to save metadata entered or changed."
@@ -11362,7 +11362,7 @@ msgstr "Nazwa użytkownika FTP/SSH"
 
 #: wp-admin/widgets.php:76
 msgid "Many themes show some sidebar widgets by default until you edit your sidebars, but they are not automatically displayed in your sidebar management tool. After you make your first widget change, you can re-add the default widgets by adding them from the Available Widgets area."
-msgstr "Wiele motywów domyślnie wyświetla pewien zestaw widgetów do czasu edycji paneli bocznych, jednak nie są one wyświetlane na ekranie zarządzania widgetami. Po wprowadzeniu pierwszych zmian do paneli bocznych możesz odtworzyć domyślną ich postać przy pomocy widgetów z obszaru &#8222;Dostępne widgety&#8221;."
+msgstr "Wiele motywów domyślnie wyświetla pewien zestaw widżetów do czasu edycji paneli bocznych, jednak nie są one wyświetlane na ekranie zarządzania widżetami. Po wprowadzeniu pierwszych zmian do paneli bocznych można odtworzyć ich domyślną  konfigurację przy pomocy widżetów z obszaru \"Dostępne widżety\"."
 
 #. translators: %s: URL to create a new page.
 #: wp-admin/options-reading.php:28
@@ -11385,7 +11385,7 @@ msgstr "Jeżeli w strukturze odnośników wybrano inną opcję niż Prosty, stru
 
 #: wp-admin/widgets.php:66
 msgid "If you want to remove the widget but save its setting for possible future use, just drag it into the Inactive Widgets area. You can add them back anytime from there. This is especially helpful when you switch to a theme with fewer or different widget areas."
-msgstr "Jeśli chcesz usunąć widget z panelu bocznego, ale zachować jego ustawienia do użycia w przyszłości, po prostu przeciągnij go do obszaru &#8222;Nieużywane widgety&#8221;. Kiedy to zrobisz, ponowne jego użycie będzie możliwe w dowolnej chwili. Funkcja ta jest szczególnie przydatna, kiedy zmieniasz motyw na taki, który zawiera mniej lub inne obszary dla widgetów."
+msgstr "Jeśli chcemy usunąć widżet z panelu bocznego, ale zachować jego ustawienia do użycia w przyszłości, należy przeciągnąć go do obszaru \"Nieużywane widżety\". Kiedy to zostanie zrobione, ponowne jego użycie będzie możliwe w dowolnej chwili. Funkcja jest szczególnie przydatna, kiedy zmieniamy motyw na taki, który zawiera mniej lub inne obszary dla widżetów."
 
 #: wp-admin/users.php:34
 msgid "To add a new user for your site, click the Add New button at the top of the screen or Add New in the Users menu section."
@@ -11447,7 +11447,7 @@ msgstr "Usunięcie odnośnika spowoduje usunięcie go na zawsze, ponieważ nie i
 #. translators: %s: URL to Widgets screen.
 #: wp-admin/link-manager.php:60
 msgid "You can add links here to be displayed on your site, usually using <a href=\"%s\">Widgets</a>. By default, links to several sites in the WordPress community are included as examples."
-msgstr "Na tym ekranie możesz dodać odnośniki, które mogą być wyświetlane na Twojej witrynie, zwykle przy pomocy <a href=\"%s\">widgetów</a>. Domyślnie znajdują się tu odnośniki do kilku stron związanych z WordPressem."
+msgstr "Na ekranie można dodać odnośniki, które mogą być wyświetlane w witrynie, zwykle przy pomocy <a href=\"%s\">widżetów</a>. Domyślnie znajdują się tu odnośniki do kilku stron związanych z WordPressem."
 
 #: wp-admin/edit-tags.php:284
 msgid "<strong>Slug</strong> &mdash; The &#8220;slug&#8221; is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens."
@@ -11585,11 +11585,11 @@ msgstr "Włączenie trybu ułatwionej dostępności, poprzez kartę &#8222;Opcje
 
 #: wp-admin/widgets.php:67
 msgid "Widgets may be used multiple times. You can give each widget a title, to display on your site, but it&#8217;s not required."
-msgstr "Widgety mogą zostać użyte wiele razy. Możesz nadać każdemu widgetowi tytuł, ale nie jest to wymagane."
+msgstr "Widżety mogą zostać użyte wiele razy. Można nadać każdemu widżetowi tytuł, ale nie jest to wymagane."
 
 #: wp-admin/widgets.php:57
 msgid "Widgets are independent sections of content that can be placed into any widgetized area provided by your theme (commonly called sidebars). To populate your sidebars/widget areas with individual widgets, drag and drop the title bars into the desired area. By default, only the first widget area is expanded. To populate additional widget areas, click on their title bars to expand them."
-msgstr "Widgety są niezależnymi od głównej treści witryny sekcjami, które mogą zostać umieszczone w dowolnym obszarze Twojej witryny, przeznaczonym dla widgetów (obszary te nazywane są często &#8222;panelami bocznymi&#8221;). Aby umieścić widgety w panelu bocznym/obszarze przeznaczonym dla widgetów, przeciągnij je ich paski tytułów do wybranego obszaru. Domyślnie tylko pierwszy obszar dla widgetów jest rozwinięty. Aby umieścić widgety w innych obszarach, kliknij ich paski tytułów, aby je rozwinąć."
+msgstr "Widżety są niezależnymi od głównej treści witryny sekcjami, które mogą zostać umieszczone w dowolnym obszarze witryny, przeznaczonym dla widżetów (obszary nazywamy \"panelami bocznymi\"). Aby umieścić widżety w panelu bocznym/obszarze przeznaczonym dla widżetów, proszę przeciągnąć je za ich paski tytułów do wybranego obszaru. Domyślnie tylko pierwszy obszar dla widżetów pozostaje rozwinięty. Aby umieścić widżety w innych obszarach, proszę kliknąć ich paski tytułów, aby je rozwinąć."
 
 #: wp-admin/theme-editor.php:39
 msgid "<strong>Advice:</strong> Think very carefully about your site crashing if you are live-editing the theme currently in use."
@@ -11736,7 +11736,7 @@ msgstr "Używany motyw obsługuje jedno menu. Wybierz menu, które chcesz używa
 
 #: wp-admin/nav-menus.php:19
 msgid "Your theme does not support navigation menus or widgets."
-msgstr "Używany motyw nie obsługuje nawigacyjnych menu ani widgetów."
+msgstr "Używany motyw nie obsługuje menu nawigacyjnych ani widżetów."
 
 #: wp-admin/includes/import.php:196 wp-admin/tools.php:47 wp-admin/tools.php:72
 msgid "Categories and Tags Converter"
@@ -12297,15 +12297,15 @@ msgstr "Kategorie:"
 
 #: wp-admin/widgets.php:129
 msgid "Drag widgets here to remove them from the sidebar but keep their settings."
-msgstr "Przeciągnij widgety tutaj, aby usunąć je z panelu bocznego, ale zachować ich ustawienia."
+msgstr "Przeciągnij widżety tutaj, aby usunąć je z panelu bocznego, ale zachować ich ustawienia."
 
 #: wp-admin/widgets.php:442 wp-admin/widgets.php:445
 msgid "Available Widgets"
-msgstr "Dostępne widgety"
+msgstr "Dostępne widżety"
 
 #: wp-admin/widgets.php:383
 msgid "Error in displaying the widget settings form."
-msgstr "Błąd wyświetlania formularza ustawień widgetu."
+msgstr "Błąd wyświetlania formularza ustawień widżetu."
 
 #: wp-admin/includes/misc.php:1246 wp-admin/includes/post.php:1958
 #: wp-admin/widgets.php:382
@@ -12319,7 +12319,7 @@ msgstr "Zmiany zostały zapisane."
 
 #: wp-admin/widgets.php:360
 msgid "Save Widget"
-msgstr "Zapisz widget"
+msgstr "Zapisz widżet"
 
 #: wp-admin/widgets.php:315
 msgid "Position"
@@ -12327,16 +12327,16 @@ msgstr "Położenie"
 
 #: wp-admin/widgets.php:313
 msgid "Select both the sidebar for this widget and the position of the widget in that sidebar."
-msgstr "Wybierz docelowy panel boczny dla tego widgetu i jego położenie w tym panelu."
+msgstr "Proszę wybrać docelowy panel boczny dla widżetu i jego położenie w panelu."
 
 #. translators: %s: Widget name.
 #: wp-admin/widgets.php:298
 msgid "Widget %s"
-msgstr "Widget %s"
+msgstr "Widżet %s"
 
 #: wp-admin/widgets.php:126
 msgid "Inactive Widgets"
-msgstr "Nieużywane widgety"
+msgstr "Nieużywane widżety"
 
 #: wp-admin/includes/class-wp-users-list-table.php:306
 msgid "Change"
@@ -14516,7 +14516,7 @@ msgstr "Szablon strony głównej"
 
 #: wp-admin/includes/dashboard.php:1107 wp-admin/includes/dashboard.php:1286
 msgid "This widget requires JavaScript."
-msgstr "Ten widget wymaga włączenia obsługi JavaScriptu."
+msgstr "Widżet wymaga JavaScriptu."
 
 #. translators: 1: Type of comment, 2: Notification if the comment is pending.
 #: wp-admin/includes/dashboard.php:860
