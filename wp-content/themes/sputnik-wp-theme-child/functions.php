@@ -90,104 +90,6 @@ function custom_post_loop_template_dlugoleka($heading_level = 'h2', $thumb_size 
 	<?php
     }
 
-    add_action('wp_ajax_myfilter', 'misha_filter_function'); // wp_ajax_{ACTION HERE}
-    add_action('wp_ajax_nopriv_myfilter', 'misha_filter_function');
-
-    function misha_filter_function(){
-        $args = array(
-            'orderby' => 'date', // we will sort posts by date
-            'order'	=> $_POST['date'], // ASC or DESC
-            'posts_per_page' => 4
-        );
-
-        // for taxonomies / categories
-        if( isset( $_POST['categoryfilter'] ) )
-            $args['tax_query'] = array(
-                array(
-                    'taxonomy' => 'category',
-                    'field' => 'id',
-                    'terms' => $_POST['categoryfilter']
-                )
-            );
-
-            // if post thumbnail is set
-        // if( isset( $_POST['featured_image'] ) && $_POST['featured_image'] == 'on' )
-        // $args['meta_query'][] = array(
-        //     'key' => '_thumbnail_id',
-        //     'compare' => 'EXISTS'
-        // );
-
-        $query = new WP_Query( $args );
-
-        if( $query->have_posts() ) :
-            while( $query->have_posts() ): $query->the_post();
-                //echo '<h2>' . $query->post->post_title . '</h2>';
-                ?>
-                <article id="post-<?= get_the_ID(); ?>" <?php post_class() . ' post'; ?>>
-                    <div class="post-others-left">
-                    <?php
-                        if (has_post_thumbnail( get_the_ID() ) ){ ?>
-                            <figure>
-                            <?php
-                                sputnik_wp_theme_post_thumbnail('medium');
-                            ?>
-                            </figure>
-                            <?php
-                        } else { ?>
-                            <figure>
-                                <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/app/public/images/dlugoleka-logo.png" title="<?php get_bloginfo('name'); ?>" alt="<?php get_bloginfo('name'); ?>"/>
-                            </figure>
-                        <?php
-                        }
-                    ?>
-
-                    </div>
-                    <div class="post-bulk">
-                        <header class="post-heading">
-                                <div class="post-heading-meta">
-                                        <?php echo '<i class="fas fa-clock"></i> Data publikacji: ' . get_the_date('d.m.Y') . 'r.'; ?>
-                                </div>
-                                <?php the_title( '<div class="post-heading__title"><h3><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3></div>' ); ?>
-
-                        </header><!-- .entry-header -->
-
-                        <div class="post-content">
-                                <?= get_custom_excerpt(200); ?>
-
-                        </div><!-- .entry-content -->
-
-                        <footer class="post-footer">
-                                <!-- Category -->
-
-                            <?php
-                            $categories = get_the_category();
-                            $separator = ', ';
-                            $output = '';
-                            if ( ! empty( $categories ) ) {
-                                foreach( $categories as $category ) {
-                                        $output .= '<div class="category-list">Kategoria: <a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '" class="category-link">' . esc_html( $category->name ) . '</a></div>';
-
-                                }
-                                echo trim( $output, $separator );
-                            }
-                             ?>
-
-
-                        <a href="<?= get_the_permalink(); ?>" class="post-footer__button btn btn--primary" title='<?= __('Czytaj','sputnik-wp-theme') . ' - ' . get_the_title(); ?>'><?= __('Czytaj','sputnik-wp-theme'); ?></a>
-                        </footer><!-- .entry-footer -->
-                    </div>
-                </article><!-- #post-<?= get_the_ID(); ?> -->
-        <?php
-            endwhile;
-            wp_reset_postdata();
-        else :
-            echo 'No posts found';
-        endif;
-
-        die();
-    }
-
-
 
     // Default custom post template
 if(!function_exists('title_on_hover_loop_template')) {
@@ -248,3 +150,5 @@ function my_disable_gutenberg( $can_edit, $post ) {
 
 // rmeove cf7 auto p and br
 add_filter( 'wpcf7_autop_or_not', '__return_false' );
+
+require get_stylesheet_directory() . '/inc/posts-ajax/posts-ajax-my.php';

@@ -10,41 +10,6 @@ if(get_field('posts_sections')) {
 
 <section class='page-section news'>
   <div class="container">
-    <div id="response"></div>
-
-    <script>
-      jQuery(function($){
-        $('#filter').submit(function() {
-          var filter = $('#filter');
-
-          $.ajax({
-            url:filter.attr('action'),
-            data:filter.serialize(), // form data
-            type:filter.attr('method'), // POST
-            beforeSend:function(xhr){
-              filter.find('button').text('W toku...'); // changing the button label
-            },
-            success:function(data) {
-              filter.find('button').text('Filtruj'); // changing the button label back
-
-              const selectVal = $('#filter select').val();
-
-              $('#ajax_term_ID').text(`TermID: ${selectVal}`);
-              // window.location.href = `${window.location.origin}${window.location.pathname}?term=${selectVal}`;
-
-              if(data.length === 14){
-                $('.posts-front .posts-loop').html("Nie znaleziono wpisów.");
-              } else {
-                $('.posts-front .posts-loop').html(data); // insert data
-              }
-            }
-          });
-
-          return false;
-        });
-      });
-    </script>
-
 		<div class='container posts-front'>
 			<header class="page-section-heading">
 				<h2 class="page-section-heading__title"><?= __('Aktualności','sputnik-wp-theme'); ?></h2>
@@ -52,24 +17,10 @@ if(get_field('posts_sections')) {
 				<div class='page-section-heading__meta'>
 					<a href='<?= get_the_permalink(get_page_by_path(__('aktualnosci', 'sputnik-wp-theme'))); ?>' class='page-section-heading__anchor' title='<?= __('Zobacz wszystkie','sputnik-wp-theme'); ?>'><?= __('Zobacz wszystkie','sputnik-wp-theme'); ?></a>
 
-            <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
-              <span id="ajax_term_ID"></span>
-              <?php
-                if( $terms = get_terms( array( 'taxonomy' => $taxonomy, 'orderby' => 'name' ) ) ) :
-                  echo '<label for="categoryfilter" class="screen-reader-text">Wybierz kategorię</label><select name="categoryfilter" id="categoryfilter" aria-label="Wybierz kategorie"><option value="'.$terms[0]->id.'">Wybierz kategorie...</option>';
-                  foreach ( $terms as $term ) :
-                    echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as the value of an option
-                  endforeach;
-                  echo '</select>';
-                endif;
-              ?>
+          <?php require get_stylesheet_directory() . '/inc/posts-ajax/posts-ajax-form.php'; ?>
+				</div>
 
-              <button><?= __('Filtruj','sputnik-wp-theme'); ?></button>
-
-              <input type="hidden" name="action" value="myfilter">
-            </form>
-					</div>
-				</header>
+			</header>
 
       <?php
 
@@ -81,21 +32,6 @@ if(get_field('posts_sections')) {
           'orderby' => 'date',
           'order' => 'DESC',
       );
-
-      // $news_args = array(
-      //   'post_type' => $choosed_post_type,
-      //   'tax_query' => array(
-      //     array(
-      //       'taxonomy' => $taxonomy,
-      //       'field' => 'term_id',
-      //       'terms' => 21,
-      //     )
-      //   ),
-      //   'posts_per_page' => 4,
-      //   'post_status' => 'publish',
-      //   'orderby' => 'date',
-      //   'order' => 'DESC',
-      // );
 
       $news_query = new WP_Query($news_args);
 
@@ -132,8 +68,6 @@ if(get_field('posts_sections')) {
                           <div class="category-list">
                           <?php
 
-                          $categories = get_the_category();
-
                           $categories = get_the_terms(get_the_ID(), $taxonomy);
 
                           $output = '';
@@ -157,3 +91,5 @@ if(get_field('posts_sections')) {
 	  </div>
   </div>
 </section>
+
+<script src="<?= get_stylesheet_directory_uri() . '/inc/posts-ajax/posts-ajax.js'; ?>"></script>
