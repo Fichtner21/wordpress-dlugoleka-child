@@ -27,19 +27,62 @@ get_header(); ?>
 				</div>
 
 				<div class="archive-sidebar">
-				<?php
-				$news_sidebar = array(
-					'post_type' => 'post',
-					'post__not_in' => $exclude,
-					'posts_per_page' => 8,
-					'post_status' => 'publish',
-					'orderby' => 'date',
-					'order' => 'DESC',
-				);
+				<script>
+					jQuery(function($){
+						$('#filter-sidebar').submit(function() {
+							const filter = $('#filter-sidebar');
 
-				$news_others = new WP_Query($news_sidebar);
-				if($news_others->have_posts()) : ?>
+							$.ajax({
+								url:filter.attr('action'),
+								data:filter.serialize(), // form data
+								type:filter.attr('method'), // POST
+								beforeSend:function(xhr){
+									filter.find('button').text('W toku...'); // changing the button label
+								},
+								success:function(data){
+									filter.find('button').text('Filtruj'); // changing the button label back
+									console.log('filter', filter);
+									if(data.length === 14){
+										$('.archive-sidebar .posts-loop').html("Nie znaleziono wpisów.")
+									} else {
+										$('.archive-sidebar .posts-loop').html(data); // insert data
+									}									
+								}							
+							});
+
+							return false;
+						});
+					});
+				</script>
+
+					<?php
+					$news_sidebar = array(
+						'post_type' => 'post',
+						'post__not_in' => $exclude,
+						'posts_per_page' => 8,
+						'post_status' => 'publish',
+						'orderby' => 'date',
+						'order' => 'DESC',
+					);
+
+					$news_others = new WP_Query($news_sidebar);
+					if($news_others->have_posts()) : ?>
 					<h2>Aktualności</h2>
+					<form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter-sidebar">
+              <?php
+                if( $terms = get_terms( array( 'taxonomy' => 'category', 'orderby' => 'name' ) ) ) :
+                  echo '<label for="categoryfilter" class="screen-reader-text">Wybierz kategorię</label><select name="categoryfilter" id="categoryfilter" aria-label="Choose category"><option value="'.$terms[0]->id.'">Wybierz kategorie...</option>';
+                  foreach ( $terms as $term ) :
+                    echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as the value of an option
+                  endforeach;
+                  echo '</select>';
+                endif;
+              ?>
+
+              <button><?= __('Filtruj','sputnik-wp-theme'); ?></button>
+
+              <input type="hidden" name="action" value="myfilter">
+            </form>
 					<div class='posts-loop'>
 							<?php while($news_others->have_posts()) : $news_others->the_post(); ?>
 							<article id="post-<?= get_the_ID(); ?>" <?php post_class(); ?>>
@@ -52,15 +95,20 @@ get_header(); ?>
 
 										if ( ! empty( $categories ) ) {
 											foreach( $categories as $category ) {
-												$output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '" style="background-color:'.get_field('category_color', $category).'" class="category-color">' . esc_html( $category->name ) . '</a>' . $separator;
+												$output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '" style="background-color:'.get_field('category_color', $category).'" class="category-color">' . esc_html( $category->name ) . '</a>'; 
+												// . $separator;
 											}
 											echo trim( $output, $separator );
 										} ?>
 									</div>
 
-									<figure>
-										<?php sputnik_wp_theme_post_thumbnail('medium'); ?>
-									</figure>
+									<?php if (has_post_thumbnail( get_the_ID() ) ) { ?>
+										<figure><?php sputnik_wp_theme_post_thumbnail('medium');  ?></figure>
+									<?php } else { ?>
+										<figure>
+												<img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/app/public/images/dlugoleka-logo.png" title="<?php get_bloginfo('name'); ?>" alt="<?php get_bloginfo('name'); ?>"/>
+										</figure>
+										<?php } ?>
 								</div>
 
 								<div class="post-bulk">

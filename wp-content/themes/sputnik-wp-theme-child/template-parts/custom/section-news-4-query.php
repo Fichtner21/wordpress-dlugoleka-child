@@ -33,7 +33,7 @@
 				<div class='page-section-heading__meta'>
 					<a href='<?= get_the_permalink(get_page_by_path(__('aktualnosci', 'sputnik-wp-theme'))); ?>' class='page-section-heading__anchor' title='<?= __('Zobacz wszystkie','sputnik-wp-theme'); ?>'><?= __('Zobacz wszystkie','sputnik-wp-theme'); ?></a>
 
-            <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php"     method="POST" id="filter">
+            <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
               <?php
                 if( $terms = get_terms( array( 'taxonomy' => 'category', 'orderby' => 'name' ) ) ) :
                   echo '<label for="categoryfilter" class="screen-reader-text">Wybierz kategorię</label><select name="categoryfilter" id="categoryfilter" aria-label="Choose category"><option value="'.$terms[0]->id.'">Wybierz kategorie...</option>';

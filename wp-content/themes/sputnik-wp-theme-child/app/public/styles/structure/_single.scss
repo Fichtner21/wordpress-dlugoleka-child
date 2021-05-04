@@ -66,143 +66,144 @@
 }
 
 .posts-other {
-  .archive-sidebar {
-    h2 {
-      text-transform: none;
-      font-size: 2.4rem;
-      letter-spacing: 0.3rem;
-      margin-bottom: 3rem;
-    }
+  // .archive-sidebar {
+  //   h2 {
+  //     text-transform: none;
+  //     font-size: 2.4rem;
+  //     letter-spacing: 0.3rem;
+  //     margin-bottom: 3rem;
+  //   }
 
-    .posts-loop {
-      .post {
-        display: grid;
-        grid-template-columns: 18rem 1fr;
-        grid-template-rows: auto;
-        gap: 0 1.5rem;
-        position: relative;
-        margin-bottom: 3rem;
-        box-shadow: 0px 0.3rem 0.7rem 0px rgba(40, 40, 40, 0.1);
-        min-height: 18rem;
-        @include small {
-          display: block;
-        }
+  //   .posts-loop {
+  //     .post {
+  //       display: grid;
+  //       grid-template-columns: 18rem 1fr;
+  //       grid-template-rows: auto;
+  //       gap: 0 1.5rem;
+  //       position: relative;
+  //       margin-bottom: 3rem;
+  //       box-shadow: 0px 0.3rem 0.7rem 0px rgba(40, 40, 40, 0.1);
+  //       min-height: 18rem;
+  //       @include small {
+  //         display: block;
+  //       }
 
-        .post-others-left {
-          position: relative;
-          overflow: hidden;
+  //       .post-others-left {
+  //         position: relative;
+  //         overflow: hidden;
 
-          &__category {
-            position: absolute;
-            overflow: hidden;
-            top: 0;
-            left: 0;
-            background-color: $primaryColor;
-            display: flex;
-            flex-wrap: wrap;
+  //         &__category {
+  //           position: absolute;
+  //           overflow: hidden;
+  //           top: 0;
+  //           left: 0;
+  //           background-color: $primaryColor;
+  //           display: flex;
+  //           flex-wrap: wrap;
 
-            a {
-              text-decoration: none;
-              color: $primaryColor;
-              padding: 0.7rem 1rem;
-              font-size: 1.2rem;
-              color: #fff;
+  //           a {
+  //             text-decoration: none;
+  //             color: $primaryColor;
+  //             padding: 0.7rem 0 0.7rem 1rem;
+  //             font-size: 1.2rem;
+  //             color: #fff;
+  //             position: relative;
 
-              &:hover {
-                text-decoration: underline;
-              }
-            }
-          }
+  //             &:hover {
+  //               text-decoration: underline;
+  //             }
+  //           }
+  //         }
 
-          figure {
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 18rem;
+  //         figure {
+  //           overflow: hidden;
+  //           display: flex;
+  //           align-items: center;
+  //           justify-content: center;
+  //           min-height: 18rem;
 
-            .mock-img {
-              max-width: 100%;
-            }
+  //           .mock-img {
+  //             max-width: 100%;
+  //           }
 
-            img {
-              max-width: initial;
-              height: initial;
-            }
-          }
-        }
+  //           img {
+  //             max-width: initial;
+  //             height: initial;
+  //           }
+  //         }
+  //       }
 
-        .post-bulk {
-          padding: 1rem;
-          .post-heading {
-            .post-heading-meta {
-              font-size: 1.2rem;
-              margin: 1rem 0;
+  //       .post-bulk {
+  //         padding: 1rem;
+  //         .post-heading {
+  //           .post-heading-meta {
+  //             font-size: 1.2rem;
+  //             margin: 1rem 0;
 
-              svg {
-                color: $secondaryColor;
-              }
-            }
+  //             svg {
+  //               color: $secondaryColor;
+  //             }
+  //           }
 
-            &__title {
-              font-size: 1.4rem;
-              font-weight: 700;
-              text-transform: none;
-              margin-bottom: 1rem;
-              html.contrast-mode & {
-                color: $contrastColor;
-              }
+  //           &__title {
+  //             font-size: 1.4rem;
+  //             font-weight: 700;
+  //             text-transform: none;
+  //             margin-bottom: 1rem;
+  //             html.contrast-mode & {
+  //               color: $contrastColor;
+  //             }
 
-              a {
-                text-decoration: none;
-                color: #000;
+  //             a {
+  //               text-decoration: none;
+  //               color: #000;
 
-                .contrast-mode & {
-                  color: $contrastColor;
-                }
+  //               .contrast-mode & {
+  //                 color: $contrastColor;
+  //               }
 
-                &:hover {
-                  text-decoration: underline;
-                }
-              }
-            }
-          }
+  //               &:hover {
+  //                 text-decoration: underline;
+  //               }
+  //             }
+  //           }
+  //         }
 
-          .post-content {
-            margin-bottom: 1rem;
-            &__excerpt {
-              font-size: 1.2rem;
-              line-height: 2rem;
-              max-height: 6rem;
-              overflow: hidden;
-            }
-          }
+  //         .post-content {
+  //           margin-bottom: 1rem;
+  //           &__excerpt {
+  //             font-size: 1.2rem;
+  //             line-height: 2rem;
+  //             max-height: 6rem;
+  //             overflow: hidden;
+  //           }
+  //         }
 
-          .post-footer {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            margin-right: 1rem;
+  //         .post-footer {
+  //           display: flex;
+  //           justify-content: flex-end;
+  //           align-items: center;
+  //           margin-right: 1rem;
 
-            &__button {
-              padding: 0.3rem 2rem;
-              background-color: $secondaryColor;
-              color: #000;
-              text-decoration: none;
-              transition: all 0.3s;
-              font-size: 1.2rem;
-              font-weight: 700;
+  //           &__button {
+  //             padding: 0.3rem 2rem;
+  //             background-color: $secondaryColor;
+  //             color: #000;
+  //             text-decoration: none;
+  //             transition: all 0.3s;
+  //             font-size: 1.2rem;
+  //             font-weight: 700;
 
-              &:hover {
-                background-color: lighten($secondaryColor, 5%);
-                text-decoration: underline;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+  //             &:hover {
+  //               background-color: lighten($secondaryColor, 5%);
+  //               text-decoration: underline;
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 article {

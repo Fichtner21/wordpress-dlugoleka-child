@@ -1,33 +1,24 @@
-body.home {
-  .news {
-    margin-top: 15rem;
+.archive-sidebar {
+  h2 {
+    text-transform: none;
+    font-size: 2.4rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 3rem;
   }
-}
 
-.news {
-  margin: 4rem 0;
   .posts-loop {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-
-    @media screen and (max-width: 899px) {
-      display: block;
-    }
     article {
       display: grid;
       grid-template-columns: 18rem 1fr;
       grid-template-rows: auto;
       gap: 0 1.5rem;
       position: relative;
+      margin-bottom: 3rem;
       box-shadow: 0px 0.3rem 0.7rem 0px rgba(40, 40, 40, 0.1);
-      min-height: 20rem;
+      min-height: 18rem;
 
-      @media screen and (max-width: 500px) {
-        grid-template-columns: 12rem 1fr;
-      }
-      @media screen and (max-width: 899px) {
-        margin-bottom: 3rem;
+      @include small {
+        display: block;
       }
 
       .post-others-left {
@@ -36,15 +27,18 @@ body.home {
           overflow: hidden;
           top: 0;
           left: 0;
-          background-color: $primaryColor;
+          // background: $primaryColor;
+          color: white;
           display: flex;
           flex-wrap: wrap;
           line-height: 1;
+          max-width: 18rem;
 
           a {
             text-decoration: none;
-            color: $primaryColor;
-            padding: 0.7rem 0 0.7rem 1rem;
+            color: #fff;
+            // padding: 0.7rem 0 0.7rem 1rem;
+            padding: 0.5rem 1rem;
             font-size: 1.2rem;
             position: relative;
 
@@ -59,7 +53,7 @@ body.home {
           display: flex;
           align-items: center;
           justify-content: center;
-          height: 20rem;
+          min-height: 18rem;
 
           @media screen and (max-width: 500px) {
             max-height: 12rem;
@@ -67,13 +61,13 @@ body.home {
 
           img {
             // max-width: initial;
-            max-width: 100%;
-            height: initial;
+            height: initial;            
           }
         }
       }
 
       .post-bulk {
+        padding: 1rem;
         .post-heading {
           .post-heading-meta {
             font-size: 1.2rem;
@@ -120,25 +114,12 @@ body.home {
 
         .post-footer {
           display: flex;
-          justify-content: space-between;
+          justify-content: flex-end;
           align-items: center;
-          flex-wrap: wrap;
           margin-right: 1rem;
 
           .category-list {
-            font-size: 1.2rem;
-
-            .category-link {
-              display: inline-block;
-              margin: 0.5rem;
-              color: #000;
-              text-decoration: none;
-              margin-right: 0.5rem;
-
-              &:hover {
-                text-decoration: underline;
-              }
-            }
+            display: none;
           }
 
           &__button {
@@ -149,10 +130,6 @@ body.home {
             transition: all 0.3s;
             font-size: 1.2rem;
             font-weight: 700;
-            html.contrast-mode & {
-              background: $contrastColor;
-              color: $contrastBackground;
-            }
 
             &:hover {
               background-color: lighten($secondaryColor, 5%);
@@ -164,3 +141,23 @@ body.home {
     }
   }
 }
+
+#filter-sidebar {
+  margin-bottom: 2rem;
+}
+
+form#filter-sidebar select {
+  background: #fff;
+  padding: 1rem 2rem;
+  border: .1rem solid rgba(0,0,0,.2);
+  border-radius: .3rem;
+}
+
+form#filter-sidebar button {
+  background-color: #0a3255;
+  color: #fff;
+  padding: 1.2rem 2rem;
+  border-radius: .3rem;
+  border: 0;
+}
+
