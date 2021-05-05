@@ -15,7 +15,7 @@ get_header(); ?>
 			<?php require CUSTOM_PARTS . '/loops/loop-page-childs.php'; ?>
 		</div>
 
-		<?php require get_stylesheet_directory() . '/template-parts/custom/section-news-4-query-template.php'; ?>
+		<?php require get_stylesheet_directory() . '/template-parts/custom/section-news-4-query.php'; ?>
 
 		<section class='page-section events'>
 			<div class='container'>

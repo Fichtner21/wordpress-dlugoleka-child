@@ -1,7 +1,13 @@
 <?php
+$choosed_post_type; $taxonomy;
 
-$choosed_post_type = 'post';
-$taxonomy = 'category';
+if(get_field('posts_sections')) {
+   $choosed_post_type = get_field('posts_sections');
+   $taxonomy = get_option($choosed_post_type);
+} else {
+  $choosed_post_type = 'post';
+  $taxonomy = 'category';
+}
 
 ?>
 
@@ -15,14 +21,15 @@ $taxonomy = 'category';
 					<a href='<?= get_the_permalink(get_page_by_path(__('aktualnosci', 'sputnik-wp-theme'))); ?>' class='page-section-heading__anchor' title='<?= __('Zobacz wszystkie','sputnik-wp-theme'); ?>'><?= __('Zobacz wszystkie','sputnik-wp-theme'); ?></a>
 
           <?php require get_stylesheet_directory() . '/inc/posts-ajax/posts-ajax-form.php'; ?>
-
 				</div>
+
 			</header>
 
       <?php
 
       $news_args = array(
           'post_type' => $choosed_post_type,
+          'taxonomy' => $taxonomy,
           'posts_per_page' => 4,
           'post_status' => 'publish',
           'orderby' => 'date',
@@ -63,8 +70,6 @@ $taxonomy = 'category';
                           <!-- Category -->
                           <div class="category-list">
                           <?php
-
-                          $categories = get_the_category();
 
                           $categories = get_the_terms(get_the_ID(), $taxonomy);
 

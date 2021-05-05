@@ -12,12 +12,6 @@
         },
         success: function (data) {
           filter.find("button").text("Filtruj"); // changing the button label back
-
-          const selectVal = $("#filter select").val();
-
-          console.log(data);
-
-          $("#ajax_term_ID").text(`TermID: ${selectVal}`);
           // window.location.href = `${window.location.origin}${window.location.pathname}?term=${selectVal}`;
           $(".posts-front .posts-loop").html(data); // insert data
         },

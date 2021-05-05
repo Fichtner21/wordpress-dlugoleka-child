@@ -20,6 +20,11 @@ if(!function_exists('ajax_posts_filter_function')) {
             $taxonomy = 'category';
         }
 
+        if($pageID !== 5) {
+            $choosed_post_type = 'post';
+            $taxonomy = 'category';
+        }
+
         $args = array(
             'post_type' => $choosed_post_type,
             'orderby' => 'date', // we will sort posts by date
