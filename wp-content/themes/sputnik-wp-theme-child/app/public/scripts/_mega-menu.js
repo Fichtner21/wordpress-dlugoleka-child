@@ -65,6 +65,44 @@ if (jQuery) {
           $topLevelItems.find("a:first").attr("aria-expanded", "false");
         }
       });
+
+      $(window).on("keypress", function (e) {
+        if (e.keyCode === 32) e.preventDefault();
+      });
+
+      $topLevelItems.find("a:first").on("keypress", function (e) {
+        const $menuAnchor = $(e.target);
+        const $megaMenu = $menuAnchor.next();
+
+        if (e.keyCode === 32) {
+          // user has pressed space
+          const prevEl = $menuAnchor.parent().prev().find("a:first");
+          const nextEl = $menuAnchor.parent().next().find("a:first");
+
+          if (prevEl.attr("aria-expanded") == "true") {
+            prevEl.attr("aria-expanded", "false");
+            prevEl.next().removeClass("focus");
+          } else if (nextEl.attr("aria-expanded") == "true") {
+            nextEl.attr("aria-expanded", "false");
+            nextEl.next().removeClass("focus");
+          }
+
+          if ($menuAnchor.attr("aria-expanded") === "true") {
+            $menuAnchor.attr("aria-expanded", "false");
+            $megaMenu.removeClass("focus");
+          } else {
+            $menuAnchor.attr("aria-expanded", "true");
+            $megaMenu.addClass("focus");
+          }
+        }
+      });
+
+      $(document).keyup(function (e) {
+        if (e.key === "Escape") {
+          $("#primary-menu .sub-menu").prev().attr("aria-expanded", "false");
+          $("#primary-menu .sub-menu").removeClass("focus");
+        }
+      });
     });
   })(jQuery);
 }
