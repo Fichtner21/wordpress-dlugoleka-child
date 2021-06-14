@@ -13,7 +13,11 @@
         success: function (data) {
           filter.find("button").text("Filtruj"); // changing the button label back
           // window.location.href = `${window.location.origin}${window.location.pathname}?term=${selectVal}`;
-          $(".posts-front .posts-loop").html(data); // insert data
+          if (document.querySelector(".archive-sidebar")) {
+            $(".archive-sidebar .posts-loop").html(data);
+          } else if (document.querySelector(".posts-front")) {
+            $(".posts-front .posts-loop").html(data);
+          }
         },
       });
 

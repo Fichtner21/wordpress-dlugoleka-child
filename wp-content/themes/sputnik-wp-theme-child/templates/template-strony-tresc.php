@@ -32,34 +32,6 @@ $taxonomy = get_option($choosed_post_type);
 				</div>
 
 				<div class="archive-sidebar">
-				<script>
-					jQuery(function($){
-						$('#filter-sidebar').submit(function() {
-							const filter = $('#filter-sidebar');
-
-							$.ajax({
-								url:filter.attr('action'),
-								data:filter.serialize(), // form data
-								type:filter.attr('method'), // POST
-								beforeSend:function(xhr){
-									filter.find('button').text('W toku...'); // changing the button label
-								},
-								success:function(data){
-									filter.find('button').text('Filtruj'); // changing the button label back
-
-									if(data.length === 14){
-										$('.archive-sidebar .posts-loop').html("Nie znaleziono wpisów.")
-									} else {
-										$('.archive-sidebar .posts-loop').html(data); // insert data
-									}
-								}
-							});
-
-							return false;
-						});
-					});
-				</script>
-
 					<?php
 					$news_sidebar = array(
 						'post_type' => $choosed_post_type,
@@ -73,21 +45,10 @@ $taxonomy = get_option($choosed_post_type);
 					$news_others = new WP_Query($news_sidebar);
 					if($news_others->have_posts()) : ?>
 					<h2>Aktualności</h2>
-					<form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter-sidebar">
-              <?php
-                if( $terms = get_terms( array( 'taxonomy' => $taxonomy, 'orderby' => 'name' ) ) ) :
-                  echo '<label for="categoryfilter" class="screen-reader-text">Wybierz kategorię</label><select name="categoryfilter" id="categoryfilter" aria-label="Choose category"><option value="'.$terms[0]->id.'">Wybierz kategorie...</option>';
-                  foreach ( $terms as $term ) :
-                    echo '<option value="' . $term->term_id . '">' . $term->name . '</option>'; // ID of the category as the value of an option
-                  endforeach;
-                  echo '</select>';
-                endif;
-              ?>
 
-              <button><?= __('Filtruj','sputnik-wp-theme'); ?></button>
+          <?php require get_stylesheet_directory() . '/inc/posts-ajax/posts-ajax-form.php'; ?>
+          <script src="<?= get_stylesheet_directory_uri() . '/inc/posts-ajax/posts-ajax.js'; ?>"></script>
 
-              <input type="hidden" name="action" value="myfilter">
-            </form>
 					<div class='posts-loop'>
 							<?php while($news_others->have_posts()) : $news_others->the_post(); ?>
 							<article id="post-<?= get_the_ID(); ?>" <?php post_class(); ?>>
